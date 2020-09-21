@@ -1,0 +1,42 @@
+"How to use atk scripts"
+
+attack_timing_end : Hur många frames till man går tillbaks till st_normal
+attack_move_spd : Hur mycket man får manuellt röra sig under movets gång. Sätt den på noll så kan man inte röra sig.
+attack_cancellable : Om hela movet får bli cancellad (Måste göra mer dokumentation om det här)
+
+cancel_hitbox: Om den blir true, så cancellar den hitboxen (Behöver mer dokumentation)
+cancel_move : Om den blir true, så cancellar den hela movet och går till st_normal. 
+
+attack_timing : hur många frames efter attacken blev inputtad. 
+
+Med den här kan man scripta flera sequenses i en attack, tillexempel när i en attack x och y får använda. 
+Man kan göra tillexempel att en move bara får bli cancellad till ett hopp under X frames efter inputten. 
+
+function atk_lingeringkick()
+{
+	attack_timing_end = 45;
+	attack_move_spd = 1.5;
+	attack_cancellable = true;
+	
+	if (attack_timing == 10)
+	{
+		var current_hitbox = instance_create_layer(x,y,"Hitbox",o_hitbox); //Skapar ett hitbox objekt
+			with (current_hitbox) //Adjusterar hitboxen som nyss skapades
+			{
+				hitbox_owner = o_player; //Ägaren av hitboxen. Egentligen så ska den ta id:t av den som skapade hitboxen. 
+				hitbox_offset_x = 90; //X offset från hitbox_owner, optional
+				hitbox_offset_y = 20; //Y offset från hitbox_owner, optional
+				hitbox_cancellable = true; //Om hitboxen får cancellas när "cancel_hitbox" flaggan hos hitbox_owner blir true.
+				hitbox_duration = 30;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				image_xscale = 3; //Hitboxens X scale, optional
+				image_yscale = 1;//Hitboxens Y scale, optional
+			}
+	}
+	
+	if (ground == true)
+	{
+		cancel_attack = true;
+		cancel_hitbox = true;
+	}
+	
+}
