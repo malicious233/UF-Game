@@ -1,5 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+//Spadoodle
 function atk_fastpunch()
 {
 	sprite_index = s_player_fastpunch;
