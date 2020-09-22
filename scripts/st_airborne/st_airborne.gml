@@ -4,9 +4,12 @@ function st_airborne()
 {
 	
 //Movement
+move = (key_right - key_left) * SPD_WALK_MAX
+hsp = Approach(hsp,move,SPD_WALK_ACCEL);
+
 	if (key_left == true)
 {
-	hsp = hsp-move_spd
+	//hsp = hsp-move_spd
 	dir = -1;
 	curr_dir = -1;
 }
@@ -20,7 +23,7 @@ if (key_left_click == true)
 */
 if (key_right == true)
 {
-	hsp = hsp+move_spd
+	//hsp = hsp+move_spd
 	dir = 1;
 	curr_dir = 1;
 }
@@ -76,8 +79,8 @@ if (ground == true)
 
 vsp = vsp+grv;
 
-friction_force(1,0.98);
-hsp = clamp(hsp,-max_spd,max_spd)
+//friction_force(1,0.98);
+//hsp = clamp(hsp,-max_spd,max_spd)
 
 hori_collision();
 vert_collision();

@@ -22,3 +22,4 @@ function friction_force(argument1,argument0)
 	
 	}
 }
+

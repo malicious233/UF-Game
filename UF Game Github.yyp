@@ -15,6 +15,7 @@
     {"id":{"name":"s_player_lightpunch","path":"sprites/s_player_lightpunch/s_player_lightpunch.yy",},"order":3,},
     {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},"order":1,},
     {"id":{"name":"s_player_bicyclekick_rec","path":"sprites/s_player_bicyclekick_rec/s_player_bicyclekick_rec.yy",},"order":7,},
+    {"id":{"name":"Approach","path":"scripts/Approach/Approach.yy",},"order":3,},
     {"id":{"name":"st_airborne","path":"scripts/st_airborne/st_airborne.yy",},"order":3,},
     {"id":{"name":"s_wall","path":"sprites/s_wall/s_wall.yy",},"order":4,},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},"order":2,},
