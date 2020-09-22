@@ -3,7 +3,11 @@
 function st_recovery()
 {
 	recovery_time --;
-	if (recovery_time <= 0) {states = states.normal};
+	if (recovery_time <= 0) 
+	{
+		states = states.normal;
+		sprite_index = s_player;
+	}
 	
 	friction_force(0.5,0.97);
 	hsp = clamp(hsp,-max_spd,max_spd);

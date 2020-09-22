@@ -56,8 +56,8 @@ function atk_longkick()
 				}
 		}
 		states = states.recovery
-		recovery_time = 3;
-		sprite_index = s_player_bicyclekick_rec;
+		recovery_time = 9.6;
+		sprite_index = s_player_longkick_rec;
 		cancel_attack = true;	
 		cancel_hitbox = true;
 	}
