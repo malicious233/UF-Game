@@ -4,7 +4,8 @@
 function atk_fastpunch()
 {
 	sprite_index = s_player_fastpunch;
-	attack_timing_end = 25;
+	//attack_timing_end = (sprite_get_number(s_player_fastpunch)*60)/image_speed;
+	attack_timing_end = 16; 
 	attack_move_spd = 0;
 	if (attack_timing == 5)
 		{
@@ -24,6 +25,11 @@ function atk_fastpunch()
 				
 				}
 		}
+	if (key_x_click) and (attack_timing >= 5)
+	{
+		cancel_hitbox = true;
+		cancel_attack = true;
+	}
 	
 
 }

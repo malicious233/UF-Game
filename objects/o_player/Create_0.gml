@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-#macro SPD_WALK_MAX 6.9  
-#macro SPD_WALK_ACCEL 0.5
+#macro SPD_WALK_MAX 7.2  
+#macro SPD_WALK_ACCEL 0.9
 
 
 hsp = 0;
