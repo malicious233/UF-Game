@@ -147,8 +147,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d5372ff7-4d3b-4b97-a6b7-074c0b0b8055","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Meta Sprites",
+    "path": "folders/Sprites/Meta Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_hitbox",

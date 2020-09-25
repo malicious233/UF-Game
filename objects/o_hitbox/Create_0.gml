@@ -3,7 +3,7 @@
 image_xscale = 0;
 image_yscale = 0;
 
-frame1 = 0;
+frame1 = 0; //Just a temporary variable for the first frame of creation
 
 obey_hitbox_creator = true;
 //Allows the hitbox creator to let this hitbox be removed by flags. It also wont follow the player. Useful for projectiles.

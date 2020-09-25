@@ -8,38 +8,27 @@ function atk_bicyclekick()
 	attack_move_spd = 0.75; //How much may you move while attacking
 	if (attack_timing == 3)
 	{
-				
-		var current_hitbox = instance_create_layer(0,0,"Hitbox",o_hitbox); //Skapar ett hitbox objekt
-			with (current_hitbox) //Adjusterar hitboxen som nyss skapades
-			{
-				hitbox_owner = o_player; //Ägaren av hitboxen. Egentligen så ska den ta id:t av den som skapade hitboxen.
-				hitbox_offset_x = 50; //X offset från hitbox_owner, optional
-				hitbox_offset_y = 5; //Y offset från hitbox_owner, optional
-				hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1; //Hitboxens X scale, optional
-				image_yscale = 1;//Hitboxens Y scale, optional
-				
-				
-				//Fixa lite hitbox shenanigans till nice scripts, kanske. Nu så måste man skriva off-setten två gånger methonks
-				
-			}
+		create_hitbox()
+		with (current_hitbox)
+		{
+			hitbox_offset_x = 50; //X offset från hitbox_owner, optional
+			hitbox_offset_y = 5; //Y offset från hitbox_owner, optional
+			hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
+			image_xscale = 1; //Hitboxens X scale, optional
+			image_yscale = 1;//Hitboxens Y scale, optional
+		}
 	}
 	if (attack_timing == 10)
 	{
-		var current_hitbox = instance_create_layer(0,0,"Hitbox",o_hitbox); //Skapar ett hitbox objekt
-			with (current_hitbox) //Adjusterar hitboxen som nyss skapades
-			{
-				hitbox_owner = o_player; //Ägaren av hitboxen. Egentligen så ska den ta id:t av den som skapade hitboxen.
-				hitbox_offset_x = 15; //X offset från hitbox_owner, optional
-				hitbox_offset_y = -30; //Y offset från hitbox_owner, optional
-				hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 2.3; //Hitboxens X scale, optional
-				image_yscale = 1;//Hitboxens Y scale, optional
-				
-				
-				//Fixa lite hitbox shenanigans till nice scripts, kanske. Nu så måste man skriva off-setten två gånger methonks
-				
-			}
+		create_hitbox()
+		with (current_hitbox)
+		{
+			hitbox_offset_x = 15; //X offset från hitbox_owner, optional
+			hitbox_offset_y = -30; //Y offset från hitbox_owner, optional
+			hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
+			image_xscale = 2.3; //Hitboxens X scale, optional
+			image_yscale = 1;//Hitboxens Y scale, optional
+		}
 	}
 	
 	if (ground == true)

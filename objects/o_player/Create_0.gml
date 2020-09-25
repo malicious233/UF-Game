@@ -13,7 +13,7 @@ attack_timing = 0;
 attack_timing_end = 0;
 dir = 1;
 input_dir = 1; //Might become useful when adding controller support and a more intricate moveset.
-obj_id = instance_id;
+obj_id = id;
 
 jumps = 2;
 
@@ -24,6 +24,8 @@ cancel_attack = false;
 
 ground = false;
 
+//Declare states
+
 enum states
 {
 	normal, //Normal state where you can move, attack, etc
@@ -32,3 +34,11 @@ enum states
 	recovery,
 }
 states = states.normal;
+
+//Create personal hurtbox
+
+var p_hurtbox = instance_create_layer(x,y,"Hurtbox",o_hurtbox); 
+with (p_hurtbox) //Makes the created hitbox owned by this entity. Byea
+{
+	hurtbox_owner = other.id;
+}
