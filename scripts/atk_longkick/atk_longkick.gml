@@ -15,6 +15,8 @@ function atk_longkick()
 				hitbox_duration = 8;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.5; //Hitboxens X scale, optional
 				image_yscale = 1.5;//Hitboxens Y scale, optional
+				
+				hitbox_damage = 6;
 			}
 		}
 	if (attack_timing == 18) //Late hitbox
@@ -27,6 +29,8 @@ function atk_longkick()
 				hitbox_duration = 45;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.75; //Hitboxens X scale, optional
 				image_yscale = 1;//Hitboxens Y scale, optional
+				
+				hitbox_damage = 2;
 			}
 		}
 		
@@ -34,6 +38,7 @@ function atk_longkick()
 	{
 		if (attack_timing >= 10) //Landing hitbox
 		{
+		/*
 		create_hitbox()
 		with (current_hitbox)
 			{
@@ -44,12 +49,13 @@ function atk_longkick()
 				image_xscale = 2; //Hitboxens X scale, optional
 				image_yscale = 0.5;//Hitboxens Y scale, optional
 			}
-		}
+		}*/
 		states = states.recovery
 		recovery_time = 9.6;
 		sprite_index = s_player_longkick_rec;
 		cancel_attack = true;	
 		cancel_hitbox = true;
+		}
 	}
 	
 

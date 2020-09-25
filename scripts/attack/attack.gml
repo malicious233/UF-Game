@@ -1,5 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+//arg0 : What sprite is the attack
+//arg1 : What atk_script will the attack run
+
 function attack(argument0,argument1)
 {
 	sprite_index = argument1;

@@ -35,10 +35,8 @@ enum states
 }
 states = states.normal;
 
+
+
 //Create personal hurtbox
 
-var p_hurtbox = instance_create_layer(x,y,"Hurtbox",o_hurtbox); 
-with (p_hurtbox) //Makes the created hitbox owned by this entity. Byea
-{
-	hurtbox_owner = other.id;
-}
+create_hurtbox()

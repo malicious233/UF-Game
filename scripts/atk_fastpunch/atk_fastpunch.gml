@@ -18,6 +18,8 @@ function atk_fastpunch()
 				hitbox_duration = 10;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1; //Hitboxens X scale, optional
 				image_yscale = 1;//Hitboxens Y scale, optional
+				
+				hitbox_damage = 6;
 			}
 			
 		}

@@ -14,7 +14,9 @@ function create_hitbox()
 	current_hitbox = instance_create_layer(0,0,"Hitbox",o_hitbox); //Skapar ett hitbox objekt
 				with (current_hitbox) //Adjusterar hitboxen som nyss skapades
 				{
-					hitbox_owner = other.id; 
+					hitbox_owner = other.id; //Ger hitboxen id't av skaparen
+					team = other.team //Sätter hitboxen på samma team som en själv
+					hitbox_group = other.current_attack; //Vilket "cluster" hitboxen är, så en attack med flera hitboxes inte träffar flera gånger.
 				}
 
 }
