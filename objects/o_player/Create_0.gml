@@ -21,6 +21,7 @@ jumps = 2;
 cancel_hitbox = false;
 cancel_attack = false;
 
+curr_attack_id = 0;
 
 ground = false;
 

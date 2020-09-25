@@ -5,6 +5,7 @@
 
 function attack(argument0,argument1)
 {
+	curr_attack_id = random_range(0,100);
 	sprite_index = argument1;
 	image_index = 0;
 	attack_timing = 0;
