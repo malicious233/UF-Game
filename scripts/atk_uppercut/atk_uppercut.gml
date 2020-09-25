@@ -16,6 +16,11 @@ function atk_uppercut()
 					hitbox_duration = 3;//Hur länge hitboxen är active tills den tas bort automatiskt.
 					image_xscale = 1; //Hitboxens X scale, optional
 					image_yscale = 1;//Hitboxens Y scale, optional
+					
+					hitbox_damage = 15;
+					hitbox_x_kb = 5.5*other.dir;
+					hitbox_y_kb = -20;
+					
 				}
 		}
 		if (attack_timing == 17)
@@ -30,6 +35,10 @@ function atk_uppercut()
 				hitbox_duration = 10;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1; //Hitboxens X scale, optional
 				image_yscale = 2.5;//Hitboxens Y scale, optional
+				
+				hitbox_damage = 7;
+				hitbox_x_kb = 5*other.dir;
+				hitbox_y_kb = -20;
 			}
 		}
 	

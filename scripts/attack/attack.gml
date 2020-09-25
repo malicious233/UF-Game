@@ -3,9 +3,14 @@
 //arg0 : What sprite is the attack
 //arg1 : What atk_script will the attack run
 
+//I have an idea to have a third argument which determines how many attack id's 
+//a move will have. So you can have a multihit move with two seperate hits.
+//Like a one-two punch. Wouldn't be that hard to do I think.
+
+
 function attack(argument0,argument1)
 {
-	curr_attack_id = random_range(0,100);
+	curr_attack_id = random_range(0,100); 
 	sprite_index = argument1;
 	image_index = 0;
 	attack_timing = 0;

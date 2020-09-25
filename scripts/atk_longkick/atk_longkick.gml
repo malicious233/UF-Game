@@ -17,6 +17,8 @@ function atk_longkick()
 				image_yscale = 1.5;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 6;
+				hitbox_x_kb = 10*other.dir;
+				hitbox_y_kb = -5;
 			}
 		}
 	if (attack_timing == 18) //Late hitbox
@@ -30,7 +32,10 @@ function atk_longkick()
 				image_xscale = 1.75; //Hitboxens X scale, optional
 				image_yscale = 1;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 2;
+				hitbox_damage = 3;
+				hitbox_x_kb = 5*other.dir;
+				hitbox_y_kb = -2.5
+				
 			}
 		}
 		

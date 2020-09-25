@@ -1,9 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-#macro SPD_WALK_MAX 7.2  
-#macro SPD_WALK_ACCEL 0.9
-
-
+attack_interval = 60;
 hsp = 0;
 vsp = 0;
 
@@ -23,21 +20,9 @@ cancel_attack = false;
 
 curr_attack_id = 0;
 curr_damage = 0;
+
 ground = false;
 
-//Declare states
 
-enum states
-{
-	normal, //Normal state where you can move, attack, etc
-	airborne, //When you're capable of performing aerial actions
-	attacking, //State while you're attacking, where you're looping an atk_ script
-	recovery,
-}
 states = states.normal;
 
-
-
-//Create personal hurtbox
-
-create_hurtbox()

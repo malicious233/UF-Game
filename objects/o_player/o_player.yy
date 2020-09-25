@@ -10,7 +10,10 @@
     "path": "sprites/s_player/s_player.yy",
   },
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "o_base_character",
+    "path": "objects/o_base_character/o_base_character.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
