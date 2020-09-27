@@ -3,6 +3,18 @@
 
 
 //Inputs
+//ctrl_arrowkeys()
+switch(controls)
+{
+	case controls.arrowkeys: ctrl_arrowkeys() ; break;
+	case controls.typist: ctrl_typist() ; break;
+	case controls.wasd1hand: ctrl_wasd1hand() ; break;
+	case controls.wasdmouse: ctrl_wasdmouse() ; break;
+}
+
+
+#region all the input buttons (commented)
+/*
 key_x_click = keyboard_check_pressed(ord("X"));
 key_z_click = keyboard_check_pressed(ord("Z"));
 key_c_click = keyboard_check_pressed(ord("C"));
@@ -15,6 +27,8 @@ key_left_click = keyboard_check_pressed(vk_left);
 key_right = keyboard_check(vk_right);
 key_right_click = keyboard_check_pressed(vk_right);
 key_up = keyboard_check(vk_up);
+*/
+#endregion
 
 //Reset Flag
 if (cancel_hitbox == true)

@@ -21,7 +21,7 @@ if (key_right == true)
 }
 
 
-
+//state changes
 if (attack_timing >= attack_timing_end) //Ends the attack state once the attack duration ends
 {
 	states = states.normal;	

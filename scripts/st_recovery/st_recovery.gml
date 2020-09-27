@@ -5,6 +5,7 @@ function st_recovery()
 	recovery_time --;
 	if (recovery_time <= 0) 
 	{
+		//state change
 		states = states.normal;
 		sprite_index = s_player;
 	}

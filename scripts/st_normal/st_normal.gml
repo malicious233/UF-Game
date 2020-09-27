@@ -80,11 +80,34 @@ if (key_c_click)
 	attack(atk_uppercut,s_player_uppercut);	
 }
 
-//State what
+//State change
 if (ground == false)
 {
 	states = states.airborne	
 }
+
+//controls change
+if keyboard_check_pressed(ord("O")) and (vk_up)
+{
+	controls = controls.arrowkeys
+}
+
+if keyboard_check_pressed(ord("P")) and (ord("F"))
+{
+	controls = controls.typist
+}
+
+
+/*if keyboard_check_pressed(ord("P")) and (ord("W"))
+{
+	controls = controls.wasd1hand
+}
+
+if keyboard_check_pressed(ord("P")) and (mb_left)
+{
+	controls = controls.wasdmouse
+}*/
+
 
 
 
@@ -101,6 +124,7 @@ x = x+hsp;
 
 image_xscale = size*dir;
 image_yscale = size;
+
 
 
 

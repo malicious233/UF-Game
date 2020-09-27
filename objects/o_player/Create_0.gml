@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 #macro SPD_WALK_MAX 7.2  
-#macro SPD_WALK_ACCEL 0.9
+#macro SPD_WALK_ACCEL 0.7
 
 
 hsp = 0;
@@ -36,6 +36,14 @@ enum states
 }
 states = states.normal;
 
+enum controls
+{
+	arrowkeys,
+	typist,
+	wasd1hand,
+	wasdmouse
+}
+controls = controls.arrowkeys
 
 
 //Create personal hurtbox
