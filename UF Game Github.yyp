@@ -32,6 +32,7 @@
     {"id":{"name":"hori_collision","path":"scripts/hori_collision/hori_collision.yy",},"order":2,},
     {"id":{"name":"vert_collision","path":"scripts/vert_collision/vert_collision.yy",},"order":1,},
     {"id":{"name":"s_player_longkick","path":"sprites/s_player_longkick/s_player_longkick.yy",},"order":5,},
+    {"id":{"name":"fnt_Menu","path":"fonts/fnt_Menu/fnt_Menu.yy",},"order":2,},
     {"id":{"name":"create_hitbox","path":"scripts/create_hitbox/create_hitbox.yy",},"order":6,},
     {"id":{"name":"s_hurtbox","path":"sprites/s_hurtbox/s_hurtbox.yy",},"order":1,},
     {"id":{"name":"atk_bicyclekick","path":"scripts/atk_bicyclekick/atk_bicyclekick.yy",},"order":4,},

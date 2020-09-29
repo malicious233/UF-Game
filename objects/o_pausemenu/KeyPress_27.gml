@@ -1,9 +1,10 @@
 
 ///@description PAUSE GAME
 ///@description captures every instance and it's sprite and pauses the game
+
 	if (!pause)
 	{
-		o_hurtbox.image_alpha = 0.5  /*Make hurtbox invisible before we capture a "screenshot" of all objects
+		o_hurtbox.image_alpha = 0  /*Make hurtbox invisible before we capture a "screenshot" of all objects
 		because otherwise hurbox will be seen when game is paused even if the "Hurtbox"-layer in the room is set to 
 		Not-Viewable-In-Game*/
 		var offset = 0;						/* offset basically makes sure that we always
@@ -33,6 +34,7 @@
 		instance_deactivate_all(true);  /*deactivates all instances except for this one (notme expression, or whatever it is)
 		This also means that all instances cease to exist,
 		Which is why we capture-screenshot them before they go spooky*/
+		menu_control = true  //when escape key is pressed, and pause initiates, arrowkey control in menu is allowed
 		
 		//want to have more stuff in the pause menu? create them here
 	}
@@ -41,6 +43,8 @@
 		pause = false;
 		instance_activate_all();  //activates all instances again, makes them exist again, perfectly as they were before.
 		o_hurtbox.image_alpha = 1   //max opacity again after activation of object, so that we devs can see hutrbox when needed
-		
+		menu_control = false      //when escape key is pressed again, and pause goes away, arrowkey control in menu is not allowed
+								//prevents menu control when pausemenu isn't seen.
+								
 		//deactivate more pausmenu stuff here so that they dont stay when exiting pausemenu.
 	}
