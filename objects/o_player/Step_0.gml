@@ -30,7 +30,7 @@ key_up = keyboard_check(vk_up);
 */
 #endregion
 
-//Reset Flag
+//Reset Flags
 if (cancel_hitbox == true)
 {
 	cancel_hitbox = false;

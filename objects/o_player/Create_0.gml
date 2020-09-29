@@ -43,9 +43,15 @@ enum controls
 	wasd1hand,
 	wasdmouse
 }
+if (controlscheme == 0)
+{
 controls = controls.arrowkeys
-
+}
+else
+{
+controls = controls.wasd1hand
+}
 
 //Create personal hurtbox
 
-create_hurtbox()
+create_hurtbox() //This isnt neccessary by the way
