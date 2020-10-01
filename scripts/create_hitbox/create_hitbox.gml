@@ -16,7 +16,7 @@ function create_hitbox()
 				{
 					hitbox_owner = other.id; //Ger hitboxen id't av skaparen
 					team = other.team //Sätter hitboxen på samma team som en själv
-					hitbox_group = other.curr_attack_id; //Vilket "cluster" hitboxen är, så en attack med flera hitboxes inte träffar flera gånger.
+					hitbox_group = other.current_attack_id; //Vilket "cluster" hitboxen är, så en attack med flera hitboxes inte träffar flera gånger.
 				}
 
 }

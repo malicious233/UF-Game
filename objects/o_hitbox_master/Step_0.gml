@@ -14,11 +14,22 @@
 if (obey_hitbox_creator == true)
 {
 
-	if (hitbox_owner.cancel_hitbox == true)
+	with (hitbox_owner)
+	{
+		if !(states.attacking)
 		{
-			instance_destroy();
+			other.attack_timing_end = -1;
 		}
+	}
 }
+
+if (attack_timing_end <= 0)
+{
+	instance_destroy();	
+}
+
+attack_timing_end --;
+
 
 /*
 if (hitbox_duration == 0)

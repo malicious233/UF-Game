@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"s_player_recovery","path":"sprites/s_player_recovery/s_player_recovery.yy",},"order":4,},
     {"id":{"name":"jump_fx","path":"sprites/jump_fx/jump_fx.yy",},"order":1,},
+    {"id":{"name":"s_hitbox_master","path":"sprites/s_hitbox_master/s_hitbox_master.yy",},"order":4,},
     {"id":{"name":"o_text","path":"objects/o_text/o_text.yy",},"order":6,},
     {"id":{"name":"s_hitbox","path":"sprites/s_hitbox/s_hitbox.yy",},"order":0,},
     {"id":{"name":"s_player_uppercut","path":"sprites/s_player_uppercut/s_player_uppercut.yy",},"order":4,},

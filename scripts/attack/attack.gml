@@ -10,7 +10,11 @@
 
 function attack(argument0,argument1)
 {
-	curr_attack_id = random_range(0,100); 
+	current_attack_id = instance_create_layer(x,y,"Hitbox",o_hitbox_master);
+	with (current_attack_id)
+		{
+			hitbox_owner = other.id; //Ger hitboxen id't av skaparen
+		}
 	sprite_index = argument1;
 	image_index = 0;
 	attack_timing = 0;

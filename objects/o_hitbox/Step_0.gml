@@ -13,9 +13,10 @@ if (obey_hitbox_creator == true)
 {
 
 	if (hitbox_owner.cancel_hitbox == true)
-		{
-			instance_destroy();
-		}
+	{
+		instance_destroy();
+	}
+
 	x = hitbox_owner.x+(hitbox_offset_x*hitbox_owner.dir);
 	y = hitbox_owner.y+hitbox_offset_y;
 }
