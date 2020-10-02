@@ -45,3 +45,13 @@ case states.attacking: st_attacking() ; break;
 case states.recovery: st_recovery() ; break;
 
 }
+
+if (place_meeting(x,y+1,o_plat))
+{
+	ground = true;	
+	jumps = 2;
+}
+else
+{
+	ground = false;	
+}

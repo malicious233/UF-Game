@@ -8,14 +8,19 @@ function vert_collision()
 		{
 			y = y+sign(vsp);
 		}
+		
 		vsp = 0;
+		/*
 		ground = true;
 		jumps = 2;
+		*/
 	}
+	/*
 	else
 	{
 		ground = false;	
 	}
+	*/
 
 
 }
