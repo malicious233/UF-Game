@@ -52,6 +52,14 @@ if (instance_exists(hurtbox_owner))
 						
 					}
 				
+				for (var f = 0; f < ds_list_size(attack_blacklist); ++f)
+				{
+					if !(instance_exists(attack_blacklist[|f]))
+					{
+						ds_list_delete(attack_blacklist,f);
+					}
+				}
+				
 	        }
 			ds_list_destroy(_list);
 			
