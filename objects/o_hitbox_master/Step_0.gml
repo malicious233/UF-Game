@@ -30,10 +30,3 @@ if (attack_timing_end <= 0)
 
 attack_timing_end --;
 
-
-/*
-if (hitbox_duration == 0)
-{
-	instance_destroy();	
-}
-*/

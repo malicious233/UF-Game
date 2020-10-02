@@ -14,8 +14,8 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 68,
-  "height": 68,
+  "width": 64,
+  "height": 64,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a4bea9e7-e84b-4c85-b241-580187c22607","path":"sprites/s_player_recovery/s_player_recovery.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a4bea9e7-e84b-4c85-b241-580187c22607","path":"sprites/s_player_recovery/s_player_recovery.yy",},"LayerId":{"name":"22bee359-f186-4b74-af17-917df9063b77","path":"sprites/s_player_recovery/s_player_recovery.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_player_recovery","path":"sprites/s_player_recovery/s_player_recovery.yy",},"resourceVersion":"1.0","name":"a4bea9e7-e84b-4c85-b241-580187c22607","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a4bea9e7-e84b-4c85-b241-580187c22607","path":"sprites/s_enemy_angry/s_enemy_angry.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a4bea9e7-e84b-4c85-b241-580187c22607","path":"sprites/s_enemy_angry/s_enemy_angry.yy",},"LayerId":{"name":"22bee359-f186-4b74-af17-917df9063b77","path":"sprites/s_enemy_angry/s_enemy_angry.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_enemy_angry","path":"sprites/s_enemy_angry/s_enemy_angry.yy",},"resourceVersion":"1.0","name":"a4bea9e7-e84b-4c85-b241-580187c22607","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"s_player_recovery","path":"sprites/s_player_recovery/s_player_recovery.yy",},
+    "spriteId": {"name":"s_enemy_angry","path":"sprites/s_enemy_angry/s_enemy_angry.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"6e322cc4-f8dd-4541-a688-db9319a3d7c9","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a4bea9e7-e84b-4c85-b241-580187c22607","path":"sprites/s_player_recovery/s_player_recovery.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"52dd8c88-6829-4e48-83e9-6bedac3fed14","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a4bea9e7-e84b-4c85-b241-580187c22607","path":"sprites/s_enemy_angry/s_enemy_angry.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,13 +54,13 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 34,
-    "yorigin": 34,
+    "xorigin": 32,
+    "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"s_player_recovery","path":"sprites/s_player_recovery/s_player_recovery.yy",},
+    "parent": {"name":"s_enemy_angry","path":"sprites/s_enemy_angry/s_enemy_angry.yy",},
     "resourceVersion": "1.3",
-    "name": "s_player_recovery",
+    "name": "s_enemy_angry",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "s_player_recovery",
+  "name": "s_enemy_angry",
   "tags": [],
   "resourceType": "GMSprite",
 }
