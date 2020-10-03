@@ -1,12 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-instance_create_depth(0,0,-1, o_pausemenu_sub)
-//instance_deactivate_object(o_pausemenu_sub)
-
-
-
-
+instance_deactivate_object(o_pausemenu_sub)
+//instance_activate_object(o_pausemenu_sub)
+alarm[0] = 60
 
 pause = false   //variable pause is false at creation of this object
 
@@ -20,7 +17,7 @@ allObjects[0,0] = noone;   //variable for every instance that exist on screen, u
 
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
-gui_margin = 32;
+gui_margin = 332;
 
 menu_x = gui_width+200;  /*where, on the x-axis, in the viewport the menu text appears.
 						setting it to +0 or similar low value could return text out of viewport boundaries*/
@@ -31,15 +28,15 @@ menu_speed = 1  //lower is faster (time wise or precossing wise? time wise.)
 menu_font = fnt_Menu;
 menu_itemheight = font_get_size(fnt_Menu);
 menu_committed = -1;
-menu_control = false; /*not able to control menu with arrowkeys when this object is created.
+menu_control = true; /*not able to control menu with arrowkeys when this object is created.
 woulda been bad if you coulda exit the game for example without even viewing the pause menu. 
 Glad I caught this before committing*/
 
 
 //create menus, and which order they appear from top to bottom
-menu[2] = "BAJS submenu";
-menu[1] = "BAJS2";
-menu[0] = "BAJS3 quit game";
+menu[2] = "sub2";
+menu[1] = "sub1";
+menu[0] = "sub0";
 
 
 menu_items = array_length_1d(menu);

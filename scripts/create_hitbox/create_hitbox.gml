@@ -11,6 +11,7 @@
 
 function create_hitbox()
 {
+	audio_play_sound(tune_windows95,1,false);
 	current_hitbox = instance_create_layer(0,0,"Hitbox",o_hitbox); //Skapar ett hitbox objekt
 				with (current_hitbox) //Adjusterar hitboxen som nyss skapades
 				{

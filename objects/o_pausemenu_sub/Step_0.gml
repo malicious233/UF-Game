@@ -36,42 +36,14 @@ if (menu_control)
 	
 }
 
-/*if pause = true
-{
-	instance_create_depth(0,0,-1,o_pausemenu_sub)
-}*/
-
 if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
 {
 	switch (menu_committed)
 	{
 		//case 2: default: SlideTransition(TRANS_MODE.NEXT); break;  //unused, we dont have no transition animation between levels.
 		case 0: game_end(); break;          //selects menu[0] and executes code before break.
-		case 2: instance_activate_object(o_pausemenu_sub); break;
+		//case 2: instance_activate_object(o_pausemenu_sub); menu_control = false; break;
 		
 	}
 	
-}
-
-
-if instance_exists(o_pausemenu_sub) and pause = false
-{
-	//menu_control = false 
-	audio_play_sound(tune_windows95,1000,false)
-	//instance_deactivate_object(o_pausemenu_sub)
-	with o_pausemenu_sub instance_destroy()
-}
-
-/*if !instance_exists(o_pausemenu_sub)
-{
-	//menu_control = false 
-	//audio_play_sound(tune_windows95,1000,false)
-	//instance_deactivate_object(o_pausemenu_sub)
-	//with o_pausemenu_sub instance_destroy()
-	instance_create_depth(0,0,-1,o_pausemenu_sub)
-}
-
-/*else if !instance_exists(o_pausemenu_sub) and pause = true
-{
-	instance_create_depth(0,0,-1,o_pausemenu_sub)
 }
