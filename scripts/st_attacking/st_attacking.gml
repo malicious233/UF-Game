@@ -8,6 +8,7 @@ function st_attacking()
 
 
 
+
 attack_timing ++;
 
 if (key_left == true)
@@ -22,7 +23,7 @@ if (key_right == true)
 
 
 //state changes
-if (attack_timing >= attack_timing_end) //Ends the attack state once the attack duration ends
+if (attack_timing > attack_timing_end) //Ends the attack state once the attack duration ends
 {
 	states = states.normal;	
 }
@@ -35,7 +36,6 @@ if (cancel_attack == true) //Ends the attack when this flag is true inside an at
 }
 
 script_execute(current_attack);
-
 
 vsp = vsp+grv;
 hsp = clamp(hsp,-max_spd,max_spd) // clamp((hsp+mov_speed)

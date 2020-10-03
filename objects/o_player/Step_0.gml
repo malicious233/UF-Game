@@ -46,7 +46,7 @@ case states.recovery: st_recovery() ; break;
 
 }
 
-if (place_meeting(x,y+1,o_plat))
+if (place_meeting(x,y+1,o_plat)) //Grounded tag
 {
 	ground = true;	
 	jumps = 2;

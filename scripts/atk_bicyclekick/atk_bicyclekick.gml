@@ -42,6 +42,7 @@ function atk_bicyclekick()
 		states = states.recovery
 		recovery_time = 12;
 		sprite_index = s_player_bicyclekick_rec;
+		image_index = 0;
 		cancel_attack = true;	
 		cancel_hitbox = true;
 	}
