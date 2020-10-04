@@ -1,4 +1,3 @@
-
 /// @description Draws pause text
 
 if (pause)

@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if !instance_exists(o_pausemenu)     //creates o_pausemenu when pressing escape
+{
+instance_create_depth(0,0,1,o_pausemenu)
+}
+
 
 
 /*

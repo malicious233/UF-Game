@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
 //Inputs
 //ctrl_arrowkeys()
 switch(controls)

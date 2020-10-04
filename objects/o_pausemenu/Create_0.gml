@@ -1,14 +1,14 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-instance_create_depth(0,0,-1, o_pausemenu_sub)
-//instance_deactivate_object(o_pausemenu_sub)
+/// @description creation code
 
 
+alarm[0] = 1  //after one frame alarm 0 runs, could probably put all that code here but naahh.
+
+instance_create_depth(0,0,-1, o_pausemenu_sub)   //as soon as this o_pausemenu is created, o_pausemenu_sub is created
 
 
 
-pause = false   //variable pause is false at creation of this object
+
+pause = false   //variable pause is false at creation of this object, becomes true in ALARM 0.
 
 allObjects[0,0] = noone;   //variable for every instance that exist on screen, used in DRAW and key-ESCAPE events
 
@@ -37,9 +37,9 @@ Glad I caught this before committing*/
 
 
 //create menus, and which order they appear from top to bottom
-menu[2] = "BAJS submenu";
-menu[1] = "BAJS2";
-menu[0] = "BAJS3 quit game";
+menu[2] = "resume game";
+menu[1] = "submenu testing";
+menu[0] = "quit game";
 
 
 menu_items = array_length_1d(menu);

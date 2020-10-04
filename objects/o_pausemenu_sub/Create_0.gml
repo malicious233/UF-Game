@@ -2,10 +2,9 @@
 // You can write your code in this editor
 
 instance_deactivate_object(o_pausemenu_sub)
-//instance_activate_object(o_pausemenu_sub)
-alarm[0] = 60
 
-pause = false   //variable pause is false at creation of this object
+
+pause = true   //variable pause is true at creation of this object
 
 allObjects[0,0] = noone;   //variable for every instance that exist on screen, used in DRAW and key-ESCAPE events
 

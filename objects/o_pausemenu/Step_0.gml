@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description arrowkey and Enter controls 
+
 
 //Item ease in (slide menu text in from left, animation) //"disabled" by having menu_speed in Create set to 1, very low.
 menu_x += (menu_x_target - menu_x) / menu_speed;
@@ -28,50 +28,39 @@ if (menu_control)
 	{
 		menu_x_target = gui_width-32//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
 		menu_committed = menu_cursor;
-		//ScreenShake(4,30);     //unused, we dont have no screenshake object
 		menu_control = true;     //could set to false to take away arrowkey menu control 
-						//depending on how we do menus, we might want menu_control to be true in certain cases
+			//because now, if nothing happens when trying to press on a menu, you'll still have arrowkey control
+			//depending on how we do menus, we might want menu_control to be true in certain cases
 		
 	}
 	
 }
 
-/*if pause = true
-{
-	instance_create_depth(0,0,-1,o_pausemenu_sub)
-}*/
+
+
 
 if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
 {
 	switch (menu_committed)
 	{
-		//case 2: default: SlideTransition(TRANS_MODE.NEXT); break;  //unused, we dont have no transition animation between levels.
 		case 0: game_end(); break;          //selects menu[0] and executes code before break.
-		case 2: instance_activate_object(o_pausemenu_sub); break;
+		case 1: instance_activate_object(o_pausemenu_sub); menu_control = false; break;  //acivates submenu and disables arrow control on this menu
+		
+								//this whole case 2 needs to be exactly the same code as in KEYPRESS - ESCAPE,
+								//could probably make it a script to call for when needed instead of having be duplicate shenans
+								//resumes game
+		case 2: pause = false;			
+				instance_activate_all();  
+				o_hurtbox.image_alpha = 1;   
+				menu_control = false; 
+				if instance_exists(o_pausemenu_sub) and pause = false
+					{
+						audio_play_sound(tune_windows95,1000,false) //for testing purposes
+						instance_destroy(o_pausemenu_sub)
+					}
+				instance_destroy();
+				break;
 		
 	}
 	
-}
-
-
-if instance_exists(o_pausemenu_sub) and pause = false
-{
-	//menu_control = false 
-	audio_play_sound(tune_windows95,1000,false)
-	//instance_deactivate_object(o_pausemenu_sub)
-	with o_pausemenu_sub instance_destroy()
-}
-
-/*if !instance_exists(o_pausemenu_sub)
-{
-	//menu_control = false 
-	//audio_play_sound(tune_windows95,1000,false)
-	//instance_deactivate_object(o_pausemenu_sub)
-	//with o_pausemenu_sub instance_destroy()
-	instance_create_depth(0,0,-1,o_pausemenu_sub)
-}
-
-/*else if !instance_exists(o_pausemenu_sub) and pause = true
-{
-	instance_create_depth(0,0,-1,o_pausemenu_sub)
 }
