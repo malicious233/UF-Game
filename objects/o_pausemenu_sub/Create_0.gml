@@ -1,10 +1,11 @@
-/// @description Insert description here
+/// @description creation code
 // You can write your code in this editor
 
-instance_deactivate_object(o_pausemenu_sub)
+instance_deactivate_object(o_pausemenu_sub)  //deactivates this object immediately,
+									//activates when pressing enter in o_pausemenu --> STEP event
 
 
-pause = true   //variable pause is true at creation of this object
+subpause = true   //variable pause is true at creation of this object
 
 allObjects[0,0] = noone;   //variable for every instance that exist on screen, used in DRAW and key-ESCAPE events
 

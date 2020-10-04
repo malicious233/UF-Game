@@ -1,7 +1,7 @@
 
 /// @description Draws pause text
 
-if (pause)
+if (subpause)
 {
 	draw_set_color(c_black);   // draws black	
 	draw_set_alpha(0.6);       //set transparency of said black

@@ -3,7 +3,7 @@
 
 alarm[0] = 1  //after one frame alarm 0 runs, could probably put all that code here but naahh.
 
-instance_create_depth(0,0,-1, o_pausemenu_sub)   //as soon as this o_pausemenu is created, o_pausemenu_sub is created
+
 
 
 

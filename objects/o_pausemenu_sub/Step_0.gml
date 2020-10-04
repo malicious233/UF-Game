@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description arrowkey and Enter controls 
+
 
 //Item ease in (slide menu text in from left, animation) //"disabled" by having menu_speed in Create set to 1, very low.
 menu_x += (menu_x_target - menu_x) / menu_speed;
@@ -40,7 +40,8 @@ if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) m
 {
 	switch (menu_committed)
 	{
-		
+		//case 2: break;
+		//case 1: break;
 		case 0: game_end(); break;          //selects menu[0] and executes code before break.
 		
 		
