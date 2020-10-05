@@ -12,7 +12,7 @@ if !instance_exists(o_pausemenu_sub) and pause = true
 								 //prevents menu control when pausemenu isn't seen.
 		if instance_exists(o_pausemenu_sub) and pause = false			//prevents submenu from existing when game is not paused
 					{
-						audio_play_sound(tune_windows95,1000,false)   //for testing purposes, may remove or add other tune
+					
 						instance_destroy(o_pausemenu_sub)				//destroys submenu so that it doesn't exist when game is not paused
 					}
 			instance_destroy()		//destroys this o_pausemenu
