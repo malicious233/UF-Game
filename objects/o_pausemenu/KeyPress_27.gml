@@ -20,3 +20,4 @@ if !instance_exists(o_pausemenu_quit) and pause = true
 }
 		//deactivate more pausmenu stuff here so that they dont stay when exiting pausemenu.
 	//}
+	

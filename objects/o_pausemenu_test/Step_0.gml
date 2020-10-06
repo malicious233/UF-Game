@@ -41,9 +41,8 @@ if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) m
 	switch (menu_committed)
 	{
 		case 2: break;
-		case 1: audio_play_sound(tune_windows95,1000,false); break;
-		case 0: game_end(); break;          //selects menu[0] and executes code before break.
-		
+		case 1: game_end(); break;          //selects menu[0] and executes code before break.
+		case 0: instance_destroy(); break;
 		
 	}
 	

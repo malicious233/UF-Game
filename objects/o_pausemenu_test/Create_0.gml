@@ -1,7 +1,7 @@
 /// @description creation code
 // You can write your code in this editor
 
-instance_deactivate_object(o_pausemenu_settings)  //deactivates this object immediately,
+instance_deactivate_object(o_pausemenu_quit)  //deactivates this object immediately,
 									//activates when pressing enter in o_pausemenu --> STEP event
 
 
@@ -34,9 +34,9 @@ Glad I caught this before committing*/
 
 
 //create menus, and which order they appear from top to bottom
-menu[2] = "settings2";
-menu[1] = "settings1";
-menu[0] = "settings0";
+menu[2] = "test";
+menu[1] = "Yes";
+menu[0] = "No";
 
 
 menu_items = array_length_1d(menu);
