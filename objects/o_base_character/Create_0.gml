@@ -3,7 +3,6 @@
 
 hsp = 0;
 vsp = 0;
-grv = 0.65;
 
 curr_damage = 0;
 curr_x_kb = 0;
