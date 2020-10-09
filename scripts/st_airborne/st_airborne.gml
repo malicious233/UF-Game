@@ -69,7 +69,8 @@ if (ground == true)
 //Physics
 
 friction_force(flat_friction,perc_friction);
-hsp = clamp(hsp,-max_spd,max_spd);
+vsp = clamp(vsp,-infinity,max_fall_spd); //Gives you actual terminal velocity
+
 //Animations
 
 sprite_index = s_player_airborne;

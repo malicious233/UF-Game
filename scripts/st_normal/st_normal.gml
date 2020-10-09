@@ -107,7 +107,7 @@ if keyboard_check_pressed(ord("P")) and (mb_left)
 //vsp = vsp+grv;
 
 friction_force(flat_friction,perc_friction);
-vsp = clamp(vsp,-infinity,max_fall_spd); //Gives you actual terminal velocity
+
 
 
 
