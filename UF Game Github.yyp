@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"o_tincan","path":"objects/o_tincan/o_tincan.yy",},"order":12,},
     {"id":{"name":"s_player_hurt","path":"sprites/s_player_hurt/s_player_hurt.yy",},"order":4,},
     {"id":{"name":"s_enemy_confuzzled","path":"sprites/s_enemy_confuzzled/s_enemy_confuzzled.yy",},"order":4,},
     {"id":{"name":"jump_fx","path":"sprites/jump_fx/jump_fx.yy",},"order":1,},
@@ -43,6 +44,7 @@
     {"id":{"name":"fnt_Menu","path":"fonts/fnt_Menu/fnt_Menu.yy",},"order":2,},
     {"id":{"name":"create_hitbox","path":"scripts/create_hitbox/create_hitbox.yy",},"order":6,},
     {"id":{"name":"s_hurtbox","path":"sprites/s_hurtbox/s_hurtbox.yy",},"order":1,},
+    {"id":{"name":"moving","path":"scripts/moving/moving.yy",},"order":11,},
     {"id":{"name":"s_tincan_hurt","path":"sprites/s_tincan_hurt/s_tincan_hurt.yy",},"order":2,},
     {"id":{"name":"atk_bicyclekick","path":"scripts/atk_bicyclekick/atk_bicyclekick.yy",},"order":4,},
     {"id":{"name":"s_tincan_idle","path":"sprites/s_tincan_idle/s_tincan_idle.yy",},"order":0,},
@@ -55,9 +57,11 @@
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},"order":0,},
     {"id":{"name":"ctrl_typist","path":"scripts/ctrl_typist/ctrl_typist.yy",},"order":0,},
     {"id":{"name":"st_normal","path":"scripts/st_normal/st_normal.yy",},"order":0,},
+    {"id":{"name":"reset_damage","path":"scripts/reset_damage/reset_damage.yy",},"order":10,},
     {"id":{"name":"atk_longkick","path":"scripts/atk_longkick/atk_longkick.yy",},"order":7,},
     {"id":{"name":"s_player_longkick_rec","path":"sprites/s_player_longkick_rec/s_player_longkick_rec.yy",},"order":6,},
     {"id":{"name":"s_player_bicyclekick","path":"sprites/s_player_bicyclekick/s_player_bicyclekick.yy",},"order":0,},
+    {"id":{"name":"st_hitstunned","path":"scripts/st_hitstunned/st_hitstunned.yy",},"order":4,},
     {"id":{"name":"atk_uppercut","path":"scripts/atk_uppercut/atk_uppercut.yy",},"order":6,},
     {"id":{"name":"attack","path":"scripts/attack/attack.yy",},"order":3,},
     {"id":{"name":"ctrl_wasdmouse","path":"scripts/ctrl_wasdmouse/ctrl_wasdmouse.yy",},"order":1,},

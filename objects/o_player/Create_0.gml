@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+// Inherit the parent event
+event_inherited();
+
 #macro SPD_WALK_MAX 7.2  
 #macro SPD_WALK_ACCEL 0.7
 
@@ -14,6 +18,7 @@ attack_timing_end = 0;
 dir = 1;
 input_dir = 1; //Might become useful when adding controller support and a more intricate moveset.
 obj_id = id;
+
 
 jumps = 2;
 
@@ -33,6 +38,7 @@ enum states
 	airborne, //When you're capable of performing aerial actions
 	attacking, //State while you're attacking, where you're looping an atk_ script
 	recovery,
+	hitstunned,
 }
 states = states.normal;
 
@@ -54,4 +60,5 @@ controls = controls.wasd1hand
 
 //Create personal hurtbox
 
-create_hurtbox() //This isnt neccessary by the way
+//create_hurtbox() //This isnt neccessary by the way
+

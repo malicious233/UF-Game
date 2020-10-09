@@ -9,12 +9,8 @@ function st_recovery()
 		states = states.normal;
 		sprite_index = s_player;
 	}
-	
-	friction_force(0.5,0.97);
+
+	friction_force(flat_friction,perc_friction);
 	hsp = clamp(hsp,-max_spd,max_spd);
-	hori_collision();
-	vert_collision();
-	y = y+vsp;
-	x = x+hsp;
 	
 }
