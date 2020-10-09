@@ -13,12 +13,12 @@ attack_timing ++;
 
 if (key_left == true)
 {
-	hsp = clamp(hsp-attack_move_spd,-max_spd,max_spd);
+	hsp = hsp-attack_move_spd;
 }
 
 if (key_right == true)
 {
-	hsp = clamp(hsp+attack_move_spd,-max_spd,max_spd);
+	hsp = hsp+attack_move_spd;
 }
 
 
@@ -37,9 +37,14 @@ if (cancel_attack == true) //Ends the attack when this flag is true inside an at
 
 script_execute(current_attack);
 
-vsp = clamp(vsp,-infinity,max_fall_spd); //Gives you actual terminal velocity
-friction_force(flat_friction,perc_friction);
+vsp = vsp+grv;
+hsp = clamp(hsp,-max_spd,max_spd) // clamp((hsp+mov_speed)
+friction_force(0.5,0.97);
 
+hori_collision();
+vert_collision();
 
+x = x+hsp;
+y = y+vsp;
 
 }

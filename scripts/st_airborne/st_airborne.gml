@@ -6,29 +6,42 @@ function st_airborne()
 {
 	
 //Movement
-//move = (key_right - key_left) * SPD_WALK_MAX
-//hsp = Approach(hsp,move,SPD_WALK_ACCEL);
+move = (key_right - key_left) * SPD_WALK_MAX
+hsp = Approach(hsp,move,SPD_WALK_ACCEL);
 
-if (key_left == true)
+	if (key_left == true)
 {
 	//hsp = hsp-move_spd
 	dir = -1;
 	curr_dir = -1;
 }
-
+//Snappy movement. Instant full speed
+/* 
+if (key_left_click == true)
+{
+	if (hsp >= -max_spd)
+	{hsp = -max_spd}
+}
+*/
 if (key_right == true)
 {
 	//hsp = hsp+move_spd
 	dir = 1;
 	curr_dir = 1;
 }
+//Snappy movement
+/*
+if (key_right_click == true)
+{
+	if (hsp <= max_spd)
+	{hsp = max_spd}
+}
+*/
 
 if (key_right == false) and (key_left == false)
 {
 	curr_dir = 0;
 }
-
-moving(move_spd,curr_dir);
 
 if (key_space_click == true) and (jumps > 0)
 {
@@ -50,15 +63,10 @@ if (key_x_click) and !(key_up)
 
 
 //Heavy attacks
-if (key_c_click) and (key_up) and (uppercuts > 0)
+if (key_c_click) and (key_up)
 {
 	vsp = -5;
-	uppercuts = 0;
 	attack(atk_uppercut,s_player_uppercut);
-}
-if (key_c_click) and (key_down) and !(key_up) //shits fucked
-{
-	attack(atk_stomp,s_player_stomp);
 }
 
 
@@ -67,13 +75,19 @@ if (key_c_click) and (key_down) and !(key_up) //shits fucked
 if (ground == true)
 {
 	states = states.normal;	
-	uppercuts = 1;
 }
 
 //Physics
 
-friction_force(flat_friction,perc_friction);
-vsp = clamp(vsp,-infinity,max_fall_spd); //Gives you actual terminal velocity
+vsp = vsp+grv;
+
+//friction_force(1,0.98);
+//hsp = clamp(hsp,-max_spd,max_spd)
+
+hori_collision();
+vert_collision();
+y = y+vsp;
+x = x+hsp;
 
 //Animations
 

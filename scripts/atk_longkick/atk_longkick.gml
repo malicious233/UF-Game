@@ -10,16 +10,15 @@ function atk_longkick()
 			create_hitbox()
 			with (current_hitbox)
 			{
-				hitbox_offset_x = 35; //X offset från hitbox_owner, optional
+				hitbox_offset_x = 40; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 30; //Y offset från hitbox_owner, optional
 				hitbox_duration = 4;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1.35; //Hitboxens X scale, optional
+				image_xscale = 1.5; //Hitboxens X scale, optional
 				image_yscale = 1;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 6;
 				hitbox_x_kb = 10*other.dir;
 				hitbox_y_kb = -5;
-
 			}
 		}
 	if (attack_timing == 13) //Late hitbox
