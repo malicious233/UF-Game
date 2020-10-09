@@ -10,7 +10,7 @@ if (subpause)
 	draw_set_font(fnt_GUI);     //sets given custom font
 	draw_set_color(c_white);    //draws font white 
 	draw_set_alpha(1);          //opacity for font
-	draw_text((view_wport[0]-1366/2), (view_hport[0]-400)/2, "Test"); /*sets where on the viewport text is drawn
+	draw_text((view_wport[0]+700)/2, (view_hport[0]+400)/2, "Settings"); /*sets where on the viewport text is drawn
 	so that the text 'follows', so to say, the player instead of having a stupid set place as an object that can't 
 	be moved.*/
 	//draw_text (room_get_viewport(0,3)/,room_getviewport(0,4)/2,"pauseddd");   //unused

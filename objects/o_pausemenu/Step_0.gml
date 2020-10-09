@@ -44,7 +44,7 @@ if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) m
 	switch (menu_committed)
 	{
 		case 0: instance_activate_object(o_pausemenu_quit); menu_control = false;break;          //selects menu[0] and executes code before break.
-		case 1: instance_activate_object(o_pausemenu_test); menu_control = false; break;  //acivates submenu and disables arrow control on this menu
+		case 1: instance_activate_object(o_pausemenu_settings); menu_control = false; break;  //acivates submenu and disables arrow control on this menu
 																						//submenu always seen as activated after this, not good.
 								//this whole case 2 needs to be exactly the same code as in KEYPRESS - ESCAPE,
 								//could probably make it a script to call for when needed instead of having be duplicate shenans

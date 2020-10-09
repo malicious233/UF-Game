@@ -26,7 +26,7 @@ if (menu_control)
 	//when pressing the Enter key, animate menu to move to the right
 	if (keyboard_check_pressed(vk_enter))
 	{
-		menu_x_target = gui_width-32//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
+		menu_x_target = gui_width-372//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
 		menu_committed = menu_cursor;
 		
 		menu_control = true;     //could set to false to take away arrowkey menu control 
@@ -36,7 +36,7 @@ if (menu_control)
 	
 }
 
-if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
+if (menu_x > gui_width-373) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
 {
 	switch (menu_committed)
 	{
