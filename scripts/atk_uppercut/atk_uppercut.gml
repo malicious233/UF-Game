@@ -17,7 +17,7 @@ function atk_uppercut()
 					image_xscale = 1; //Hitboxens X scale, optional
 					image_yscale = 1;//Hitboxens Y scale, optional
 					
-					hitbox_damage = 15;
+					hitbox_damage = 10;
 					hitbox_x_kb = 5.5*other.dir;
 					hitbox_y_kb = -20;
 					

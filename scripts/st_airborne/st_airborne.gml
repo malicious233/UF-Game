@@ -50,9 +50,10 @@ if (key_x_click) and !(key_up)
 
 
 //Heavy attacks
-if (key_c_click) and (key_up)
+if (key_c_click) and (key_up) and (uppercuts > 0)
 {
 	vsp = -5;
+	uppercuts = 0;
 	attack(atk_uppercut,s_player_uppercut);
 }
 
@@ -62,6 +63,7 @@ if (key_c_click) and (key_up)
 if (ground == true)
 {
 	states = states.normal;	
+	uppercuts = 1;
 }
 
 //Physics

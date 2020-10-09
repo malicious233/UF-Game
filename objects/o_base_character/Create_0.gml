@@ -4,12 +4,36 @@
 hsp = 0;
 vsp = 0;
 
+curr_dir = 0;
+attack_move_spd = 0;
+attack_timing = 0;
+attack_timing_end = 0;
+dir = 1;
+input_dir = 1; //Might become useful when adding controller support and a more intricate moveset.
+obj_id = id;
+
+
+
+
+cancel_hitbox = false;
+cancel_attack = false;
 ground = false;
 hitstun_duration = 0;
 
+curr_attack_id = 0;
 curr_damage = 0;
 curr_x_kb = 0;
 curr_y_kb = 0;
+
+enum states
+{
+	normal, //Normal state where you can move, attack, etc
+	airborne, //When you're capable of performing aerial actions
+	attacking, //State while you're attacking, where you're looping an atk_ script
+	recovery, //State where you can't act due to say, landing with an aerial attack
+	hitstunned, //State where you're stunned and cannot act
+}
+states = states.normal;
 
 image_xscale = size;
 image_yscale = size;
