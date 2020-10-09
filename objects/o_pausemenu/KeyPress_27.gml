@@ -8,6 +8,15 @@ if !instance_exists(o_pausemenu_quit) and pause = true
 		instance_activate_all();  //activates all instances again, makes them exist again, perfectly as they were before.
 		instance_deactivate_object(o_pausemenu_quit)
 		o_hurtbox.image_alpha = 1   //max opacity again after activation of object, so that we devs can see hutrbox when needed
+		if instance_exists(o_hitbox)
+		{
+			o_hitbox.image_alpha = 0
+		}
+		
+		if instance_exists(o_hitbox_master)
+		{
+			o_hitbox_master.image_alpha = 0
+		}
 		menu_control = false      //when escape key is pressed again, and pause goes away, arrowkey control in menu is not allowed
 								 //prevents menu control when pausemenu isn't seen.
 		if instance_exists(o_pausemenu_quit) and pause = false			//prevents submenu from existing when game is not paused

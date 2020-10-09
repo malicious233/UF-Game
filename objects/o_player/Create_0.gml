@@ -41,7 +41,8 @@ enum controls
 	arrowkeys,
 	typist,
 	wasd1hand,
-	wasdmouse
+	wasdmouse,
+	gp_dpad
 }
 if (controlscheme == 0)
 {

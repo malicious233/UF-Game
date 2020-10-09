@@ -42,7 +42,7 @@ if (menu_x > gui_width-633) && (menu_committed != -1)    //-33 (one behind -32) 
 	{
 		//case 2: break;
 		case 1: instance_activate_object(o_pausemenu_kb); menu_control = false; break;          //selects menu[0] and executes code before break.
-		case 0: instance_destroy (); break;
+		case 0: instance_activate_object(o_pausemenu_gp); menu_control = false; break;
 		
 		
 	}

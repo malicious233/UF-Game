@@ -3,7 +3,17 @@
 
 	if (!pause)
 	{
-		o_hurtbox.image_alpha = 0  /*Make hurtbox invisible before we capture a "screenshot" of all objects
+		o_hurtbox.image_alpha = 0
+		
+		if instance_exists(o_hitbox)
+		{
+			o_hitbox.image_alpha = 0
+		}
+		
+		if instance_exists(o_hitbox_master)
+		{
+			o_hitbox_master.image_alpha = 0
+		}/*Make hurtbox invisible before we capture a "screenshot" of all objects
 		because otherwise hurbox will be seen when game is paused even if the "Hurtbox"-layer in the room is set to 
 		Not-Viewable-In-Game*/
 		var offset = 0;						/* offset basically makes sure that we always
