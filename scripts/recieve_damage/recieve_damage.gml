@@ -7,7 +7,7 @@ function recieve_damage()
 		hp = hp-curr_damage;
 		hsp = curr_x_kb;
 		vsp = curr_y_kb;
-		hitstun_duration = curr_damage*5; //WIP hitstun calculation
+		hitstun_duration = curr_damage*5.5; //WIP hitstun calculation
 		var p_text = instance_create_layer(x,y,"Text",o_text)
 		with (p_text)
 		{

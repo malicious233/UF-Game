@@ -56,6 +56,10 @@ if (key_c_click) and (key_up) and (uppercuts > 0)
 	uppercuts = 0;
 	attack(atk_uppercut,s_player_uppercut);
 }
+if (key_c_click) and (key_down) and !(key_up) //shits fucked
+{
+	attack(atk_stomp,s_player_stomp);
+}
 
 
 
@@ -74,10 +78,6 @@ vsp = clamp(vsp,-infinity,max_fall_spd); //Gives you actual terminal velocity
 //Animations
 
 sprite_index = s_player_airborne;
-
-
-
-
 
 if (vsp < 0)
 {

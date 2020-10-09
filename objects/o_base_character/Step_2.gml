@@ -18,6 +18,14 @@ image_yscale = size;
 
 vsp = vsp+grv;
 
+if (place_meeting(x,y+1,o_plat))
+{
+	ground = true;	
+}
+else
+{
+	ground = false;	
+}
 
 hori_collision();
 vert_collision();
