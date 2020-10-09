@@ -38,7 +38,7 @@ Glad I caught this before committing*/
 
 //create menus, and which order they appear from top to bottom
 menu[2] = "Resume game";
-menu[1] = "Settings testing";
+menu[1] = "Settings";
 menu[0] = "Quit game";
 
 

@@ -1,9 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function ctrl_wasdmouse(){
-key_x_click = keyboard_check_pressed(mb_left);
+key_x_click = mouse_check_button_pressed(mb_left);
 //key_z_click = keyboard_check_pressed(ord("Z"));
-key_c_click = keyboard_check_pressed(mb_right);
+key_c_click = mouse_check_button_pressed(mb_right);
 key_space_click = keyboard_check_pressed(vk_space);
 //key_v_click = keyboard_check_pressed(ord("V"));
 
