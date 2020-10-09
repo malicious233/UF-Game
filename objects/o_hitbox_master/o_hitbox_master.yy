@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "s_hitbox_master",
-    "path": "sprites/s_hitbox_master/s_hitbox_master.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -11,34 +11,34 @@ function atk_uppercut()
 			create_hitbox()
 			with (current_hitbox)
 				{
-					hitbox_offset_x = 40; //X offset från hitbox_owner, optional
+					hitbox_offset_x = 28; //X offset från hitbox_owner, optional
 					hitbox_offset_y = 20; //Y offset från hitbox_owner, optional
-					hitbox_duration = 3;//Hur länge hitboxen är active tills den tas bort automatiskt.
+					hitbox_duration = 2;//Hur länge hitboxen är active tills den tas bort automatiskt.
 					image_xscale = 1; //Hitboxens X scale, optional
 					image_yscale = 1;//Hitboxens Y scale, optional
 					
-					hitbox_damage = 15;
+					hitbox_damage = 10;
 					hitbox_x_kb = 5.5*other.dir;
 					hitbox_y_kb = -20;
 					
 				}
 		}
-		if (attack_timing == 17)
+		if (attack_timing == 16)
 		{
 			vsp = -15;
 			hsp = hsp+(5*dir)
 			create_hitbox()
 			with (current_hitbox)
 			{
-				hitbox_offset_x = 50; //X offset från hitbox_owner, optional
+				hitbox_offset_x = 30; //X offset från hitbox_owner, optional
 				hitbox_offset_y = -50; //Y offset från hitbox_owner, optional
 				hitbox_duration = 10;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1; //Hitboxens X scale, optional
+				image_xscale = 0.85; //Hitboxens X scale, optional
 				image_yscale = 2.5;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 7;
-				hitbox_x_kb = 5*other.dir;
-				hitbox_y_kb = -20;
+				hitbox_x_kb = 10*other.dir;
+				hitbox_y_kb = -15;
 			}
 		}
 	

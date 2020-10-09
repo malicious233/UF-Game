@@ -16,6 +16,7 @@ function attack(argument0,argument1)
 			hitbox_owner = other.id; //Ger hitboxen id't av skaparen
 		}
 	sprite_index = argument1;
+	image_speed = 1;
 	image_index = 0;
 	attack_timing = 0;
 	current_attack = argument0;	
