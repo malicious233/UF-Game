@@ -13,5 +13,4 @@ key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 //key_right_click = keyboard_check_pressed(vk_right);
 key_up = keyboard_check(ord("W"));
-key_down = keyboard_check(ord("S"));
 }
