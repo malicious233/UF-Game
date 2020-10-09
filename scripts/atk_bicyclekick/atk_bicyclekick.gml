@@ -16,8 +16,8 @@ function atk_bicyclekick()
 			hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
 			image_xscale = 1; //Hitboxens X scale, optional
 			image_yscale = 1;//Hitboxens Y scale, optional
-			hitbox_damage = 6;
-			hitbox_x_kb = 3*other.dir;
+			hitbox_damage = 5;
+			hitbox_x_kb = 4*other.dir;
 			hitbox_y_kb = -12.5
 		}
 	}
@@ -31,7 +31,7 @@ function atk_bicyclekick()
 			hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
 			image_xscale = 2.3; //Hitboxens X scale, optional
 			image_yscale = 1;//Hitboxens Y scale, optional
-			hitbox_damage = 4;
+			hitbox_damage = 3;
 			hitbox_x_kb = 3*other.dir;
 			hitbox_y_kb = -10.5
 		}

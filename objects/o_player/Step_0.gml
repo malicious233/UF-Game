@@ -36,14 +36,10 @@ if (cancel_hitbox == true)
 	cancel_hitbox = false;
 }
 
-//States
-switch (states)
+//Hitstun
+if (hitstun_duration > 0)
 {
-case states.normal: st_normal() ; break;
-case states.airborne: st_airborne() ; break;
-case states.attacking: st_attacking() ; break;
-case states.recovery: st_recovery() ; break;
-
+	states = states.hitstunned;	
 }
 
 if (place_meeting(x,y+1,o_plat)) //Grounded tag
@@ -55,3 +51,15 @@ else
 {
 	ground = false;	
 }
+
+//States
+switch (states)
+{
+case states.normal: st_normal() ; break;
+case states.airborne: st_airborne() ; break;
+case states.attacking: st_attacking() ; break;
+case states.recovery: st_recovery() ; break;
+case states.hitstunned: st_hitstunned() ; break;
+
+}
+
