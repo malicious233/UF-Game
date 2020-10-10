@@ -9,6 +9,7 @@ switch(controls)
 	case controls.typist: ctrl_typist() ; break;
 	case controls.wasd1hand: ctrl_wasd1hand() ; break;
 	case controls.wasdmouse: ctrl_wasdmouse() ; break;
+	case controls.gp_dpad: ctrl_gp_dpad() ; break;
 }
 
 

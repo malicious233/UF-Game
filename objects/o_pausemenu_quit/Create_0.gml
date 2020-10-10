@@ -17,11 +17,11 @@ allObjects[0,0] = noone;   //variable for every instance that exist on screen, u
 
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
-gui_margin = 332;
+gui_margin = 372;
 
 menu_x = gui_width+200;  /*where, on the x-axis, in the viewport the menu text appears.
 						setting it to +0 or similar low value could return text out of viewport boundaries*/
-menu_y = gui_height - gui_margin;   //where, on the y-axis, in the viewport the menu text appears
+menu_y = gui_height - 32;   //where, on the y-axis, in the viewport the menu text appears
 
 menu_x_target = gui_width - gui_margin;   //targets to where text should move to when pressing enter in Step event
 menu_speed = 1  //lower is faster (time wise or precossing wise? time wise.)
