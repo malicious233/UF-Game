@@ -12,7 +12,6 @@ function st_normal()
 
 if (key_left == true)
 {
-	//hsp = hsp-move_spd
 	dir = -1;
 	curr_dir = -1;
 	//hsp = hsp-move_spd;

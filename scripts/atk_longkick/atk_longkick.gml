@@ -27,10 +27,10 @@ function atk_longkick()
 			create_hitbox()
 			with (current_hitbox)
 			{
-				hitbox_offset_x = 20; //X offset från hitbox_owner, optional
+				hitbox_offset_x = 10; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 30; //Y offset från hitbox_owner, optional
 				hitbox_duration = 45;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1.75; //Hitboxens X scale, optional
+				image_xscale = 1.65; //Hitboxens X scale, optional
 				image_yscale = 1;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 3;
