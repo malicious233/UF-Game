@@ -70,6 +70,7 @@
     {"id":{"name":"s_player_longkick_rec","path":"sprites/s_player_longkick_rec/s_player_longkick_rec.yy",},"order":6,},
     {"id":{"name":"s_player_bicyclekick","path":"sprites/s_player_bicyclekick/s_player_bicyclekick.yy",},"order":0,},
     {"id":{"name":"st_hitstunned","path":"scripts/st_hitstunned/st_hitstunned.yy",},"order":4,},
+    {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},"order":3,},
     {"id":{"name":"atk_uppercut","path":"scripts/atk_uppercut/atk_uppercut.yy",},"order":6,},
     {"id":{"name":"s_player_stomp_rec","path":"sprites/s_player_stomp_rec/s_player_stomp_rec.yy",},"order":11,},
     {"id":{"name":"attack","path":"scripts/attack/attack.yy",},"order":3,},
