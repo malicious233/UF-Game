@@ -22,13 +22,39 @@ if abs(gamepad_axis_value(0,gp_axislh)) > hori_deadzone
 	{
 		key_left = true;	
 	}
+	else
+	{
+		key_left = false;	
+	}
 	
 	if gamepad_axis_value(0,gp_axislh) > 0
 	{
 		key_right = true;	
 	}
+	else
+	{
+		key_right = false;	
+	}
 
 }
+
+#region
+if (key_left == true)
+{
+	curr_dir = -1;	
+}
+
+if (key_right == true)
+{
+	curr_dir = 1;	
+}
+
+if (!key_left and !key_right)
+{
+	curr_dir = 0;	
+}
+#endregion
+
 if abs(gamepad_axis_value(0,gp_axislv)) > vert_deadzone
 {	
 	if gamepad_axis_value(0,gp_axislv) < 0
@@ -38,6 +64,7 @@ if abs(gamepad_axis_value(0,gp_axislv)) > vert_deadzone
 	
 	if gamepad_axis_value(0,gp_axislv) > 0
 	{
+		key_up = false;
 		key_down = true;	
 	}
 
@@ -45,15 +72,16 @@ if abs(gamepad_axis_value(0,gp_axislv)) > vert_deadzone
 #endregion
 
 #region The Right Stick
+
+var r_stick_hori = sign(gamepad_axis_value(0,gp_axisrh));
+
 if abs(gamepad_axis_value(0,gp_axisrv)) > vert_deadzone
 {	
 	if gamepad_axis_value(0,gp_axisrv) < 0
 	{
-		
 		//Bicyclekick Macro
 		key_up = true;
 		key_attack = true;
-		var r_stick_hori = sign(gamepad_axis_value(0,gp_axisrh));
 		if (r_stick_hori != 0)
 		{
 			if (states == states.normal) or (states == states.airborne)
@@ -72,35 +100,17 @@ if abs(gamepad_axis_value(0,gp_axisrv)) > vert_deadzone
 
 
 }
+
+if abs(gamepad_axis_value(0,gp_axisrh)) > hori_deadzone
+{
+	if (r_stick_hori != 0) and ((states == states.normal) or (states == states.airborne))
+	{
+		dir = r_stick_hori;
+		curr_dir = r_stick_hori;	
+	}
+	key_attack = true;
+}
+
 #endregion
-//key_right = gamepad_button_check(0,gp_padr)
-//key_left = gamepad_button_check(0,gp_padl)
 
-//key_left_click = keyboard_check_pressed(vk_left);
-
-
-
-
-//key_right_click = keyboard_check_pressed(vk_right);
-//key_up = gamepad_button_check(0,gp_padu);
-
-//key_down = gamepad_button_check(0,gp_padd);
-
-
-#region
-if (key_left == true)
-{
-	curr_dir = -1;	
-}
-
-if (key_right == true)
-{
-	curr_dir = 1;	
-}
-
-if (!key_left and !key_right)
-{
-	curr_dir = 0;	
-}
-#endregion
 }

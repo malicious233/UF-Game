@@ -10,6 +10,7 @@
 
 function attack(argument0,argument1)
 {
+	if (curr_dir != 0) {dir = curr_dir;}
 	current_attack_id = instance_create_layer(x,y,"Hitbox",o_hitbox_master);
 	with (current_attack_id)
 		{

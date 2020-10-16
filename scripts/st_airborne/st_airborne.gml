@@ -57,7 +57,7 @@ if (key_special) and (key_up) and (uppercuts > 0)
 	attack(atk_uppercut,s_player_uppercut);
 }
 
-if (key_special) and (key_down) and !(key_up) //shits fucked
+if (key_special) and (key_down)//shits fucked
 {
 	attack(atk_stomp,s_player_stomp);
 }

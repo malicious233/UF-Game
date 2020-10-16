@@ -45,7 +45,7 @@ if (key_space_click == true) and (jumps > 0)
 
 //Animations
 
-if (curr_dir == 0)
+if (curr_dir == 0) 
 {
 	image_speed = 1;
 	sprite_index = s_player;	
