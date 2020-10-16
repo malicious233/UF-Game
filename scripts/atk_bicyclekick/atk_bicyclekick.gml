@@ -39,11 +39,15 @@ function atk_bicyclekick()
 	
 	if (ground == true)
 	{
-		states = states.recovery
-		recovery_time = 12;
-		sprite_index = s_player_bicyclekick_rec;
-		image_index = 0;
 		cancel_attack = true;	
 		cancel_hitbox = true;
+		if (attack_timing >= 3)
+		{
+			states = states.recovery
+			recovery_time = 12;
+			sprite_index = s_player_bicyclekick_rec;
+			image_index = 0;
+		}
+		
 	}
 }
