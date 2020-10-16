@@ -33,8 +33,10 @@ if (key_right == false) and (key_left == false)
 	curr_dir = 0;
 }
 
+if (curr_dir != 0)
+{
 moving(move_spd,curr_dir);
-
+}
 
 if (key_space_click == true) and (jumps > 0)
 {

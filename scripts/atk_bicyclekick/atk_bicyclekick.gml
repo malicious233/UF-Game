@@ -11,7 +11,7 @@ function atk_bicyclekick()
 		create_hitbox()
 		with (current_hitbox)
 		{
-			hitbox_offset_x = 50; //X offset från hitbox_owner, optional
+			hitbox_offset_x = 35; //X offset från hitbox_owner, optional
 			hitbox_offset_y = 10; //Y offset från hitbox_owner, optional
 			hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
 			image_xscale = 1; //Hitboxens X scale, optional
@@ -26,10 +26,10 @@ function atk_bicyclekick()
 		create_hitbox()
 		with (current_hitbox)
 		{
-			hitbox_offset_x = 15; //X offset från hitbox_owner, optional
+			hitbox_offset_x = 10; //X offset från hitbox_owner, optional
 			hitbox_offset_y = -30; //Y offset från hitbox_owner, optional
 			hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
-			image_xscale = 2.3; //Hitboxens X scale, optional
+			image_xscale = 2.15; //Hitboxens X scale, optional
 			image_yscale = 1;//Hitboxens Y scale, optional
 			hitbox_damage = 3;
 			hitbox_x_kb = 3*other.dir;
