@@ -13,7 +13,7 @@ function st_normal()
 if (key_left == true)
 {
 	dir = -1;
-	curr_dir = -1;
+	//curr_dir = -1; //Is now in the ctrl script instead
 	//hsp = hsp-move_spd;
 	//hsp = clamp(hsp,-max_spd,max_spd);
 }
@@ -22,21 +22,20 @@ if (key_right == true)
 {
 	//hsp = hsp+move_spd
 	dir = 1;
-	curr_dir = 1;
+	//curr_dir = 1; //Now exists in the ctrl script instead
 	//hsp = hsp+move_spd;
 	//hsp = clamp(hsp,-max_spd,max_spd);
 }
 
 
-if (key_right == false) and (key_left == false)
+/*if (key_right == false) and (key_left == false)
 {
 	curr_dir = 0;
 }
+*/
 
-if (curr_dir != 0)
-{
 moving(move_spd,curr_dir);
-}
+
 
 if (key_space_click == true) and (jumps > 0)
 {
@@ -60,16 +59,16 @@ else
 
 
 //Attacks
-if (key_x_click) and !(key_up)
+if (key_attack) and !(key_up)
 {
 	attack(atk_fastpunch,s_player_fastpunch);	
 }
-if (key_x_click) and (key_up)
+if (key_attack) and (key_up)
 {
 	attack(atk_bicyclekick,s_player_bicyclekick);
 	vsp = -(0.75*jump_spd);
 }
-if (key_c_click)
+if (key_special)
 {
 	attack(atk_uppercut,s_player_uppercut);	
 }
@@ -81,6 +80,7 @@ if (ground == false)
 }
 
 //controls change
+
 if keyboard_check_pressed(ord("O")) and (vk_up)
 {
 	controls = controls.arrowkeys
@@ -92,20 +92,6 @@ if keyboard_check_pressed(ord("P")) and (ord("F"))
 }
 
 
-/*if keyboard_check_pressed(ord("P")) and (ord("W"))
-{
-	controls = controls.wasd1hand
-}
-
-if keyboard_check_pressed(ord("P")) and (mb_left)
-{
-	controls = controls.wasdmouse
-}*/
-
-
-
-
-//vsp = vsp+grv;
 
 friction_force(flat_friction,perc_friction);
 

@@ -13,21 +13,21 @@ if (key_left == true)
 {
 	//hsp = hsp-move_spd
 	dir = -1;
-	curr_dir = -1;
+	//curr_dir = -1;
 }
 
 if (key_right == true)
 {
 	//hsp = hsp+move_spd
 	dir = 1;
-	curr_dir = 1;
+	//curr_dir = 1;
 }
 
-if (key_right == false) and (key_left == false)
+/*if (key_right == false) and (key_left == false)
 {
 	curr_dir = 0;
 }
-
+*/
 moving(move_spd,curr_dir);
 
 if (key_space_click == true) and (jumps > 0)
@@ -38,25 +38,26 @@ if (key_space_click == true) and (jumps > 0)
 
 //Aerial Attacks
 
-//Light attacks
-if (key_x_click) and (key_up)
+//Normal Attacks
+if (key_attack) and (key_up)
 {
 	attack(atk_bicyclekick,s_player_bicyclekick);
 }
-if (key_x_click) and !(key_up)
+if (key_attack) and !(key_up)
 {
 	attack(atk_longkick,s_player_longkick);
 }
 
 
-//Heavy attacks
-if (key_c_click) and (key_up) and (uppercuts > 0)
+//Special Attacks
+if (key_special) and (key_up) and (uppercuts > 0)
 {
 	vsp = -5;
 	uppercuts = 0;
 	attack(atk_uppercut,s_player_uppercut);
 }
-if (key_c_click) and (key_down) and !(key_up) //shits fucked
+
+if (key_special) and (key_down) and !(key_up) //shits fucked
 {
 	attack(atk_stomp,s_player_stomp);
 }

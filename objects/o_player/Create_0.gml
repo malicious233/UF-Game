@@ -34,11 +34,11 @@ enum controls
 }
 if (controlscheme == 0)
 {
-controls = controls.arrowkeys
+controls = controls.wasd1hand
 }
 else
 {
-controls = controls.wasd1hand
+controls = controls.gp_dpad
 }
 
 //Create personal hurtbox

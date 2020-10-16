@@ -17,8 +17,8 @@ function atk_bicyclekick()
 			image_xscale = 1; //Hitboxens X scale, optional
 			image_yscale = 1;//Hitboxens Y scale, optional
 			hitbox_damage = 5;
-			hitbox_x_kb = 4*other.dir;
-			hitbox_y_kb = -12.5
+			hitbox_x_kb = 6*other.dir;
+			hitbox_y_kb = -11.5
 		}
 	}
 	if (attack_timing == 10)

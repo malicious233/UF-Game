@@ -13,4 +13,18 @@ key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("F"));
 //key_right_click = keyboard_check_pressed(vk_right);
 key_up = keyboard_check(ord("D"));
+
+if (key_left == true)
+{
+	curr_dir = -1;	
+}
+if (key_right == true)
+{
+	curr_dir = 1;	
+}
+if (!key_left and !key_right)
+{
+	curr_dir = 0;	
+}
+
 }
