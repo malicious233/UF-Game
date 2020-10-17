@@ -41,8 +41,8 @@ if (menu_x > gui_width-373) && (menu_committed != -1)    //-33 (one behind -32) 
 	switch (menu_committed)
 	{
 		case 2: instance_activate_object(o_pausemenu_controls); menu_control = false; break;
-		case 1: game_end(); break;          //selects menu[0] and executes code before break.
-		case 0: instance_destroy(); break;
+		case 1: window_set_fullscreen(true); break;          //selects menu[0] and executes code before break.
+		case 0: window_set_fullscreen(false); break;
 		
 	}
 	
