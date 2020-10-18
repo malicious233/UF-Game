@@ -35,8 +35,8 @@ Glad I caught this before committing*/
 
 //create menus, and which order they appear from top to bottom
 menu[2] = "Controls";
-menu[1] = "Yes";
-menu[0] = "No";
+menu[1] = "Fullscreen on";
+menu[0] = "Fullscreen off";
 
 
 menu_items = array_length_1d(menu);

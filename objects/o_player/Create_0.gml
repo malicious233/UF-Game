@@ -8,7 +8,7 @@ event_inherited();
 #macro SPD_WALK_ACCEL 0.7
 
 
-window_set_fullscreen(true)
+//window_set_fullscreen(true)
 
 
 jumps = 2;
