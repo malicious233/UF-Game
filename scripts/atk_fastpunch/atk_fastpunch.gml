@@ -20,8 +20,8 @@ function atk_fastpunch()
 				image_yscale = 1;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 3;
-				hitbox_x_kb = 5*other.dir;
-				hitbox_y_kb = -6;
+				hitbox_x_kb = 7.5*other.dir;
+				hitbox_y_kb = -7.5;
 			}
 			
 		}
