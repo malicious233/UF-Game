@@ -30,7 +30,8 @@ enum controls
 	typist,
 	wasd1hand,
 	wasdmouse,
-	gp_dpad
+	gp_xinput,
+	gp_directinput,
 }
 if (controlscheme == 0)
 {
@@ -38,7 +39,7 @@ controls = controls.wasd1hand
 }
 else
 {
-controls = controls.gp_dpad
+controls = controls.gp_xinput
 }
 
 //Create personal hurtbox

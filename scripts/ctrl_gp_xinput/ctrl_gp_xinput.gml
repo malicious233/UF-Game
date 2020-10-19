@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function ctrl_gp_dpad(){
+function ctrl_gp_xinput(){
 key_attack = gamepad_button_check_pressed(0,gp_shoulderr);
 //key_z_click = keyboard_check_pressed(ord("Z"));
 key_special = gamepad_button_check_pressed(0,gp_shoulderrb);

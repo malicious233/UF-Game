@@ -35,8 +35,8 @@ Glad I caught this before committing*/
 
 //create menus, and which order they appear from top to bottom
 //menu[2] = "sub2";
-menu[3] = "D-pad & shoulderB's";
-menu[2] = "GP2";
+menu[3] = "Xinput";
+menu[2] = "Directinput";
 menu[1] = "GP1";
 menu[0] = "GP0";
 

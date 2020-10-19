@@ -9,7 +9,8 @@ switch(controls)
 	case controls.typist: ctrl_typist() ; break;
 	case controls.wasd1hand: ctrl_wasd1hand() ; break;
 	case controls.wasdmouse: ctrl_wasdmouse() ; break;
-	case controls.gp_dpad: ctrl_gp_dpad() ; break;
+	case controls.gp_xinput: ctrl_gp_xinput() ; break;
+	case controls.gp_directinput: ctrl_gp_directinput() ; break;
 }
 
 

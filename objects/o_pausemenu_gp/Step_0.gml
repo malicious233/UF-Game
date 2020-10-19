@@ -40,8 +40,8 @@ if (menu_x > gui_width-1033) && (menu_committed != -1)    //-33 (one behind -32)
 {
 	switch (menu_committed)
 	{
-		case 3: instance_activate_object(o_player); o_player.controls = controls.gp_dpad; instance_deactivate_object(o_player); instance_destroy(); break;
-		case 2:// instance_activate_object(o_player); o_player.controls = controls.typist; instance_deactivate_object(o_player); instance_destroy(); break;
+		case 3: instance_activate_object(o_player); o_player.controls = controls.gp_xinput; instance_deactivate_object(o_player); instance_destroy(); break;
+		case 2: instance_activate_object(o_player); o_player.controls = controls.gp_directinput; instance_deactivate_object(o_player); instance_destroy(); break;
 		case 1: //instance_activate_object(o_player); o_player.controls = controls.wasd1hand; instance_deactivate_object(o_player); instance_destroy(); break;          //selects menu[0] and executes code before break.
 		case 0: //instance_activate_object(o_player); o_player.controls = controls.wasdmouse; instance_deactivate_object(o_player); instance_destroy (); break;
 		
