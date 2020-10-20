@@ -28,8 +28,6 @@ else
 }
 
 hori_collision();
-vert_collision();
-
-
 x = x+hsp;
+vert_collision();
 y = y+vsp;
