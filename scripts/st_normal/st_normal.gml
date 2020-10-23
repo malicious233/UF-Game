@@ -34,7 +34,7 @@ if (key_right == true)
 }
 */
 
-moving(move_spd*.5,curr_dir);
+moving(move_spd,curr_dir);
 
 
 if (key_space_click == true) and (jumps > 0)

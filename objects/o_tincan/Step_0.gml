@@ -45,8 +45,9 @@ break;
 
 }
 
-
+/*
 if distance_to_object(o_player) <= 100
 { 
      o_camera.follow = o_tincan
 }else o_camera.follow = o_player
+*/
