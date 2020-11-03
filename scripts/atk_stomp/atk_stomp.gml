@@ -18,7 +18,7 @@ function atk_stomp()
 				image_yscale = 1.5;   //Hitboxens Y scale, optional
 				
 				hitbox_damage = 8;
-				hitbox_x_kb = 0;
+				hitbox_x_kb = 2*other.dir;
 				hitbox_y_kb = 25;
 
 			}
