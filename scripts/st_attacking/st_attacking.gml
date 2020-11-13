@@ -10,7 +10,7 @@ function st_attacking()
 
 
 attack_timing ++;
-
+/*
 if (key_left == true)
 {
 	hsp = clamp(hsp-attack_move_spd,-max_spd,max_spd);
@@ -20,6 +20,8 @@ if (key_right == true)
 {
 	hsp = clamp(hsp+attack_move_spd,-max_spd,max_spd);
 }
+*/
+moving(attack_move_spd,curr_dir);
 
 
 //state changes

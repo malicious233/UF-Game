@@ -5,7 +5,7 @@ function atk_longkick()
 	sprite_index = s_player_longkick;
 	attack_timing_end = 60;
 	attack_move_spd = 1;
-	if (attack_timing == 9) //Early hitbox
+	if (attack_timing == 11) //Early hitbox
 		{
 			create_hitbox()
 			with (current_hitbox)
@@ -22,7 +22,7 @@ function atk_longkick()
 
 			}
 		}
-	if (attack_timing == 13) //Late hitbox
+	if (attack_timing == 15) //Late hitbox
 		{
 			create_hitbox()
 			with (current_hitbox)
@@ -30,7 +30,7 @@ function atk_longkick()
 				hitbox_offset_x = 10; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 30; //Y offset från hitbox_owner, optional
 				hitbox_duration = 45;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 0.95; //Hitboxens X scale, optional
+				image_xscale = 1.1; //Hitboxens X scale, optional
 				image_yscale = 0.75;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 3;

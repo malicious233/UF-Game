@@ -64,6 +64,11 @@ if (key_special) and (key_up) and (uppercuts > 0)
 	uppercuts = 0;
 	attack(atk_uppercut,s_player_uppercut);
 }
+if (key_special) and !(key_up)
+{
+	vsp = -5;
+	attack(atk_shoulderbash,s_player_shoulderbash);
+}
 
 if (key_special) and (key_down)//shits fucked
 {

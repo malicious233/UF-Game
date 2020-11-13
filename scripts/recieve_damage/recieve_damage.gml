@@ -34,19 +34,20 @@ function recieve_damage()
 		//o_hitlagcontroller.hitlag_duration = curr_damage;
 		//Hitlag, pretty experimental
 		
-		var __time = current_time;  
-		while current_time-__time < 0*curr_damage
+		// The old hitlag that looks like ass
+		/*var __time = current_time;  
+		while current_time-__time < 10*curr_damage
 		{  
 			
 		}  
-		
+		*/
 
 		//Adds oneself to the hitlagcontroller list
 		ds_list_add(o_hitlagcontroller.hitlaggers_id,obj_id);
-		ds_list_add(o_hitlagcontroller.hitlaggers_dur,curr_damage*0.9);
+		ds_list_add(o_hitlagcontroller.hitlaggers_dur,curr_damage*2);
 		
 		//Adds the attacker to the hitlagcontroller list too
 		ds_list_add(o_hitlagcontroller.hitlaggers_id,atk_by.obj_id);
-		ds_list_add(o_hitlagcontroller.hitlaggers_dur,curr_damage*0.75);
+		ds_list_add(o_hitlagcontroller.hitlaggers_dur,curr_damage*2);
 	}
 }

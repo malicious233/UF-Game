@@ -68,9 +68,14 @@ if (key_attack) and (key_up)
 	attack(atk_bicyclekick,s_player_bicyclekick);
 	vsp = -(0.75*jump_spd);
 }
-if (key_special)
+
+if (key_special) and (key_up)
 {
 	attack(atk_uppercut,s_player_uppercut);	
+}
+if (key_special) and !(key_up)
+{
+	attack(atk_shoulderbash,s_player_shoulderbash);	
 }
 
 //State change
