@@ -5,6 +5,8 @@ key_attack = keyboard_check_pressed(vk_lshift);
 //key_z_click = keyboard_check_pressed(ord("Z"));
 key_special = keyboard_check_pressed(vk_lcontrol);
 key_space_click = keyboard_check_pressed(vk_space);
+key_test = keyboard_check_pressed(ord("Q"));
+key_test2 = keyboard_check_pressed(ord("E"));
 //key_v_click = keyboard_check_pressed(ord("V"));
 
 //Dir Inputs

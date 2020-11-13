@@ -13,11 +13,11 @@ function atk_fastpunch()
 			create_hitbox()
 			with (current_hitbox)
 			{
-				hitbox_offset_x = 60; //X offset från hitbox_owner, optional
+				hitbox_offset_x = 55; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 20; //Y offset från hitbox_owner, optional
-				hitbox_duration = 10;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				hitbox_duration = 4;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1; //Hitboxens X scale, optional
-				image_yscale = 1;//Hitboxens Y scale, optional
+				image_yscale = 0.6;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 3;
 				hitbox_x_kb = 7.5*other.dir;

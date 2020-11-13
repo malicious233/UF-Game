@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+if (paused == false)
+
+{
 
 //Inputs
 //ctrl_arrowkeys()
@@ -64,3 +67,4 @@ case states.hitstunned: st_hitstunned() ; break;
 
 }
 
+}

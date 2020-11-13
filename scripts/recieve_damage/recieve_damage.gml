@@ -14,5 +14,39 @@ function recieve_damage()
 			dialogue = other.curr_damage;
 		}
 		
+		//I'll change this in the future so what particle effects 
+		//that occur upon attack depend on what type of attack it is
+		//So fiery punch will have different fx than a normal kick does!
+		var partcl = create_particle();
+		with (partcl)
+		{
+			sprite_index = impact1_fx;
+			image_xscale = other.attack_dir*(image_xscale*2)
+			image_yscale = image_yscale*2
+		}
+		var partcl = create_particle();
+		with (partcl)
+		{
+			sprite_index = impact2_fx;
+			image_xscale = other.attack_dir*(image_xscale*4)
+			image_yscale = image_yscale*4
+		}
+		//o_hitlagcontroller.hitlag_duration = curr_damage;
+		//Hitlag, pretty experimental
+		
+		var __time = current_time;  
+		while current_time-__time < 0*curr_damage
+		{  
+			
+		}  
+		
+
+		//Adds oneself to the hitlagcontroller list
+		ds_list_add(o_hitlagcontroller.hitlaggers_id,obj_id);
+		ds_list_add(o_hitlagcontroller.hitlaggers_dur,curr_damage*0.9);
+		
+		//Adds the attacker to the hitlagcontroller list too
+		ds_list_add(o_hitlagcontroller.hitlaggers_id,atk_by.obj_id);
+		ds_list_add(o_hitlagcontroller.hitlaggers_dur,curr_damage*0.75);
 	}
 }

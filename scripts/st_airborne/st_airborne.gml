@@ -34,6 +34,14 @@ if (key_space_click == true) and (jumps > 0)
 {
 	vsp = -jump_spd;	
 	jumps --;
+	var partcl = create_particle();
+	with (partcl)
+	{
+		sprite_index = jump_fx;	
+		y = y+46;
+		image_xscale = image_xscale*3;
+		image_yscale = image_yscale*3;
+	}
 }
 
 //Aerial Attacks
@@ -62,6 +70,17 @@ if (key_special) and (key_down)//shits fucked
 	attack(atk_stomp,s_player_stomp);
 }
 
+if (key_test) //Just trying out some ways to make movement a little more fun, like mini dashes, Q or E in the air
+{
+	hsp = -17.5	
+	vsp = -1;
+}
+if (key_test2)
+{
+	hsp = 17.5
+	vsp = -1;
+}
+
 
 
 //States
@@ -74,7 +93,7 @@ if (ground == true)
 //Physics
 
 friction_force(flat_friction,perc_friction);
-vsp = clamp(vsp,-infinity,max_fall_spd); //Gives you actual terminal velocity
+//vsp = clamp(vsp,-infinity,max_fall_spd); //Gives you actual terminal velocity
 
 //Animations
 

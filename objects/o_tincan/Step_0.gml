@@ -1,6 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+ 
+ if (paused == false)
+ {
+ 
+
 if (hitstun_duration > 0){states = states.hitstunned;}
 
 switch (states)
@@ -8,27 +13,26 @@ switch (states)
 case states.normal:
 #region Normal
 
-sprite_index = s_tincan_walk;
-friction_force(flat_friction,perc_friction);
-if instance_exists(o_player) //I'll switch this to "target" instead of just o_player so it doesnt act spooky with more than one player, and then make I'll a more cleverer "targetting" system to who this guy will harrass
-{
-	var lorr = -sign(x-o_player.x); //Signs if the player is to the right or to the left of this character
-	if (lorr = 0) {lorr = 1};
-	
-	moving(move_spd,lorr);
+actionable = true;
 
-	if (distance_to_point(o_player.x,o_player.y)) < 180
-	{
-		attack(atk_faceplant,s_tincan_faceplant);	
-	}
-	dir = lorr;
+moving(move_spd,input_dir);
+friction_force(flat_friction,perc_friction);
+
+sprite_index = s_tincan_idle;
+if (input_dir != 0)
+{
+sprite_index = s_tincan_walk;	
 }
+
 
 break;
 
 #endregion
 case states.airborne:  
 #region Airborne
+
+actionable = false;
+
 if (ground == true)
 {
 	states = states.normal;	
@@ -39,6 +43,9 @@ break;
 #endregion
 case states.attacking:  
 #region Attacking
+
+actionable = false;
+
 attack_timing ++;
 //state changes
 if (attack_timing > attack_timing_end) //Ends the attack state once the attack duration ends
@@ -71,12 +78,16 @@ break;
 case states.recovery:  
 #region Recovery
 
+actionable = false;
+
 break;
 
 #endregion
 case states.hitstunned: 
 #region Hitstunned
 sprite_index = s_tincan_hurt;
+
+actionable = false;
 hitstun_duration --;
 friction_force(flat_friction*0.5,0.999);
 if (hitstun_duration < 0){states = states.normal;}
@@ -85,9 +96,67 @@ break;
 
 }
 
-/*
-if distance_to_object(o_player) <= 100
-{ 
-     o_camera.follow = o_tincan
-}else o_camera.follow = o_player
-*/
+switch (thought)
+{
+#region Idling
+case thought.idling:
+
+input_dir = 0;
+idle_time --;
+if (idle_time < 0)
+{
+	var d = 0;
+	while (d = 0)
+	{
+		d = round(random_range(-1,1));
+	}
+	input_dir = d;
+	dir = d;
+	thought = thought.patrol;
+	idle_time = random_range(60,120);
+}
+
+break;
+#endregion
+
+#region Patrol
+case thought.patrol:
+
+idle_time --;
+if (idle_time < 0)
+{
+	thought = thought.idling;
+	idle_time = random_range(30,120);
+}
+
+var _num = (distance_to_point(o_player.x,o_player.y))
+if (_num < 160)
+	{
+		thought = thought.agitated;
+		target_focus = o_player;
+	}
+
+break;
+#endregion
+
+#region Agitated
+case thought.agitated:
+
+var lorr = -sign(x-target_focus.x); //Signs if the player is to the right or to the left of this character
+if (lorr = 0) {lorr = 1};
+input_dir = lorr;
+if (actionable = true)
+{
+	dir = lorr;	//Should fix so the moving() script is what does the turning. Thoughts shouldnt do that much physically, only give commands.
+	if ((distance_to_point(target_focus.x,target_focus.y)) < 180)
+	{
+		attack(atk_faceplant,s_tincan_faceplant);	
+	}
+}
+
+break;
+#endregion
+}
+
+
+}

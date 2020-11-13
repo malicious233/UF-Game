@@ -47,6 +47,9 @@ if (instance_exists(hurtbox_owner))
 						hurtbox_owner.curr_damage = c_hb.hitbox_damage;
 						hurtbox_owner.curr_x_kb = c_hb.hitbox_x_kb;
 						hurtbox_owner.curr_y_kb = c_hb.hitbox_y_kb;
+						hurtbox_owner.attack_dir = sign(x-c_hb.x);
+						hurtbox_owner.atk_by = c_hb.hitbox_owner;
+						if (hurtbox_owner.attack_dir == 0){hurtbox_owner.attack_dir = 1};
 						ds_list_add(attack_blacklist,c_hb.hitbox_group); 
 						
 						

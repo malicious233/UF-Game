@@ -79,6 +79,17 @@ if (ground == false)
 	states = states.airborne	
 }
 
+if (key_test) //Just trying out some ways to make movement a little more fun, like mini dashes, Q or E in the air
+{
+	hsp = -17.5	
+	vsp = -6;
+}
+if (key_test2)
+{
+	hsp = 17.5
+	vsp = -6;
+}
+
 //controls change
 
 if keyboard_check_pressed(ord("O")) and (vk_up)
