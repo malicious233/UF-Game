@@ -11,13 +11,24 @@ if instance_exists(follow)
 
 //Goes to the follower smoothly
 x += (xTo - x) /6.5;
-y += (yTo - y - 200) /6.5;
+y += (yTo - y) /6.5;
 
 
-x = clamp(x,view_w_half,room_width-view_w_half);
-y = clamp(y,view_h_half,room_height-view_h_half);
+x = clamp(x,view_w_half+buff,room_width-view_w_half-buff);
+y = clamp(y,view_h_half+buff,room_height-view_h_half-buff);
+
+x += random_range(-screenshake_remain,screenshake_remain);
+y += random_range(-screenshake_remain,screenshake_remain);
+screenshake_remain = max(0,screenshake_remain-((1/screenshake_length)*screenshake_magnitude));
 
 camera_set_view_pos(cam,x-view_w_half,y-view_h_half)
+
+
+
+
+
+
+#region Parallax effect: This needs to be improved in the future
 
 cloud_offset = cloud_offset+0.2;
 cloud_offset2 = cloud_offset2+0.5;
@@ -51,7 +62,7 @@ if (layer_exists("Backgrounds_4")) //Apparently, using strings for things like t
 	layer_background_xscale(bg_4,xscal)
 	layer_background_yscale(bg_4,yscal)
 }
-
+#endregion
 
 
 

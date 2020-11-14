@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+if (hitbox_owner.paused = false)
+{
 hitbox_duration --;
+}
 
 if (frame1 == 0) //Moves the hitbox to hitbox owners position once
 {

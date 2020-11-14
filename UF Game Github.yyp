@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"o_tincan","path":"objects/o_tincan/o_tincan.yy",},"order":12,},
+    {"id":{"name":"screenshake","path":"scripts/screenshake/screenshake.yy",},"order":13,},
     {"id":{"name":"s_player_hurt","path":"sprites/s_player_hurt/s_player_hurt.yy",},"order":4,},
     {"id":{"name":"s_enemy_confuzzled","path":"sprites/s_enemy_confuzzled/s_enemy_confuzzled.yy",},"order":4,},
     {"id":{"name":"jump_fx","path":"sprites/jump_fx/jump_fx.yy",},"order":1,},

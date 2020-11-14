@@ -17,32 +17,32 @@ function atk_shoulderbash()
 			create_hitbox()
 			with (current_hitbox)
 			{
-				hitbox_offset_x = 20; //X offset från hitbox_owner, optional
+				hitbox_offset_x = 25; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 20; //Y offset från hitbox_owner, optional
-				hitbox_duration = 3;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1.35; //Hitboxens X scale, optional
-				image_yscale = 0.8;//Hitboxens Y scale, optional
+				hitbox_duration = 4;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				image_xscale = 1; //Hitboxens X scale, optional
+				image_yscale = 1;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 10;
-				hitbox_x_kb = 12.5*other.dir;
+				hitbox_damage = 9;
+				hitbox_x_kb = 13*other.dir;
 				hitbox_y_kb = -10.5;
 			}
 		}
 			
-	if (attack_timing == 22)
+	if (attack_timing == 21)
 	{
 			create_hitbox()
 			with (current_hitbox)
 			{
 				hitbox_offset_x = 20; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 20; //Y offset från hitbox_owner, optional
-				hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1.25; //Hitboxens X scale, optional
-				image_yscale = 0.8;//Hitboxens Y scale, optional
+				hitbox_duration = 9;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				image_xscale = 1; //Hitboxens X scale, optional
+				image_yscale = 1;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 8;
-				hitbox_x_kb = 6.5*other.dir;
-				hitbox_y_kb = -13.5;
+				hitbox_damage = 6;
+				hitbox_x_kb = 3*other.dir;
+				hitbox_y_kb = -12.5;
 			}
 	}
 			

@@ -19,3 +19,8 @@ xscal = 30;
 yscal = 30;
 cloud_offset = 0;
 cloud_offset2 = 0;
+
+screenshake_length = 0;
+screenshake_magnitude = 0;
+screenshake_remain = 0;
+buff = 32;
