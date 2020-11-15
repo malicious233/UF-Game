@@ -57,5 +57,6 @@ function recieve_damage()
 		
 		//Screenshake
 		screenshake(hit_pwr,hit_pwr);
+		audio_play_sound(tune_punch_tincan,1000,false)
 	}
 }
