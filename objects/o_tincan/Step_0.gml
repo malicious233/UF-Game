@@ -8,6 +8,7 @@
 
 if (hitstun_duration > 0){states = states.hitstunned;}
 
+
 switch (states)
 {
 case states.normal:
@@ -86,6 +87,7 @@ break;
 case states.hitstunned: 
 #region Hitstunned
 sprite_index = s_tincan_hurt;
+
 
 actionable = false;
 hitstun_duration --;

@@ -8,4 +8,5 @@ function st_hitstunned()
 	sprite_index = s_player_hurt;
 	
 	friction_force(flat_friction*0.5,0.995);
+	
 }
