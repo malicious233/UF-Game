@@ -35,7 +35,7 @@
     {"propertyId":{"name":"jump_spd","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"max_spd","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"max_fall_spd","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"14","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"hp","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"40","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hp","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Objects",

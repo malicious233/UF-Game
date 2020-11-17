@@ -4,15 +4,14 @@
 
 for (var i = 0; i < ds_list_size(hitlaggers_id); ++i;)
 {
-	/*
-	var _whatever = create_particle()
-	with (_whatever)
+	if !(instance_exists(hitlaggers_id[|i]))
 	{
-		sprite_index = 	s_tincan_walk
-		x = other.hitlaggers_id[|i].x;
+		ds_list_delete(hitlaggers_id,i)
+		ds_list_delete(hitlaggers_dur,i)	
 	}
-	*/
-	
+	else
+	{
+
 	hitlaggers_id[|i].paused = true;
 	hitlaggers_id[|i].image_speed = 0;
 	
@@ -24,6 +23,7 @@ for (var i = 0; i < ds_list_size(hitlaggers_id); ++i;)
 		ds_list_delete(hitlaggers_id,i)
 		ds_list_delete(hitlaggers_dur,i)	
 		
+	}
 	}
 	
 }

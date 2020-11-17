@@ -11,9 +11,13 @@ function atk_shoulderbash()
 	{
 		vsp = 0;
 	}
+	if (attack_timing == 18)
+	{
+		hsp = -1*dir;	
+	}
 	if (attack_timing == 20)
 		{
-			hsp = hsp+(20*dir);
+			hsp = hsp+(23*dir);
 			create_hitbox()
 			with (current_hitbox)
 			{

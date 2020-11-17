@@ -31,10 +31,10 @@ function atk_uppercut()
 			with (current_hitbox)
 			{
 				hitbox_offset_x = 30; //X offset från hitbox_owner, optional
-				hitbox_offset_y = -50; //Y offset från hitbox_owner, optional
+				hitbox_offset_y = -60; //Y offset från hitbox_owner, optional
 				hitbox_duration = 10;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 0.6; //Hitboxens X scale, optional
-				image_yscale = 2.5;//Hitboxens Y scale, optional
+				image_xscale = 0.7; //Hitboxens X scale, optional
+				image_yscale = 1.6;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 7;
 				hitbox_x_kb = 10*other.dir;
