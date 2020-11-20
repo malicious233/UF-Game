@@ -32,10 +32,11 @@ enum controls
 	wasdmouse,
 	gp_xinput,
 	gp_directinput,
+	nothing,
 }
 if (controlscheme == 0)
 {
-controls = controls.wasd1hand
+controls = controls.nothing
 }
 else
 {

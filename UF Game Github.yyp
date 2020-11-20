@@ -52,6 +52,7 @@
     {"id":{"name":"o_pausemenu_settings","path":"objects/o_pausemenu_settings/o_pausemenu_settings.yy",},"order":2,},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},"order":2,},
     {"id":{"name":"Sprite25","path":"sprites/Sprite25/Sprite25.yy",},"order":10,},
+    {"id":{"name":"ctrl_nothing","path":"scripts/ctrl_nothing/ctrl_nothing.yy",},"order":6,},
     {"id":{"name":"atk_lightpunch","path":"scripts/atk_lightpunch/atk_lightpunch.yy",},"order":0,},
     {"id":{"name":"s_tincan_walk","path":"sprites/s_tincan_walk/s_tincan_walk.yy",},"order":1,},
     {"id":{"name":"o_attacker","path":"objects/o_attacker/o_attacker.yy",},"order":7,},

@@ -7,7 +7,10 @@ menu_x += (menu_x_target - menu_x) / menu_speed;
 if (menu_control)
 {
 	//move selection arrow in menu up when pressing vk_up, up arrowkey
-	if(keyboard_check_pressed(vk_up))
+	if((keyboard_check_pressed(vk_up)) or 
+	(keyboard_check_pressed(ord("W"))) or
+	(gamepad_button_check_pressed(0,gp_padu)) or		//xinput dpad up
+	(gamepad_button_check_pressed(4,gp_padu)))		//directinput dpad up		
 	{
 		menu_cursor++;
 		if (menu_cursor >= menu_items) menu_cursor = 0;
@@ -15,7 +18,10 @@ if (menu_control)
 	
 	
 	//move selection arrow in menu down when pressing vk_down, down arrowkey
-	if(keyboard_check_pressed(vk_down))
+	if((keyboard_check_pressed(vk_down)) or 
+	(keyboard_check_pressed(ord("S"))) or
+	(gamepad_button_check_pressed(0,gp_padd)) or		//xinput dpad down
+	(gamepad_button_check_pressed(4,gp_padd)))		//directinput dpad down
 	{
 		menu_cursor--;
 		if (menu_cursor < 0) menu_cursor = menu_items-1;
@@ -24,7 +30,10 @@ if (menu_control)
 	
 	
 	//when pressing the Enter key, animate menu to move to the right
-	if (keyboard_check_pressed(vk_enter))
+	if ((keyboard_check_pressed(vk_enter)) or 
+	(keyboard_check_pressed(vk_space)) or
+	(gamepad_button_check_pressed(0,gp_face1)) or		//xinput "A" button
+	(gamepad_button_check_pressed(4,gp_face1)))			//directinput "A" button
 	{
 		menu_x_target = gui_width-32//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
 		menu_committed = menu_cursor;
@@ -72,3 +81,63 @@ if !instance_exists(o_pausemenu_quit) and pause = true  //if submenu doesn't exi
 {
 	menu_control = true
 }
+
+
+//go back a submenu with controller
+if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button
+(gamepad_button_check_pressed(4,gp_face2)) or	  //directinput "B" button
+(gamepad_button_check_pressed(0,gp_start)) or		// xinput start button
+(gamepad_button_check_pressed(4,gp_start)))		  // direct start button
+{
+	//same code as in ESCAPE
+	if !instance_exists(o_pausemenu_quit) and pause = true
+	{
+			instance_activate_all();  //activates all instances again, makes them exist again, perfectly as they were before.
+			instance_deactivate_object(o_pausemenu_quit)
+			o_hurtbox.image_alpha = 1   //max opacity again after activation of object, so that we devs can see hutrbox when needed
+			if instance_exists(o_hitbox)
+			{
+				o_hitbox.image_alpha = 0
+			}
+		
+			if instance_exists(o_hitbox_master)
+			{
+				o_hitbox_master.image_alpha = 0
+			}
+			
+			if instance_exists(o_wall)
+			{
+				o_wall.image_alpha = 1
+			}
+			menu_control = false      //when escape key is pressed again, and pause goes away, arrowkey control in menu is not allowed
+									 //prevents menu control when pausemenu isn't seen.
+			if instance_exists(o_pausemenu_quit) and pause = false			//prevents submenu from existing when game is not paused
+						{
+					
+							instance_destroy(o_pausemenu_quit)				//destroys submenu so that it doesn't exist when game is not paused
+						}
+				instance_destroy()		//destroys this o_pausemenu
+							//it will be created again when pressing escape, check o_player --> keyperss-escape
+	}
+			//deactivate more pausmenu stuff here so that they dont stay when exiting pausemenu.
+		//}
+}
+
+//go to next submenu with controller
+if ((gamepad_button_check_pressed(0,gp_face1)) or		//xinput "A" button
+	(gamepad_button_check_pressed(4,gp_face1)))		//directinput "A" button
+	{
+		if !instance_exists(o_pausemenu_quit) and menu_cursor = 0     //when pressing enter when menu cursor is 
+		                                                             //hovering over the one that's supposed to 
+																	 //spawn the submenu, creates the submenu
+		{
+			instance_create_depth(0,0,3,o_pausemenu_quit)
+		}
+
+		if !instance_exists(o_pausemenu_settings) and menu_cursor = 1     //when pressing enter when menu cursor is 
+		                                                             //hovering over the one that's supposed to 
+																	 //spawn the submenu, creates the submenu
+		{
+			instance_create_depth(0,0,3,o_pausemenu_settings)
+		}
+	}

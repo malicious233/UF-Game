@@ -6,6 +6,7 @@ key_attack = gamepad_button_check_pressed(4,gp_shoulderr);
 key_special = gamepad_button_check_pressed(4,gp_shoulderrb);
 key_space_click = gamepad_button_check_pressed(4,gp_face1);
 //key_v_click = keyboard_check_pressed(ord("V"));
+key_pause_gp = gamepad_button_check_pressed(4,gp_start) //options buttion on a PS4 gamepad
 
 key_left = 0;
 key_right = 0;

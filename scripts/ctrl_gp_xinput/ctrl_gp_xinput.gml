@@ -6,12 +6,11 @@ key_attack = gamepad_button_check_pressed(0,gp_shoulderr);
 key_special = gamepad_button_check_pressed(0,gp_shoulderrb);
 key_space_click = gamepad_button_check_pressed(0,gp_face1);
 //key_v_click = keyboard_check_pressed(ord("V"));
+key_pause_gp = gamepad_button_check_pressed(0,gp_start) //options buttion on a PS4 gamepad
+
 
 //remove all tincans
-if (gamepad_button_check_pressed(0,gp_face2))
-{
-	instance_destroy(o_tincan);
-}
+
 
 key_left = 0;
 key_right = 0;
@@ -24,7 +23,7 @@ key_down = 0;
 #region The Left Stick
 if abs(gamepad_axis_value(0,gp_axislh)) > hori_deadzone
 {	
-	if gamepad_axis_value(0,gp_axislh) < 0
+	if gamepad_axis_value(0,gp_axislh) < -0//.75  //inner deadzone
 	{
 		key_left = true;	
 	}
@@ -33,7 +32,7 @@ if abs(gamepad_axis_value(0,gp_axislh)) > hori_deadzone
 		key_left = false;	
 	}
 	
-	if gamepad_axis_value(0,gp_axislh) > 0
+	if gamepad_axis_value(0,gp_axislh) > 0//.75   //inner deadzone
 	{
 		key_right = true;	
 	}
@@ -63,12 +62,12 @@ if (!key_left and !key_right)
 
 if abs(gamepad_axis_value(0,gp_axislv)) > vert_deadzone
 {	
-	if gamepad_axis_value(0,gp_axislv) < 0
+	if gamepad_axis_value(0,gp_axislv) < -0//.75   //inner deadzone
 	{
 		key_up = true;	
 	}
 	
-	if gamepad_axis_value(0,gp_axislv) > 0
+	if gamepad_axis_value(0,gp_axislv) > 0//.75   //inner deadzone
 	{
 		key_up = false;
 		key_down = true;	

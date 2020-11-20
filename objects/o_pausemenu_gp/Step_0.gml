@@ -8,7 +8,10 @@ menu_x += (menu_x_target - menu_x) / menu_speed;
 if (menu_control)
 {
 	//move selection arrow in menu up when pressing vk_up, up arrowkey
-	if(keyboard_check_pressed(vk_up))
+	if((keyboard_check_pressed(vk_up)) or
+	(keyboard_check_pressed(ord("W"))) or 
+	(gamepad_button_check_pressed(0,gp_padu)) or		//xinput dpad up
+	(gamepad_button_check_pressed(4,gp_padu)))		//directinput dpad up)))
 	{
 		menu_cursor++;
 		if (menu_cursor >= menu_items) menu_cursor = 0;
@@ -16,7 +19,10 @@ if (menu_control)
 	
 	
 	//move selection arrow in menu down when pressing vk_down, down arrowkey
-	if(keyboard_check_pressed(vk_down))
+	if((keyboard_check_pressed(vk_down)) or
+	(keyboard_check_pressed(ord("S"))) or
+	(gamepad_button_check_pressed(0,gp_padd)) or		//xinput dpad down
+	(gamepad_button_check_pressed(4,gp_padd)))		//directinput dpad down)))))
 	{
 		menu_cursor--;
 		if (menu_cursor < 0) menu_cursor = menu_items-1;
@@ -24,7 +30,10 @@ if (menu_control)
 	}
 	
 	//when pressing the Enter key, animate menu to move to the right
-	if (keyboard_check_pressed(vk_enter))
+	if ((keyboard_check_pressed(vk_enter)) or
+	(keyboard_check_pressed(vk_space)) or
+	(gamepad_button_check_pressed(0,gp_face1)) or		//xinput "A" button
+	(gamepad_button_check_pressed(4,gp_face1)))		//directinput "A" button)))
 	{
 		menu_x_target = gui_width-1032//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
 		menu_committed = menu_cursor;
@@ -48,4 +57,14 @@ if (menu_x > gui_width-1033) && (menu_committed != -1)    //-33 (one behind -32)
 		
 	}
 	
+}
+
+
+//go back a submenu with controller
+if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button
+(gamepad_button_check_pressed(4,gp_face2)) or	  //directinput "B" button
+(gamepad_button_check_pressed(0,gp_start)) or		// xinput start button
+(gamepad_button_check_pressed(4,gp_start)))		  // directinput start button
+{
+	instance_destroy();
 }

@@ -17,7 +17,7 @@ if !instance_exists(o_pausemenu_quit) and pause = true
 		{
 			o_hitbox_master.image_alpha = 0
 		}
-		
+				
 		if instance_exists(o_wall)
 		{
 			o_wall.image_alpha = 1

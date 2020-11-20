@@ -26,6 +26,8 @@
     {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_pausemenu_controls","path":"objects/o_pausemenu_controls/o_pausemenu_controls.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":27,"eventType":9,"collisionObjectId":null,"parent":{"name":"o_pausemenu_controls","path":"objects/o_pausemenu_controls/o_pausemenu_controls.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":13,"eventType":9,"collisionObjectId":null,"parent":{"name":"o_pausemenu_controls","path":"objects/o_pausemenu_controls/o_pausemenu_controls.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":32,"eventType":9,"collisionObjectId":null,"parent":{"name":"o_pausemenu_controls","path":"objects/o_pausemenu_controls/o_pausemenu_controls.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":8,"eventType":9,"collisionObjectId":null,"parent":{"name":"o_pausemenu_controls","path":"objects/o_pausemenu_controls/o_pausemenu_controls.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

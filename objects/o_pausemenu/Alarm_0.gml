@@ -16,6 +16,11 @@
 		}/*Make hurtbox invisible before we capture a "screenshot" of all objects
 		because otherwise hurbox will be seen when game is paused even if the "Hurtbox"-layer in the room is set to 
 		Not-Viewable-In-Game*/
+		if instance_exists(o_wall)
+		{
+			o_wall.image_alpha = 0
+		}
+		
 		var offset = 0;						/* offset basically makes sure that we always
 													have valid sprites drawn when paused*/
 													

@@ -14,7 +14,61 @@ switch(controls)
 	case controls.wasdmouse: ctrl_wasdmouse() ; break;
 	case controls.gp_xinput: ctrl_gp_xinput() ; break;
 	case controls.gp_directinput: ctrl_gp_directinput() ; break;
+	case controls.nothing: ctrl_nothing() ; break;
 }
+
+
+#region //Detect input method after startup
+if controls = controls.nothing
+{
+	//if wasd1hand is pressed
+	if (keyboard_check_pressed(vk_lshift) or 
+	keyboard_check_pressed(vk_lcontrol) or
+	keyboard_check_pressed(vk_space) or  //May remove this if you want--> 
+	keyboard_check_pressed(ord("Q")) or   //-->to choose between more than one input method-->
+	keyboard_check_pressed(ord("E")) or     //-->that uses space.
+	keyboard_check(ord("A")) or
+	keyboard_check(ord("D")) or 
+	keyboard_check(ord("W")) or
+	keyboard_check(ord("S")))
+	{
+		controls = controls.wasd1hand
+	}
+	
+	//if xinput controller is pressed
+	if (gamepad_button_check_pressed(0,gp_shoulderr) or 
+	gamepad_button_check_pressed(0,gp_shoulderrb) or 
+	gamepad_button_check_pressed(0,gp_face1) or
+	gamepad_axis_value(0,gp_axislh) < -0.2 or
+	gamepad_axis_value(0,gp_axislh) > 0.2 or
+	gamepad_axis_value(0,gp_axislv) < -0.2 or
+	gamepad_axis_value(0,gp_axislv) > 0.2 or
+	gamepad_axis_value(0,gp_axisrv) < -0.2 or
+	gamepad_axis_value(0,gp_axisrv) > 0.2 or
+	gamepad_axis_value(0,gp_axisrh) < -0.2 or
+	gamepad_axis_value(0,gp_axisrh) > 0.2)
+	{
+		controls = controls.gp_xinput
+	}
+	
+	//if directinput controller is pressed
+	if (gamepad_button_check_pressed(4,gp_shoulderr) or 
+	gamepad_button_check_pressed(4,gp_shoulderrb) or 
+	gamepad_button_check_pressed(4,gp_face1) or
+	gamepad_axis_value(4,gp_axislh) < -0.2 or
+	gamepad_axis_value(4,gp_axislh) > 0.2 or
+	gamepad_axis_value(4,gp_axislv) < -0.2 or
+	gamepad_axis_value(4,gp_axislv) > 0.2 or
+	gamepad_axis_value(4,gp_axisrv) < -0.2 or
+	gamepad_axis_value(4,gp_axisrv) > 0.2 or
+	gamepad_axis_value(4,gp_axisrh) < -0.2 or
+	gamepad_axis_value(4,gp_axisrh) > 0.2)
+	{
+		controls = controls.gp_directinput
+	}
+	
+}
+#endregion
 
 
 #region all the input buttons (commented)
@@ -65,6 +119,15 @@ case states.attacking: st_attacking() ; break;
 case states.recovery: st_recovery() ; break;
 case states.hitstunned: st_hitstunned() ; break;
 
+}
+
+//controller can pause the game
+if (gamepad_button_check_pressed(0,gp_start) or gamepad_button_check_pressed(4,gp_start))
+{
+	if !instance_exists(o_pausemenu)     //creates o_pausemenu when pressing escape
+	{
+		instance_create_depth(0,0,4,o_pausemenu)
+	}
 }
 
 }
