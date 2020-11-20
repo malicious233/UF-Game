@@ -21,15 +21,15 @@ function recieve_damage()
 		with (partcl)
 		{
 			sprite_index = impact1_fx;
-			image_xscale = other.attack_dir*(image_xscale*2)
-			image_yscale = image_yscale*2
+			image_xscale = other.attack_dir*(image_xscale)
+			image_yscale = image_yscale
 		}
 		var partcl = create_particle();
 		with (partcl)
 		{
 			sprite_index = impact2_fx;
-			image_xscale = other.attack_dir*(image_xscale*4)
-			image_yscale = image_yscale*4
+			image_xscale = other.attack_dir*(image_xscale*2)
+			image_yscale = image_yscale*2
 		}
 		//o_hitlagcontroller.hitlag_duration = curr_damage;
 		//Hitlag, pretty experimental
