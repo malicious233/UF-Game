@@ -7,6 +7,12 @@ key_special = gamepad_button_check_pressed(0,gp_shoulderrb);
 key_space_click = gamepad_button_check_pressed(0,gp_face1);
 //key_v_click = keyboard_check_pressed(ord("V"));
 
+//remove all tincans
+if (gamepad_button_check_pressed(0,gp_face2))
+{
+	instance_destroy(o_tincan);
+}
+
 key_left = 0;
 key_right = 0;
 key_up = 0;

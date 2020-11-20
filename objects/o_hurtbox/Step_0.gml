@@ -16,7 +16,7 @@ if !(instance_exists(hurtbox_owner))
 
 if (instance_exists(hurtbox_owner))
 {
-	x = hurtbox_owner.x+hurtbox_owner.hurtbox_x_offset;
+	x = hurtbox_owner.x;
 	y = hurtbox_owner.y+hurtbox_owner.hurtbox_y_offset;
 	
 
