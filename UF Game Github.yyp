@@ -27,6 +27,7 @@
     {"id":{"name":"o_door_text","path":"objects/o_door_text/o_door_text.yy",},"order":18,},
     {"id":{"name":"o_wall","path":"objects/o_wall/o_wall.yy",},"order":2,},
     {"id":{"name":"impact1_fx","path":"sprites/impact1_fx/impact1_fx.yy",},"order":2,},
+    {"id":{"name":"s_meadow_tileset","path":"sprites/s_meadow_tileset/s_meadow_tileset.yy",},"order":22,},
     {"id":{"name":"atk_lowpunch","path":"scripts/atk_lowpunch/atk_lowpunch.yy",},"order":2,},
     {"id":{"name":"s_bg_1","path":"sprites/s_bg_1/s_bg_1.yy",},"order":13,},
     {"id":{"name":"s_bg_2","path":"sprites/s_bg_2/s_bg_2.yy",},"order":14,},
@@ -91,6 +92,7 @@
     {"id":{"name":"Sprite39","path":"sprites/Sprite39/Sprite39.yy",},"order":16,},
     {"id":{"name":"ctrl_typist","path":"scripts/ctrl_typist/ctrl_typist.yy",},"order":0,},
     {"id":{"name":"s_player_stomp2","path":"sprites/s_player_stomp2/s_player_stomp2.yy",},"order":8,},
+    {"id":{"name":"t_meadow","path":"tilesets/t_meadow/t_meadow.yy",},"order":2,},
     {"id":{"name":"st_normal","path":"scripts/st_normal/st_normal.yy",},"order":0,},
     {"id":{"name":"s_top","path":"sprites/s_top/s_top.yy",},"order":18,},
     {"id":{"name":"reset_damage","path":"scripts/reset_damage/reset_damage.yy",},"order":10,},
@@ -155,6 +157,7 @@
     {"folderPath":"folders/Objects/Pausemenu.yy","order":13,"resourceVersion":"1.0","name":"Pausemenu","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Background.yy","order":11,"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Moves/Tin Can.yy","order":2,"resourceVersion":"1.0","name":"Tin Can","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Tilesets.yy","order":21,"resourceVersion":"1.0","name":"Tilesets","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
