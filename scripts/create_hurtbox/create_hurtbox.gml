@@ -10,5 +10,7 @@ function create_hurtbox()
 	{
 		hurtbox_owner = other.id; //Makes the hurtbox owned by creator
 		team = other.team; //Makes the hurtbox the same team as creator
+		image_xscale = other.hurtbox_x_scale;
+		image_yscale = other.hurtbox_y_scale
 	}
 }

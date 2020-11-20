@@ -16,7 +16,7 @@ function atk_bicyclekick()
 			hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
 			image_xscale = 0.8; //Hitboxens X scale, optional
 			image_yscale = 0.8;//Hitboxens Y scale, optional
-			hitbox_damage = 5;
+			hitbox_damage = 4;
 			hitbox_x_kb = 6.75*other.dir;
 			hitbox_y_kb = -12.5
 		}

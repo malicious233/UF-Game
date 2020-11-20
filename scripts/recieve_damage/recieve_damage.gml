@@ -44,21 +44,21 @@ function recieve_damage()
 
 		
 		
-		var hit_pwr = (curr_damage*1.8)^2;
+		var hit_pwr = (curr_damage*1.9)^2;
 		if (hp <= 0) {hit_pwr *= 1.5}; //The finishing blow is more crunchy
 		
 		//Adds oneself to the hitlagcontroller list
 		ds_list_add(o_hitlagcontroller.hitlaggers_id,obj_id);
-		ds_list_add(o_hitlagcontroller.hitlaggers_dur,hit_pwr);
+		ds_list_add(o_hitlagcontroller.hitlaggers_dur,min(15,hit_pwr));
 		
 		//Adds the attacker to the hitlagcontroller list too
 		if instance_exists(atk_by)
 		{
 		ds_list_add(o_hitlagcontroller.hitlaggers_id,atk_by.obj_id); 
-		ds_list_add(o_hitlagcontroller.hitlaggers_dur,hit_pwr);
+		ds_list_add(o_hitlagcontroller.hitlaggers_dur,min(15,hit_pwr));
 		}
 		
 		//Screenshake
-		screenshake(1.1*hit_pwr,1.1*hit_pwr);
+		screenshake(1.1*hit_pwr,min(13,hit_pwr*1.1));
 	}
 }

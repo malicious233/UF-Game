@@ -5,7 +5,10 @@
 //Checks if owner exists
 if !(instance_exists(hurtbox_owner))
 {
+	ds_list_destroy(attack_blacklist);
 	instance_destroy();	
+
+			
 }
 
 
@@ -13,8 +16,9 @@ if !(instance_exists(hurtbox_owner))
 
 if (instance_exists(hurtbox_owner))
 {
-	x = hurtbox_owner.x;
-	y = hurtbox_owner.y;
+	x = hurtbox_owner.x+hurtbox_owner.hurtbox_x_offset;
+	y = hurtbox_owner.y+hurtbox_owner.hurtbox_y_offset;
+	
 
 	//Place_meet with a hitbox
 
@@ -29,9 +33,8 @@ if (instance_exists(hurtbox_owner))
 			{
 				c_hb = _list[|i]; //Current hitbox being analyzed
 	
-				var b;
 				var in_bl = false; 
-				for (b = 0; b < ds_list_size(attack_blacklist); ++b)
+				for (var b = 0; b < ds_list_size(attack_blacklist); ++b)
 				{
 					if (c_hb.hitbox_group == attack_blacklist[|b]) //Checks if current hitbox is in the attack_blacklist
 					{
