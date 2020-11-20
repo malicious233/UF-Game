@@ -28,7 +28,7 @@ if (key_right == true)
 	curr_dir = 0;
 }
 */
-moving(move_spd*.5,curr_dir);
+moving(move_spd*.7,curr_dir);
 
 if (key_space_click == true) and (jumps > 0)
 {

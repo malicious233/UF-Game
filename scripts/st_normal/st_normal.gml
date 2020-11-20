@@ -66,7 +66,7 @@ if (key_attack) and !(key_up)
 if (key_attack) and (key_up)
 {
 	attack(atk_bicyclekick,s_player_bicyclekick);
-	vsp = -(0.75*jump_spd);
+	vsp = -(0.85*jump_spd);
 }
 
 if (key_special) and (key_up)

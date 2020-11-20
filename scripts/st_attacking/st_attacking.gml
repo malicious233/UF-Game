@@ -21,7 +21,7 @@ if (key_right == true)
 	hsp = clamp(hsp+attack_move_spd,-max_spd,max_spd);
 }
 */
-moving(attack_move_spd,curr_dir);
+moving(move_spd*attack_move_spd,curr_dir);
 
 
 //state changes

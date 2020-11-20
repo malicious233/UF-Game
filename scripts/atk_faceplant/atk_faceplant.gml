@@ -10,9 +10,9 @@ function atk_faceplant()
 	attack_move_spd = 0;
 	if (attack_timing == 17)
 		{
-			var atk_rang = random_range(9,14)
+			var atk_rang = random_range(6,10)
 			hsp = hsp+(atk_rang*dir);
-			vsp = vsp-6.5;
+			vsp = vsp-5.5;
 		}
 	if (attack_timing == 43)
 		{
@@ -20,15 +20,15 @@ function atk_faceplant()
 			with (current_hitbox)
 			{
 				
-				hitbox_offset_x = 60; //X offset från hitbox_owner, optional
-				hitbox_offset_y = 20; //Y offset från hitbox_owner, optional
+				hitbox_offset_x = 30; //X offset från hitbox_owner, optional
+				hitbox_offset_y = 10; //Y offset från hitbox_owner, optional
 				hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.75; //Hitboxens X scale, optional
 				image_yscale = 1.5;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 8;
-				hitbox_x_kb = 11*other.dir;
-				hitbox_y_kb = -8.5;
+				hitbox_x_kb = 8*other.dir;
+				hitbox_y_kb = -7.5;
 			}
 			
 		}

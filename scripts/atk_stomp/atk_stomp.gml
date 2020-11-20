@@ -4,22 +4,22 @@ function atk_stomp()
 {
 	sprite_index = s_player_stomp;
 	attack_timing_end = 45;
-	attack_move_spd = 1;
+	attack_move_spd = 0.6;
 	if (attack_timing == 16)
 		{
-			vsp = -6;
+			vsp = -3;
 			create_hitbox()
 			with (current_hitbox)
 			{
-				hitbox_offset_x = 5;  //X offset från hitbox_owner, optional
-				hitbox_offset_y = 60; //Y offset från hitbox_owner, optional
+				hitbox_offset_x = 2.5;  //X offset från hitbox_owner, optional
+				hitbox_offset_y = 30; //Y offset från hitbox_owner, optional
 				hitbox_duration = 6;  //Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.1;   //Hitboxens X scale, optional
 				image_yscale = 1.5;   //Hitboxens Y scale, optional
 				
 				hitbox_damage = 8;
-				hitbox_x_kb = 2*other.dir;
-				hitbox_y_kb = 25;
+				hitbox_x_kb = 3*other.dir;
+				hitbox_y_kb = 17.5;
 
 			}
 		}

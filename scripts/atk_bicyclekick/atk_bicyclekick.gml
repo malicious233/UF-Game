@@ -11,14 +11,14 @@ function atk_bicyclekick()
 		create_hitbox()
 		with (current_hitbox)
 		{
-			hitbox_offset_x = 35; //X offset från hitbox_owner, optional
-			hitbox_offset_y = 15; //Y offset från hitbox_owner, optional
+			hitbox_offset_x = 17; //X offset från hitbox_owner, optional
+			hitbox_offset_y = 7; //Y offset från hitbox_owner, optional
 			hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
 			image_xscale = 0.8; //Hitboxens X scale, optional
 			image_yscale = 0.8;//Hitboxens Y scale, optional
 			hitbox_damage = 4;
-			hitbox_x_kb = 6.75*other.dir;
-			hitbox_y_kb = -12.5
+			hitbox_x_kb = 5*other.dir;
+			hitbox_y_kb = -8.25
 		}
 	}
 	if (attack_timing == 10)
@@ -26,14 +26,14 @@ function atk_bicyclekick()
 		create_hitbox()
 		with (current_hitbox)
 		{
-			hitbox_offset_x = 5; //X offset från hitbox_owner, optional
-			hitbox_offset_y = -30; //Y offset från hitbox_owner, optional
+			hitbox_offset_x = 2.5; //X offset från hitbox_owner, optional
+			hitbox_offset_y = -15; //Y offset från hitbox_owner, optional
 			hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
 			image_xscale = 2; //Hitboxens X scale, optional
 			image_yscale = 0.8;//Hitboxens Y scale, optional
 			hitbox_damage = 3;
-			hitbox_x_kb = -4*other.dir;
-			hitbox_y_kb = -11.5
+			hitbox_x_kb = -3*other.dir;
+			hitbox_y_kb = -8.5
 		}
 	}
 	

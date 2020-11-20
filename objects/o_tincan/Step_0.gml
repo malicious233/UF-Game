@@ -98,6 +98,7 @@ break;
 
 }
 
+/*
 switch (thought)
 {
 #region Idling
@@ -159,6 +160,6 @@ if (actionable = true)
 break;
 #endregion
 }
-
+*/
 
 }
