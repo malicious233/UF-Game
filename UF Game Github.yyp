@@ -99,6 +99,7 @@
     {"id":{"name":"st_normal","path":"scripts/st_normal/st_normal.yy",},"order":0,},
     {"id":{"name":"s_top","path":"sprites/s_top/s_top.yy",},"order":18,},
     {"id":{"name":"reset_damage","path":"scripts/reset_damage/reset_damage.yy",},"order":10,},
+    {"id":{"name":"s_player_stomp_rec43","path":"sprites/s_player_stomp_rec43/s_player_stomp_rec43.yy",},"order":13,},
     {"id":{"name":"atk_longkick","path":"scripts/atk_longkick/atk_longkick.yy",},"order":7,},
     {"id":{"name":"s_player_longkick_rec","path":"sprites/s_player_longkick_rec/s_player_longkick_rec.yy",},"order":6,},
     {"id":{"name":"Sprite38","path":"sprites/Sprite38/Sprite38.yy",},"order":15,},

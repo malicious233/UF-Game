@@ -22,7 +22,6 @@ function recieve_damage()
 		{
 			sprite_index = impact1_fx;
 			image_xscale = other.attack_dir*(image_xscale)
-			image_yscale = image_yscale
 		}
 		var partcl = create_particle();
 		with (partcl)
