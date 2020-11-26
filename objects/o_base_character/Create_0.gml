@@ -21,6 +21,13 @@ ground = false;
 hitstun_duration = 0;
 atk_by = 0;
 
+enum atk_fx
+{
+	medium,
+	heavy,
+	heavy_2,
+}
+
 paused = false;
 
 attack_dir = 0; //Checks what direction is coming from

@@ -41,6 +41,7 @@
     {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},"order":0,},
     {"id":{"name":"tune_windows95","path":"sounds/tune_windows95/tune_windows95.yy",},"order":0,},
     {"id":{"name":"s_player_bicyclekick_rec","path":"sprites/s_player_bicyclekick_rec/s_player_bicyclekick_rec.yy",},"order":7,},
+    {"id":{"name":"tune_heavy_2","path":"sounds/tune_heavy_2/tune_heavy_2.yy",},"order":4,},
     {"id":{"name":"fnt_GUI","path":"fonts/fnt_GUI/fnt_GUI.yy",},"order":1,},
     {"id":{"name":"Approach","path":"scripts/Approach/Approach.yy",},"order":3,},
     {"id":{"name":"st_airborne","path":"scripts/st_airborne/st_airborne.yy",},"order":3,},
@@ -49,6 +50,7 @@
     {"id":{"name":"atk_stomp","path":"scripts/atk_stomp/atk_stomp.yy",},"order":9,},
     {"id":{"name":"s_tileset","path":"sprites/s_tileset/s_tileset.yy",},"order":17,},
     {"id":{"name":"atk_faceplant","path":"scripts/atk_faceplant/atk_faceplant.yy",},"order":0,},
+    {"id":{"name":"tune_medium","path":"sounds/tune_medium/tune_medium.yy",},"order":3,},
     {"id":{"name":"o_pausemenu_settings","path":"objects/o_pausemenu_settings/o_pausemenu_settings.yy",},"order":2,},
     {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},"order":2,},
     {"id":{"name":"Sprite25","path":"sprites/Sprite25/Sprite25.yy",},"order":10,},
@@ -60,6 +62,7 @@
     {"id":{"name":"o_tincan2","path":"objects/o_tincan2/o_tincan2.yy",},"order":16,},
     {"id":{"name":"ctrl_wasd1hand","path":"scripts/ctrl_wasd1hand/ctrl_wasd1hand.yy",},"order":2,},
     {"id":{"name":"create_hurtbox","path":"scripts/create_hurtbox/create_hurtbox.yy",},"order":7,},
+    {"id":{"name":"tune_heavy_3","path":"sounds/tune_heavy_3/tune_heavy_3.yy",},"order":5,},
     {"id":{"name":"o_door","path":"objects/o_door/o_door.yy",},"order":17,},
     {"id":{"name":"o_particle","path":"objects/o_particle/o_particle.yy",},"order":4,},
     {"id":{"name":"s_testblock","path":"sprites/s_testblock/s_testblock.yy",},"order":20,},
@@ -73,6 +76,7 @@
     {"id":{"name":"atk_shoulderbash","path":"scripts/atk_shoulderbash/atk_shoulderbash.yy",},"order":10,},
     {"id":{"name":"fnt_Menu","path":"fonts/fnt_Menu/fnt_Menu.yy",},"order":2,},
     {"id":{"name":"create_hitbox","path":"scripts/create_hitbox/create_hitbox.yy",},"order":6,},
+    {"id":{"name":"tune_heavy","path":"sounds/tune_heavy/tune_heavy.yy",},"order":2,},
     {"id":{"name":"o_pausemenu_kb","path":"objects/o_pausemenu_kb/o_pausemenu_kb.yy",},"order":4,},
     {"id":{"name":"s_hurtbox","path":"sprites/s_hurtbox/s_hurtbox.yy",},"order":1,},
     {"id":{"name":"moving","path":"scripts/moving/moving.yy",},"order":11,},
@@ -127,8 +131,8 @@
     "name": "Default",
     "children": [],
   },
-  "RoomOrder": [
-    {"name":"Room1","path":"rooms/Room1/Room1.yy",},
+  "RoomOrderNodes": [
+    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
@@ -165,15 +169,16 @@
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+    {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup1","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
-    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":461609314234257646,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.0.529",
+    "IDEVersion": "2.3.1.536",
   },
-  "resourceVersion": "1.3",
+  "resourceVersion": "1.4",
   "name": "UF Game Github",
   "tags": [],
   "resourceType": "GMProject",

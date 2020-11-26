@@ -98,7 +98,7 @@ break;
 
 }
 
-/*
+
 switch (thought)
 {
 #region Idling
@@ -133,7 +133,7 @@ if (idle_time < 0)
 }
 
 var _num = (distance_to_point(o_player.x,o_player.y))
-if (_num < 160)
+if (_num < 100)
 	{
 		thought = thought.agitated;
 		target_focus = o_player;
@@ -151,7 +151,7 @@ input_dir = lorr;
 if (actionable = true)
 {
 	dir = lorr;	//Should fix so the moving() script is what does the turning. Thoughts shouldnt do that much physically, only give commands.
-	if ((distance_to_point(target_focus.x,target_focus.y)) < 180)
+	if ((distance_to_point(target_focus.x,target_focus.y)) < 80)
 	{
 		attack(atk_faceplant,s_tincan_faceplant);	
 	}
@@ -160,6 +160,6 @@ if (actionable = true)
 break;
 #endregion
 }
-*/
+
 
 }

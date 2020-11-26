@@ -34,6 +34,7 @@ if controls = controls.nothing
 	{
 		controls = controls.wasd1hand
 	}
+	//Maybe you could make this into a switch statement?
 	
 	//if xinput controller is pressed
 	if (gamepad_button_check_pressed(0,gp_shoulderr) or 

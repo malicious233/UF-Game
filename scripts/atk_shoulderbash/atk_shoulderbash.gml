@@ -30,6 +30,7 @@ function atk_shoulderbash()
 				hitbox_damage = 9;
 				hitbox_x_kb = 9*other.dir;
 				hitbox_y_kb = -7.5;
+				atk_fx = atk_fx.heavy;
 			}
 		}
 			
@@ -47,6 +48,7 @@ function atk_shoulderbash()
 				hitbox_damage = 6;
 				hitbox_x_kb = 3*other.dir;
 				hitbox_y_kb = -7.5;
+				atk_fx = atk_fx.heavy_2;
 			}
 	}
 			

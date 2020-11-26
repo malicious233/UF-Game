@@ -16,9 +16,10 @@ function atk_longkick()
 				image_xscale = 1.2; //Hitboxens X scale, optional
 				image_yscale = 1;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 6;
+				hitbox_damage = 7;
 				hitbox_x_kb = 7.5*other.dir;
 				hitbox_y_kb = -5;
+				atk_fx = atk_fx.heavy;
 
 			}
 		}

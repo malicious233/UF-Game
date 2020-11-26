@@ -21,6 +21,8 @@ function atk_uppercut()
 					hitbox_x_kb = 5.5*other.dir;
 					hitbox_y_kb = -15;
 					
+					atk_fx = atk_fx.heavy;
+					
 				}
 		}
 		if (attack_timing == 16)

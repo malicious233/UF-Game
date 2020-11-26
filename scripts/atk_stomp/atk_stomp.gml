@@ -4,12 +4,16 @@ function atk_stomp()
 {
 	sprite_index = s_player_stomp;
 	attack_timing_end = 45;
-	attack_move_spd = 0.35;
+	attack_move_spd = 0.35; 
+	if (attack_timing > 1 and attack_timing < 4)
+	{
+		vsp = -4;
+	}
 	if (attack_timing > 17 and attack_timing < 40)
 	{
 		vsp = 10;
 	}
-	if (attack_timing == 16)
+	if (attack_timing == 16) //Early hitbox
 		{
 			create_hitbox()
 			with (current_hitbox)
@@ -23,10 +27,11 @@ function atk_stomp()
 				hitbox_damage = 8;
 				hitbox_x_kb = 3*other.dir;
 				hitbox_y_kb = 17.5;
+				atk_fx = atk_fx.heavy;
 
 			}
 		}
-	if (attack_timing == 20)
+	if (attack_timing == 20) //Late hitbox
 	{
 		create_hitbox()
 		with (current_hitbox)
@@ -37,9 +42,9 @@ function atk_stomp()
 			image_xscale = 1.1;   //Hitboxens X scale, optional
 			image_yscale = 1.2;   //Hitboxens Y scale, optional
 				
-			hitbox_damage = 6;
-			hitbox_x_kb = 3*other.dir;
-			hitbox_y_kb = 5;
+			hitbox_damage = 5;
+			hitbox_x_kb = 4.5*other.dir;
+			hitbox_y_kb = -5;
 
 		}
 	}
@@ -62,9 +67,11 @@ function atk_stomp()
 			sprite_index = jump_fx
 			y = y+28;
 		}
+		
 		screenshake(5,10);
+		
 		create_hitbox()
-		with (current_hitbox)
+		with (current_hitbox) //Earthquake hitbox
 		{
 			hitbox_offset_x = 0;  //X offset från hitbox_owner, optional
 			hitbox_offset_y = 19; //Y offset från hitbox_owner, optional

@@ -14,7 +14,7 @@ function atk_faceplant()
 			hsp = hsp+(atk_rang*dir);
 			vsp = vsp-5.5;
 		}
-	if (attack_timing == 43)
+	if (attack_timing == 42)
 		{
 			create_hitbox()
 			with (current_hitbox)
@@ -29,6 +29,8 @@ function atk_faceplant()
 				hitbox_damage = 8;
 				hitbox_x_kb = 8*other.dir;
 				hitbox_y_kb = -7.5;
+				audio_play_sound(tune_medium,500,false);
+				screenshake(3,10);
 			}
 			
 		}
