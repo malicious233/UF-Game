@@ -4,7 +4,7 @@ function atk_bicyclekick()
 {
 	sprite_index = s_player_bicyclekick;
 	//!!! Attack_timing_end is a magic number, we should fix that!
-	attack_timing_end = 23; //What frame after attacking will you go back to normal state?
+	attack_timing_end = 20; //What frame after attacking will you go back to normal state?
 	attack_move_spd = 0.75; //How much may you move while attacking
 	if (attack_timing == 4)
 	{

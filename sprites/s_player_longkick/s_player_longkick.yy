@@ -59,7 +59,7 @@
     "spriteId": {"name":"s_player_longkick","path":"sprites/s_player_longkick/s_player_longkick.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 20.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

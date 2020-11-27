@@ -58,6 +58,7 @@ else
 	sprite_index = s_player_run;
 	
 	//The atrocity that is footsteps
+	/*
 	if (image_index >= 4 and image_index < 5) or (image_index >= 9 and image_index < 10)
 	{
 		if (step_once == false) //Some hocus pocus here does that it only makes the step sound once per footstep frame
@@ -70,6 +71,7 @@ else
 	{
 		step_once = false;	
 	}
+	*/
 }	
 
 

@@ -53,7 +53,14 @@ if (key_attack) and (key_up)
 }
 if (key_attack) and !(key_up)
 {
-	attack(atk_longkick,s_player_longkick);
+	if (curr_dir != 0)
+	{
+	attack(atk_braceletbash,s_player_braceletbash);
+	}
+	else 
+	{
+		attack(atk_longkick,s_player_longkick);	
+	}
 }
 
 

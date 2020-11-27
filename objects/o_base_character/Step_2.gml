@@ -8,7 +8,9 @@ if (paused == false)
 	
 if (hp <= 0)
 {
-	instance_destroy();	
+	audio_play_sound(tune_tincan_death,500,false);
+	instance_destroy();
+	
 }
 
 
