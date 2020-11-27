@@ -44,7 +44,7 @@ function recieve_damage()
 		
 		
 		var hit_pwr = (curr_damage*1.9)^2;
-		if (hp <= 0) {hit_pwr *= 1.5}; //The finishing blow is more crunchy
+		if (hp <= 0) {hit_pwr *= 2}; //The finishing blow is more crunchy
 		
 		//Adds oneself to the hitlagcontroller list
 		ds_list_add(o_hitlagcontroller.hitlaggers_id,obj_id);
