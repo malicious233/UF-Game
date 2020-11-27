@@ -21,7 +21,7 @@ function atk_uppercut()
 					hitbox_x_kb = 5.5*other.dir;
 					hitbox_y_kb = -15;
 					
-					atk_fx = atk_fx.heavy;
+					atk_fx = atk_fx.heavy_2;
 					
 				}
 		}

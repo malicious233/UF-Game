@@ -36,6 +36,8 @@ if (key_right == true)
 
 moving(move_spd,curr_dir);
 
+//Basic footstep thing
+
 
 if (key_space_click == true) and (jumps > 0)
 {
@@ -54,6 +56,20 @@ else
 {
 	image_speed = 1;
 	sprite_index = s_player_run;
+	
+	//The atrocity that is footsteps
+	if (image_index >= 4 and image_index < 5) or (image_index >= 9 and image_index < 10)
+	{
+		if (step_once == false) //Some hocus pocus here does that it only makes the step sound once per footstep frame
+		{
+		audio_play_sound(tune_footstep,500,false);
+		step_once = true;
+		}
+	}
+	else //Is this really how you do it holy crap, can you replace this with a var somehow?
+	{
+		step_once = false;	
+	}
 }	
 
 

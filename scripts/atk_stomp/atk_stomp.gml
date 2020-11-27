@@ -68,6 +68,7 @@ function atk_stomp()
 			y = y+28;
 		}
 		
+		audio_play_sound(tune_heavy,10,false);
 		screenshake(5,10);
 		
 		create_hitbox()

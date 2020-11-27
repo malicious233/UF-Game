@@ -72,14 +72,14 @@ function recieve_damage()
 			break;	
 			
 			case atk_fx.heavy:
-			var c = tune_heavy_3;
+			var c = tune_heavy_5;
 			audio_sound_pitch(c,vari);
 			audio_play_sound(c,1200,false);
 			//audio_sound_pitch(c,1);
 			break;
 			
 			case atk_fx.heavy_2:
-			var c = tune_heavy_2;
+			var c = tune_heavy_4;
 			audio_sound_pitch(c,vari);
 			audio_play_sound(c,1200,false);
 			//audio_sound_pitch(c,1);
