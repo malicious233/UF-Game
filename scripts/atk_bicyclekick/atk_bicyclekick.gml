@@ -4,7 +4,7 @@ function atk_bicyclekick()
 {
 	sprite_index = s_player_bicyclekick;
 	//!!! Attack_timing_end is a magic number, we should fix that!
-	attack_timing_end = 20; //What frame after attacking will you go back to normal state?
+	attack_timing_end = 26; //What frame after attacking will you go back to normal state?
 	attack_move_spd = 0.75; //How much may you move while attacking
 	if (attack_timing == 4)
 	{
@@ -17,8 +17,8 @@ function atk_bicyclekick()
 			image_xscale = 0.8; //Hitboxens X scale, optional
 			image_yscale = 0.8;//Hitboxens Y scale, optional
 			hitbox_damage = 4;
-			hitbox_x_kb = 5*other.dir;
-			hitbox_y_kb = -8.25
+			hitbox_x_kb = 4.5*other.dir;
+			hitbox_y_kb = -9
 		}
 	}
 	if (attack_timing == 10)
@@ -26,10 +26,10 @@ function atk_bicyclekick()
 		create_hitbox()
 		with (current_hitbox)
 		{
-			hitbox_offset_x = 2.5; //X offset från hitbox_owner, optional
+			hitbox_offset_x = 0; //X offset från hitbox_owner, optional
 			hitbox_offset_y = -15; //Y offset från hitbox_owner, optional
 			hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
-			image_xscale = 2; //Hitboxens X scale, optional
+			image_xscale = 1.6; //Hitboxens X scale, optional
 			image_yscale = 0.8;//Hitboxens Y scale, optional
 			hitbox_damage = 3;
 			hitbox_x_kb = -3*other.dir;

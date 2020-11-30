@@ -5,7 +5,7 @@ function atk_shoulderbash()
 {
 	sprite_index = s_player_shoulderbash;
 	//attack_timing_end = (sprite_get_number(s_player_fastpunch)*60)/image_speed;
-	attack_timing_end = 40; 
+	attack_timing_end = 44; 
 	attack_move_spd = 0;
 	if (attack_timing > 0) and (attack_timing < 26)
 	{
@@ -31,6 +31,7 @@ function atk_shoulderbash()
 				hitbox_x_kb = 9*other.dir;
 				hitbox_y_kb = -7.5;
 				atk_fx = atk_fx.heavy;
+				screenshake(5,10);
 			}
 		}
 			

@@ -8,7 +8,10 @@ function st_attacking()
 
 
 
-
+if (abs(vsp) <= 1) and (key_down)
+	{
+	vsp = 3;
+	}
 attack_timing ++;
 /*
 if (key_left == true)

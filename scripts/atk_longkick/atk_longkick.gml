@@ -3,7 +3,7 @@
 function atk_longkick()
 {
 	sprite_index = s_player_longkick;
-	attack_timing_end = 30;
+	attack_timing_end = 37;
 	attack_move_spd = 1;
 	if (attack_timing == 5) //Early hitbox
 		{
@@ -12,7 +12,7 @@ function atk_longkick()
 			{
 				hitbox_offset_x = 13.5; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 15; //Y offset från hitbox_owner, optional
-				hitbox_duration = 4;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				hitbox_duration = 5;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.5; //Hitboxens X scale, optional
 				image_yscale = 1.4;//Hitboxens Y scale, optional
 				
@@ -22,14 +22,14 @@ function atk_longkick()
 
 			}
 		}
-	if (attack_timing == 8) //Late hitbox
+	if (attack_timing == 9) //Late hitbox
 		{
 			create_hitbox()
 			with (current_hitbox)
 			{
 				hitbox_offset_x = 5; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 15; //Y offset från hitbox_owner, optional
-				hitbox_duration = 25;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				hitbox_duration = 20;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.1; //Hitboxens X scale, optional
 				image_yscale = 0.75;//Hitboxens Y scale, optional
 				

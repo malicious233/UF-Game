@@ -67,7 +67,7 @@ if (key_attack) and !(key_up)
 //Special Attacks
 if (key_special) and (key_up) and (uppercuts > 0)
 {
-	vsp = -5;
+	vsp = -3;
 	uppercuts = 0;
 	attack(atk_uppercut,s_player_uppercut);
 }
@@ -77,9 +77,16 @@ if (key_special) and !(key_up)
 	attack(atk_shoulderbash,s_player_shoulderbash);
 }
 
-if (key_special) and (key_down)//shits fucked
+if (key_down)//shits fucked
 {
+	if (abs(vsp) <= 1) //Fastfalling, lets you go down at the apex of every jump, also exists while attacking
+	{
+	vsp = 3;
+	}
+	if (key_special)
+	{
 	attack(atk_stomp,s_player_stomp);
+	}
 }
 
 if (key_test) //Just trying out some ways to make movement a little more fun, like mini dashes, Q or E in the air
