@@ -21,6 +21,17 @@
 			o_wall.image_alpha = 0
 		}
 		
+		if layer_exists("Grass")
+		{
+			layer_depth("Grass", 1)
+		}
+		
+		if layer_exists("Meadow")
+		{
+			layer_depth("Meadow", 1)
+		}
+		
+		
 		var offset = 0;						/* offset basically makes sure that we always
 													have valid sprites drawn when paused*/
 													
