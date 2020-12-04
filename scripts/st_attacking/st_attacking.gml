@@ -49,7 +49,7 @@ if (cancel_attack == true) //Ends the attack when this flag is true inside an at
 
 script_execute(current_attack);
 
-vsp = clamp(vsp,-infinity,max_fall_spd); //Gives you actual terminal velocity
+
 friction_force(flat_friction,perc_friction);
 
 

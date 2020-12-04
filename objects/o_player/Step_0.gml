@@ -122,6 +122,8 @@ case states.hitstunned: st_hitstunned() ; break;
 
 }
 
+gravity_force();
+
 //controller can pause the game
 if (gamepad_button_check_pressed(0,gp_start) or gamepad_button_check_pressed(4,gp_start))
 {

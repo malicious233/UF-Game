@@ -27,10 +27,10 @@ function atk_bicyclekick()
 		with (current_hitbox)
 		{
 			hitbox_offset_x = 0; //X offset från hitbox_owner, optional
-			hitbox_offset_y = -15; //Y offset från hitbox_owner, optional
+			hitbox_offset_y = -12.5; //Y offset från hitbox_owner, optional
 			hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
 			image_xscale = 1.6; //Hitboxens X scale, optional
-			image_yscale = 0.8;//Hitboxens Y scale, optional
+			image_yscale = 1;//Hitboxens Y scale, optional
 			hitbox_damage = 3;
 			hitbox_x_kb = -3*other.dir;
 			hitbox_y_kb = -8.5

@@ -26,7 +26,7 @@ function atk_stomp()
 				
 				hitbox_damage = 8;
 				hitbox_x_kb = 3*other.dir;
-				hitbox_y_kb = 8.5;
+				hitbox_y_kb = 11.5;
 				atk_fx = atk_fx.heavy;
 
 			}
@@ -44,7 +44,7 @@ function atk_stomp()
 				
 			hitbox_damage = 5;
 			hitbox_x_kb = 4.5*other.dir;
-			hitbox_y_kb = -5;
+			hitbox_y_kb = 5;
 
 		}
 	}

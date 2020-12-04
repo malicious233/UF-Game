@@ -98,6 +98,7 @@ break;
 
 }
 
+gravity_force();
 
 switch (thought)
 {

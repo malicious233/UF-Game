@@ -6,7 +6,7 @@
 if (paused == false)
 {
 	
-if (hp <= 0)
+if (hp <= 0) //We should move this so objects can die their own way, so to speak.
 {
 	audio_play_sound(tune_tincan_death,500,false);
 	instance_destroy();
@@ -17,7 +17,7 @@ if (hp <= 0)
 image_xscale = size*dir;
 image_yscale = size;
 
-vsp = vsp+grv;
+
 
 if (place_meeting(x,y+1,o_plat))
 {
