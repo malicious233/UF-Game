@@ -61,7 +61,7 @@ function recieve_damage()
 		screenshake(1.1*hit_pwr,min(13,hit_pwr*1.1));
 		//audio_sound_pitch(tune_heavy,6/hit_pwr*1);
 		var vari = random_range(0.75,1.25);
-		
+		/*
 		switch (atk_fx)
 		{
 
@@ -86,6 +86,7 @@ function recieve_damage()
 			//audio_sound_pitch(c,1);
 			break;
 		}
+		*/
 		
 	}
 }

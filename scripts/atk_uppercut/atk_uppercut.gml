@@ -4,7 +4,7 @@ function atk_uppercut()
 {
 	sprite_index = s_player_uppercut;
 	attack_timing_end = 45;
-	attack_move_spd = 0.5;
+	attack_move_spd = 0.3;
 	if (attack_timing == 14)
 		{
 			vsp = 0;
@@ -22,14 +22,14 @@ function atk_uppercut()
 					hitbox_y_kb = -15;
 					
 					atk_fx = atk_fx.heavy_2;
-					screenshake(5,12);
+					screenshake(4,12);
 					
 				}
 		}
 		if (attack_timing == 16)
 		{
-			vsp = -8;
-			hsp = hsp+(4*dir)
+			vsp = -8.5;
+			hsp = hsp+(3*dir)
 			create_hitbox()
 			with (current_hitbox)
 			{

@@ -23,26 +23,26 @@ function atk_shoulderbash()
 			{
 				hitbox_offset_x = 12.5; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 10; //Y offset från hitbox_owner, optional
-				hitbox_duration = 4;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1; //Hitboxens X scale, optional
 				image_yscale = 1;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 9;
-				hitbox_x_kb = 9*other.dir;
+				hitbox_x_kb = 9.5*other.dir;
 				hitbox_y_kb = -7.5;
 				atk_fx = atk_fx.heavy;
 				screenshake(5,10);
 			}
 		}
 			
-	if (attack_timing == 21)
+	if (attack_timing == 25)
 	{
 			create_hitbox()
 			with (current_hitbox)
 			{
 				hitbox_offset_x = 5; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 5; //Y offset från hitbox_owner, optional
-				hitbox_duration = 9;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				hitbox_duration = 11;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1; //Hitboxens X scale, optional
 				image_yscale = 1;//Hitboxens Y scale, optional
 				

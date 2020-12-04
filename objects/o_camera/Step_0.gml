@@ -5,7 +5,7 @@
 if instance_exists(follow)
 {
 	xTo = follow.x
-	yTo = follow.y-60
+	yTo = follow.y
 }
 
 

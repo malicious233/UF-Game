@@ -34,8 +34,8 @@ function atk_braceletbash()
 				image_yscale = 1.1;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 8;
-				hitbox_x_kb = 6.5*other.dir;
-				hitbox_y_kb = -7.5;
+				hitbox_x_kb = 9.5*other.dir;
+				hitbox_y_kb = -6.5;
 				atk_fx = atk_fx.heavy;
 			}
 			

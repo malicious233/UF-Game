@@ -8,12 +8,19 @@ function vert_collision()
 		{
 			y = y+sign(vsp);
 		}
-		
-		vsp = 0;
-		/*
-		ground = true;
-		jumps = 2;
-		*/
+
+		if (states == states.hitstunned) and (abs(vsp) >= 9)
+		{
+			var absvsp = abs(vsp);
+			ds_list_add(o_hitlagcontroller.hitlaggers_id,obj_id);
+			ds_list_add(o_hitlagcontroller.hitlaggers_dur,absvsp);
+			screenshake(absvsp,absvsp);
+			vsp = vsp*-0.8;
+		}
+		else
+		{
+			vsp = 0;
+		}
 	}
 	/*
 	else
