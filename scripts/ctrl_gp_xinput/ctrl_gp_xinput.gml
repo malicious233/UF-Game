@@ -62,12 +62,12 @@ if (!key_left and !key_right)
 
 if abs(gamepad_axis_value(0,gp_axislv)) > vert_deadzone
 {	
-	if gamepad_axis_value(0,gp_axislv) < -0//.75   //inner deadzone
+	if gamepad_axis_value(0,gp_axislv) < -0.25   //inner deadzone
 	{
 		key_up = true;	
 	}
 	
-	if gamepad_axis_value(0,gp_axislv) > 0//.75   //inner deadzone
+	if gamepad_axis_value(0,gp_axislv) > 0.25   //inner deadzone
 	{
 		key_up = false;
 		key_down = true;	
@@ -82,7 +82,7 @@ var r_stick_hori = sign(gamepad_axis_value(0,gp_axisrh));
 
 if abs(gamepad_axis_value(0,gp_axisrv)) > vert_deadzone
 {	
-	if gamepad_axis_value(0,gp_axisrv) < 0
+	if gamepad_axis_value(0,gp_axisrv) < -0.25
 	{
 		//Bicyclekick Macro
 		key_up = true;
@@ -96,7 +96,7 @@ if abs(gamepad_axis_value(0,gp_axisrv)) > vert_deadzone
 			}
 		}
 	}
-	if gamepad_axis_value(0,gp_axisrv) > 0
+	if gamepad_axis_value(0,gp_axisrv) > 0.25
 	{
 		//Stomp Macro
 		key_down = true;	
