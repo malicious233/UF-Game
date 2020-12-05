@@ -1,5 +1,4 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+///@description used to check inputs before "auto detecting" your input method. Used in o_player, starting controlscheme
 function ctrl_nothing(){
 key_attack =0// keyboard_check_pressed(vk_lshift);
 //key_z_click = keyboard_check_pressed(ord("Z"));

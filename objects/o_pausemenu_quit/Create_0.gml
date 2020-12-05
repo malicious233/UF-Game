@@ -42,4 +42,8 @@ menu[0] = "No";
 menu_items = array_length_1d(menu);
 menu_cursor = 1;   //sets where the selection arrow starts in menu order when thos object is created
 
+menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);  //part of mouse menu tutorial from Shaun Spalding
+														//gets the top (or was it the bottom?) of the list of menu items
+
+
 

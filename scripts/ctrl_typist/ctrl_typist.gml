@@ -14,6 +14,8 @@ key_right = keyboard_check(ord("F"));
 //key_right_click = keyboard_check_pressed(vk_right);
 key_up = keyboard_check(ord("D"));
 
+key_down = keyboard_check(ord("S"));
+
 if (key_left == true)
 {
 	curr_dir = -1;	

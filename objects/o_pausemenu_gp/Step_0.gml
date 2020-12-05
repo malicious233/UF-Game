@@ -43,6 +43,24 @@ if (menu_control)
 			//depending on how we do menus, we might want menu_control to be true in certain cases
 	}
 	
+	//get mouse position within the GUI of the pausemenu
+	var mouse_y_gui = device_mouse_y_to_gui(0);		//(0) can be changed to other numbers 
+	var mouse_x_gui = device_mouse_x_to_gui(0);		//depending on if you have more than one mouse connected to the PC
+												//sorta like gamepad ports.
+	if (mouse_y_gui < menu_y) and 
+	(mouse_y_gui > menu_top) and 
+	(mouse_x_gui > menu_x - 330) and	//if mouse is between top menu item and bottom menu item, y-axis-wise
+	(mouse_x_gui < menu_x + 32)
+	{								//and if mouse is within the area of menu items, x-axis-wise.													
+		menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);		//menu cursor attached to mouse position
+		
+		if (mouse_check_button_pressed(mb_left)) //this is within this mouse centered if-statement so that
+		{						
+			menu_x_target = gui_width-1032//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
+			menu_committed = menu_cursor;
+			menu_control = true;
+		}
+	}
 }
 
 if (menu_x > gui_width-1033) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
