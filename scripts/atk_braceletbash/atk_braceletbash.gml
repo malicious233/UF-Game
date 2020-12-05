@@ -3,10 +3,10 @@
 function atk_braceletbash()
 {
 	sprite_index = s_player_braceletbash;
-	attack_timing_end = 38;
+	attack_timing_end = 30;
 	attack_move_spd = 0.75;
 	
-	if (attack_timing == 16) //Early hitbox
+	if (attack_timing == 13) //Early hitbox
 		{
 			hsp = hsp+3*dir;
 			create_hitbox() //Close hitbox
@@ -29,12 +29,12 @@ function atk_braceletbash()
 			{
 				hitbox_offset_x = 40; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 5; //Y offset från hitbox_owner, optional
-				hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.1; //Hitboxens X scale, optional
 				image_yscale = 1.1;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 8;
-				hitbox_x_kb = 9.5*other.dir;
+				hitbox_damage = 7;
+				hitbox_x_kb = 8.5*other.dir;
 				hitbox_y_kb = -6.5;
 				atk_fx = atk_fx.heavy;
 			}

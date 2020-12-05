@@ -10,7 +10,7 @@ function hori_collision() //Here we should fit in wall-bounce logic
 		}
 		if (states == states.hitstunned) and (abs(hsp) >= 5)
 		{
-			var abshsp = abs(hsp);
+			var abshsp = (abs(hsp)^2)-2;
 			
 			ds_list_add(o_hitlagcontroller.hitlaggers_id,obj_id);
 			ds_list_add(o_hitlagcontroller.hitlaggers_dur,abshsp);

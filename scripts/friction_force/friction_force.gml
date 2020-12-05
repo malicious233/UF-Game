@@ -10,13 +10,13 @@ function friction_force(argument1,argument0)
 		if (sign(hsp) == 1)
 		{
 			hsp = hsp*argument0
-			hsp = hsp-argument1
+			hsp = hsp-argument1;
 			//hsp = clamp(hsp,-infinity,infinity)	
 		}
 		else
 		{	
 			hsp = hsp*argument0
-			hsp = hsp+argument1
+			hsp = hsp+argument1;
 			//hsp = clamp(hsp,-infinity,infinity)
 		}
 	
