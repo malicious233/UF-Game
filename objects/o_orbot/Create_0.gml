@@ -5,5 +5,7 @@
 event_inherited();
 states = states.normal;
 floating = true;
-float_force = 1.5;
-
+float_force = 2.25;
+idle_time = 0;
+target_focus = 0;
+actionable = true;

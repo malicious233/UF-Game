@@ -24,13 +24,13 @@ function atk_faceplant()
 				hitbox_offset_y = 10; //Y offset från hitbox_owner, optional
 				hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.75; //Hitboxens X scale, optional
-				image_yscale = 1.5;//Hitboxens Y scale, optional
+				image_yscale = 1.3;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 8;
 				hitbox_x_kb = 8*other.dir;
 				hitbox_y_kb = -7.5;
 				audio_play_sound(tune_medium,500,false);
-				screenshake(3,10);
+				screenshake(3,8);
 			}
 			
 		}

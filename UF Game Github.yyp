@@ -61,6 +61,7 @@
     {"id":{"name":"ctrl_nothing","path":"scripts/ctrl_nothing/ctrl_nothing.yy",},"order":6,},
     {"id":{"name":"atk_lightpunch","path":"scripts/atk_lightpunch/atk_lightpunch.yy",},"order":0,},
     {"id":{"name":"s_tincan_walk","path":"sprites/s_tincan_walk/s_tincan_walk.yy",},"order":1,},
+    {"id":{"name":"s_orbot_orbohurt","path":"sprites/s_orbot_orbohurt/s_orbot_orbohurt.yy",},"order":3,},
     {"id":{"name":"o_attacker","path":"objects/o_attacker/o_attacker.yy",},"order":7,},
     {"id":{"name":"atk_fastpunch","path":"scripts/atk_fastpunch/atk_fastpunch.yy",},"order":5,},
     {"id":{"name":"o_tincan2","path":"objects/o_tincan2/o_tincan2.yy",},"order":16,},
@@ -96,6 +97,7 @@
     {"id":{"name":"o_top","path":"objects/o_top/o_top.yy",},"order":14,},
     {"id":{"name":"s_player_run","path":"sprites/s_player_run/s_player_run.yy",},"order":2,},
     {"id":{"name":"s_orbot_hurt","path":"sprites/s_orbot_hurt/s_orbot_hurt.yy",},"order":2,},
+    {"id":{"name":"atk_orbohurt","path":"scripts/atk_orbohurt/atk_orbohurt.yy",},"order":0,},
     {"id":{"name":"s_player_braceletbash","path":"sprites/s_player_braceletbash/s_player_braceletbash.yy",},"order":15,},
     {"id":{"name":"o_pausemenu_gp","path":"objects/o_pausemenu_gp/o_pausemenu_gp.yy",},"order":5,},
     {"id":{"name":"o_hitbox","path":"objects/o_hitbox/o_hitbox.yy",},"order":0,},
@@ -180,6 +182,7 @@
     {"folderPath":"folders/Scripts/Moves/Tin Can.yy","order":2,"resourceVersion":"1.0","name":"Tin Can","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Tilesets.yy","order":21,"resourceVersion":"1.0","name":"Tilesets","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Enemies/Orbot.yy","order":2,"resourceVersion":"1.0","name":"Orbot","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/Moves/Orbot.yy","order":3,"resourceVersion":"1.0","name":"Orbot","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":461609314234257646,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
