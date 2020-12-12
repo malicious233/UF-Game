@@ -21,7 +21,7 @@ function vert_collision()
 			with (partcl)
 			{
 				sprite_index = slam_fx;
-				image_yscale = sign(other.vsp);
+				image_yscale = -sign(other.vsp);
 			}
 			
 		}
