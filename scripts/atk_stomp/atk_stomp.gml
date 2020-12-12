@@ -55,7 +55,7 @@ function atk_stomp()
 	{
 
 		states = states.recovery
-		recovery_time = 9;
+		recovery_time = 22;
 		sprite_index = s_player_stomp_rec;
 		image_index = 0;
 		cancel_attack = true;	
@@ -64,24 +64,37 @@ function atk_stomp()
 		var partcl = create_particle();
 		with (partcl)
 		{
-			sprite_index = jump_fx
-			y = y+28;
+			sprite_index = slam_fx
 		}
 		
 		audio_play_sound(tune_heavy,10,false);
-		screenshake(5,10);
+		screenshake(5,15);
 		
 		create_hitbox()
 		with (current_hitbox) //Earthquake hitbox
 		{
-			hitbox_offset_x = 0;  //X offset från hitbox_owner, optional
+			hitbox_offset_x = 15;  //X offset från hitbox_owner, optional
 			hitbox_offset_y = 19; //Y offset från hitbox_owner, optional
-			hitbox_duration = 4;  //Hur länge hitboxen är active tills den tas bort automatiskt.
-			image_xscale = 2.5;   //Hitboxens X scale, optional
+			hitbox_duration = 10;  //Hur länge hitboxen är active tills den tas bort automatiskt.
+			image_xscale = 1.75;   //Hitboxens X scale, optional
 			image_yscale = 0.75;   //Hitboxens Y scale, optional
 			obey_hitbox_creator = false;
 			hitbox_damage = 4;
 			hitbox_x_kb = 4*other.dir;
+			hitbox_y_kb = -8;
+
+		}
+		create_hitbox()
+		with (current_hitbox) //Earthquake hitbox
+		{
+			hitbox_offset_x = -15;  //X offset från hitbox_owner, optional
+			hitbox_offset_y = 19; //Y offset från hitbox_owner, optional
+			hitbox_duration = 10;  //Hur länge hitboxen är active tills den tas bort automatiskt.
+			image_xscale = 1.75;   //Hitboxens X scale, optional
+			image_yscale = 0.75;   //Hitboxens Y scale, optional
+			obey_hitbox_creator = false;
+			hitbox_damage = 4;
+			hitbox_x_kb = -4*other.dir;
 			hitbox_y_kb = -8;
 
 		}

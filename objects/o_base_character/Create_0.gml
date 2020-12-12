@@ -17,9 +17,13 @@ obj_id = id;
 
 cancel_hitbox = false;
 cancel_attack = false;
+
 ground = false;
+ground_once = true;
+
 hitstun_duration = 0;
 atk_by = 0;
+
 
 enum atk_fx
 {
@@ -36,6 +40,7 @@ curr_attack_id = 0;
 curr_damage = 0;
 curr_x_kb = 0;
 curr_y_kb = 0;
+kb_angle = 0;
 
 enum states
 {

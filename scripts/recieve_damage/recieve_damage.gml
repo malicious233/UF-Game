@@ -4,9 +4,11 @@ function recieve_damage()
 {
 	if (curr_damage != 0)
 	{
+		
 		hp = hp-curr_damage;
 		hsp = curr_x_kb;
 		vsp = curr_y_kb;
+		kb_angle = point_direction(x,y,x+curr_x_kb,y+curr_y_kb);
 		hitstun_duration = curr_damage*5.5; //WIP hitstun calculation
 		var p_text = instance_create_layer(x,y,"Text",o_text)
 		with (p_text)
@@ -21,25 +23,15 @@ function recieve_damage()
 		with (partcl)
 		{
 			sprite_index = impact1_fx;
-			image_xscale = other.attack_dir*(image_xscale)
 		}
+		
 		var partcl = create_particle();
 		with (partcl)
 		{
-			sprite_index = impact2_fx;
-			image_xscale = other.attack_dir*(image_xscale*2)
-			image_yscale = image_yscale*2
+			sprite_index = impact2big_fx;
+			image_angle = other.kb_angle;
+			if (image_angle < 0) {image_xscale = image_xscale*-1}
 		}
-		//o_hitlagcontroller.hitlag_duration = curr_damage;
-		//Hitlag, pretty experimental
-		
-		// The old hitlag that looks like ass
-		/*var __time = current_time;  
-		while current_time-__time < 10*curr_damage
-		{  
-			
-		}  
-		*/
 
 		
 		

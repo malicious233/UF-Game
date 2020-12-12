@@ -21,11 +21,24 @@ image_yscale = size;
 
 if (place_meeting(x,y+1,o_plat))
 {
-	ground = true;	
+	ground = true;
+	if (ground_once == true)
+	{
+		var partcl = create_particle()
+		with (partcl)
+		{
+			sprite_index = 	landingpuff_fx;
+			image_xscale = image_xscale*1.5;
+			image_yscale = image_yscale*1.5;
+			y = y-16;
+		}
+		ground_once = false;
+	}
 }
 else
 {
 	ground = false;	
+	ground_once = true;
 }
 
 hori_collision();

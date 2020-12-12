@@ -16,6 +16,14 @@ function vert_collision()
 			ds_list_add(o_hitlagcontroller.hitlaggers_dur,absvsp);
 			screenshake(absvsp,absvsp);
 			vsp = vsp*-0.8;
+			
+			var partcl = create_particle();
+			with (partcl)
+			{
+				sprite_index = slam_fx;
+				image_yscale = sign(other.vsp);
+			}
+			
 		}
 		else
 		{
