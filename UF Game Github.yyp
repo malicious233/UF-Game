@@ -118,6 +118,7 @@
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},"order":0,},
     {"id":{"name":"s_orbot_idle","path":"sprites/s_orbot_idle/s_orbot_idle.yy",},"order":1,},
     {"id":{"name":"impact2big_fx","path":"sprites/impact2big_fx/impact2big_fx.yy",},"order":4,},
+    {"id":{"name":"ct_totalweight","path":"scripts/ct_totalweight/ct_totalweight.yy",},"order":4,},
     {"id":{"name":"Sprite39","path":"sprites/Sprite39/Sprite39.yy",},"order":16,},
     {"id":{"name":"ctrl_typist","path":"scripts/ctrl_typist/ctrl_typist.yy",},"order":0,},
     {"id":{"name":"s_player_stomp2","path":"sprites/s_player_stomp2/s_player_stomp2.yy",},"order":8,},
