@@ -32,6 +32,7 @@
   ],
   "properties": [
     {"varType":0,"value":"160","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"float_height","tags":[],"resourceType":"GMObjectProperty",},
+    {"varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],"resourceVersion":"1.0","name":"has_ai","tags":[],"resourceType":"GMObjectProperty",},
   ],
   "overriddenProperties": [
     {"propertyId":{"name":"grv ","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"0.475","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
@@ -40,7 +41,7 @@
     {"propertyId":{"name":"hurtbox_y_scale","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"1.3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"max_spd","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"move_spd","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"0.275","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"hp","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"25","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"hp","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"999","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"team ","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {

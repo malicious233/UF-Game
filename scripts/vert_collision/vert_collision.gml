@@ -9,7 +9,7 @@ function vert_collision()
 			y = y+sign(vsp);
 		}
 
-		if (states == states.hitstunned) and (abs(vsp) >= 9)
+		if (states == states.hitstunned) and (abs(vsp) >= 3)
 		{
 			var absvsp = abs(vsp);
 			ds_list_add(o_hitlagcontroller.hitlaggers_id,obj_id);

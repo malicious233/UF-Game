@@ -67,7 +67,7 @@ function atk_stomp()
 			sprite_index = slam_fx
 		}
 		
-		audio_play_sound(tune_heavy,10,false);
+		//audio_play_sound(tune_heavy,10,false);
 		screenshake(5,15);
 		
 		create_hitbox()

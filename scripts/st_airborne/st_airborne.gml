@@ -38,9 +38,9 @@ if (key_space_click == true) and (jumps > 0)
 	with (partcl)
 	{
 		sprite_index = jump_fx;	
-		y = y+46;
-		image_xscale = image_xscale*3;
-		image_yscale = image_yscale*3;
+		y = y+10;
+		image_xscale = image_xscale*2;
+		image_yscale = image_yscale*2;
 	}
 }
 

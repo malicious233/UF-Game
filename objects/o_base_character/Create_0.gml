@@ -9,7 +9,7 @@ attack_move_spd = 0;
 attack_timing = 0;
 attack_timing_end = 0;
 dir = 1;
-input_dir = 1; //Might become useful when adding controller support and a more intricate moveset.
+input_dir = 0; //Might become useful when adding controller support and a more intricate moveset.
 obj_id = id;
 
 

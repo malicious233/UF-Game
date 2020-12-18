@@ -100,6 +100,8 @@ break;
 
 gravity_force();
 
+if has_ai == true
+{
 switch (thought)
 {
 #region Idling
@@ -161,6 +163,6 @@ if (actionable = true)
 break;
 #endregion
 }
-
+}
 
 }

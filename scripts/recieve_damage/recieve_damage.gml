@@ -30,7 +30,11 @@ function recieve_damage()
 		{
 			sprite_index = impact2big_fx;
 			image_angle = other.kb_angle;
-			if (image_angle < 0) {image_xscale = image_xscale*-1}
+			if (other.curr_x_kb < 0)
+			{
+				image_yscale = image_yscale*-1;
+			}
+
 		}
 
 		

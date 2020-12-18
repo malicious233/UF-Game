@@ -29,7 +29,7 @@ function atk_faceplant()
 				hitbox_damage = 8;
 				hitbox_x_kb = 8*other.dir;
 				hitbox_y_kb = -7.5;
-				audio_play_sound(tune_medium,500,false);
+				//audio_play_sound(tune_medium,500,false);
 				screenshake(3,8);
 			}
 			

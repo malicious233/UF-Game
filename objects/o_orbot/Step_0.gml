@@ -65,7 +65,7 @@ if (floating == true)
 	{
 		if (place_meeting(x,y+i,o_wall))
 		{
-			//vsp = vsp*0.975;
+			
 			var hgt = 1-i/float_height;
 			if (vsp >= -2)
 			{vsp = vsp-(float_force*hgt);}
@@ -77,6 +77,8 @@ if (floating == true)
 
 gravity_force();
 
+if has_ai == true
+{
 switch (thought)
 {
 #region Idling
@@ -137,6 +139,7 @@ if (actionable == true)
 
 break;
 #endregion
+}
 }
 
 }

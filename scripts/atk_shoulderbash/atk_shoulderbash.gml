@@ -29,7 +29,7 @@ function atk_shoulderbash()
 				
 				hitbox_damage = 9;
 				hitbox_x_kb = 9.5*other.dir;
-				hitbox_y_kb = -7.5;
+				hitbox_y_kb = -5;
 				atk_fx = atk_fx.heavy;
 				screenshake(5,10);
 			}
