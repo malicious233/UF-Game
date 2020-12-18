@@ -18,3 +18,5 @@ for (var i = 0; i < ds_grid_height(chance_table); i++)
 	var the_string = string(chance_table[# 1, i])
 	draw_text(100,60+yoffset,the_string);
 }
+
+//Simply draws what's in the chance table for debugging purposes
