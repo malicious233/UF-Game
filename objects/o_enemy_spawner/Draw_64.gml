@@ -30,8 +30,8 @@ for (var i = 0; i < ds_grid_height(chance_table); i++)
 	draw_text(220,60+yoffset,""+the_string+"%");
 }
 
-//draw_set_color(c_black);
-//draw_set_font(simpletext);
-//draw_text(120,120,ct_totalweight(chance_table));
+draw_set_color(c_blue);
+draw_set_font(simpletext);
+draw_text(360,120,ct_totalweight(chance_table));
 
 //Simply draws what's in the chance table for debugging purposes

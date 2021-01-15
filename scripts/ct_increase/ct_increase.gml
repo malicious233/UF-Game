@@ -8,4 +8,5 @@ function ct_increase(argument0)
 	{
 		ds_grid_add(argument0,1,i,argument0[# 2, i])	
 	}
+	ds_grid_sort(argument0,1,true);
 }

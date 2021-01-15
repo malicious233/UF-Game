@@ -15,5 +15,9 @@ function ct_create(argument0)
 	//I'm keeping this idea commented because it's so stupid but at the same time clever
 	//Time to use a ds_grid instead
 	
-	argument0 = ds_grid_create(3,1);
+	argument0 = ds_grid_create(3,2);
+	ds_grid_set(argument0,0,0,o_player)
+	ds_grid_set(argument0,1,0,0)
+	ds_grid_set(argument0,2,0,0)
+	//I could've  done grid set region I think but I don't know how to use that
 }

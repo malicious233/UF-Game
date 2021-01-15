@@ -7,7 +7,7 @@
 
 function ct_add(argument0,argument1,argument2,argument3)
 {
-	var width = ds_grid_width(argument0);
+	//var width = ds_grid_width(argument0);
 	var height = ds_grid_height(argument0);
 	
 //	ds_grid_add(argument0,0,height+1,argument1)
