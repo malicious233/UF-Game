@@ -99,6 +99,10 @@ if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) m
 								//EDIT: maybe not exactly the same code as in keypress-escape but whatever, it works now
 								//case 2 resumes game
 		case 2: room_goto(Room1)
+			if audio_is_playing(tune_pause_menu)
+			{
+				audio_sound_gain(tune_pause_menu, 0, 1000)
+			}
 				pause = false;			
 				instance_activate_all(); 
 				instance_deactivate_object(o_pausemenu_quit)

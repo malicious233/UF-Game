@@ -1,9 +1,6 @@
 /// @description creates submenu when it's needed
 
-if audio_is_playing(tune_pause_menu)
-{
-	audio_sound_gain(tune_pause_menu, 0, 1000)
-}
+
 
 
 if !instance_exists(o_pausemenu_quit) and menu_cursor = 0     //when pressing enter when menu cursor is 

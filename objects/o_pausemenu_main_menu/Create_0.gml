@@ -1,6 +1,8 @@
 /// @description creation code
 
-
+if audio_is_playing(tune_pause_menu){
+	audio_sound_gain(tune_pause_menu, 1, 3000)}
+	//else audio_sound_gain(tune_pause_menu, 1, 3000)
 alarm[0] = 1  //after one frame alarm 0 runs, could probably put all that code here but naahh.
 alarm[1] = 100
 

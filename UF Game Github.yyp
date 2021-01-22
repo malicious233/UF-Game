@@ -1,7 +1,6 @@
 {
   "resources": [
     {"id":{"name":"tune_changename","path":"sounds/tune_changename/tune_changename.yy",},"order":12,},
-    {"id":{"name":"o_player_main_menu","path":"objects/o_player_main_menu/o_player_main_menu.yy",},"order":24,},
     {"id":{"name":"o_tincan","path":"objects/o_tincan/o_tincan.yy",},"order":12,},
     {"id":{"name":"o_acrylic_games_logo","path":"objects/o_acrylic_games_logo/o_acrylic_games_logo.yy",},"order":20,},
     {"id":{"name":"screenshake","path":"scripts/screenshake/screenshake.yy",},"order":13,},

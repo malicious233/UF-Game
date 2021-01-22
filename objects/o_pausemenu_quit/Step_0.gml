@@ -64,17 +64,26 @@ if (menu_control)
 	}
 }
 
-if (menu_x > gui_width-373) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
-{
+if (menu_x > gui_width-373) && (menu_committed != -1)     //-33 (one behind -32) makes it so something actually happens when pressing enter
+{ 
+	if room == room_main_menu{
 	switch (menu_committed)
 	{
 		//case 2: break;
 		case 1: game_end(); break;          //selects menu[0] and executes code before break.
 		case 0: instance_destroy(); break;
-		
-		
+	
 		
 	}
+	}else
+		switch (menu_committed)
+		{
+			//case 2: break;
+			case 1: room_goto(room_main_menu); break;          //selects menu[0] and executes code before break.
+			case 0: instance_destroy(); break;
+	
+		
+		}
 	
 }
 

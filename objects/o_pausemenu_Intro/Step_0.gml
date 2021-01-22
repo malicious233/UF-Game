@@ -10,7 +10,7 @@ menu_y += (menu_y_target - menu_y) / menu_speed_y_slow;
 }
 
 if (alarm[2] == -1) {
-	menu_y -= (menu_y_target + menu_y) / menu_speed_y*0.165;
+	menu_y -= (menu_y_target + menu_y) / menu_speed_y*0.2;
 	
 }
 

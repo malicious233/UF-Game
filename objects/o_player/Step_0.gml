@@ -29,7 +29,7 @@ if controls = controls.nothing
 	//if wasd1hand is pressed
 	if (keyboard_check_pressed(vk_lshift) or 
 	keyboard_check_pressed(vk_lcontrol) or
-	keyboard_check_pressed(vk_space) or  //May remove this if you want--> 
+	//keyboard_check_pressed(vk_space) or  //May remove this if you want--> 
 	keyboard_check_pressed(ord("Q")) or   //-->to choose between more than one input method-->
 	keyboard_check_pressed(ord("E")) or     //-->that uses space.
 	keyboard_check(ord("A")) or
@@ -73,6 +73,18 @@ if controls = controls.nothing
 		controls = controls.gp_directinput
 	}
 	
+	if (keyboard_check_pressed(ord("X")) or 
+	keyboard_check_pressed(ord("C")) or
+	//keyboard_check_pressed(vk_space) or  //May remove this if you want--> 
+	//keyboard_check_pressed(ord("Q")) or   //-->to choose between more than one input method-->
+	//keyboard_check_pressed(ord("E")) or     //-->that uses space.
+	keyboard_check(vk_right) or
+	keyboard_check(vk_left) or 
+	keyboard_check(vk_up) or
+	keyboard_check(vk_down))
+	{
+		controls = controls.arrowkeys
+	}
 }
 #endregion
 

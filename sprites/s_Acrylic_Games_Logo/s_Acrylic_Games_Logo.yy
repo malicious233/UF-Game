@@ -2,20 +2,20 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 0,
+  "origin": 4,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 427,
+  "bbox_right": 1519,
   "bbox_top": 0,
-  "bbox_bottom": 335,
+  "bbox_bottom": 1192,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 428,
-  "height": 336,
+  "width": 1520,
+  "height": 1193,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b043dd02-8b54-482a-acbb-471504c21b13","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b043dd02-8b54-482a-acbb-471504c21b13","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"LayerId":{"name":"32f842b4-57c9-4461-871f-ee1876d121f2","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_acrylic_games_logo","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"resourceVersion":"1.0","name":"b043dd02-8b54-482a-acbb-471504c21b13","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b6acdc13-1610-49f7-adda-504104adcc30","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b6acdc13-1610-49f7-adda-504104adcc30","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"LayerId":{"name":"c52a166c-6641-494c-96c8-81aa84a94e9a","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_acrylic_games_logo","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"resourceVersion":"1.0","name":"b6acdc13-1610-49f7-adda-504104adcc30","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"s_acrylic_games_logo","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8f24dc78-0a2d-4146-b61b-c7ff1d816acc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b043dd02-8b54-482a-acbb-471504c21b13","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"42b58f5e-477e-414a-a0c8-c097b65aa883","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b6acdc13-1610-49f7-adda-504104adcc30","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 0,
-    "yorigin": 0,
+    "xorigin": 760,
+    "yorigin": 596,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"s_acrylic_games_logo","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"32f842b4-57c9-4461-871f-ee1876d121f2","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c52a166c-6641-494c-96c8-81aa84a94e9a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",

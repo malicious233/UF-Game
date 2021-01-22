@@ -1,8 +1,8 @@
-/// @description PAUSES game and objects
+/// @description PAUSES GAME
 //description captures every instance and it's sprite and pauses the game
 
-audio_play_sound(tune_pause_menu,1000,true)
 
+	//}
 /*	if (!pause)
 	{
 		o_hurtbox.image_alpha = 0 
