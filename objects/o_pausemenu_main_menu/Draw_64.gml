@@ -9,14 +9,14 @@ if (pause)
 	draw_set_font(fnt_GUI);     //sets given custom font
 	draw_set_color(c_white);    //draws font white 
 	draw_set_alpha(1);          //opacity for font
-	draw_text((view_wport[0]+150)/2, (view_hport[0]+400)/2, "Presents"); /*sets where on the viewport text is drawn
+	draw_text((view_wport[0]+1300)/2, (view_hport[0]+400)/2, ""); /*sets where on the viewport text is drawn
 	so that the text 'follows', so to say, the player instead of having a stupid set place as an object that can't 
 	be moved.*/
 	//draw_text (room_get_viewport(0,3)/,room_getviewport(0,4)/2,"pauseddd");   //unused
 	
 	
 	//Draw navigatable Menu
-	draw_set_font(fnt_GUI);        //draws given font
+	draw_set_font(fnt_Menu);        //draws given font
 	draw_set_halign(fa_right);
 	draw_set_valign(fa_bottom);
 
@@ -26,13 +26,13 @@ if (pause)
 		var txt = menu[i];
 		if (menu_cursor == i)
 		{
-			txt = string_insert("", txt, 0)   //draws selection arrow beside menu items
+			txt = string_insert("> ", txt, 0)   //draws selection arrow beside menu items
 			var col = c_white;                  /*when selection arrow hovers over a menu item,
 												that menu item turns white-->*/
 		}
 		else
 		{
-			var col = c_white;					//--> meanwhile other menu items turn gray, or grey (BRIT) idk.
+			var col = c_gray;					//--> meanwhile other menu items turn gray, or grey (BRIT) idk.
 		}
 		var xx = menu_x;
 		var yy = menu_y - (menu_itemheight * (i * 1.5));

@@ -1,19 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-if room = (room_main_menu)
-{
-	controls = controls.nothing
-}
-
 if (paused == false)
 
 {
 
 //Inputs
 //ctrl_arrowkeys()
-switch(controls)
+/*switch(controls)
 {
-	case controls.arrowkeys: ctrl_arrowkeys() ; break;
+	/*case controls.arrowkeys: ctrl_arrowkeys() ; break;
 	case controls.typist: ctrl_typist() ; break;
 	case controls.wasd1hand: ctrl_wasd1hand() ; break;
 	case controls.wasdmouse: ctrl_wasdmouse() ; break;
@@ -22,6 +17,8 @@ switch(controls)
 	case controls.nothing: ctrl_nothing() ; break;
 }
 
+
+/*
 
 #region //Detect input method after startup
 if controls = controls.nothing
@@ -76,6 +73,8 @@ if controls = controls.nothing
 }
 #endregion
 
+*/
+
 
 #region all the input buttons (commented)
 /*
@@ -93,6 +92,8 @@ key_right_click = keyboard_check_pressed(vk_right);
 key_up = keyboard_check(vk_up);
 */
 #endregion
+
+
 
 //Reset Flags
 if (cancel_hitbox == true)
@@ -127,9 +128,11 @@ case states.hitstunned: st_hitstunned() ; break;
 
 }
 
+/*
 gravity_force();
 
 //controller can pause the game
+
 if (gamepad_button_check_pressed(0,gp_start) or gamepad_button_check_pressed(4,gp_start))
 {
 	if !instance_exists(o_pausemenu)     //creates o_pausemenu when pressing escape
@@ -138,4 +141,5 @@ if (gamepad_button_check_pressed(0,gp_start) or gamepad_button_check_pressed(4,g
 	}
 }
 
+*/
 }

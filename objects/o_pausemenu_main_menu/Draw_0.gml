@@ -1,8 +1,7 @@
 /// @description While game is paused 
 
-
-//draws screenshot of objects when paused
 /*
+//draws screenshot of objects when paused
 if (pause)
 {
 	//draw_text (500,500, "game is paused");   //unused

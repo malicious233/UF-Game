@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b043dd02-8b54-482a-acbb-471504c21b13","path":"sprites/s_Acrylic_Games_Logo/s_Acrylic_Games_Logo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b043dd02-8b54-482a-acbb-471504c21b13","path":"sprites/s_Acrylic_Games_Logo/s_Acrylic_Games_Logo.yy",},"LayerId":{"name":"32f842b4-57c9-4461-871f-ee1876d121f2","path":"sprites/s_Acrylic_Games_Logo/s_Acrylic_Games_Logo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_Acrylic_Games_Logo","path":"sprites/s_Acrylic_Games_Logo/s_Acrylic_Games_Logo.yy",},"resourceVersion":"1.0","name":"b043dd02-8b54-482a-acbb-471504c21b13","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b043dd02-8b54-482a-acbb-471504c21b13","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b043dd02-8b54-482a-acbb-471504c21b13","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"LayerId":{"name":"32f842b4-57c9-4461-871f-ee1876d121f2","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_acrylic_games_logo","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"resourceVersion":"1.0","name":"b043dd02-8b54-482a-acbb-471504c21b13","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"s_Acrylic_Games_Logo","path":"sprites/s_Acrylic_Games_Logo/s_Acrylic_Games_Logo.yy",},
+    "spriteId": {"name":"s_acrylic_games_logo","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8f24dc78-0a2d-4146-b61b-c7ff1d816acc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b043dd02-8b54-482a-acbb-471504c21b13","path":"sprites/s_Acrylic_Games_Logo/s_Acrylic_Games_Logo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"8f24dc78-0a2d-4146-b61b-c7ff1d816acc","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b043dd02-8b54-482a-acbb-471504c21b13","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"s_Acrylic_Games_Logo","path":"sprites/s_Acrylic_Games_Logo/s_Acrylic_Games_Logo.yy",},
+    "parent": {"name":"s_acrylic_games_logo","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},
     "resourceVersion": "1.3",
-    "name": "s_Acrylic_Games_Logo",
+    "name": "s_acrylic_games_logo",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -72,7 +72,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "s_Acrylic_Games_Logo",
+  "name": "s_acrylic_games_logo",
   "tags": [],
   "resourceType": "GMSprite",
 }

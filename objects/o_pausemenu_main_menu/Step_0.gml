@@ -1,15 +1,11 @@
 /// @description arrowkey and Enter controls 
 
 //Item ease in (slide menu text in from left, animation) //"disabled" by having menu_speed in Create set to 1, very low.
-menu_y += (menu_y_target - menu_y) / menu_speed_y;
-menu_x += (menu_x_target - menu_x) / menu_speed_x;
-
-if (alarm[1] == -1) {
-menu_y += (0.5*menu_y_target - menu_y) / menu_speed_y_slow;
+if (alarm[1] == -1){
+menu_x += (menu_x_target - menu_x) / menu_speed;
 }
 
 //arrowkey controls
-/*
 if (menu_control)
 {
 	//move selection arrow in menu up when pressing vk_up, up arrowkey
@@ -102,7 +98,8 @@ if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) m
 								//resumes game
 								//EDIT: maybe not exactly the same code as in keypress-escape but whatever, it works now
 								//case 2 resumes game
-		case 2: pause = false;			
+		case 2: room_goto(Room1)
+				pause = false;			
 				instance_activate_all(); 
 				instance_deactivate_object(o_pausemenu_quit)
 				o_hurtbox.image_alpha = 1;   

@@ -1,7 +1,7 @@
 /// @description PAUSES game and objects
 //description captures every instance and it's sprite and pauses the game
 
-	if (!pause)
+	if (pause == false)
 	{
 		o_hurtbox.image_alpha = 0 
 		

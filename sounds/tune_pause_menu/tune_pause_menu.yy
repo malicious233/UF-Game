@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "tune_punch_tincan.mp3",
-  "duration": 2.1993,
+  "soundFile": "tune_pause_menu.mp3",
+  "duration": 57.5527534,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "tune_punch_tincan",
+  "name": "tune_pause_menu",
   "tags": [],
   "resourceType": "GMSound",
 }

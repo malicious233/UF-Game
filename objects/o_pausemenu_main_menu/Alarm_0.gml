@@ -1,7 +1,9 @@
 /// @description PAUSES game and objects
 //description captures every instance and it's sprite and pauses the game
-/*
-	if (!pause)
+
+audio_play_sound(tune_pause_menu,1000,true)
+
+/*	if (!pause)
 	{
 		o_hurtbox.image_alpha = 0 
 		
@@ -16,8 +18,7 @@
 		}/*Make hurtbox invisible before we capture a "screenshot" of all objects
 		because otherwise hurbox will be seen when game is paused even if the "Hurtbox"-layer in the room is set to 
 		Not-Viewable-In-Game*/
-/*
-		if instance_exists(o_wall)
+/*		if instance_exists(o_wall)
 		{
 			o_wall.image_alpha = 0
 		}
