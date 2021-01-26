@@ -86,7 +86,7 @@ if (menu_control)
 
 
 
-if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
+if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 (one behind -32) makes it so something actually happens when pressing enter
 {
 	switch (menu_committed)
 	{
@@ -127,6 +127,7 @@ if !instance_exists(o_pausemenu_quit) and pause = true  //if submenu doesn't exi
 
 
 //go back a submenu with controller
+/*
 if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button
 (gamepad_button_check_pressed(4,gp_face2)) or	  //directinput "B" button
 (gamepad_button_check_pressed(0,gp_start)) or		// xinput start button
@@ -165,6 +166,7 @@ if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button
 			//deactivate more pausmenu stuff here so that they dont stay when exiting pausemenu.
 		//}
 }
+*/
 
 //go to next submenu with controller
 if ((gamepad_button_check_pressed(0,gp_face1)) or		//xinput "A" button

@@ -34,14 +34,23 @@ Glad I caught this before committing*/
 
 
 //create menus, and which order they appear from top to bottom
+if room == room_main_menu{
+//menu[2] = "Controls";
+menu[1] = "Fullscreen on";
+menu[0] = "Fullscreen off";
+}else{
 menu[2] = "Controls";
 menu[1] = "Fullscreen on";
 menu[0] = "Fullscreen off";
+}
 
 
 menu_items = array_length_1d(menu);
-menu_cursor = 2;   //sets where the selection arrow starts in menu order when thos object is created
-
+if room == room_main_menu{
+menu_cursor = 1;   //sets where the selection arrow starts in menu order when thos object is created
+}else{
+menu_cursor = 2;
+}
 menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);  //part of mouse menu tutorial from Shaun Spalding
 														//gets the top (or was it the bottom?) of the list of menu items
 
