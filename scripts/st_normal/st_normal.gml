@@ -113,8 +113,9 @@ if (key_test2)
 	vsp = -6;
 }
 
-//controls change
 
+//controls change
+/*
 if keyboard_check_pressed(ord("O")) and (vk_up)
 {
 	controls = controls.arrowkeys
@@ -124,6 +125,7 @@ if keyboard_check_pressed(ord("P")) and (ord("F"))
 {
 	controls = controls.typist
 }
+*/
 
 
 

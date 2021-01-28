@@ -90,7 +90,9 @@ if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 
 {
 	switch (menu_committed)
 	{
-		case 0: instance_activate_object(o_pausemenu_quit); menu_control = false;break;          //selects menu[0] and executes code before break.
+		case 0: poisonTick = 1; poisonTick -= 1; if (poisonTick = 0) and ((gamepad_button_check_pressed(0,gp_face1)) or		//fix for quitmenu being opened immediately after exiting when pressing "No" with controller (might be a hardware fault on my end tho but still annoying)
+	(gamepad_button_check_pressed(4,gp_face1))) {instance_activate_object(o_pausemenu_quit)} else if(((keyboard_check_pressed(vk_enter)) or 
+	(keyboard_check_pressed(vk_space))) or (mouse_check_button_pressed(mb_left))){instance_activate_object(o_pausemenu_quit)}; menu_control = false;break;          //selects menu[0] and executes code before break.
 		case 1: instance_activate_object(o_pausemenu_settings); menu_control = false; break;  //acivates submenu and disables arrow control on this menu
 																						//submenu always seen as activated after this, not good.
 								//this whole case 2 needs to be exactly the same code as in KEYPRESS - ESCAPE,
@@ -119,10 +121,11 @@ if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 
 	}
 	
 }
-if !instance_exists(o_pausemenu_quit) and pause = true  //if submenu doesn't exist while game is paused, 
+if !instance_exists(o_pausemenu_quit) and pause = true and alarm[2] == -1  //if submenu doesn't exist while game is paused, 
 														//allow arrowkey control in the normal pausemenu
 {
 	menu_control = true
+	
 }
 
 
