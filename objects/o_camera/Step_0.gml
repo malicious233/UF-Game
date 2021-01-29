@@ -50,7 +50,7 @@ if (layer_exists("Backgrounds_2")) //Apparently, using strings for things like t
 }
 if (layer_exists("Backgrounds_3")) //Apparently, using strings for things like this has a performance cost. Maybe in the create event you can make that yellow thing a more flexible variable? Like with layer_Get_id
 {
-	layer_x("Backgrounds_3",x/1.9+cloud_offset2)
+	layer_x("Backgrounds_3",x/1.9+cloud_offset+2)
 	layer_y("Backgrounds_3",y-yoffset)
 	layer_background_xscale(bg_3,xscal)
 	layer_background_yscale(bg_3,yscal)
@@ -61,6 +61,13 @@ if (layer_exists("Backgrounds_4")) //Apparently, using strings for things like t
 	layer_y("Backgrounds_4",y-yoffset)
 	layer_background_xscale(bg_4,xscal)
 	layer_background_yscale(bg_4,yscal)
+}
+if (layer_exists("Backgrounds_5")) //Apparently, using strings for things like this has a performance cost. Maybe in the create event you can make that yellow thing a more flexible variable? Like with layer_Get_id
+{
+	layer_x("Backgrounds_5",x/2.4+cloud_offset+3)
+	layer_y("Backgrounds_5",y-yoffset+170)
+	layer_background_xscale(bg_5,xscal)
+	layer_background_yscale(bg_5,yscal)
 }
 #endregion
 

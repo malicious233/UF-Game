@@ -14,6 +14,7 @@ bg_1 = layer_get_id("Backgrounds_1");
 bg_2 = layer_get_id("Backgrounds_2");
 bg_3 = layer_get_id("Backgrounds_3");
 bg_4 = layer_get_id("Backgrounds_4");
+bg_5 = layer_get_id("Backgrounds_5");
 
 xscal = 30;
 yscal = 30;
