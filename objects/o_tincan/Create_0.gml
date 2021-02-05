@@ -9,4 +9,10 @@ actionable = true;
 input_dir = 0;
 step_once = false;
 
+if (insta_aggro == true)
+{
+thought = thought.agitated;
+target_focus = o_player;
+}
+
 //move_spd = random_range(0.3,0.5);

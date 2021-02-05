@@ -23,11 +23,11 @@ function atk_shoulderbash()
 			{
 				hitbox_offset_x = 12.5; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 10; //Y offset från hitbox_owner, optional
-				hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1; //Hitboxens X scale, optional
 				image_yscale = 1;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 9;
+				hitbox_damage = 8;
 				hitbox_x_kb = 9.5*other.dir;
 				hitbox_y_kb = -5;
 				atk_fx = atk_fx.heavy;
@@ -35,7 +35,7 @@ function atk_shoulderbash()
 			}
 		}
 			
-	if (attack_timing == 25)
+	if (attack_timing == 24)
 	{
 			create_hitbox()
 			with (current_hitbox)

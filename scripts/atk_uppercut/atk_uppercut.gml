@@ -8,6 +8,15 @@ function atk_uppercut()
 	if (attack_timing == 14)
 		{
 			vsp = 0;
+			var partcl = create_particle()
+			with (partcl)
+			{
+				sprite_index = landingpuff_fx;
+				image_xscale = image_xscale*2;
+				image_yscale = image_yscale*2;
+				y = y-30
+			}
+			
 			create_hitbox()
 			with (current_hitbox)
 				{

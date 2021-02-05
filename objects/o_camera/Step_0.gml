@@ -65,7 +65,7 @@ if (layer_exists("Backgrounds_4")) //Apparently, using strings for things like t
 if (layer_exists("Backgrounds_5")) //Apparently, using strings for things like this has a performance cost. Maybe in the create event you can make that yellow thing a more flexible variable? Like with layer_Get_id
 {
 	layer_x("Backgrounds_5",x/2.4+cloud_offset+3)
-	layer_y("Backgrounds_5",y-yoffset+170)
+	layer_y("Backgrounds_5",y-yoffset+168)
 	layer_background_xscale(bg_5,xscal)
 	layer_background_yscale(bg_5,yscal)
 }
