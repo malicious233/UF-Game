@@ -4,12 +4,12 @@ spawn_interval_set = 150;
 spawn_interval = spawn_interval_set;
 
 wave = 0;
-wave_buildup = 5;
+wave_buildup = 1;
 wave_max = 2;
 
 //Horizontal list for enemies required to progress to next wave
-e_wave_buildup[0] = 5; 
-e_wave_buildup[1] = 3;
+e_wave_buildup[0] = 1; 
+e_wave_buildup[1] = 1;
 e_wave_buildup[2] = 10;
 
 
