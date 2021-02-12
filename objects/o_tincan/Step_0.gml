@@ -100,7 +100,7 @@ break;
 
 gravity_force();
 
-if has_ai == true
+if (has_ai == true)
 {
 switch (thought)
 {
@@ -128,6 +128,7 @@ break;
 #region Patrol
 case thought.patrol:
 
+
 idle_time --;
 if (idle_time < 0)
 {
@@ -135,18 +136,28 @@ if (idle_time < 0)
 	idle_time = random_range(30,120);
 }
 
-var _num = (distance_to_point(o_player.x,o_player.y))
-if (_num < 100)
-	{
-		thought = thought.agitated;
-		target_focus = o_player;
-	}
+if (instance_exists(o_player))
+{
+	var _num = (distance_to_point(o_player.x,o_player.y))
+
+	if (_num < 100)
+		{
+			thought = thought.agitated;
+			target_focus = o_player;
+		}
+}
+
 
 break;
 #endregion
 
 #region Agitated
 case thought.agitated:
+if !(instance_exists(o_player))
+{
+	thought = thought.idling;
+	break;
+}
 
 var lorr = -sign(x-target_focus.x); //Signs if the player is to the right or to the left of this character
 if (lorr = 0) {lorr = 1};

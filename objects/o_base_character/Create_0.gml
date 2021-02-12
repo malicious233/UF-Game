@@ -13,6 +13,12 @@ input_dir = 0; //Might become useful when adding controller support and a more i
 obj_id = id;
 
 
+//Powerup modifiers
+Speed_mod = 1;
+Power_mod = 1;
+Push_mod = 1;
+
+
 
 
 cancel_hitbox = false;
