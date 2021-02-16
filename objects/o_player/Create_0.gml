@@ -14,6 +14,7 @@ event_inherited();
 jumps = 2;
 uppercuts = 1;
 step_once = false;
+dodge_duration = 0;
 
 
 

@@ -136,6 +136,7 @@ case states.airborne: st_airborne() ; break;
 case states.attacking: st_attacking() ; break;
 case states.recovery: st_recovery() ; break;
 case states.hitstunned: st_hitstunned() ; break;
+case states.rolling: st_rolling(); break;
 
 }
 

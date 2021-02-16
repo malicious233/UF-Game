@@ -59,6 +59,7 @@ enum states
 	attacking, //State while you're attacking, where you're looping an atk_ script
 	recovery, //State where you can't act due to say, landing with an aerial attack
 	hitstunned, //State where you're stunned and cannot act
+	rolling, //State where you're intangible while rolling
 	
 	//Specific States
 	//States that only specific objects may have

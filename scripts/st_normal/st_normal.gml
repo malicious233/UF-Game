@@ -105,13 +105,15 @@ if (ground == false)
 
 if (key_test) //Just trying out some ways to make movement a little more fun, like mini dashes, Q or E in the air
 {
-	hsp = -17.5	
-	vsp = -6;
+	states = states.rolling
+	dodge_duration = 10;
+	hsp = -8*Speed_mod
 }
 if (key_test2)
 {
-	hsp = 17.5
-	vsp = -6;
+	states = states.rolling
+	dodge_duration = 10;
+	hsp = 8*Speed_mod
 }
 
 
