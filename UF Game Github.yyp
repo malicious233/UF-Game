@@ -110,6 +110,7 @@
     {"id":{"name":"s_hurtbox","path":"sprites/s_hurtbox/s_hurtbox.yy",},"order":1,},
     {"id":{"name":"o_enemyportal","path":"objects/o_enemyportal/o_enemyportal.yy",},"order":10,},
     {"id":{"name":"ct_create","path":"scripts/ct_create/ct_create.yy",},"order":3,},
+    {"id":{"name":"fx_explosion","path":"sprites/fx_explosion/fx_explosion.yy",},"order":22,},
     {"id":{"name":"moving","path":"scripts/moving/moving.yy",},"order":11,},
     {"id":{"name":"t_meadow_grass","path":"tilesets/t_meadow_grass/t_meadow_grass.yy",},"order":3,},
     {"id":{"name":"s_tincan_hurt","path":"sprites/s_tincan_hurt/s_tincan_hurt.yy",},"order":2,},

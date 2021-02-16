@@ -10,7 +10,14 @@ if (hp <= 0) //We should move this so objects can die their own way, so to speak
 {
 	audio_play_sound(tune_tincan_death,500,false);
 	instance_destroy();
-	
+	var partcl = create_particle();
+	with partcl
+	{
+		sprite_index = fx_explosion;
+		image_xscale = 2;
+		image_yscale = 2;
+	}
+	screenshake(6,25)
 }
 
 
