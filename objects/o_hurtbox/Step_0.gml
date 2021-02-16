@@ -14,7 +14,7 @@ if !(instance_exists(hurtbox_owner))
 
 //Follow the creator
 
-if (instance_exists(hurtbox_owner))
+if (instance_exists(hurtbox_owner)) and (hurtbox_owner.intangible == false)
 {
 	x = hurtbox_owner.x;
 	y = hurtbox_owner.y+hurtbox_owner.hurtbox_y_offset;
@@ -88,3 +88,7 @@ if (instance_exists(hurtbox_owner))
 					}
 			}
 }
+else {
+		x = 0
+		y = 0
+	 }

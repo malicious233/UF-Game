@@ -1,13 +1,13 @@
 {
   "spriteId": {
-    "name": "s_orbot_idle",
-    "path": "sprites/s_orbot_idle/s_orbot_idle.yy",
+    "name": "s_orbot_idl",
+    "path": "sprites/s_orbot_idl/s_orbot_idl.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "s_orbot_idle",
-    "path": "sprites/s_orbot_idle/s_orbot_idle.yy",
+    "name": "s_orbot_idl",
+    "path": "sprites/s_orbot_idl/s_orbot_idl.yy",
   },
   "persistent": false,
   "parentObjectId": {

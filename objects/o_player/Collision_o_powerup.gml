@@ -6,20 +6,21 @@ with (other)
 	instance_destroy();
 }
 
+var pwr_time = 10;
 switch(powerup_type)
 {
 	case powerups.Speed:
-	alarm[0] = 7*room_speed;
+	alarm[0] = pwr_time*room_speed;
 	Speed_mod = 1.5;
 	break;
 	
 	case powerups.Power:
-	alarm[1] = 7*room_speed;
+	alarm[1] = pwr_time*room_speed;
 	Power_mod = 2;
 	break;
 	
 	case powerups.Push:
-	alarm[2] = 7*room_speed;
+	alarm[2] = pwr_time*room_speed;
 	Push_mod = 1.5;
 	break;
 }

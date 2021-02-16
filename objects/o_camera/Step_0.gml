@@ -2,6 +2,11 @@
 // You can write your code in this editor
 
 //Will crash if it tries to follow something that dosnt exist
+if !(instance_exists(o_player))
+{
+	room_goto(room_main_menu)
+}
+
 if instance_exists(follow)
 {
 	xTo = follow.x

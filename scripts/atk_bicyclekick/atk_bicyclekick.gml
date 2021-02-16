@@ -14,26 +14,26 @@ function atk_bicyclekick()
 			hitbox_offset_x = 17; //X offset från hitbox_owner, optional
 			hitbox_offset_y = 7; //Y offset från hitbox_owner, optional
 			hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
-			image_xscale = 0.8; //Hitboxens X scale, optional
-			image_yscale = 0.8;//Hitboxens Y scale, optional
+			image_xscale = 0.9; //Hitboxens X scale, optional
+			image_yscale = 0.9;//Hitboxens Y scale, optional
 			hitbox_damage = 4;
 			hitbox_x_kb = 5*other.dir;
-			hitbox_y_kb = -8.5
+			hitbox_y_kb = -8
 		}
 	}
 	if (attack_timing == 10)
 	{
 		create_hitbox()
-		with (current_hitbox)
+		with (current_hitbox) //If you hit with the back of the heel, it sends them downwards. Like a true bicicleta.
 		{
-			hitbox_offset_x = 0; //X offset från hitbox_owner, optional
+			hitbox_offset_x = -5; //X offset från hitbox_owner, optional
 			hitbox_offset_y = -12.5; //Y offset från hitbox_owner, optional
-			hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
+			hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
 			image_xscale = 1.6; //Hitboxens X scale, optional
-			image_yscale = 1;//Hitboxens Y scale, optional
-			hitbox_damage = 3;
-			hitbox_x_kb = -3*other.dir;
-			hitbox_y_kb = -8.5
+			image_yscale = 1.2;//Hitboxens Y scale, optional
+			hitbox_damage = 4;
+			hitbox_x_kb = -3.5*other.dir;
+			hitbox_y_kb = 3
 		}
 	}
 	

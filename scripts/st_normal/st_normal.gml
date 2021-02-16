@@ -9,6 +9,7 @@ function st_normal()
 //move = (key_right - key_left) * SPD_WALK_MAX
 //hsp = Approach(hsp,move,SPD_WALK_ACCEL);
 
+intangible = false;
 
 if (key_left == true)
 {

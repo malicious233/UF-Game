@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function st_hitstunned()
 {
+	intangible = true;
 	hitstun_duration --;
 	if (hitstun_duration < 0) {states = states.normal;}
 	

@@ -11,6 +11,7 @@ attack_timing_end = 0;
 dir = 1;
 input_dir = 0; //Might become useful when adding controller support and a more intricate moveset.
 obj_id = id;
+intangible = false;
 
 
 //Powerup modifiers
