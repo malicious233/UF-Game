@@ -85,7 +85,7 @@ if (key_attack) and !(key_up)
 if (key_attack) and (key_up)
 {
 	attack(atk_bicyclekick,s_player_bicyclekick);
-	vsp = -(0.85*jump_spd);
+	vsp = -(0.65*jump_spd);
 }
 
 if (key_special) and (key_up)
@@ -106,13 +106,15 @@ if (ground == false)
 if (key_test) //Just trying out some ways to make movement a little more fun, like mini dashes, Q or E in the air
 {
 	states = states.rolling
-	dodge_duration = 10;
+	dodge_duration = 12;
+	vsp = -2;
 	hsp = -8*Speed_mod
 }
 if (key_test2)
 {
 	states = states.rolling
-	dodge_duration = 10;
+	dodge_duration = 12;
+	vsp = -2;
 	hsp = 8*Speed_mod
 }
 

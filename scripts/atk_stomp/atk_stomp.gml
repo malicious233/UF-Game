@@ -19,10 +19,10 @@ function atk_stomp()
 			with (current_hitbox)
 			{
 				hitbox_offset_x = 2.5;  //X offset från hitbox_owner, optional
-				hitbox_offset_y = 30; //Y offset från hitbox_owner, optional
-				hitbox_duration = 4;  //Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1.1;   //Hitboxens X scale, optional
-				image_yscale = 1.2;   //Hitboxens Y scale, optional
+				hitbox_offset_y = 35; //Y offset från hitbox_owner, optional
+				hitbox_duration = 6;  //Hur länge hitboxen är active tills den tas bort automatiskt.
+				image_xscale = 1.2;   //Hitboxens X scale, optional
+				image_yscale = 1.4;   //Hitboxens Y scale, optional
 				
 				hitbox_damage = 8;
 				hitbox_x_kb = 3*other.dir;
@@ -31,7 +31,7 @@ function atk_stomp()
 
 			}
 		}
-	if (attack_timing == 20) //Late hitbox
+	if (attack_timing == 21) //Late hitbox
 	{
 		create_hitbox()
 		with (current_hitbox)

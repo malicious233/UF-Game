@@ -41,7 +41,7 @@
     "spriteId": {"name":"s_player_bicyclekick_rec","path":"sprites/s_player_bicyclekick_rec/s_player_bicyclekick_rec.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 20.0,
+    "playbackSpeed": 23.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
