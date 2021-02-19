@@ -17,7 +17,7 @@ function atk_shoulderbash()
 	}
 	if (attack_timing == 20)
 		{
-			hsp = hsp+(14*dir);
+			hsp = hsp+((14*Speed_mod)*dir);
 			create_hitbox()
 			with (current_hitbox)
 			{

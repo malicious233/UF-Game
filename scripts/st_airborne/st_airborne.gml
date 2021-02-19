@@ -69,7 +69,7 @@ if (key_special) and (key_up) and (uppercuts > 0)
 {
 	vsp = -3;
 	uppercuts = 0;
-	attack(atk_rocketcut,s_player_rocketcut);
+	attack(atk_uppercut,s_player_uppercut);
 }
 if (key_special) and !(key_up)
 {

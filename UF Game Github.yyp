@@ -150,6 +150,7 @@
     {"id":{"name":"s_acrylic_games_logo","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"order":19,},
     {"id":{"name":"s_player_stomp2","path":"sprites/s_player_stomp2/s_player_stomp2.yy",},"order":8,},
     {"id":{"name":"s_player_rocketcut","path":"sprites/s_player_rocketcut/s_player_rocketcut.yy",},"order":16,},
+    {"id":{"name":"o_tanker","path":"objects/o_tanker/o_tanker.yy",},"order":26,},
     {"id":{"name":"t_meadow","path":"tilesets/t_meadow/t_meadow.yy",},"order":2,},
     {"id":{"name":"st_normal","path":"scripts/st_normal/st_normal.yy",},"order":0,},
     {"id":{"name":"s_top","path":"sprites/s_top/s_top.yy",},"order":13,},
