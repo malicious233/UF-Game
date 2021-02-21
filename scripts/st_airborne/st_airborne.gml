@@ -49,7 +49,7 @@ if (key_space_click == true) and (jumps > 0)
 //Normal Attacks
 if (key_attack) and (key_up)
 {
-	attack(atk_bicyclekick,s_player_bicyclekick);
+	attack(atk_windheel,s_player_bicyclekick);
 }
 if (key_attack) and !(key_up)
 {
