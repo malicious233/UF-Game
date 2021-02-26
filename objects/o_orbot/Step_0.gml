@@ -142,7 +142,7 @@ if (actionable == true)
 {
 	
 	dir = lorr;	//Should fix so the moving() script is what does the turning. Thoughts shouldnt do that much physically, only give commands.
-	if ((distance_to_point(target_focus.x,target_focus.y)) < 100)
+	if ((distance_to_point(target_focus.x,target_focus.y)) < 100) and (irandom(10) == 1)
 	{
 		attack(atk_orbohurt,s_orbot_orbohurt);	
 	}

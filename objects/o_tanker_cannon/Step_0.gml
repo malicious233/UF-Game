@@ -32,7 +32,7 @@ else
 
 //Shoot
 shot_interval --;
-if (shot_interval < 60)
+if (shot_interval < 90)
 {
 	image_index = 1;	
 }
@@ -43,12 +43,13 @@ else
 
 if (shot_interval == 0)
 {
+	screenshake(6,10)
 	repeat(3)
 	{
-		var canonbal = instance_create_layer(x,y,"Particles",o_tanker_cannonball)
+		var canonbal = instance_create_layer(x,y,"Text",o_tanker_cannonball)
 		with (canonbal)
 		{
-			direction = other.image_angle+(random_range(-6,6));
+			direction = other.image_angle+(random_range(-8,8));
 			speed = random_range(5,7);
 		}
 	}

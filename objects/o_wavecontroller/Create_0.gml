@@ -5,12 +5,13 @@ spawn_interval = spawn_interval_set;
 
 wave = 0;
 wave_buildup = 1;
-wave_max = 2;
+wave_max = 3;
 
 //Horizontal list for enemies required to progress to next wave
 e_wave_buildup[0] = 1; 
 e_wave_buildup[1] = 1;
 e_wave_buildup[2] = 10;
+e_wave_buildup[3] = 15;
 
 
 /*

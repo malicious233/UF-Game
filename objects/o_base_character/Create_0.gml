@@ -78,6 +78,7 @@ enum thought //What "thought" will the AI use
 	idling, 
 	patrol,
 	agitated,
+	distancing,
 	
 }
 thought = thought.idling;

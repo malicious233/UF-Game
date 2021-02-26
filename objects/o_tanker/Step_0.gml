@@ -16,7 +16,7 @@ switch (states)
 		sprite_index = s_tanker_move;
 		actionable = true;
 		friction_force(flat_friction*0.5,0.95);
-		moving(move_spd,input_dir);
+		moving(move_spd,-input_dir);
 		break;
 	
 	case states.hitstunned:
@@ -107,14 +107,14 @@ if !(instance_exists(o_player))
 	thought = thought.idling;
 	break;
 }
-var lorr = -sign(x-target_focus.x); //Signs if the player is to the right or to the left of this character
+var lorr = sign(x-target_focus.x); //Signs if the player is to the right or to the left of this character
 if (lorr = 0) {lorr = 1};
-input_dir = lorr;
+input_dir = -lorr;
 if (actionable == true)
 {
 	
-	dir = lorr;	//Should fix so the moving() script is what does the turning. Thoughts shouldnt do that much physically, only give commands.
-	if ((distance_to_point(target_focus.x,target_focus.y)) < 150)
+	//dir = lorr;	//Should fix so the moving() script is what does the turning. Thoughts shouldnt do that much physically, only give commands.
+	if ((distance_to_point(target_focus.x,target_focus.y)) < 175) and (irandom(40) == 1)
 	{
 		attack(atk_rammer,s_tanker_move);	
 	}

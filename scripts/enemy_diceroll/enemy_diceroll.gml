@@ -30,13 +30,24 @@ function enemy_diceroll()
 		return o_orbot; //100% chance for orbot
 	}
 	
-	if wav >= 2
+	if wav == 2
 	{
 		if (roll >= 0) and (roll < 0.25) //25% for orbot
 			{return o_orbot};
 		else if (roll >= 0.25) and (roll <= 1) //75% for tincan
 			{return o_tincan};
 	}
+	
+	if wav == 3
+	{
+		if (roll >= 0) and (roll < 0.05)
+			{return o_tanker};
+		else if (roll >= 0.05) and (roll < 0.35)
+			{return o_orbot}
+		else if (roll >= 0.35) and (roll <= 1)
+			{return o_tincan}
+	}
+	
 	
  
 }

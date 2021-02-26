@@ -13,6 +13,7 @@ function atk_rammer()
 	{
 		vsp = -5;
 		hsp = 3*-dir;
+		dir = -sign(x-target_focus.x);
 	}
 	
 	if (attack_timing > 40) and (attack_timing < 60)
@@ -28,6 +29,7 @@ function atk_rammer()
 	
 	if (attack_timing == 40)
 		{
+			screenshake(3,30);
 			create_hitbox()
 			with (current_hitbox)
 			{
