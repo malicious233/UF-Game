@@ -28,6 +28,25 @@ if (menu_control)
 		
 	}
 	
+
+	if (gamepad_axis_value(0,gp_axislv) < -0.25) 
+	{
+		menu_cursor++;
+		if (menu_cursor >= menu_items) menu_cursor = 0;
+	    	
+	}
+			
+			
+	
+
+
+	
+	if gamepad_axis_value(0,gp_axislv) > 0.25   //inner deadzone DOWN
+	{
+		menu_cursor--;
+		if (menu_cursor < 0) menu_cursor = menu_items-1;
+	}
+	
 	
 	//when pressing the Enter key, animate menu to move to the right
 	if ((keyboard_check_pressed(vk_enter)) or 

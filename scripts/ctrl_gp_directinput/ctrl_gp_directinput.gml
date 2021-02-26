@@ -1,17 +1,20 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function ctrl_gp_directinput(){
-key_attack = gamepad_button_check_pressed(4,gp_shoulderr);
+key_attack = /*gamepad_button_check_pressed(4,gp_shoulderr) or*/ gamepad_button_check_pressed(4,gp_face3) /*or gamepad_button_check_pressed(4,gp_shoulderl);*/
 //key_z_click = keyboard_check_pressed(ord("Z"));
-key_special = gamepad_button_check_pressed(4,gp_shoulderrb);
-key_space_click = gamepad_button_check_pressed(4,gp_face1);
+key_special = gamepad_button_check_pressed(4,gp_shoulderrb) or gamepad_button_check_pressed(4,gp_face2) or gamepad_button_check_pressed(4,gp_shoulderlb);
+key_space_click = gamepad_button_check_pressed(4,gp_face1) or gamepad_button_check_pressed(4,gp_face4);
 //key_v_click = keyboard_check_pressed(ord("V"));
 key_pause_gp = gamepad_button_check_pressed(4,gp_start) //options buttion on a PS4 gamepad
 
-key_left = 0;
-key_right = 0;
-key_up = 0;
-key_down = 0;
+key_left = 0 or gamepad_button_check(4,gp_padl);
+key_right = 0 or gamepad_button_check(4,gp_padr);
+key_up = 0 or gamepad_button_check(4,gp_padu);
+key_down = 0 or gamepad_button_check(4,gp_padd);
+
+key_test = gamepad_button_check_pressed(4,gp_shoulderl);
+key_test2 = gamepad_button_check_pressed(4,gp_shoulderr);
 
 //Dir Inputs
 

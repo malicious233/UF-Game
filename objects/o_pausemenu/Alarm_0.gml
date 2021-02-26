@@ -31,6 +31,10 @@
 			layer_depth("Meadow", 1)
 		}
 		
+		if instance_exists(o_enemyportal_location)
+		{
+			o_enemyportal_location.image_alpha = 0
+		}
 		
 		var offset = 0;						/* offset basically makes sure that we always
 													have valid sprites drawn when paused*/
@@ -63,3 +67,5 @@
 		
 		//want to have more stuff in the pause menu? create them here
 	}
+	else { allObjects = 0;}
+	

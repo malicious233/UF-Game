@@ -76,5 +76,7 @@ if (layer_exists("Backgrounds_5")) //Apparently, using strings for things like t
 }
 #endregion
 
+if !instance_exists(o_player){
+	room_goto(room_main_menu)}
 
 

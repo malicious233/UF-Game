@@ -1,9 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function ctrl_arrowkeys(){
-key_attack = keyboard_check_pressed(ord("X"));
+key_attack = keyboard_check_pressed(ord("C"));
 //key_z_click = keyboard_check_pressed(ord("Z"));
-key_special = keyboard_check_pressed(ord("C"));
+key_special = keyboard_check_pressed(ord("V"));
 key_space_click = keyboard_check_pressed(vk_space);
 //key_v_click = keyboard_check_pressed(ord("V"));
 

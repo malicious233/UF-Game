@@ -105,6 +105,7 @@ if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 
 			{
 				audio_sound_gain(tune_pause_menu, 0, 1000)
 			}
+			audio_play_sound(tune_wave_1,1000,false);
 				pause = false;			
 				instance_activate_all(); 
 				instance_deactivate_object(o_pausemenu_quit)

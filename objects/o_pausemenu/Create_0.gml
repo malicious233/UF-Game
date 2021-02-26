@@ -4,8 +4,9 @@
 alarm[0] = 1  //after one frame alarm 0 runs, could probably put all that code here but naahh.
 
 
-
-
+//controller left stick fix for menus)
+moveme = 0
+movemetime = 0.01
 
 
 pause = false   //variable pause is false at creation of this object, becomes true in ALARM 0.
