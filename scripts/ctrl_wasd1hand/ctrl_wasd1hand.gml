@@ -3,7 +3,7 @@
 function ctrl_wasd1hand(){
 key_attack = keyboard_check_pressed(vk_lshift) or 
 keyboard_check_pressed(ord("J")) or 
-keyboard_check_pressed(ord("C")) or 
+keyboard_check_pressed(ord("V")) or 
 mouse_check_button_pressed(mb_left) or
 gamepad_button_check_pressed(0,gp_shoulderr) or 
 gamepad_button_check_pressed(0,gp_face3) or 
@@ -14,7 +14,7 @@ gamepad_button_check_pressed(4,gp_shoulderl);
 
 key_special = keyboard_check_pressed(vk_lcontrol) or 
 keyboard_check_pressed(ord("K")) or 
-keyboard_check_pressed(ord("V")) or 
+keyboard_check_pressed(ord("C")) or 
 mouse_check_button_pressed(mb_right) or 
 gamepad_button_check_pressed(0,gp_shoulderrb) or 
 gamepad_button_check_pressed(0,gp_face2) or 
@@ -29,8 +29,21 @@ gamepad_button_check_pressed(0,gp_face4) or
 gamepad_button_check_pressed(4,gp_face1) or 
 gamepad_button_check_pressed(4,gp_face4);
 
-key_test = keyboard_check_pressed(ord("Q"));
-key_test2 = keyboard_check_pressed(ord("E"));
+key_test = keyboard_check_pressed(ord("Q")) 
+key_test2 = keyboard_check_pressed(ord("E")) 
+
+if keyboard_check_pressed(ord("Z"))
+{
+	if o_player.image_xscale = -1
+	{
+		key_test = true
+	}
+	if o_player.image_xscale = 1
+	{
+		key_test2 = true
+	}
+}
+	
 //key_v_click = keyboard_check_pressed(ord("V"));
 
 //Dir Inputs

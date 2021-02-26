@@ -38,7 +38,8 @@ if controls = controls.nothing
 	keyboard_check(ord("S")))
 	{
 		controls = controls.wasd1hand
-		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_1hand)
+		if room = Room1{
+		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_1hand)}
 	}
 	//Maybe you could make this into a switch statement?
 	
@@ -102,7 +103,9 @@ if controls = controls.nothing
 	keyboard_check(vk_up) or
 	keyboard_check(vk_down))
 	{
-		controls = controls.arrowkeys
+		controls = controls.wasd1hand
+		if room = Room1{
+		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_arrow)}
 	}
 }
 #endregion
