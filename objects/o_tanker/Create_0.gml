@@ -7,3 +7,10 @@ states = states.normal;
 idle_time = 0;
 target_focus = 0;
 actionable = true;
+
+
+var cannon = instance_create_layer(x,y,"Player",o_tanker_cannon)
+with (cannon)
+{
+	owner = other.id;
+}

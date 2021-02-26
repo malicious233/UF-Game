@@ -1,0 +1,57 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+
+
+
+//Point at target
+
+if (instance_exists(owner)) and (instance_exists(target))
+{
+
+var angle = point_direction(x,y,target.x,target.y);
+
+image_angle = angle
+
+if (angle > 90) and (angle < 270)
+{
+	image_yscale = -1;	
+}
+else
+{
+	image_yscale = 1;	
+}
+
+//Teleport to owner
+x = owner.x+x_offset*owner.image_xscale
+y = owner.y+y_offset;
+
+}
+else
+{instance_destroy()}
+
+//Shoot
+shot_interval --;
+if (shot_interval < 60)
+{
+	image_index = 1;	
+}
+else
+{
+	image_index = 0	
+}
+
+if (shot_interval == 0)
+{
+	repeat(3)
+	{
+		var canonbal = instance_create_layer(x,y,"Particles",o_tanker_cannonball)
+		with (canonbal)
+		{
+			direction = other.image_angle+(random_range(-6,6));
+			speed = random_range(5,7);
+		}
+	}
+	
+	shot_interval = 270;	
+}

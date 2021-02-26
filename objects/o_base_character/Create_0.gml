@@ -4,6 +4,7 @@
 hsp = 0;
 vsp = 0;
 
+
 curr_dir = 0;
 attack_move_spd = 0;
 attack_timing = 0;
@@ -12,6 +13,7 @@ dir = 1;
 input_dir = 0; //Might become useful when adding controller support and a more intricate moveset.
 obj_id = id;
 intangible = false;
+projectile = false;
 
 
 //Powerup modifiers
