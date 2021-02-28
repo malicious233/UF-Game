@@ -1,7 +1,13 @@
 /// @description arrowkey and Enter controls 
 
 //Item ease in (slide menu text in from left, animation) //"disabled" by having menu_speed in Create set to 1, very low.
+if (alarm[1] == -1){
 menu_x += (menu_x_target - menu_x) / menu_speed;
+}
+
+
+dugg += 0.01		//fade to black
+if dugg > 0.6 {dugg = 0.6}
 
 //arrowkey controls
 if (menu_control)
@@ -28,8 +34,6 @@ if (menu_control)
 		
 	}
 	
-
-
 	
 	//when pressing the Enter key, animate menu to move to the right
 	if ((keyboard_check_pressed(vk_enter)) or 
@@ -71,12 +75,12 @@ if (menu_control)
 				instance_create_depth(0,0,3,o_pausemenu_quit)
 			}
 
-			if !instance_exists(o_pausemenu_settings) and menu_cursor = 1     //when pressing enter when menu cursor is 
+			/*if !instance_exists(o_pausemenu_settings) and menu_cursor = 1     //when pressing enter when menu cursor is 
 			                                                             //hovering over the one that's supposed to 
 																		 //spawn the submenu, creates the submenu
 			{
 				instance_create_depth(0,0,3,o_pausemenu_settings)
-			}
+			}*/
 			
 		}
 	}
@@ -86,19 +90,27 @@ if (menu_control)
 
 
 
-if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
+if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 (one behind -32) makes it so something actually happens when pressing enter
 {
 	switch (menu_committed)
 	{
-		case 0: instance_activate_object(o_pausemenu_quit); menu_control = false;break;          //selects menu[0] and executes code before break.
-		case 1: instance_activate_object(o_pausemenu_settings); menu_control = false; break;  //acivates submenu and disables arrow control on this menu
+		case 0: poisonTick = 1; poisonTick -= 1; if (poisonTick = 0) and ((gamepad_button_check_pressed(0,gp_face1)) or		//fix for quitmenu being opened immediately after exiting when pressing "No" with controller (might be a hardware fault on my end tho but still annoying)
+	(gamepad_button_check_pressed(4,gp_face1))) {instance_activate_object(o_pausemenu_quit)} else if(((keyboard_check_pressed(vk_enter)) or 
+	(keyboard_check_pressed(vk_space))) or (mouse_check_button_pressed(mb_left))){instance_activate_object(o_pausemenu_quit)}; menu_control = false;break;          //selects menu[0] and executes code before break.
+		//case 1: instance_activate_object(o_pausemenu_settings); menu_control = false; break;  //acivates submenu and disables arrow control on this menu
 																						//submenu always seen as activated after this, not good.
 								//this whole case 2 needs to be exactly the same code as in KEYPRESS - ESCAPE,
 								//could probably make it a script to call for when needed instead of having be duplicate shenans
 								//resumes game
 								//EDIT: maybe not exactly the same code as in keypress-escape but whatever, it works now
 								//case 2 resumes game
-		case 2: pause = false;			
+		case 1: room_goto(Room1)
+			if audio_is_playing(tune_pause_menu)
+			{
+				audio_sound_gain(tune_pause_menu, 0, 1000)
+			}
+			audio_play_sound(tune_wave_1,1000,false);
+				pause = false;			
 				instance_activate_all(); 
 				instance_deactivate_object(o_pausemenu_quit)
 				o_hurtbox.image_alpha = 1;   
@@ -114,14 +126,16 @@ if (menu_x > gui_width-33) && (menu_committed != -1)    //-33 (one behind -32) m
 	}
 	
 }
-if !instance_exists(o_pausemenu_quit) and pause = true  //if submenu doesn't exist while game is paused, 
+if !instance_exists(o_pausemenu_quit) and pause = true and alarm[2] == -1  //if submenu doesn't exist while game is paused, 
 														//allow arrowkey control in the normal pausemenu
 {
 	menu_control = true
+	
 }
 
 
 //go back a submenu with controller
+/*
 if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button
 (gamepad_button_check_pressed(4,gp_face2)) or	  //directinput "B" button
 (gamepad_button_check_pressed(0,gp_start)) or		// xinput start button
@@ -160,6 +174,7 @@ if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button
 			//deactivate more pausmenu stuff here so that they dont stay when exiting pausemenu.
 		//}
 }
+*/
 
 //go to next submenu with controller
 if ((gamepad_button_check_pressed(0,gp_face1)) or		//xinput "A" button
@@ -172,10 +187,10 @@ if ((gamepad_button_check_pressed(0,gp_face1)) or		//xinput "A" button
 			instance_create_depth(0,0,3,o_pausemenu_quit)
 		}
 
-		if !instance_exists(o_pausemenu_settings) and menu_cursor = 1     //when pressing enter when menu cursor is 
+		/*if !instance_exists(o_pausemenu_settings) and menu_cursor = 1     //when pressing enter when menu cursor is 
 		                                                             //hovering over the one that's supposed to 
 																	 //spawn the submenu, creates the submenu
 		{
 			instance_create_depth(0,0,3,o_pausemenu_settings)
-		}
+		}*/
 	}

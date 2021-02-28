@@ -2,10 +2,13 @@
 // You can write your code in this editor
 
 //Will crash if it tries to follow something that dosnt exist
-if !(instance_exists(o_player))
+if !(instance_exists(o_player)) and !instance_exists(o_pausemenu_end)
 {
-	room_goto(room_main_menu)
+	instance_create_depth(0,0,4,o_pausemenu_end) 
+	//room_goto(room_main_menu)
 }
+
+
 
 if instance_exists(follow)
 {
@@ -76,7 +79,5 @@ if (layer_exists("Backgrounds_5")) //Apparently, using strings for things like t
 }
 #endregion
 
-if !instance_exists(o_player){
-	room_goto(room_main_menu)}
 
 

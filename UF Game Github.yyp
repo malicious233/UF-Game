@@ -86,6 +86,7 @@
     {"id":{"name":"o_attacker","path":"objects/o_attacker/o_attacker.yy",},"order":7,},
     {"id":{"name":"atk_fastpunch","path":"scripts/atk_fastpunch/atk_fastpunch.yy",},"order":5,},
     {"id":{"name":"o_tincan2","path":"objects/o_tincan2/o_tincan2.yy",},"order":16,},
+    {"id":{"name":"o_pausemenu_end","path":"objects/o_pausemenu_end/o_pausemenu_end.yy",},"order":8,},
     {"id":{"name":"tune_uppercut","path":"sounds/tune_uppercut/tune_uppercut.yy",},"order":8,},
     {"id":{"name":"ctrl_wasd1hand","path":"scripts/ctrl_wasd1hand/ctrl_wasd1hand.yy",},"order":2,},
     {"id":{"name":"create_hurtbox","path":"scripts/create_hurtbox/create_hurtbox.yy",},"order":7,},
