@@ -9,6 +9,9 @@ menu_x += (menu_x_target - menu_x) / menu_speed;
 dugg += 0.01		//fade to black
 if dugg > 0.6 {dugg = 0.6}
 
+dugg2 += 0.01		//fade text from0 to 1
+if dugg2 > 1 {dugg2 = 1}
+
 //arrowkey controls
 if (menu_control)
 {

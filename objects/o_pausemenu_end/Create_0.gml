@@ -8,6 +8,7 @@ alarm[1] = 100
 alarm[2] = 150
 
 dugg = 0 // fade to black
+dugg2 = 0 //fade text from 0 to 1
 
 
 pause = true   //variable pause is false at creation of this object, becomes true in ALARM 0.
