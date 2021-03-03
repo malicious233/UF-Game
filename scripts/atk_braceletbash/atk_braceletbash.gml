@@ -54,5 +54,14 @@ function atk_braceletbash()
 		cancel_hitbox = true;
 	}
 	
+	if instance_exists(o_key_layout_1hand) 
+	{
+		instance_destroy(o_key_layout_1hand)
+	}
+	
+	if instance_exists(o_key_layout_arrow)
+	{
+		instance_destroy(o_key_layout_arrow)
+	}
 
 }
