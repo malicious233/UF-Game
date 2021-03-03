@@ -52,5 +52,6 @@ function atk_shoulderbash()
 				atk_fx = atk_fx.heavy_2;
 			}
 	}
+	
 			
 }

@@ -23,6 +23,7 @@ if (menu_control)
 	{
 		menu_cursor++;
 		if (menu_cursor >= menu_items) menu_cursor = 0;
+		pause_menu_sound()
 	}
 	
 	
@@ -34,6 +35,7 @@ if (menu_control)
 	{
 		menu_cursor--;
 		if (menu_cursor < 0) menu_cursor = menu_items-1;
+		pause_menu_sound()
 		
 	}
 	
@@ -49,7 +51,7 @@ if (menu_control)
 		menu_control = true;     //could set to false to take away arrowkey menu control 
 			//because now, if nothing happens when trying to press on a menu, you'll still have arrowkey control
 			//depending on how we do menus, we might want menu_control to be true in certain cases
-		
+		pause_menu_sound2()
 	}
 	
 	//get mouse position within the GUI of the pausemenu

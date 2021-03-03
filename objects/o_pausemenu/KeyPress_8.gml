@@ -5,6 +5,7 @@
 
 if !instance_exists(o_pausemenu_quit) and pause = true
 {
+		pause_menu_sound3()
 		instance_activate_all();  //activates all instances again, makes them exist again, perfectly as they were before.
 		instance_deactivate_object(o_pausemenu_quit)
 		o_hurtbox.image_alpha = 1   //max opacity again after activation of object, so that we devs can see hutrbox when needed

@@ -81,6 +81,7 @@ else
 if (key_attack) and !(key_up)
 {
 	attack(atk_fastpunch,s_player_fastpunch);	
+	audio_play_sound(tune_fastpunch1,1000,false)
 }
 if (key_attack) and (key_up)
 {
@@ -95,6 +96,7 @@ if (key_special) and (key_up)
 if (key_special) and !(key_up)
 {
 	attack(atk_shoulderbash,s_player_shoulderbash);	
+	audio_play_sound(tune_shoulderbash1,1000,false)
 }
 
 //State change

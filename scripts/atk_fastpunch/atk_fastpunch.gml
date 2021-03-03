@@ -25,4 +25,5 @@ function atk_fastpunch()
 			}
 			
 		}
+
 }
