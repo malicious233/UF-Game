@@ -75,7 +75,6 @@ if (key_special) and !(key_up)
 {
 	vsp = -5;
 	attack(atk_shoulderbash,s_player_shoulderbash);
-	if !attack(atk_stomp,s_player_stomp){audio_play_sound(tune_shoulderbash1,1000,false)}
 }
 
 if (key_down)//shits fucked
