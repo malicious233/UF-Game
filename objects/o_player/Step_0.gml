@@ -40,9 +40,22 @@ if controls = controls.nothing
 		controls = controls.wasd1hand
 		if room = Room1{
 		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_1hand)}
+		//ADD mouse and JK shits!!!
 	}
 	//Maybe you could make this into a switch statement?
 	
+	if keyboard_check_pressed(ord("J")) or
+	keyboard_check_pressed(ord("K")) or
+	keyboard_check_pressed(ord("L")) or
+	mouse_check_button_pressed(mb_right) or
+	mouse_check_button_pressed(mb_left)
+	{
+		controls = controls.wasd1hand
+		if room = Room1{
+		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_jk)
+		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_mouse)
+		}
+	}
 	//if xinput controller is pressed
 	if (gamepad_button_check_pressed(0,gp_shoulderr) or 
 	gamepad_button_check_pressed(0,gp_shoulderrb) or 
@@ -65,7 +78,9 @@ if controls = controls.nothing
 	gamepad_axis_value(0,gp_axisrh) < -0.2 or
 	gamepad_axis_value(0,gp_axisrh) > 0.2)
 	{
-		controls = controls.gp_xinput
+		controls = controls.wasd1hand
+		if room = Room1{
+		instance_create_layer(o_player.x, o_player.y, "Text", o_gamepad_layout_xbox)}
 	}
 	
 	//if directinput controller is pressed
@@ -90,11 +105,14 @@ if controls = controls.nothing
 	gamepad_axis_value(4,gp_axisrh) < -0.2 or
 	gamepad_axis_value(4,gp_axisrh) > 0.2)
 	{
-		controls = controls.gp_directinput
+		controls = controls.wasd1hand
+		if room = Room1{
+		instance_create_layer(o_player.x, o_player.y, "Text", o_gamepad_layout_ps4)}
 	}
 	
-	if (keyboard_check_pressed(ord("X")) or 
+	if (keyboard_check_pressed(ord("V")) or 
 	keyboard_check_pressed(ord("C")) or
+	keyboard_check_pressed(ord("Z")) or
 	//keyboard_check_pressed(vk_space) or  //May remove this if you want--> 
 	//keyboard_check_pressed(ord("Q")) or   //-->to choose between more than one input method-->
 	//keyboard_check_pressed(ord("E")) or     //-->that uses space.

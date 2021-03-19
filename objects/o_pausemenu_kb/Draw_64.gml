@@ -48,6 +48,25 @@ if (subpause)
 	}
 
 
+if menu_cursor = 3{
+	draw_sprite(s_key_layout_arrow, image_index*0.05,(view_wport[0])/2, (view_hport[0]-300)/2)
+}
+
+if menu_cursor = 2{
+	draw_sprite(s_key_layout_typist, image_index*0.05,(view_wport[0])/2, (view_hport[0]-300)/2)
+}
+
+
+if menu_cursor = 1{
+	draw_sprite(s_key_layout_1hand, image_index*0.05,(view_wport[0])/2, (view_hport[0]-300)/2)
+}
+
+if menu_cursor = 0{
+	draw_sprite(s_key_layout_jk, image_index*0.05,(view_wport[0]-300)/2, (view_hport[0]-300)/2)
+	draw_sprite_ext(s_key_layout_mouse, image_index*0.05,(view_wport[0]+850)/2, (view_hport[0]-300)/2, 0.75, 0.75, 0, c_white, 1)
+}
+
+
 
 
 

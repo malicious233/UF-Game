@@ -57,6 +57,33 @@ if (menu_control)
 	{								//and if mouse is within the area of menu items, x-axis-wise.													
 		menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);		//menu cursor attached to mouse position
 		
+		if (sound_played2 = 0 and menu_cursor = 2)
+		{
+			audio_play_sound(tune_pause_check1, 1000, false)
+			sound_played2 = 1
+		}else if sound_played2 = 1 and menu_cursor < 2
+		{
+			sound_played2 = 0
+		}
+		
+		if (sound_played1 = 0 and menu_cursor = 1)
+		{
+			audio_play_sound(tune_pause_check1, 1000, false)
+			sound_played1 = 1
+		}else if sound_played1 = 1 and !menu_cursor = 1 or menu_cursor > 1
+		{
+			sound_played1 = 0
+		}
+		
+		if (sound_played0 = 0 and menu_cursor = 0)
+		{
+			audio_play_sound(tune_pause_check1, 1000, false)
+			sound_played0 = 1
+		}else if sound_played0 = 1 and !menu_cursor = 0 
+		{
+			sound_played0 = 0
+		}
+		
 		if (mouse_check_button_pressed(mb_left)) //this is within this mouse centered if-statement so that
 		{										//you can NOT press mouse to go to next menu 
 												//when not hovering over menu item. Could change that if we want
@@ -64,6 +91,7 @@ if (menu_control)
 			menu_x_target = gui_width-32
 			menu_committed = menu_cursor;
 			menu_control = true;
+			pause_menu_sound2()
 			
 			//same as in KEYPRESS - ENTER, couldn't get it to work any other way.
 			if !instance_exists(o_pausemenu_quit) and menu_cursor = 0     //when pressing enter when menu cursor is 
@@ -178,12 +206,12 @@ if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button
 if ((gamepad_button_check_pressed(0,gp_face1)) or		//xinput "A" button
 	(gamepad_button_check_pressed(4,gp_face1)))		//directinput "A" button
 	{
-		if !instance_exists(o_pausemenu_quit) and menu_cursor = 0     //when pressing enter when menu cursor is 
+		/*if !instance_exists(o_pausemenu_quit) and menu_cursor = 0     //when pressing enter when menu cursor is 
 		                                                             //hovering over the one that's supposed to 
 																	 //spawn the submenu, creates the submenu
 		{
 			instance_create_depth(0,0,3,o_pausemenu_quit)
-		}
+		}*/
 
 		if !instance_exists(o_pausemenu_settings) and menu_cursor = 1     //when pressing enter when menu cursor is 
 		                                                             //hovering over the one that's supposed to 

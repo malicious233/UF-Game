@@ -19,7 +19,7 @@ key_test2 = gamepad_button_check_pressed(4,gp_shoulderr);
 //Dir Inputs
 
 
-#region The Left Stick
+#region The Left Stick Directinput
 if abs(gamepad_axis_value(4,gp_axislh)) > hori_deadzone
 {	
 	if gamepad_axis_value(4,gp_axislh) < 0
@@ -75,7 +75,7 @@ if abs(gamepad_axis_value(4,gp_axislv)) > vert_deadzone
 }
 #endregion
 
-#region The Right Stick
+#region The Right Stick Directinput
 
 var r_stick_hori = sign(gamepad_axis_value(4,gp_axisrh));
 

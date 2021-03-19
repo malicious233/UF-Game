@@ -57,15 +57,35 @@ if (menu_control)
 	{								//and if mouse is within the area of menu items, x-axis-wise.													
 		menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);		//menu cursor attached to mouse position
 		
+		if (sound_played1 = 0 and menu_cursor = 1)
+		{
+			audio_play_sound(tune_pause_check1, 1000, false)
+			sound_played1 = 1
+		}else if sound_played1 = 1 and !menu_cursor = 1 or menu_cursor > 1
+		{
+			sound_played1 = 0
+		}
+		
+		if (sound_played0 = 0 and menu_cursor = 0)
+		{
+			audio_play_sound(tune_pause_check1, 1000, false)
+			sound_played0 = 1
+		}else if sound_played0 = 1 and !menu_cursor = 0 
+		{
+			sound_played0 = 0
+		}
+		
 		if (mouse_check_button_pressed(mb_left)) //this is within this mouse centered if-statement so that
 		{						
 			menu_x_target = gui_width-372//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
 			menu_committed = menu_cursor;
 		
 			menu_control = true;    
+			pause_menu_sound2()
 		}
 	}
 }
+
 
 if (menu_x > gui_width-373) && (menu_committed != -1)     //-33 (one behind -32) makes it so something actually happens when pressing enter
 { 
@@ -94,8 +114,9 @@ if (menu_x > gui_width-373) && (menu_committed != -1)     //-33 (one behind -32)
 if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button
 (gamepad_button_check_pressed(4,gp_face2)) or	  //directinput "B" button
 (gamepad_button_check_pressed(0,gp_start)) or		// xinput start button
-(gamepad_button_check_pressed(4,gp_start)))		  // direct start button
+(gamepad_button_check_pressed(4,gp_start)) or
+(mouse_check_button_pressed(mb_right)))		  // direct start button
 {
 	instance_destroy();
-	pause_menu_sound3()
+	pause_menu_sound3();
 }

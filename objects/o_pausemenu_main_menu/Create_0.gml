@@ -14,6 +14,9 @@ pause = true   //variable pause is false at creation of this object, becomes tru
 
 allObjects[0,0] = noone;   //variable for every instance that exist on screen, used in DRAW and key-ESCAPE events
 
+sound_played2 = 0
+sound_played1 = 0
+sound_played0 = 0
 
 
 

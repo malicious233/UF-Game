@@ -9,7 +9,8 @@ subpause = true   //variable pause is true at creation of this object
 
 allObjects[0,0] = noone;   //variable for every instance that exist on screen, used in DRAW and key-ESCAPE events
 
-
+sound_played1 = 0
+sound_played0 = 0
 
 
 //create basic shit for having a navigatable pausemenu with arrowkeys
@@ -35,14 +36,12 @@ Glad I caught this before committing*/
 
 //create menus, and which order they appear from top to bottom
 //menu[2] = "sub2";
-menu[3] = "Xinput";
-menu[2] = "Directinput";
-menu[1] = "GP1";
-menu[0] = "GP0";
+menu[1] = "Xinput";
+menu[0] = "Directinput";
 
 
 menu_items = array_length_1d(menu);
-menu_cursor = 3;   //sets where the selection arrow starts in menu order when thos object is created
+menu_cursor = 1;   //sets where the selection arrow starts in menu order when thos object is created
 
 menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);  //part of mouse menu tutorial from Shaun Spalding
 														//gets the top (or was it the bottom?) of the list of menu items

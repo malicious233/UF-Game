@@ -64,6 +64,24 @@ if (menu_control)
 	{								//and if mouse is within the area of menu items, x-axis-wise.													
 		menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);		//menu cursor attached to mouse position
 		
+		if (sound_played1 = 0 and menu_cursor = 1)
+		{
+			audio_play_sound(tune_pause_check1, 1000, false)
+			sound_played1 = 1
+		}else if sound_played1 = 1 and !menu_cursor = 1 or menu_cursor > 1
+		{
+			sound_played1 = 0
+		}
+		
+		if (sound_played0 = 0 and menu_cursor = 0)
+		{
+			audio_play_sound(tune_pause_check1, 1000, false)
+			sound_played0 = 1
+		}else if sound_played0 = 1 and !menu_cursor = 0 
+		{
+			sound_played0 = 0
+		}
+		
 		if (mouse_check_button_pressed(mb_left)) //this is within this mouse centered if-statement so that
 		{										//you can NOT press mouse to go to next menu 
 												//when not hovering over menu item. Could change that if we want
@@ -71,6 +89,7 @@ if (menu_control)
 			menu_x_target = gui_width-32
 			menu_committed = menu_cursor;
 			menu_control = true;
+			pause_menu_sound2()
 			
 			//same as in KEYPRESS - ENTER, couldn't get it to work any other way.
 			if !instance_exists(o_pausemenu_quit) and menu_cursor = 0     //when pressing enter when menu cursor is 
@@ -91,6 +110,7 @@ if (menu_control)
 	}
 	
 }
+
 
 
 

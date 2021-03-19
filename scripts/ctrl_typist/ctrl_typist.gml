@@ -16,6 +16,21 @@ key_up = keyboard_check(ord("D"));
 
 key_down = keyboard_check(ord("S"));
 
+key_test = keyboard_check_pressed(ord("G")) 
+key_test2 = keyboard_check_pressed(ord("H")) 
+
+if keyboard_check_pressed(ord("L"))
+{
+	if o_player.image_xscale = -1
+	{
+		key_test = true
+	}
+	if o_player.image_xscale = 1
+	{
+		key_test2 = true
+	}
+}
+
 if (key_left == true)
 {
 	curr_dir = -1;	

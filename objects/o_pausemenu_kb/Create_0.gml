@@ -9,7 +9,10 @@ subpause = true   //variable pause is true at creation of this object
 
 allObjects[0,0] = noone;   //variable for every instance that exist on screen, used in DRAW and key-ESCAPE events
 
-
+sound_played3 = 0
+sound_played2 = 0
+sound_played1 = 0
+sound_played0 = 0
 
 
 //create basic shit for having a navigatable pausemenu with arrowkeys
@@ -35,10 +38,10 @@ Glad I caught this before committing*/
 
 //create menus, and which order they appear from top to bottom
 //menu[2] = "sub2";
-menu[3] = "Arrowkeys, C & X";
-menu[2] = "Typist, J & K";
+menu[3] = "Arrowkeys, C & V";
+menu[2] = "Typist, J & K, L";
 menu[1] = "WASD, lctrl & lshift,"; //fix when player presses any of these buttons it goes to WASD1hand 
-menu[0] = "J & K, or Mouse";
+menu[0] = "J & K, L or Mouse";
 
 
 menu_items = array_length_1d(menu);
