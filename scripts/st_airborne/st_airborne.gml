@@ -49,7 +49,7 @@ if (key_space_click == true) and (jumps > 0)
 //Normal Attacks
 if (key_attack) and (key_up)
 {
-	attack(atk_bicyclekick,s_player_bicyclekick);
+	attack(upair[upair_id],s_player_bicyclekick);
 }
 if (key_attack) and !(key_up)
 {
@@ -69,7 +69,7 @@ if (key_special) and (key_up) and (uppercuts > 0)
 {
 	vsp = -3;
 	uppercuts = 0;
-	attack(atk_uppercut,s_player_uppercut);
+	attack(upspecial[upspecial_id],s_player_uppercut);
 }
 if (key_special) and !(key_up)
 {

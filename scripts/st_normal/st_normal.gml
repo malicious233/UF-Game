@@ -85,13 +85,13 @@ if (key_attack) and !(key_up)
 }
 if (key_attack) and (key_up)
 {
-	attack(atk_bicyclekick,s_player_bicyclekick);
+	attack(upair[upair_id],s_player_bicyclekick);
 	vsp = -(0.65*jump_spd);
 }
 
 if (key_special) and (key_up)
 {
-	attack(atk_uppercut,s_player_uppercut);	
+	attack(upspecial[upspecial_id],s_player_uppercut);	
 }
 if (key_special) and !(key_up)
 {

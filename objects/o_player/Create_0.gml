@@ -44,7 +44,16 @@ else
 controls = controls.gp_xinput
 }
 
-//Create personal hurtbox
 
-//create_hurtbox() //This isnt neccessary by the way
+//Alternate moves:
+//A list which determines which move they'll use
+//If you're using the attack() script, the first argument should be INSERT_MOVE[INSERT_MOVE_id]
+//and then change the INSERT_MOVE_id to match corresponding attack variant from the array.
 
+upair[0] = atk_bicyclekick;
+upair[1] = atk_windheel;
+upair_id = 0;
+
+upspecial[0] = atk_uppercut;
+upspecial[1] = atk_rocketcut;
+upspecial_id = 0;
