@@ -4,7 +4,7 @@
 //The state when you're in the middle of attacking
 function st_attacking()
 {
-
+if audio_is_playing(tune_running_grass){audio_sound_gain(tune_running_grass, 0 , 0)}
 
 
 

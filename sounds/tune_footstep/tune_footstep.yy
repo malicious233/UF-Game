@@ -13,8 +13,8 @@
   "soundFile": "tune_footstep.wav",
   "duration": 0.120011,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "unused",
+    "path": "folders/Sounds/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_footstep",

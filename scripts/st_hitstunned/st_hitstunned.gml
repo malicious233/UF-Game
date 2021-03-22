@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function st_hitstunned()
 {
+	if audio_is_playing(tune_running_grass){audio_sound_gain(tune_running_grass, 0 , 0)}
 	intangible = true;
 	hitstun_duration --;
 	if (hitstun_duration < 0) {states = states.normal;}

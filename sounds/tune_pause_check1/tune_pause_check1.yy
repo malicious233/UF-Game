@@ -13,8 +13,8 @@
   "soundFile": "tune_pause_check1.mp3",
   "duration": 0.161735,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "pausemenus",
+    "path": "folders/Sounds/pausemenus.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_pause_check1",

@@ -13,8 +13,8 @@
   "soundFile": "tune_shoulderbash1.mp3",
   "duration": 2.0948,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "player",
+    "path": "folders/Sounds/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_shoulderbash1",

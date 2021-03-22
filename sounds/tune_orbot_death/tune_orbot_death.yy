@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "tune_heavy_3.wav",
-  "duration": 0.47593,
+  "soundFile": "tune_orbot_death.mp3",
+  "duration": 4.39355,
   "parent": {
     "name": "unused",
     "path": "folders/Sounds/unused.yy",
   },
   "resourceVersion": "1.0",
-  "name": "tune_heavy_3",
+  "name": "tune_orbot_death",
   "tags": [],
   "resourceType": "GMSound",
 }
