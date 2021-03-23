@@ -36,7 +36,6 @@ if (shot_interval < 90)
 {
 	image_index = 1;	
 	if (!audio_is_playing(tune_cannonball)) {audio_play_sound(tune_cannonball, 1000, false)}
-	if instance_exists(o_pausemenu) {audio_pause_sound(tune_cannonball)} else {audio_resume_sound(tune_cannonball)}
 }
 else
 {

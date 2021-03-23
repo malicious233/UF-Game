@@ -15,4 +15,4 @@ with (cannon)
 	owner = other.id;
 }
 
-//audio_play_sound(tune_tanker_idle,1000,true)
+audio_play_sound(tune_tanker_idle,1000,true)

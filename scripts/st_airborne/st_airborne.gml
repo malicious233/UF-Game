@@ -72,6 +72,7 @@ if (key_special) and (key_up) and (uppercuts > 0)
 	vsp = -3;
 	uppercuts = 0;
 	attack(atk_uppercut,s_player_uppercut);
+	audio_play_sound(tune_uppercut, 1000, false)
 }
 if (key_special) and !(key_up)
 {

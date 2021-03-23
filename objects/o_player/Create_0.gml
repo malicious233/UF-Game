@@ -10,6 +10,11 @@ event_inherited();
 
 //window_set_fullscreen(true)
 
+if room == (Room1) 
+{
+	audio_play_sound(tune_white_noise, 1000, true)
+}
+
 
 jumps = 2;
 uppercuts = 1;

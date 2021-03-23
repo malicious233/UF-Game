@@ -110,6 +110,7 @@ if (key_attack) and (key_up)
 if (key_special) and (key_up)
 {
 	attack(atk_uppercut,s_player_uppercut);	
+	audio_play_sound(tune_uppercut, 1000, false)
 }
 if (key_special) and !(key_up)
 {

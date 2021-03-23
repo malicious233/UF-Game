@@ -3,6 +3,10 @@
 //moving(move_spd,input_dir);
 //friction_force(flat_friction,perc_friction);
 
+if (audio_is_playing(tune_tanker_idle) and instance_exists(o_pausemenu))
+{
+	audio_pause_sound(tune_tanker_idle)
+}else audio_resume_sound(tune_tanker_idle)
 
 if (paused == false)
  {
