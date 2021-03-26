@@ -17,6 +17,7 @@ if (hp <= 0) //We should move this so objects can die their own way, so to speak
 		image_yscale = 2;
 	}
 	screenshake(6,25)
+	o_meta.scorepoints = o_meta.scorepoints+points;
 }
 
 
@@ -45,6 +46,12 @@ else
 {
 	ground = false;	
 	ground_once = true;
+}
+
+//multiply score on combo
+if (states = states.hitstunned) and (curr_damage != 0)
+{
+	points = points*1.1;
 }
 
 hori_collision();

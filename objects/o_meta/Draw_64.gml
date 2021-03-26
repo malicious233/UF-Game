@@ -1,10 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-enum powerups
-{
-	Speed,
-	Power,
-	Push
-}
-
-scorepoints = 0;
+draw_text(100,100,string(o_meta.scorepoints));
