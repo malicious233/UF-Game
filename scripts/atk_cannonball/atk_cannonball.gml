@@ -21,7 +21,7 @@ function atk_cannonball()
 				image_xscale = 1; //Hitboxens X scale, optional
 				image_yscale = 1;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 5;
+				hitbox_damage = 4;
 				if (hitbox_owner.direction > 90 and hitbox_owner.direction < 270)
 				{var direc = -1}
 				else

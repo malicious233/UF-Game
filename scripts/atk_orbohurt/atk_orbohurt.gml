@@ -26,7 +26,7 @@ function atk_orbohurt()
 				hitbox_duration = 4;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.2; //Hitboxens X scale, optional
 				image_yscale = 1.2;//Hitboxens Y scale, optional
-				hitbox_damage = 8;
+				hitbox_damage = 6;
 				hitbox_x_kb = 8.5*other.dir;
 				hitbox_y_kb = -6
 			}
@@ -42,7 +42,7 @@ function atk_orbohurt()
 				hitbox_duration = 7;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 2; //Hitboxens X scale, optional
 				image_yscale = 1.2;//Hitboxens Y scale, optional
-				hitbox_damage = 8;
+				hitbox_damage = 6;
 				hitbox_x_kb = 8.5*other.dir;
 				hitbox_y_kb = -6
 			}
@@ -57,7 +57,7 @@ function atk_orbohurt()
 				hitbox_duration = 4;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.2; //Hitboxens X scale, optional
 				image_yscale = 1.2;//Hitboxens Y scale, optional
-				hitbox_damage = 8;
+				hitbox_damage = 6;
 				hitbox_x_kb = 7.5*other.dir;
 				hitbox_y_kb = -10
 			}

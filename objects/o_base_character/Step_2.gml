@@ -17,7 +17,11 @@ if (hp <= 0) //We should move this so objects can die their own way, so to speak
 		image_yscale = 2;
 	}
 	screenshake(6,25)
+	
+	//Add score to o_meta, which handles the points
 	o_meta.scorepoints = o_meta.scorepoints+points;
+	
+	//Spawn text which shows how much points it dropped
 	var p_text = instance_create_layer(x,y,"Text",o_text)
 		with (p_text)
 		{
@@ -57,7 +61,8 @@ else
 //multiply score on combo
 if (states = states.hitstunned) and (curr_damage != 0)
 {
-	points = points*1.5;
+	points = round(points*1.5);
+	
 }
 
 hori_collision();

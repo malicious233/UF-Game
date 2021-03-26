@@ -43,7 +43,7 @@
     {"propertyId":{"name":"move_spd","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"0.275","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"hp","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"25","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"team ","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"points","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"100","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"points","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"250","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Enemies",

@@ -9,7 +9,7 @@ function recieve_damage()
 		hsp = curr_x_kb;
 		vsp = curr_y_kb;
 		kb_angle = point_direction(x,y,x+curr_x_kb,y+curr_y_kb);
-		hitstun_duration = curr_damage*5.75; //WIP hitstun calculation
+		hitstun_duration = curr_damage*6; //WIP hitstun calculation
 		var p_text = instance_create_layer(x,y,"Text",o_text)
 		with (p_text)
 		{

@@ -43,7 +43,7 @@ function atk_rammer()
 				image_xscale = 2; //Hitboxens X scale, optional
 				image_yscale = 2.9;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 10;
+				hitbox_damage = 8;
 				hitbox_x_kb = 12*other.dir;
 				hitbox_y_kb = -6;
 				//audio_play_sound(tune_medium,500,false);

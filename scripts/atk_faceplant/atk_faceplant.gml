@@ -26,7 +26,7 @@ function atk_faceplant()
 				image_xscale = 1.75; //Hitboxens X scale, optional
 				image_yscale = 1.3;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 8;
+				hitbox_damage = 5;
 				hitbox_x_kb = 8*other.dir;
 				hitbox_y_kb = -7.5;
 				//audio_play_sound(tune_medium,500,false);
