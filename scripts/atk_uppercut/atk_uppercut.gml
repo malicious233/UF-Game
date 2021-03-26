@@ -7,6 +7,7 @@ function atk_uppercut()
 	attack_move_spd = 0.3;
 	if (attack_timing == 14)
 		{
+			//if (!audio_is_playing(tune_uppercut)){audio_play_sound(tune_uppercut, 1000, false)}
 			vsp = 0;
 			var partcl = create_particle()
 			with (partcl)

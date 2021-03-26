@@ -13,8 +13,8 @@
   "soundFile": "tune_punch_tincan.mp3",
   "duration": 2.1993,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "unused",
+    "path": "folders/Sounds/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_punch_tincan",

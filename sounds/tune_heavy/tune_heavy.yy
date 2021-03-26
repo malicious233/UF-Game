@@ -13,8 +13,8 @@
   "soundFile": "tune_heavy.wav",
   "duration": 0.436791,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "unused",
+    "path": "folders/Sounds/unused.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_heavy",

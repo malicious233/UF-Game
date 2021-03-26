@@ -5,8 +5,20 @@
 if !(instance_exists(o_player)) and !instance_exists(o_pausemenu_end)
 {
 	instance_create_depth(0,0,4,o_pausemenu_end) 
+	audio_play_sound(tune_player_death,1000,false)
+	
 	//room_goto(room_main_menu)
 }
+if !(instance_exists(o_tanker) and audio_is_playing(tune_tanker_idle))
+{
+	audio_stop_sound(tune_tanker_idle);
+	if (audio_is_playing(tune_cannonball)){audio_stop_sound(tune_cannonball);}
+}
+
+if (instance_exists(o_pausemenu) and audio_is_playing(tune_cannonball)) 
+{
+	audio_pause_sound(tune_cannonball)
+}else {audio_resume_sound(tune_cannonball)}
 
 
 

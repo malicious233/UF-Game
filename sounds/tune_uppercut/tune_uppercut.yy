@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.4,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,11 +10,11 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "tune_uppercut.wav",
-  "duration": 0.385,
+  "soundFile": "tune_uppercut.mp3",
+  "duration": 1.232755,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "player",
+    "path": "folders/Sounds/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_uppercut",

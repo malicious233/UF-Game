@@ -13,8 +13,8 @@
   "soundFile": "tune_pause_menu.mp3",
   "duration": 57.605,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "pausemenus",
+    "path": "folders/Sounds/pausemenus.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_pause_menu",

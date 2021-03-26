@@ -13,8 +13,8 @@
   "soundFile": "tune_tincan_death.mp3",
   "duration": 1.023776,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "tincan",
+    "path": "folders/Sounds/enemies/tincan.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_tincan_death",

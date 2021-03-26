@@ -13,8 +13,8 @@
   "soundFile": "tune_wave_1.mp3",
   "duration": 4.863776,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "waves",
+    "path": "folders/Sounds/waves.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_wave_1",
