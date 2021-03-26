@@ -1,4 +1,5 @@
 /// @description creation code
+#macro SAVEFILE "BanDanSave.sav"
 
 
 alarm[0] = 1  //after one frame alarm 0 runs, could probably put all that code here but naahh.
