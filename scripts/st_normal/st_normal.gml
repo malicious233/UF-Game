@@ -4,6 +4,7 @@ function st_normal()
 
 {
 	
+	
 //Movement
 
 //move = (key_right - key_left) * SPD_WALK_MAX
@@ -11,12 +12,18 @@ function st_normal()
 
 intangible = false;
 
+sound_running_gain = 0
+if !audio_is_playing(tune_running_grass){ audio_play_sound(tune_running_grass,1000,true)}
+audio_sound_gain(tune_running_grass, 0 , 0)
+
 if (key_left == true)
 {
 	dir = -1;
 	//curr_dir = -1; //Is now in the ctrl script instead
 	//hsp = hsp-move_spd;
 	//hsp = clamp(hsp,-max_spd,max_spd);
+	if sound_running_gain = 0{
+		audio_sound_gain(tune_running_grass, 1 , 0)}
 }
 
 if (key_right == true)
@@ -26,7 +33,12 @@ if (key_right == true)
 	//curr_dir = 1; //Now exists in the ctrl script instead
 	//hsp = hsp+move_spd;
 	//hsp = clamp(hsp,-max_spd,max_spd);
+	if sound_running_gain = 0{
+		audio_sound_gain(tune_running_grass, 1 , 0)}
 }
+
+if (key_left != true) and (key_right != true) {sound_running_gain = 1; audio_sound_gain(tune_running_grass, 0 , 0)}
+if instance_exists(o_pausemenu){audio_sound_gain(tune_running_grass, 0 , 0)}
 
 
 /*if (key_right == false) and (key_left == false)
@@ -42,6 +54,7 @@ moving(move_spd,curr_dir);
 
 if (key_space_click == true) and (jumps > 0)
 {
+	audio_play_sound(tune_player_jump, 1000, false)
 	vsp = -jump_spd;	
 	jumps --;
 }
@@ -92,6 +105,7 @@ if (key_attack) and (key_up)
 if (key_special) and (key_up)
 {
 	attack(upspecial[upspecial_id],s_player_uppercut);	
+	audio_play_sound(tune_uppercut, 1000, false)
 }
 if (key_special) and !(key_up)
 {

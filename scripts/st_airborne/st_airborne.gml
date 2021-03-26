@@ -5,6 +5,8 @@
 function st_airborne()
 {
 	
+if audio_is_playing(tune_running_grass){audio_sound_gain(tune_running_grass, 0 , 0)}
+	
 //Movement
 //move = (key_right - key_left) * SPD_WALK_MAX
 //hsp = Approach(hsp,move,SPD_WALK_ACCEL);
@@ -32,6 +34,7 @@ moving(move_spd*.7,curr_dir);
 
 if (key_space_click == true) and (jumps > 0)
 {
+	audio_play_sound(tune_player_jump, 1000, false)
 	vsp = -jump_spd;	
 	jumps --;
 	var partcl = create_particle();
@@ -70,6 +73,7 @@ if (key_special) and (key_up) and (uppercuts > 0)
 	vsp = -3;
 	uppercuts = 0;
 	attack(upspecial[upspecial_id],s_player_uppercut);
+	audio_play_sound(tune_uppercut, 1000, false)
 }
 if (key_special) and !(key_up)
 {
