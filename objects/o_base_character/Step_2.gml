@@ -15,6 +15,10 @@ if (hp <= 0) //We should move this so objects can die their own way, so to speak
 		sprite_index = fx_explosion;
 		image_xscale = 2;
 		image_yscale = 2;
+		if !instance_exists(o_player)
+		{
+			image_blend = c_red
+		}
 	}
 	screenshake(6,25)
 	
