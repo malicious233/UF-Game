@@ -3,16 +3,23 @@
 spawn_interval_set = 150;
 spawn_interval = spawn_interval_set;
 
+
+
 wave = 0;
 wave_buildup = 1;
-wave_max = 3;
+wave_max = 7;
+e_wave_cooldown = 500;
+wave_cooldown = 500;
 
-//Horizontal list for enemies required to progress to next wave
-e_wave_buildup[0] = 1; 
-e_wave_buildup[1] = 1;
-e_wave_buildup[2] = 10;
-e_wave_buildup[3] = 15;
-
+//Horizontal list for enemies killed required to progress to next wave
+e_wave_buildup[0] = 1; //One tincan
+e_wave_buildup[1] = 3; //Several tincans
+e_wave_buildup[2] = 1; //One orbot
+e_wave_buildup[3] = 3; //Several orbots
+e_wave_buildup[4] = 4; //Mixed tincan and orbot
+e_wave_buildup[5] = 8; //Mixed tincan and orbot, low chance for tanker
+e_wave_buildup[6] = 1; //One tanker
+e_wave_buildup[7] = 10; //Gott o blandat
 
 /*
 portal_coord[0, 0] = o_player.x; 

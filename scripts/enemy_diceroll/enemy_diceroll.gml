@@ -20,6 +20,7 @@ function enemy_diceroll()
 	else if (roll >= 0.25) and (roll <= 1) //75% for tincan
 		{return o_tincan};
 	*/
+	
 	if wav == 0
 	{
 		return o_tincan; //100% chance for tincan
@@ -27,10 +28,20 @@ function enemy_diceroll()
 	
 	if wav == 1
 	{
-		return o_orbot; //100% chance for orbot
+		return o_tincan; //100% chance for orbot
 	}
 	
 	if wav == 2
+	{
+		return o_orbot;	
+	}
+	
+	if wav == 3
+	{
+		return o_orbot;	
+	}
+	
+	if wav == 4
 	{
 		if (roll >= 0) and (roll < 0.25) //25% for orbot
 			{return o_orbot};
@@ -38,7 +49,22 @@ function enemy_diceroll()
 			{return o_tincan};
 	}
 	
-	if wav == 3
+	if wav == 5
+	{
+		if (roll >= 0) and (roll < 0.01)
+			{return o_tanker};
+		else if (roll >= 0.01) and (roll < 0.35)
+			{return o_orbot}
+		else if (roll >= 0.35) and (roll <= 1)
+			{return o_tincan}
+	}
+	
+	if wav == 6
+	{
+		return o_tanker;
+	}
+	
+	if wav == 7
 	{
 		if (roll >= 0) and (roll < 0.05)
 			{return o_tanker};

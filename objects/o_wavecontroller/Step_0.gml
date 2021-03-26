@@ -1,13 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+var enemycount = (instance_number(o_base_character))-1+instance_number(o_enemyportal)
 
-if (spawn_interval < 0) and (instance_number(o_base_character)-1 < e_wave_buildup[wave])
+if (enemycount) < 1
+{
+	wave_cooldown --;
+	screenshake(10,10)
+}
+
+if (spawn_interval < 0) and (enemycount < e_wave_buildup[wave]) and (wave_cooldown < 0)
 {
 	wave_buildup --;
-	if (wave_buildup < 0) and (wave < wave_max)
+	if (wave_buildup < 0) and (wave < wave_max) 
 	{
 		next_wave();
+		wave_cooldown = e_wave_cooldown;
 	}
 	spawn_interval = spawn_interval_set;
 	

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 //var txt = string("Wave")
 //draw_text(200,200,txt)
-/*
+
 draw_set_color(c_blue);
 draw_set_font(simpletext);
 draw_text(360,60,"Wave-buildup"+ string(wave_buildup));

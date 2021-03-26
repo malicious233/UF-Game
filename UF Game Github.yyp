@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"tune_changename","path":"sounds/tune_changename/tune_changename.yy",},"order":12,},
     {"id":{"name":"o_tincan","path":"objects/o_tincan/o_tincan.yy",},"order":1,},
+    {"id":{"name":"atk_phantomdash","path":"scripts/atk_phantomdash/atk_phantomdash.yy",},"order":2,},
     {"id":{"name":"o_acrylic_games_logo","path":"objects/o_acrylic_games_logo/o_acrylic_games_logo.yy",},"order":20,},
     {"id":{"name":"screenshake","path":"scripts/screenshake/screenshake.yy",},"order":13,},
     {"id":{"name":"s_player_hurt","path":"sprites/s_player_hurt/s_player_hurt.yy",},"order":4,},
