@@ -13,7 +13,7 @@ event_inherited();
 if room == (Room1) 
 {
 	audio_play_sound(tune_white_noise, 1000, true)
-}
+}else audio_stop_sound(tune_white_noise)
 
 
 jumps = 2;
