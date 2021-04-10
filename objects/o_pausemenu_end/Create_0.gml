@@ -1,4 +1,21 @@
 /// @description creation code
+if !file_exists(SAVEFILE2)
+{
+	var file
+	file = file_text_open_write(SAVEFILE2)
+	file_text_write_real(file,o_meta.scorepoints)
+	file_text_close(file)
+}
+if file_exists(SAVEFILE2)
+{
+	file = file_text_open_read(SAVEFILE2)
+	if (file_text_read_real(file) < o_meta.scorepoints)
+	{
+		file = file_text_open_write(SAVEFILE2)
+		file_text_write_real(file,o_meta.scorepoints)
+		file_text_close(file)
+	} else file_text_close(file)
+}
 
 if audio_is_playing(tune_pause_menu){
 	audio_sound_gain(tune_pause_menu, 1, 3000)}
