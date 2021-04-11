@@ -13,7 +13,6 @@ function atk_rammer()
 	{
 		vsp = -5;
 		hsp = 3*-dir;
-		dir = -sign(x-target_focus.x);
 		if instance_exists(target_focus)
 		{dir = -sign(x-target_focus.x);}
 		
