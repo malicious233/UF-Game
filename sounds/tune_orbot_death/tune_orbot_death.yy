@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "tune_orbot_death.mp3",
-  "duration": 1.20665,
+  "duration": 1.311122,
   "parent": {
     "name": "orbot",
     "path": "folders/Sounds/enemies/orbot.yy",

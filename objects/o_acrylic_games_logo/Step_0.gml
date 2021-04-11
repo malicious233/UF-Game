@@ -11,9 +11,9 @@ if (alarm[1] == -1) {
 	
 }
 
-if keyboard_check_pressed(ord("R")){
+/*if keyboard_check_pressed(ord("R")){
 	room_restart()
-}
+}*/
 
 
 if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button

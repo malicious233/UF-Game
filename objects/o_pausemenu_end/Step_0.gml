@@ -1,6 +1,7 @@
 /// @description arrowkey and Enter controls 
 
 //Item ease in (slide menu text in from left, animation) //"disabled" by having menu_speed in Create set to 1, very low.
+if instance_exists (o_pausemenu_settings) {instance_destroy(o_pausemenu_settings)}
 if (alarm[1] == -1){
 menu_x += (menu_x_target - menu_x) / menu_speed;
 }
@@ -136,9 +137,9 @@ if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 
 			}
 			audio_play_sound(tune_wave_1,1000,false);
 				pause = false;			
-				instance_activate_all(); 
+				/*instance_activate_all(); 
 				instance_deactivate_object(o_pausemenu_quit)
-				o_hurtbox.image_alpha = 1;   
+				o_hurtbox.image_alpha = 1; */  
 				menu_control = false; 
 				if instance_exists(o_pausemenu_quit) and pause = false
 					{

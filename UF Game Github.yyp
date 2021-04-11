@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"tune_changename","path":"sounds/tune_changename/tune_changename.yy",},"order":0,},
+    {"id":{"name":"fnt_endscore","path":"fonts/fnt_endscore/fnt_endscore.yy",},"order":4,},
     {"id":{"name":"o_tincan","path":"objects/o_tincan/o_tincan.yy",},"order":1,},
     {"id":{"name":"atk_phantomdash","path":"scripts/atk_phantomdash/atk_phantomdash.yy",},"order":2,},
     {"id":{"name":"o_acrylic_games_logo","path":"objects/o_acrylic_games_logo/o_acrylic_games_logo.yy",},"order":20,},
