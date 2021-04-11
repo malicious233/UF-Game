@@ -1,12 +1,49 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var enemycount = (instance_number(o_base_character))-1+instance_number(o_enemyportal)
+var enemycount = (instance_number(o_base_character))-1 //Counts all enemies, minus the player because he's also a base_character
 
+/*
 if (enemycount) < 1
 {
 	wave_cooldown --;
-	screenshake(10,10)
+	screenshake(5,5)
+}
+*/
+if (wave_pause == false) //During wave
+{
+	if (spawn_interval < 0) and (enemycount < e_wave_buildup[wave]) //If the enemy spawn interval is ready and there's less enemies than the cap, spawn enemy
+	{
+		wave_buildup --; //Increase wave_buildup every time an enemy is spawned
+		summon_enemy();
+		spawn_interval = spawn_interval_set;
+	}
+	spawn_interval --;
+	
+	if (wave_buildup <= 0) //When wave_buildup is 0, the wave pauses
+	{
+		wave_pause = true;	
+	}
+}
+else //When wave_pause is true
+{
+	screenshake(3,3);
+	if (keyboard_check_pressed(ord("L")) == true) and (enemycount == 0) //Click L to go to the next wave during the stupid earthquake
+	{
+		if (wave < wave_max)
+		{
+			wave ++;	
+		}
+		wave_buildup = e_wave_buildup[wave];
+		wave_pause = false;
+	}
+}
+
+/*
+if (wave_cooldown > 0)
+{
+	screenshake(5,5);
+	wave_cooldown --;
 }
 
 if (spawn_interval < 0) and (enemycount < e_wave_buildup[wave]) and (wave_cooldown < 0)
@@ -14,17 +51,19 @@ if (spawn_interval < 0) and (enemycount < e_wave_buildup[wave]) and (wave_cooldo
 	wave_buildup --;
 	if (wave_buildup < 0) and (wave < wave_max) 
 	{
-		next_wave();
+		wave ++;
+	if !(wave >= wave_max)
+	{
+		wave_buildup = e_wave_buildup[wave];
+		if (spawn_interval_set > 60) //Nested if statement? Cringe!
+			spawn_interval_set = spawn_interval_set-30;
 		wave_cooldown = e_wave_cooldown;
 	}
 	spawn_interval = spawn_interval_set;
 	
-	var cell = irandom_range(0,3); //This is unfortunately a magic number, 
-	var portl_typ = instance_create_layer(portal_coord[0,cell],portal_coord[1,cell],"Instance",o_enemyportal)
-	with (portl_typ)
-	{
-		spawn_instance = enemy_diceroll();
+	summon_enemy();
 	}
 }
 
 spawn_interval --;
+*/

@@ -10,6 +10,7 @@ wave_buildup = 1;
 wave_max = 7;
 e_wave_cooldown = 500;
 wave_cooldown = 500;
+wave_pause = false;
 
 //Horizontal list for enemies killed required to progress to next wave
 e_wave_buildup[0] = 1; //One tincan
