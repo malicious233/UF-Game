@@ -113,6 +113,11 @@ if (key_special) and !(key_up)
 	audio_play_sound(tune_shoulderbash1,1000,false)
 }
 
+if (keyboard_check_pressed(ord("U")))
+{
+	attack(atk_taunt1,s_player_taunt1);	
+}
+
 //State change
 if (ground == false)
 {

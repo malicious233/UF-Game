@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var enemycount = (instance_number(o_base_character))-1 //Counts all enemies, minus the player because he's also a base_character
+var enemycount = (instance_number(o_base_character))-1+(instance_number(o_enemyportal)); //Counts all enemies, minus the player because he's also a base_character
 
 /*
 if (enemycount) < 1
@@ -27,7 +27,7 @@ if (wave_pause == false) //During wave
 }
 else //When wave_pause is true
 {
-	screenshake(3,3);
+	//screenshake(3,3);
 	if (keyboard_check_pressed(ord("L")) == true) and (enemycount == 0) //Click L to go to the next wave during the stupid earthquake
 	{
 		if (wave < wave_max)
