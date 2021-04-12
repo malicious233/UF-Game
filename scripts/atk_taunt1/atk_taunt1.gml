@@ -4,12 +4,19 @@
 function atk_taunt1()
 {
 	sprite_index = s_player_taunt1;
-	//attack_timing_end = (sprite_get_number(s_player_fastpunch)*60)/image_speed;
+	//attack_timing_end = (sprite_get_number(s_player_fastpunch)*60)/image_speed;		
 	attack_timing_end = 42; 
 	attack_move_spd = 0;
-	if (attack_timing == 10)
+	if (attack_timing == 9)
 	{
-		audio_play_sound(tune_taunt, 1000, false)
+			var roll = random(1)
+		if (roll >= 0) and (roll < 0.05)
+			{return audio_play_sound(tune_taunt_special, 1000, false);}
+		else if (roll >= 0.05) and (roll <= 1)
+			{return audio_play_sound(tune_taunt, 1000, false)}
+	}
+	if (attack_timing == 10)
+	{			
 	create_hitbox()
 			with (current_hitbox)
 				{
@@ -28,6 +35,7 @@ function atk_taunt1()
 					
 				}
 	}
+
 
 	
 			

@@ -113,7 +113,7 @@ if (key_special) and !(key_up)
 	audio_play_sound(tune_shoulderbash1,1000,false)
 }
 
-if (keyboard_check_pressed(ord("U")))
+if (keyboard_check_pressed(ord("U"))) or gamepad_button_check_pressed(0,gp_stickl) or gamepad_button_check_pressed(4,gp_stickl)
 {
 	attack(atk_taunt1,s_player_taunt1);	
 }

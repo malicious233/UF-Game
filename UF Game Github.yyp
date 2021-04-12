@@ -50,6 +50,7 @@
     {"id":{"name":"next_wave","path":"scripts/next_wave/next_wave.yy",},"order":16,},
     {"id":{"name":"s_meadow_tileset","path":"sprites/s_meadow_tileset/s_meadow_tileset.yy",},"order":17,},
     {"id":{"name":"o_key_layout_mouse","path":"objects/o_key_layout_mouse/o_key_layout_mouse.yy",},"order":34,},
+    {"id":{"name":"tune_taunt_special","path":"sounds/tune_taunt_special/tune_taunt_special.yy",},"order":11,},
     {"id":{"name":"atk_lowpunch","path":"scripts/atk_lowpunch/atk_lowpunch.yy",},"order":2,},
     {"id":{"name":"o_meta","path":"objects/o_meta/o_meta.yy",},"order":11,},
     {"id":{"name":"s_bg_1","path":"sprites/s_bg_1/s_bg_1.yy",},"order":8,},
