@@ -43,7 +43,7 @@
 									,,instance_count stores how many instances of any kind are in the room where
 									this o_pausemenu object resides. we should probs make pausemenu universal*/
 		{
-			if(instance_find(all,i).sprite_index != -1)  //fix for trying to capture sprite that doesn't exist (-1 in value)
+			if(instance_find(all,i).sprite_index != -1) and (object_index != -4)  //fix for trying to capture sprite that doesn't exist (-1 in value)
 			 //-->omit sprites that don't exist and capture the ones that do exist-->
 			{
 				allObjects[i - offset,0] = instance_find(all, i).sprite_index;
@@ -67,5 +67,5 @@
 		
 		//want to have more stuff in the pause menu? create them here
 	}
-	else { allObjects = 0;}
+	else allObjects = 0;
 	

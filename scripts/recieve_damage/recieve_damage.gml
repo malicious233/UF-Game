@@ -14,8 +14,12 @@ function recieve_damage()
 		with (p_text)
 		{
 			dialogue = other.curr_damage;
+			
+			
 		}
-		
+		if instance_exists(o_player) and (o_player.realowner = self.id) {audio_play_sound(tune_player_damage, 1000, false)}
+		if instance_exists(o_tincan) and (o_tincan.realowner = 0) and audio_is_playing(tune_tincan_attack){audio_stop_sound(tune_tincan_attack)}
+		if instance_exists(o_tincan) and (o_tincan.realowner = 0) {audio_play_sound(tune_tincan_damage, 1000, false)}
 		//I'll change this in the future so what particle effects 
 		//that occur upon attack depend on what type of attack it is
 		//So fiery punch will have different fx than a normal kick does!

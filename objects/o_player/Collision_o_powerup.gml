@@ -4,6 +4,7 @@ with (other)
 {
 	var powerup_type = image_index;
 	instance_destroy();
+	audio_play_sound(tune_powerup, 1000, false)
 }
 
 var pwr_time = 10;

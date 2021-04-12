@@ -8,6 +8,8 @@ if room = (room_main_menu)
 if (paused == false)
 
 {
+	if instance_exists(o_tincan) {
+		o_tincan.realowner = 0}
 
 //Inputs
 //ctrl_arrowkeys()

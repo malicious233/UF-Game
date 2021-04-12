@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "tune_tincan_death.mp3",
-  "duration": 1.6507,
+  "duration": 1.023776,
   "parent": {
     "name": "tincan",
     "path": "folders/Sounds/enemies/tincan.yy",

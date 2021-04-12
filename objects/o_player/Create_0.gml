@@ -7,6 +7,8 @@ event_inherited();
 #macro SPD_WALK_MAX 7.2  
 #macro SPD_WALK_ACCEL 0.7
 
+o_player.realowner = self.id
+
 
 //window_set_fullscreen(true)
 

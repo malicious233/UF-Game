@@ -7,4 +7,8 @@ recieve_damage();
 curr_damage = 0;
 curr_x_kb = 0;
 curr_y_kb = 0;
+damage_id = 0
+damage_id1 = 0
+damage_id2 = 0
+damage_id3 = 0
 }
