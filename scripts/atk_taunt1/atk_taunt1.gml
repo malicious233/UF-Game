@@ -9,6 +9,7 @@ function atk_taunt1()
 	attack_move_spd = 0;
 	if (attack_timing == 10)
 	{
+		audio_play_sound(tune_taunt, 1000, false)
 	create_hitbox()
 			with (current_hitbox)
 				{

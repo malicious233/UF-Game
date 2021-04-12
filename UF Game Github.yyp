@@ -40,6 +40,7 @@
     {"id":{"name":"s_plat","path":"sprites/s_plat/s_plat.yy",},"order":2,},
     {"id":{"name":"s_bg_3","path":"sprites/s_bg_3/s_bg_3.yy",},"order":10,},
     {"id":{"name":"o_hitbox_master","path":"objects/o_hitbox_master/o_hitbox_master.yy",},"order":2,},
+    {"id":{"name":"tune_taunt","path":"sounds/tune_taunt/tune_taunt.yy",},"order":10,},
     {"id":{"name":"o_powerup","path":"objects/o_powerup/o_powerup.yy",},"order":0,},
     {"id":{"name":"s_player_fastpunch","path":"sprites/s_player_fastpunch/s_player_fastpunch.yy",},"order":1,},
     {"id":{"name":"ct_add","path":"scripts/ct_add/ct_add.yy",},"order":0,},
