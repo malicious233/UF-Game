@@ -8,6 +8,7 @@ function hori_collision() //Here we should fit in wall-bounce logic
 		{
 			x = x+sign(hsp);
 		}
+
 		if (states == states.hitstunned) and (abs(hsp) >= 3)
 		{
 			var abshsp = (abs(hsp)^2);
@@ -34,6 +35,7 @@ function hori_collision() //Here we should fit in wall-bounce logic
 		{
 			hsp = 0;
 		}
+		
 	}
 
 

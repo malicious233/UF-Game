@@ -29,6 +29,7 @@ function vert_collision()
 		{
 			vsp = 0;
 		}
+		
 	}
 	/*
 	else

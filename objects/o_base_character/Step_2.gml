@@ -24,6 +24,15 @@ if (hp <= 0) //We should move this so objects can die their own way, so to speak
 	
 	//Add score to o_meta, which handles the points
 	o_meta.scorepoints = o_meta.scorepoints+points;
+	repeat (5)
+	{
+		var mone = instance_create_layer(x,y,"Player",o_coin)	
+		with (mone)
+		{
+			hsp = random_range(-5,5);
+			vsp = random_range(-9,-1);
+		}
+	}
 	
 	//Spawn text which shows how much points it dropped
 	var p_text = instance_create_layer(x,y,"Text",o_text)
