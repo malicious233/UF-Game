@@ -43,6 +43,7 @@
     {"propertyId":{"name":"max_spd","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"2","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"move_spd","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"0.25","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"points","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"600","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"death_money","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"15","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Tanker",

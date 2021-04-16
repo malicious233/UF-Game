@@ -171,6 +171,20 @@ else
 }
 
 //States
+
+if (Speed_duration <= 0)
+{
+	Speed_mod = 1;	
+}
+if (Power_duration <= 0)
+{
+	Power_mod = 1;	
+}
+if (Push_duration <= 0)
+{
+	Push_mod = 1;	
+}
+
 switch (states)
 {
 case states.normal: st_normal() ; break;

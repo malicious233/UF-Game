@@ -16,12 +16,18 @@ input_dir = 0; //Might become useful when adding controller support and a more i
 obj_id = id;
 intangible = false;
 projectile = false;
+combo_timer = 0;
 
 
 //Powerup modifiers
 Speed_mod = 1;
+Speed_duration = 0;
+
 Power_mod = 1;
+Power_duration = 0;
+
 Push_mod = 1;
+Push_duration = 0;
 
 
 

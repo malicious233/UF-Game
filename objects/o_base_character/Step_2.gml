@@ -24,13 +24,15 @@ if (hp <= 0) //We should move this so objects can die their own way, so to speak
 	
 	//Add score to o_meta, which handles the points
 	o_meta.scorepoints = o_meta.scorepoints+points;
-	repeat (5)
+	
+	//Spawns money coins
+	repeat (death_money)
 	{
 		var mone = instance_create_layer(x,y,"Player",o_coin)	
 		with (mone)
 		{
 			hsp = random_range(-5,5);
-			vsp = random_range(-9,-1);
+			vsp = random_range(-9,-6);
 		}
 	}
 	
@@ -47,7 +49,7 @@ if (hp <= 0) //We should move this so objects can die their own way, so to speak
 image_xscale = size*dir;
 image_yscale = size;
 
-
+//Once upon landing
 
 if (place_meeting(x,y+1,o_plat))
 {
@@ -72,11 +74,51 @@ else
 }
 
 //multiply score on combo
-if (states = states.hitstunned) and (curr_damage != 0)
+/*
+if (states = states.hitstunned) and (curr_damage != 0) //Make combos more generous with combos not being dependent on hitstun
 {
 	points = round(points*1.5);
-	
+
+	var mone = instance_create_layer(x,y,"Player",o_coin)	
+	with (mone)
+	{
+		hsp = random_range(-3,3);
+		vsp = random_range(-10,-8);
+	}
+
 }
+*/
+if (curr_damage != 0)
+{
+	
+	if (combo_timer >= 0)
+	{
+		points = round(points*1.5)	
+		var mone = instance_create_layer(x,y,"Player",o_coin)	
+		with (mone)
+		{
+			hsp = random_range(-3,3);
+			vsp = random_range(-10,-8);
+		}
+	}
+	combo_timer = 10+curr_damage*5;
+}
+combo_timer --;
+
+if (Speed_duration <= 0)
+{
+	Speed_mod = 1;	
+}
+if (Power_duration <= 0)
+{
+	Power_mod = 1;	
+}
+if (Push_duration <= 0)
+{
+	Push_mod = 1;	
+}
+
+
 
 hori_collision();
 x = x+hsp;

@@ -1,5 +1,7 @@
 /// @description Gather Powerup
 // You can write your code in this editor
+
+
 with (other)
 {
 	var powerup_type = image_index;

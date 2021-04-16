@@ -34,6 +34,9 @@ else //When wave_pause is true
 		{
 			wave ++;	
 		}
+		o_player.Speed_duration --;
+		o_player.Power_duration --;
+		o_player.Push_duration --;
 		wave_buildup = e_wave_buildup[wave];
 		wave_pause = false;
 	}
