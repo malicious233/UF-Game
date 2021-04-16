@@ -6,7 +6,7 @@
     "path": "folders/Objects/Shop/Items.yy",
   },
   "resourceVersion": "1.0",
-  "name": "item_health",
+  "name": "display_value",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function item_health()
+function display_value()
 {	
-	with (o_player)
-	o_player.hp = o_player.hp+20;
+	draw_text(x+30,y+60,string(purchase_value)+" Coins");
 }

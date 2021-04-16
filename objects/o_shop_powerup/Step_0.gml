@@ -12,3 +12,7 @@ if (place_meeting(x,y,o_player)) and (o_player.key_attack)
 		}
 	}
 }
+
+// You can write your code in this editor
+
+

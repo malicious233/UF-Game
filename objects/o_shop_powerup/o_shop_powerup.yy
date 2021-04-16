@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite84",
-    "path": "sprites/Sprite84/Sprite84.yy",
+    "name": "s_powerup",
+    "path": "sprites/s_powerup/s_powerup.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,8 +23,8 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"o_shop_powerup","path":"objects/o_shop_powerup/o_shop_powerup.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_shop_powerup","path":"objects/o_shop_powerup/o_shop_powerup.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_shop_powerup","path":"objects/o_shop_powerup/o_shop_powerup.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":5,"eventType":7,"collisionObjectId":null,"parent":{"name":"o_shop_powerup","path":"objects/o_shop_powerup/o_shop_powerup.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_shop_powerup","path":"objects/o_shop_powerup/o_shop_powerup.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
