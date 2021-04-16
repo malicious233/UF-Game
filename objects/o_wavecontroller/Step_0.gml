@@ -23,10 +23,19 @@ if (wave_pause == false) //During wave
 	if (wave_buildup <= 0) //When wave_buildup is 0, the wave pauses
 	{
 		wave_pause = true;	
+		spawnwaresonce = false;
 	}
 }
 else //When wave_pause is true
 {
+	if (enemycount == 0 and spawnwaresonce == false)
+	{
+		with (o_shopkeeper)
+		{
+			spawn_wares();	
+		}
+		spawnwaresonce = true;
+	}
 	//screenshake(3,3);
 	if (keyboard_check_pressed(ord("L")) == true) and (enemycount == 0) //Click L to go to the next wave during the stupid earthquake
 	{

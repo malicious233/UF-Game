@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-purchase_value = 75;
+purchase_value = 50;
 
 
 function change_windheel()

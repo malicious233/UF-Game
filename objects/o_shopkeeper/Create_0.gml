@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-available = true;
+//available = true;
 
 function thing()
 {
@@ -15,8 +15,9 @@ switch (b)
 
 function spawn_wares()
 {
-	instance_create_layer(x,y,"Shop",thing())
-	instance_create_layer(x-60,y,"Shop",thing())
-	instance_create_layer(x+60,y,"Shop",thing())
+	instance_create_layer(x,y-30,"Items",thing())
+	instance_create_layer(x-60,y-30,"Items",thing())
+	instance_create_layer(x+60,y-30,"Items",thing())
 }
 spawn_wares();
+
