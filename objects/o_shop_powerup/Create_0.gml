@@ -4,19 +4,19 @@ purchase_value = 5;
 
 function change_speed()
 {
-	o_player.Speed_duration = 2;
+	o_player.Speed_duration = 3;
 	o_player.Speed_mod = o_player.Speed_mod*1.2
 }
 
 function change_power()
 {
-	o_player.Power_duration = 2;
+	o_player.Power_duration = 3;
 	o_player.Power_mod = o_player.Power_mod*1.2
 }
 
 function change_push()
 {
-	o_player.Push_duration = 2;
+	o_player.Push_duration = 3;
 	o_player.Push_mod = o_player.Push_mod*1.2
 }
 
