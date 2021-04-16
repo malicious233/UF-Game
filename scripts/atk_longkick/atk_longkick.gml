@@ -5,6 +5,10 @@ function atk_longkick()
 	sprite_index = s_player_longkick;
 	attack_timing_end = 37;
 	attack_move_spd = 1;
+	if (attack_timing == 1){ 
+		audio_play_sound(tune_dodgeroll, 1000, false)
+		audio_sound_pitch(tune_dodgeroll, 0.9)
+	}
 	if (attack_timing == 5) //Early hitbox
 		{
 			create_hitbox()

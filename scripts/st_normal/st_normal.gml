@@ -94,7 +94,6 @@ else
 if (key_attack) and !(key_up)
 {
 	attack(atk_fastpunch,s_player_fastpunch);	
-	audio_play_sound(tune_fastpunch1,1000,false)
 }
 if (key_attack) and (key_up)
 {
@@ -105,15 +104,13 @@ if (key_attack) and (key_up)
 if (key_special) and (key_up)
 {
 	attack(upspecial[upspecial_id],s_player_uppercut);	
-	audio_play_sound(tune_uppercut, 1000, false)
 }
 if (key_special) and !(key_up)
 {
 	attack(atk_shoulderbash,s_player_shoulderbash);	
-	audio_play_sound(tune_shoulderbash1,1000,false)
 }
 
-if (keyboard_check_pressed(ord("U"))) or gamepad_button_check_pressed(0,gp_stickl) or gamepad_button_check_pressed(4,gp_stickl)
+if (keyboard_check_pressed(ord("U"))) or gamepad_button_check_pressed(0,gp_stickl) or gamepad_button_check_pressed(4,gp_stickl) or mouse_check_button_pressed(mb_middle)
 {
 	attack(atk_taunt1,s_player_taunt1);	
 }

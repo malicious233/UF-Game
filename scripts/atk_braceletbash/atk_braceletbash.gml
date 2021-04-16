@@ -6,6 +6,10 @@ function atk_braceletbash()
 	attack_timing_end = 30;
 	attack_move_spd = 0.75;
 	
+	if (attack_timing == 1){
+		audio_play_sound(tune_fastpunch1, 1000, false)
+		audio_sound_pitch(tune_fastpunch1, 0.9)
+	}
 	if (attack_timing == 13) //Early hitbox
 		{
 			hsp = hsp+3*dir;

@@ -7,6 +7,10 @@ function atk_shoulderbash()
 	//attack_timing_end = (sprite_get_number(s_player_fastpunch)*60)/image_speed;
 	attack_timing_end = 44; 
 	attack_move_spd = 0;
+	
+	if (attack_timing == 1){
+		audio_play_sound(tune_shoulderbash1, 1000, false)
+	}
 	if (attack_timing > 0) and (attack_timing < 26)
 	{
 		vsp = 0;

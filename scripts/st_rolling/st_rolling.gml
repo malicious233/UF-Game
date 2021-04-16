@@ -11,6 +11,7 @@ function st_rolling()
 	
 	friction_force(flat_friction*0.5,0.995);
 	if !audio_is_playing(tune_dodgeroll){
-	audio_play_sound(tune_dodgeroll, 1000, false)}
+	audio_play_sound(tune_dodgeroll, 1000, false);
+	audio_sound_pitch(tune_dodgeroll, 1)}
 	
 }

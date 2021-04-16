@@ -5,6 +5,9 @@ function atk_uppercut()
 	sprite_index = s_player_uppercut;
 	attack_timing_end = 45;
 	attack_move_spd = 0.3;
+	if (attack_timing == 1){ 
+		audio_play_sound(tune_uppercut, 1000, false)
+	}
 	if (attack_timing == 14)
 		{
 			//if (!audio_is_playing(tune_uppercut)){audio_play_sound(tune_uppercut, 1000, false)}

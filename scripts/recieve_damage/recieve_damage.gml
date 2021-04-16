@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function recieve_damage()
 {
+
+	
 	if (curr_damage != 0)
 	{
 		
@@ -14,15 +16,16 @@ function recieve_damage()
 		with (p_text)
 		{
 			dialogue = other.curr_damage;
-			
-			
 		}
+		
 		realowner_dud = 0
 		if instance_exists(o_player) and (o_player.realowner = self.id) 
 		{ 
 			realowner_dud = 1;
-			audio_play_sound(tune_player_damage, 1000, false);
-		}else { realowner_dud = 0; audio_play_sound(tune_tincan_damage, 1000, false)}
+			audio_play_sound(tune_player_damage, 1000, false);}
+		else{realowner_dud = 0; audio_play_sound(tune_tincan_damage, 1000, false)
+			audio_sound_pitch(tune_tincan_damage, random_range(0.9, 1.1))}
+
 		if instance_exists(o_tincan) and realowner_dud = 0 and audio_is_playing(tune_tincan_attack){audio_stop_sound(tune_tincan_attack)}
 
 		//I'll change this in the future so what particle effects 
@@ -93,5 +96,5 @@ function recieve_damage()
 		}
 		*/
 		
-	}
+	}	
 }
