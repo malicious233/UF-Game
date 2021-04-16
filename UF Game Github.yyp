@@ -72,6 +72,7 @@
     {"id":{"name":"st_freeze","path":"scripts/st_freeze/st_freeze.yy",},"order":5,},
     {"id":{"name":"room_main_menu","path":"rooms/room_main_menu/room_main_menu.yy",},"order":2,},
     {"id":{"name":"bababooey","path":"objects/bababooey/bababooey.yy",},"order":36,},
+    {"id":{"name":"tune_coin_pickup","path":"sounds/tune_coin_pickup/tune_coin_pickup.yy",},"order":33,},
     {"id":{"name":"s_enemy_angry","path":"sprites/s_enemy_angry/s_enemy_angry.yy",},"order":1,},
     {"id":{"name":"enemy_diceroll","path":"scripts/enemy_diceroll/enemy_diceroll.yy",},"order":17,},
     {"id":{"name":"Sprite83","path":"sprites/Sprite83/Sprite83.yy",},"order":25,},
