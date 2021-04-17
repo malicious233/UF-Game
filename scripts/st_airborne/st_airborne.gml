@@ -88,7 +88,7 @@ if (key_down)//shits fucked
 	}
 	if (key_special)
 	{
-	attack(atk_stomp,s_player_stomp);
+	attack(downair[downair_id],s_player_stomp);
 	}
 }
 
