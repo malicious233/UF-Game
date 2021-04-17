@@ -93,7 +93,7 @@ else
 //Attacks
 if (key_attack) and !(key_up)
 {
-	attack(atk_fastpunch,s_player_fastpunch);	
+	attack(basicattack[basicattack_id],s_player_stumbler);	
 }
 if (key_attack) and (key_up)
 {
@@ -107,7 +107,7 @@ if (key_special) and (key_up)
 }
 if (key_special) and !(key_up)
 {
-	attack(atk_shoulderbash,s_player_shoulderbash);	
+	attack(specialattack[specialattack_id],s_player_shoulderbash);	
 }
 
 if (keyboard_check_pressed(ord("U"))) or gamepad_button_check_pressed(0,gp_stickl) or gamepad_button_check_pressed(4,gp_stickl) or mouse_check_button_pressed(mb_middle)

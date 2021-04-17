@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-//Has vastly lower cooldown than bicyclekick but is weaker. It also stalls in the air a bit
+//Has vastly lower cooldown than bicyclekick but is far weaker. It also stalls in the air 
 
 function atk_windheel()
 {

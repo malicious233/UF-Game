@@ -24,6 +24,8 @@ uppercuts = 1;
 step_once = false;
 dodge_duration = 0;
 
+charge = 1;
+
 
 
 
@@ -67,3 +69,11 @@ upair_id = 0;
 upspecial[0] = atk_uppercut;
 upspecial[1] = atk_rocketcut;
 upspecial_id = 0;
+
+basicattack[0] = atk_stumbler;
+basicattack[1] = atk_slipkick;
+basicattack_id = 0;
+
+specialattack[0] = atk_shoulderbash;
+specialattack[1] = atk_focusedshatter;
+specialattack_id = 0;

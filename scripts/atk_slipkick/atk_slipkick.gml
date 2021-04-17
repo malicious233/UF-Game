@@ -1,15 +1,18 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 //Spadoodle
+
+//Variant of Stumbler with more sliding for increased reach
+
 function atk_slipkick()
 {
 	sprite_index = s_player_slipkick;
 	//attack_timing_end = (sprite_get_number(s_player_fastpunch)*60)/image_speed;
-	attack_timing_end = 30; 
+	attack_timing_end = 28; 
 	attack_move_spd = 0;
 	if (attack_timing == 5)
 		{
-			hsp = hsp+(8.5*dir);
+			hsp = hsp+(10*dir);
 			create_hitbox()
 			with (current_hitbox)
 			{

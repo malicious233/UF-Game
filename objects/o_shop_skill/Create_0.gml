@@ -13,17 +13,31 @@ function change_rocketcut()
 	o_player.upspecial_id = 1;	
 }
 
+function change_slipkick()
+{
+	o_player.basicattack_id = 1;	
+}
+
+function change_focusedshatter()
+{
+	o_player.specialattack_id = 1;	
+}
+
 skill_name[0] = "Windheel";
 skill_name[1] = "Rocketcut";
+skill_name[2] = "Slipkick";
+skill_name[3] = "Focusedshatter";
 
 //skill_change[0] = o_player.upair_id;
 //skill_change[1] = o_player.upspecial_id;
 
 skill_change_id[0] = change_windheel;
 skill_change_id[1] = change_rocketcut;
+skill_change_id[2] = change_slipkick;
+skill_change_id[3] = change_focusedshatter;
 
 
-skill_id = irandom(1);
+skill_id = irandom(3);
 
 
 

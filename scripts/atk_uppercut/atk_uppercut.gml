@@ -27,7 +27,7 @@ function atk_uppercut()
 					hitbox_offset_x = 14; //X offset från hitbox_owner, optional
 					hitbox_offset_y = 10; //Y offset från hitbox_owner, optional
 					hitbox_duration = 2;//Hur länge hitboxen är active tills den tas bort automatiskt.
-					image_xscale = 1; //Hitboxens X scale, optional
+					image_xscale = 1.2; //Hitboxens X scale, optional
 					image_yscale = 1;//Hitboxens Y scale, optional
 					
 					hitbox_damage = 10;
@@ -49,7 +49,7 @@ function atk_uppercut()
 				hitbox_offset_x = 15; //X offset från hitbox_owner, optional
 				hitbox_offset_y = -30; //Y offset från hitbox_owner, optional
 				hitbox_duration = 10;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 0.7; //Hitboxens X scale, optional
+				image_xscale = 1; //Hitboxens X scale, optional
 				image_yscale = 1.6;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 7;

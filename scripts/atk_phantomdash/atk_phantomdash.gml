@@ -11,13 +11,18 @@ function atk_phantomdash()
 	{
 		vsp = 0;
 	}
-	if (attack_timing == 18)
-	{
-		hsp = -1*dir;	
-	}
 	if (attack_timing == 20)
 		{
-			hsp = hsp+((14*Speed_mod)*dir);
+		dash_length = 20;
+		while (!place_meeting(x+dir,y,o_wall)) or (dash_length >= 0)
+			{
+				x = x+sign(dir);
+				dash_length --;
+			}
+			hsp = 0;
+		
+			
+			
 			create_hitbox()
 			with (current_hitbox)
 			{
