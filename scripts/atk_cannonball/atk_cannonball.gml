@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 //Spadoodle
-//Attack belonging to Tin Can
+//The attack the cannonball creates upon spawning
 function atk_cannonball()
 {
 	sprite_index = s_cannonball;
@@ -18,8 +18,8 @@ function atk_cannonball()
 				hitbox_offset_x = 0; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 0; //Y offset från hitbox_owner, optional
 				hitbox_duration = 90;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1; //Hitboxens X scale, optional
-				image_yscale = 1;//Hitboxens Y scale, optional
+				image_xscale = 0.75; //Hitboxens X scale, optional
+				image_yscale = 0.75;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 4;
 				if (hitbox_owner.direction > 90 and hitbox_owner.direction < 270)

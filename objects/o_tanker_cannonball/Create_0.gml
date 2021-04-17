@@ -3,6 +3,8 @@
 
 // Inherit the parent event
 event_inherited();
+intangible = true;
+
 
 states = states.attacking;
 attack(atk_cannonball,s_cannonball);
