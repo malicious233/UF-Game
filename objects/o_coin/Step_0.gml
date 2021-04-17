@@ -24,7 +24,20 @@ if (place_meeting(x,y+vsp,o_plat))
 	{
 		y = y+sign(vsp);
 	}
-	vsp = vsp*-0.9;
+	
+	if abs(vsp) > 3
+	{
+	vsp = vsp*-0.8;
+	var bouncechance = random(1)
+	if (bouncechance > 0.5)
+	{
+		hsp = hsp*-1
+	}
+	}
+	else
+	{
+		vsp = 0;	
+	}
 }
 
 
