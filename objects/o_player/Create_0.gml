@@ -68,7 +68,7 @@ upair_id = 0;
 
 downair[0] = atk_stomp;
 downair[1] = atk_aerialslam;
-downair_id = 1;
+downair_id = 0;
 
 upspecial[0] = atk_uppercut;
 upspecial[1] = atk_rocketcut;
