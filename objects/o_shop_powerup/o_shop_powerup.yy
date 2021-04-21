@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_powerup",
-    "path": "sprites/s_powerup/s_powerup.yy",
+    "name": "s_item_powerup",
+    "path": "sprites/s_item_powerup/s_item_powerup.yy",
   },
   "solid": false,
   "visible": true,

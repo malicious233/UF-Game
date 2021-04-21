@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite84",
-    "path": "sprites/Sprite84/Sprite84.yy",
+    "name": "s_item_skillbook",
+    "path": "sprites/s_item_skillbook/s_item_skillbook.yy",
   },
   "solid": false,
   "visible": true,

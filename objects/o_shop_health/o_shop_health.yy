@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite85",
-    "path": "sprites/Sprite85/Sprite85.yy",
+    "name": "s_item_health",
+    "path": "sprites/s_item_health/s_item_health.yy",
   },
   "solid": false,
   "visible": true,
