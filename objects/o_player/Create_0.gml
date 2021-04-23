@@ -84,4 +84,4 @@ basicattack_id = 0;
 
 specialattack[0] = atk_shoulderbash;
 specialattack[1] = atk_focusedshatter;
-specialattack_id = 0;
+specialattack_id = 1;

@@ -7,6 +7,7 @@ function atk_uppercut()
 	attack_move_spd = 0.3;
 	if (attack_timing == 1){ 
 		audio_play_sound(tune_uppercut, 1000, false)
+		audio_sound_pitch(tune_uppercut, 1.0)
 	}
 	if (attack_timing == 14)
 		{

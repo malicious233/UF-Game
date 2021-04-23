@@ -1,17 +1,17 @@
 {
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.2,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
-  "type": 0,
+  "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "tune_player_lands.mp3",
-  "duration": 0.8409,
+  "duration": 0.42295,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",

@@ -25,7 +25,7 @@ if (instance_exists(o_player))
 	
 	
 	///Left corner holder	
-	draw_sprite_ext(s_HUD_leftcorner,0,(hudwidth*hud_size)/2,(hudheight*hud_size)/2,hud_size,hud_size,0,c_black,hud_transparency);
+	draw_sprite_ext(s_HUD_leftcorner,0,(hudwidth*hud_size)/2.5,(hudheight*hud_size)/2.5,hud_size,hud_size,0,c_black,hud_transparency);
 
 	draw_set_font(fnt_HUD)
 	draw_set_color(c_white)
