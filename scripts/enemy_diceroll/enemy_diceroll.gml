@@ -74,6 +74,32 @@ function enemy_diceroll()
 			{return o_tincan}
 	}
 	
+	if wav == 8
+	{
+		return o_tanker;
+	}
+	
+	if wav == 9
+	{
+		if (roll >= 0) and (roll < 0.05)
+			{return o_tanker};
+		else if (roll >= 0.05) and (roll < 0.35)
+			{return o_orbot}
+		else if (roll >= 0.35) and (roll <= 1)
+			{return o_tincan}
+	}
+	
+	if wav == 10
+	{
+		if (roll >= 0) and (roll < 0.05)
+			{return o_tanker};
+		else if (roll >= 0.05) and (roll < 0.35)
+			{return o_orbot}
+		else if (roll >= 0.35) and (roll <= 1)
+			{return o_tincan}
+	}
+	
+	
 	
  
 }

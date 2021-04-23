@@ -7,7 +7,7 @@ spawn_interval = spawn_interval_set;
 
 wave = 0;
 wave_buildup = 1;
-wave_max = 7;
+wave_max = 10;
 e_wave_cooldown = 500;
 wave_cooldown = 500;
 wave_pause = false;
@@ -27,6 +27,10 @@ e_wave_buildup[5] = 10; //Mixed tincan and orbot, low chance for tanker
 e_wave_buildup[6] = 1; //One tanker
 e_wave_buildup[7] = 14; //Gott o blandat
 
+e_wave_buildup[8] = 3;//Tanker wave
+e_wave_buildup[9] = 18;
+e_wave_buildup[10] = 22;
+
 //Horizontal list for max amount of enemies that can be in the arena per wave
 e_max_wave[0] = 1;
 e_max_wave[1] = 2;
@@ -36,6 +40,10 @@ e_max_wave[4] = 3;
 e_max_wave[5] = 5;
 e_max_wave[6] = 1;
 e_max_wave[7] = 8;
+
+e_max_wave[8] = 2;
+e_max_wave[9] = 12;
+e_max_wave[10] = 15;
 
 /*
 portal_coord[0, 0] = o_player.x; 
