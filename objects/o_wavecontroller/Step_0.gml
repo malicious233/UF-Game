@@ -13,7 +13,7 @@ if (enemycount) < 1
 if (wave_pause == false) //During wave
 {
 	wave_complete = false;
-	if (spawn_interval < 0) and (enemycount < e_wave_buildup[wave]) //If the enemy spawn interval is ready and there's less enemies than the cap, spawn enemy
+	if (spawn_interval < 0) and (enemycount < e_wave_buildup[wave]) and (enemycount < e_max_wave[wave]) //If the enemy spawn interval is ready and there's less enemies than the cap, spawn enemy
 	{
 		wave_buildup --; //Increase wave_buildup every time an enemy is spawned
 		summon_enemy();

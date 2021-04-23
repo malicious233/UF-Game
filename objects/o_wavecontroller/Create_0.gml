@@ -18,14 +18,24 @@ spawnwaresonce = false;
 
 
 //Horizontal list for enemies killed required to progress to next wave
-e_wave_buildup[0] = 1; //One tincan
-e_wave_buildup[1] = 3; //Several tincans
-e_wave_buildup[2] = 1; //One orbot
-e_wave_buildup[3] = 3; //Several orbots
-e_wave_buildup[4] = 4; //Mixed tincan and orbot
-e_wave_buildup[5] = 8; //Mixed tincan and orbot, low chance for tanker
+e_wave_buildup[0] = 2; //Two tincans
+e_wave_buildup[1] = 4; //Several tincans
+e_wave_buildup[2] = 2; //Two orbots
+e_wave_buildup[3] = 4; //Several orbots
+e_wave_buildup[4] = 8; //Mixed tincan and orbot
+e_wave_buildup[5] = 10; //Mixed tincan and orbot, low chance for tanker
 e_wave_buildup[6] = 1; //One tanker
-e_wave_buildup[7] = 10; //Gott o blandat
+e_wave_buildup[7] = 14; //Gott o blandat
+
+//Horizontal list for max amount of enemies that can be in the arena per wave
+e_max_wave[0] = 1;
+e_max_wave[1] = 2;
+e_max_wave[2] = 1;
+e_max_wave[3] = 2;
+e_max_wave[4] = 3;
+e_max_wave[5] = 5;
+e_max_wave[6] = 1;
+e_max_wave[7] = 8;
 
 /*
 portal_coord[0, 0] = o_player.x; 
