@@ -21,7 +21,7 @@ if room == (Room1)
 	alarm [3] = 300
 }else {audio_stop_sound(tune_white_noise); audio_stop_sound(tune_music);}
 
-currency = 100;
+currency = 0;
 
 jumps = 2;
 uppercuts = 1;
@@ -80,7 +80,7 @@ upspecial_id = 0;
 
 basicattack[0] = atk_stumbler;
 basicattack[1] = atk_slipkick;
-basicattack_id = 1;
+basicattack_id = 0;
 
 specialattack[0] = atk_shoulderbash;
 specialattack[1] = atk_focusedshatter;
