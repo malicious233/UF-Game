@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+vol = 1
 cam = view_camera[0]
 follow = o_player 
 

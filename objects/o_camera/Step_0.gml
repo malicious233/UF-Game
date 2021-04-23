@@ -1,11 +1,29 @@
 /// @description Insert description here
 // You can write your code in this editor
+if keyboard_check_pressed(vk_pageup)
+   {
+   if vol < 1 vol += 0.1;
+   audio_master_gain(vol);
+   }
+if keyboard_check_pressed(vk_pagedown)
+   {
+   if vol > 0 vol -= 0.1;
+   audio_master_gain(vol);
+   }
 
 //Will crash if it tries to follow something that dosnt exist
 if !(instance_exists(o_player)) and !instance_exists(o_pausemenu_end)
 {
 	instance_create_depth(0,0,4,o_pausemenu_end) 
 	audio_play_sound(tune_player_death,1000,false)
+	if audio_is_playing(tune_orbot_hovering){
+	audio_stop_sound(tune_orbot_hovering)}
+	if audio_is_playing(tune_tincan_walk){
+	audio_stop_sound(tune_tincan_walk)}
+	if audio_is_playing(tune_tanker_idle){
+	audio_stop_sound(tune_tanker_idle)}
+	if audio_is_playing(tune_music){
+	audio_stop_sound(tune_music)}
 	
 	//room_goto(room_main_menu)
 }
@@ -15,11 +33,34 @@ if !(instance_exists(o_tanker) and audio_is_playing(tune_tanker_idle))
 	if (audio_is_playing(tune_cannonball)){audio_stop_sound(tune_cannonball);}
 }
 
-if (instance_exists(o_pausemenu) and audio_is_playing(tune_cannonball)) 
+if (instance_exists(o_pausemenu)) 
 {
-	audio_pause_sound(tune_cannonball)
-}else {audio_resume_sound(tune_cannonball)}
+	audio_pause_all();
+	/*if audio_is_playing(tune_cannonball){
+	audio_pause_sound(tune_cannonball)}
+	if audio_is_playing(tune_tincan_walk){
+	audio_pause_sound(tune_tincan_walk)}
+	if audio_is_playing(tune_tincan_attack){
+	audio_pause_sound(tune_tincan_attack)}
+	if audio_is_playing(tune_music){
+	audio_pause_sound(tune_music)}
+	if audio_is_playing(tune_white_noise){
+	audio_pause_sound(tune_white_noise)}*/
+}else {audio_resume_all(); /*audio_resume_sound(tune_cannonball);
+	audio_resume_sound(tune_tincan_walk);
+	audio_resume_sound(tune_tincan_attack);
+	audio_resume_sound(tune_music);
+	audio_resume_sound(tune_white_noise);*/}
 
+if room = room_main_menu{ 
+	if audio_is_playing(tune_orbot_hovering){
+	audio_stop_sound(tune_orbot_hovering)}
+	if audio_is_playing(tune_tincan_walk){
+	audio_stop_sound(tune_tincan_walk)}
+}
+
+if room = Room1 and audio_is_playing(tune_experimental_music){
+	audio_stop_sound(tune_experimental_music)}
 
 
 if instance_exists(follow)

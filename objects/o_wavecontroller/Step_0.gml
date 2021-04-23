@@ -33,6 +33,8 @@ else //When wave_pause is true
 		with (o_shopkeeper)
 		{
 			spawn_wares();	
+			audio_sound_gain(tune_music, 0, 3000)
+			audio_sound_gain(tune_white_noise, 0.99, 2000)
 		}
 		spawnwaresonce = true;
 	}
@@ -48,6 +50,8 @@ else //When wave_pause is true
 		o_player.Push_duration --;
 		wave_buildup = e_wave_buildup[wave];
 		wave_pause = false;
+		audio_sound_gain(tune_music, 0.69, 3000)
+		audio_sound_gain(tune_white_noise, 0, 2000)
 	}
 }
 

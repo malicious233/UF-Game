@@ -3,7 +3,7 @@
 
 alarm[0] = 1  //after one frame alarm 0 runs, could probably put all that code here but naahh.
 
-audio_play_sound(tune_pause_escape, 1000, false)
+
 
 //controller left stick fix for menus)
 moveme = 0
@@ -52,3 +52,4 @@ menu_cursor = 2;   //sets where the selection arrow starts in menu order when th
 
 menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);  //part of mouse menu tutorial from Shaun Spalding
 														//gets the top (or was it the bottom?) of the list of menu items
+														

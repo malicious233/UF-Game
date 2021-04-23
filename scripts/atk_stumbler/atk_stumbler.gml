@@ -7,6 +7,11 @@ function atk_stumbler()
 	//attack_timing_end = (sprite_get_number(s_player_fastpunch)*60)/image_speed;
 	attack_timing_end = 15; 
 	attack_move_spd = 0;
+	if (attack_timing == 1){
+		audio_play_sound(tune_fastpunch1, 1000, false);
+		audio_sound_pitch(tune_fastpunch1, 1)}
+
+	
 	if (attack_timing == 3)
 		{
 			hsp = hsp+(4*dir);

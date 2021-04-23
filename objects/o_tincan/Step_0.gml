@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
- 
+
  if (paused == false)
  {
  
@@ -88,11 +88,11 @@ case states.hitstunned:
 #region Hitstunned
 sprite_index = s_tincan_hurt;
 
-
+audio_sound_gain(tune_tincan_walk, 0, 0)
 actionable = false;
 hitstun_duration --;
 friction_force(flat_friction*0.5,0.999);
-if (hitstun_duration < 0){states = states.normal;}
+if (hitstun_duration < 0){states = states.normal; audio_sound_gain(tune_tincan_walk, 0.30, 0)}
 break;
 #endregion
 
@@ -168,7 +168,8 @@ if (actionable = true)
 	if ((distance_to_point(target_focus.x,target_focus.y)) < 80)
 	{
 		attack(atk_faceplant,s_tincan_faceplant);	
-	}
+		audio_sound_gain(tune_tincan_walk, 0, 0)
+	}else audio_sound_gain(tune_tincan_walk, 0.30, 0)
 }
 
 break;

@@ -59,6 +59,8 @@ curr_x_kb = 0;
 curr_y_kb = 0;
 kb_angle = 0;
 
+combo_count = 0
+
 enum states
 {
 	//Shared States

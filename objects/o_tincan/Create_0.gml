@@ -13,6 +13,7 @@ if (insta_aggro == true)
 {
 thought = thought.agitated;
 target_focus = o_player;
+if !audio_is_playing (tune_tincan_walk){audio_play_sound(tune_tincan_walk, 1000, true)}
 }
 
 

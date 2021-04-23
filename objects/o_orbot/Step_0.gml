@@ -7,6 +7,7 @@
 
 	if (hitstun_duration > 0){states = states.hitstunned;}
 	
+	
 switch (states)
 {
 	case states.normal:
@@ -14,6 +15,7 @@ switch (states)
 		sprite_index = s_orbot_idle;
 		floating = true;
 		actionable = true;
+		hoversound = 1
 		friction_force(flat_friction*0.5,0.999);
 		
 		moving(move_spd,input_dir);
@@ -26,11 +28,14 @@ switch (states)
 		sprite_index = s_orbot_hurt;
 		actionable = false;
 		
+		hoversound = 0
 		actionable = false;
 		hitstun_duration --;
 		friction_force(flat_friction*0.5,0.999);
 		if (hitstun_duration < 0){states = states.normal;}
-		break;
+		if audio_is_playing(tune_orbot_hovering){
+		audio_sound_gain(tune_orbot_hovering, 0, 0)}
+		break; 
 		
 	case states.attacking:
 		moving(attack_move_spd,input_dir);
@@ -38,6 +43,7 @@ switch (states)
 		friction_force(flat_friction*0.6,0.999);
 		floating = true;
 		attack_timing ++;
+		hoversound = 1
 		//state changes
 		if (attack_timing > attack_timing_end) //Ends the attack state once the attack duration ends
 		{
@@ -56,7 +62,8 @@ switch (states)
 		break;
 	
 }
-
+if hoversound=1 {audio_sound_gain(tune_orbot_hovering, 0.3, 0)}
+if instance_exists(o_pausemenu){audio_sound_gain(tune_orbot_hovering, 0 , 0)}
 
 if (floating == true)
 {

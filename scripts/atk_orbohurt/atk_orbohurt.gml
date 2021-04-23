@@ -9,6 +9,11 @@ function atk_orbohurt()
 	
 	if (attack_timing == 1)
 	{
+		audio_play_sound(tune_orbot_attack, 1000, false)	
+	}
+	
+	if (attack_timing == 1)
+	{
 		hsp = hsp*(random_range(0.75,1));	
 	}
 	

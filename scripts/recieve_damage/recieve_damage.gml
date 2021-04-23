@@ -27,6 +27,8 @@ function recieve_damage()
 			audio_sound_pitch(tune_tincan_damage, random_range(0.9, 1.1))}
 
 		if instance_exists(o_tincan) and realowner_dud = 0 and audio_is_playing(tune_tincan_attack){audio_stop_sound(tune_tincan_attack)}
+		if instance_exists(o_tanker) and realowner_dud = 0 and audio_is_playing(tune_tanker_ram){audio_stop_sound(tune_tanker_ram)}
+		if instance_exists(o_orbot) and realowner_dud = 0 and audio_is_playing(tune_orbot_attack){audio_stop_sound(tune_orbot_attack)}
 
 		//I'll change this in the future so what particle effects 
 		//that occur upon attack depend on what type of attack it is

@@ -9,6 +9,9 @@ function atk_rammer()
 	attack_timing_end = 100; 
 	attack_move_spd = 0;
 	
+	if (attack_timing == 1){
+		audio_play_sound(tune_tanker_ram, 1000, false) //MAKE THIS JUNK SOUND BETTER REPEATED
+	}
 	if (attack_timing == 10)
 	{
 		vsp = -5;

@@ -93,18 +93,29 @@ if (curr_damage != 0)
 	
 	if (combo_timer >= 0)
 	{
+		if realowner_dud = 0 {audio_play_sound(tune_combo_tick, 1000, false)
+		if (combo_count = 0){audio_sound_pitch(tune_combo_tick, 1.0)}
+		if (combo_count = 1){audio_sound_pitch(tune_combo_tick, 1.2)}
+		if (combo_count = 2){audio_sound_pitch(tune_combo_tick, 1.4)}
+		if (combo_count = 3){audio_sound_pitch(tune_combo_tick, 1.6)}
+		if (combo_count = 4){audio_sound_pitch(tune_combo_tick, 1.8)} 
+		if (combo_count > 4){audio_sound_pitch(tune_combo_tick, 2.0)}}
 		points = round(points*1.5)	
+		if realowner_dud = 0{
 		var mone = instance_create_layer(x,y,"Player",o_coin)	
 		with (mone)
 		{
 			hsp = random_range(-3,3);
 			vsp = random_range(-10,-8);
-		}
+		}}
+		combo_count ++
+
 	}
 	combo_timer = 10+curr_damage*5;
+	
 }
 combo_timer --;
-
+//combo_count = 0
 if (Speed_duration <= 0)
 {
 	Speed_mod = 1;	

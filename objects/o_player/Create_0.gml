@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
+vol = 1
+
 #macro SPD_WALK_MAX 7.2  
 #macro SPD_WALK_ACCEL 0.7
 
@@ -14,8 +16,10 @@ o_player.realowner = self.id
 
 if room == (Room1) 
 {
-	audio_play_sound(tune_white_noise, 1000, true)
-}else audio_stop_sound(tune_white_noise)
+	audio_play_sound(tune_white_noise, 1000, true);
+	audio_sound_gain(tune_white_noise, 0, 0);
+	alarm [3] = 300
+}else {audio_stop_sound(tune_white_noise); audio_stop_sound(tune_music);}
 
 currency = 100;
 

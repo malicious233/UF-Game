@@ -1,6 +1,7 @@
 /// @description PAUSES game and objects
 //description captures every instance and it's sprite and pauses the game
 
+audio_play_sound(tune_pause_escape, 1000, false)
 	if (pause == false)
 	{
 		o_hurtbox.image_alpha = 0 
@@ -43,8 +44,11 @@
 									,,instance_count stores how many instances of any kind are in the room where
 									this o_pausemenu object resides. we should probs make pausemenu universal*/
 		{
-			if(instance_find(all,i).sprite_index != -1) and (object_index != -4)  //fix for trying to capture sprite that doesn't exist (-1 in value)
+			var _inst = instance_find(all,i)
+			if (_inst != noone){
+			if(_inst.sprite_index != -1)   //fix for trying to capture sprite that doesn't exist (-1 in value)
 			 //-->omit sprites that don't exist and capture the ones that do exist-->
+			 
 			{
 				allObjects[i - offset,0] = instance_find(all, i).sprite_index;
 				allObjects[i - offset,1] = instance_find(all, i).image_index;
@@ -58,7 +62,7 @@
 			}
 			else
 				++offset; //increase offset by 1
-		}
+		}}
 		pause = true;
 		instance_deactivate_all(true);  /*deactivates all instances except for this one (notme expression, or whatever it is)
 		This also means that all instances cease to exist,
