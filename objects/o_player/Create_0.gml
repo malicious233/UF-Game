@@ -17,7 +17,7 @@ if room == (Room1)
 	audio_play_sound(tune_white_noise, 1000, true)
 }else audio_stop_sound(tune_white_noise)
 
-currency = 0;
+currency = 100;
 
 jumps = 2;
 uppercuts = 1;

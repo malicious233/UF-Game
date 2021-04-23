@@ -3,6 +3,7 @@
 draw_self();
 if place_meeting(x,y,o_player)
 {
+	draw_set_color(c_black)
 draw_text(x+30,y-20,skill_name[skill_id])
 display_value();
 }

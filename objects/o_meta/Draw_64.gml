@@ -9,21 +9,22 @@
 if (instance_exists(o_player))
 {
 	
+	
+	///Left corner holder	
 	draw_sprite_ext(s_HUD_leftcorner,0,(hudwidth*hud_size)/2,(hudheight*hud_size)/2,hud_size,hud_size,0,c_black,hud_transparency);
-
 
 	draw_set_font(fnt_HUD)
 	draw_set_color(c_white)
-	//Draw healthmeter
-	draw_text(40+(hudwidth*hud_size)/2,(hudheight*hud_size)/3,string(o_player.hp)+"/50 HP")
+	//Draw health
+	draw_text(50+(hudwidth*hud_size)/2,(hudheight*hud_size)/3,string(o_player.hp)+"/50 HP")
 	//Draw coincounter
 	draw_text((hudwidth*hud_size)/2,(hudheight*hud_size)/1.25,string(o_player.currency)+"$")
 
-	//Middle HUD
+	///Middle HUD
 	draw_sprite_ext(s_HUD_mid,0,window_width/2,(hudheight*hud_size)/4,hud_size,hud_size,0,c_black,hud_transparency)
 
 
-	//Right corner HUD
+	///Right corner HUD
 	draw_sprite_ext(s_HUD_rightcorner,0,window_width-(hudwidth*hud_size)/2,(hudheight*hud_size)/4,hud_size,hud_size,0,c_black,hud_transparency);
 
 

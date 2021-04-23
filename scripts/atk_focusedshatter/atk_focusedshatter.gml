@@ -8,7 +8,7 @@ function atk_focusedshatter()
 {
 	sprite_index = s_player_focusedshatter;
 	//attack_timing_end = (sprite_get_number(s_player_fastpunch)*60)/image_speed;
-	attack_timing_end = 145; 
+	attack_timing_end = 130; 
 	attack_move_spd = 0;
 	
 	if (attack_timing == 1)
