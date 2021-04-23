@@ -10,8 +10,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "tune_original_menu_music",
-  "duration": 0.0,
+  "soundFile": "tune_original_menu_music.mp3",
+  "duration": 33.8597,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
