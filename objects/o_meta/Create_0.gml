@@ -15,3 +15,4 @@ window_width = window_get_width();
 
 hud_size = 2
 hud_transparency = 0.35;
+

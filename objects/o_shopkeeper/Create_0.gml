@@ -4,7 +4,7 @@
 
 function thing()
 {
-var b = 2
+var b = irandom(2)
 switch (b)
 {
 	case 0: return(o_shop_health) break;

@@ -4,7 +4,7 @@
 //draw_text(100,100, string(o_meta.scorepoints));}
 //draw_sprite(s_HUD_leftcorner,0,0,0)
 
-//Left corner HUD
+
 
 if (instance_exists(o_player))
 {
@@ -15,18 +15,23 @@ if (instance_exists(o_player))
 
 	draw_set_font(fnt_HUD)
 	draw_set_color(c_white)
-	//Draw health
+	//Draw health in the middle of top hud
 	draw_text(50+(hudwidth*hud_size)/2,(hudheight*hud_size)/3,string(o_player.hp)+"/50 HP")
-	//Draw coincounter
+	//Draw coincounter in the middle of the lower hud
 	draw_text((hudwidth*hud_size)/2,(hudheight*hud_size)/1.25,string(o_player.currency)+"$")
 
 	///Middle HUD
 	draw_sprite_ext(s_HUD_mid,0,window_width/2,(hudheight*hud_size)/4,hud_size,hud_size,0,c_black,hud_transparency)
-
+	
+	//Draw respective thing in the middle of the middle hud
+	draw_text((window_width/2)+string_width("Wave")/2,(hudheight*hud_size)/4.5,"Wave")
+	draw_text((window_width/2)+string_width("1"),(hudheight*hud_size)/2.25,string(o_wavecontroller.wave))
 
 	///Right corner HUD
 	draw_sprite_ext(s_HUD_rightcorner,0,window_width-(hudwidth*hud_size)/2,(hudheight*hud_size)/4,hud_size,hud_size,0,c_black,hud_transparency);
-
+	//Draw respective text in the right corner
+	draw_text(window_width-(hudwidth*hud_size)/2,(hudheight*hud_size)/4.5,"Score")
+	draw_text(window_width-(hudwidth*hud_size)/3,(hudheight*hud_size)/2.25,string(scorepoints))
 
 }
 //draw_sprite_stretched(s_HUD_leftcorner, 0, 0, 60, hudwidth*hud_size, hudheight*hud_size);
