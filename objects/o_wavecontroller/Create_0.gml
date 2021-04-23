@@ -11,6 +11,8 @@ wave_max = 7;
 e_wave_cooldown = 500;
 wave_cooldown = 500;
 wave_pause = false;
+wave_complete = false;
+
 
 spawnwaresonce = false;
 

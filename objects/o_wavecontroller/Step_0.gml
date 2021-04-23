@@ -12,6 +12,7 @@ if (enemycount) < 1
 */
 if (wave_pause == false) //During wave
 {
+	wave_complete = false;
 	if (spawn_interval < 0) and (enemycount < e_wave_buildup[wave]) //If the enemy spawn interval is ready and there's less enemies than the cap, spawn enemy
 	{
 		wave_buildup --; //Increase wave_buildup every time an enemy is spawned
@@ -28,6 +29,8 @@ if (wave_pause == false) //During wave
 }
 else //When wave_pause is true
 {
+	if (enemycount == 0)
+	{wave_complete = true}
 	if (enemycount == 0 and spawnwaresonce == false)
 	{
 		with (o_shopkeeper)
