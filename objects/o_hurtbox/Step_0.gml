@@ -47,10 +47,11 @@ if (instance_exists(hurtbox_owner)) and (hurtbox_owner.intangible == false)
 				}
 					if (in_bl == false) and (c_hb.team != team)
 					{
-						
+						var kb_random_x = random_range(0.95,1.05);
+						var kb_random_y = random_range(0.95,1.05)
 						hurtbox_owner.curr_damage = round(c_hb.hitbox_damage*c_hb.Power_modifier);
-						hurtbox_owner.curr_x_kb = c_hb.hitbox_x_kb*c_hb.Push_modifier;
-						hurtbox_owner.curr_y_kb = c_hb.hitbox_y_kb*c_hb.Push_modifier;
+						hurtbox_owner.curr_x_kb = (c_hb.hitbox_x_kb*c_hb.Push_modifier)*kb_random_x;
+						hurtbox_owner.curr_y_kb = (c_hb.hitbox_y_kb*c_hb.Push_modifier)*kb_random_y;
 						hurtbox_owner.attack_dir = sign(x-c_hb.x);
 						hurtbox_owner.atk_by = c_hb.hitbox_owner;
 						hurtbox_owner.atk_fx = c_hb.atk_fx
