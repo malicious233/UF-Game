@@ -19,6 +19,8 @@ if (instance_exists(o_player))
 	
 	draw_set_font(fnt_HUD)
 	draw_set_color(c_white)
+	
+	DrawSetText(c_white,fnt_HUD,fa_right,fa_bottom)
 	draw_text((window_width/2)+string_width("Wave Complete")/2,(hudheight*hud_size),"Wave Complete")
 	}
 	
@@ -27,8 +29,7 @@ if (instance_exists(o_player))
 	///Left corner holder	
 	draw_sprite_ext(s_HUD_leftcorner,0,(hudwidth*hud_size)/2,(hudheight*hud_size)/2,hud_size,hud_size,0,c_black,hud_transparency);
 
-	draw_set_font(fnt_HUD)
-	draw_set_color(c_white)
+	DrawSetText(c_white,fnt_HUD,fa_right,fa_bottom)
 	//Draw health in the middle of top hud
 	draw_text(50+(hudwidth*hud_size)/2,(hudheight*hud_size)/3,string(o_player.hp)+"/50 HP")
 	//Draw coincounter in the middle of the lower hud

@@ -28,11 +28,11 @@ function change_aerialslam()
 	o_player.downair_id = 1;	
 }
 
-skill_name[0] = "Windheel";
+/*skill_name[0] = "Windheel";
 skill_name[1] = "Rocketcut";
 skill_name[2] = "Slipkick";
 skill_name[3] = "Focusedshatter";
-skill_name[4] = "Aerialslam";
+skill_name[4] = "Aerialslam";*/
 
 //skill_change[0] = o_player.upair_id;
 //skill_change[1] = o_player.upspecial_id;
@@ -45,6 +45,18 @@ skill_change_id[4] = change_aerialslam;
 
 
 skill_id = irandom(4);
+
+//How do switch statements work anyways?
+if (skill_id == 0)
+{item_name = "Windheel"}
+else if (skill_id == 1)
+{item_name = "Rocketcut"}
+else if (skill_id == 2)
+{item_name = "Slipkick"}
+else if (skill_id == 3)
+{item_name = "Focusedshatter"}
+else if (skill_id == 4)
+{item_name = "Aerialslam"}
 
 
 
