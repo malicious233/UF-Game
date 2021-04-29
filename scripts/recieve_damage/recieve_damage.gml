@@ -22,7 +22,8 @@ function recieve_damage()
 		if instance_exists(o_player) and (o_player.realowner = self.id) 
 		{ 
 			realowner_dud = 1;
-			audio_play_sound(tune_player_damage, 1000, false);}
+			audio_play_sound(tune_player_damage, 1000, false);
+			if audio_is_playing(tune_focused_shatter_charge){audio_stop_sound(tune_focused_shatter_charge)}}
 		else{realowner_dud = 0; audio_play_sound(tune_tincan_damage, 1000, false)
 			audio_sound_pitch(tune_tincan_damage, random_range(0.9, 1.1))}
 

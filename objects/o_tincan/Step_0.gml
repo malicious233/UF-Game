@@ -92,7 +92,7 @@ audio_sound_gain(tune_tincan_walk, 0, 0)
 actionable = false;
 hitstun_duration --;
 friction_force(flat_friction*0.5,0.999);
-if (hitstun_duration < 0){states = states.normal; audio_sound_gain(tune_tincan_walk, 0.30, 0)}
+if (hitstun_duration < 0){states = states.normal; audio_sound_gain(tune_tincan_walk, 0.85, 0)}
 break;
 #endregion
 
@@ -169,7 +169,7 @@ if (actionable = true)
 	{
 		attack(atk_faceplant,s_tincan_faceplant);	
 		audio_sound_gain(tune_tincan_walk, 0, 0)
-	}else audio_sound_gain(tune_tincan_walk, 0.30, 0)
+	}else audio_sound_gain(tune_tincan_walk, 0.85, 0)
 }
 
 break;

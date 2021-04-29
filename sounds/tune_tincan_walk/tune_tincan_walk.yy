@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.3,
+  "volume": 0.85,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "tune_tincan_walk.mp3",
-  "duration": 0.840918,
+  "duration": 8.155204,
   "parent": {
     "name": "tincan",
     "path": "folders/Sounds/enemies/tincan.yy",

@@ -13,8 +13,8 @@
   "soundFile": "tune_coin_pickup.mp3",
   "duration": 0.318469,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "player",
+    "path": "folders/Sounds/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_coin_pickup",

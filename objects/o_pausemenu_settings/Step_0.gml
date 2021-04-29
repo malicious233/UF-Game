@@ -37,7 +37,7 @@ if (menu_control)
 	(gamepad_button_check_pressed(0,gp_face1)) or		//xinput "A" button
 	(gamepad_button_check_pressed(4,gp_face1)))			//directinput "A" button
 	{
-		menu_x_target = gui_width-372//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
+		menu_x_target = gui_width-272//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
 		menu_committed = menu_cursor;
 		
 		menu_control = true;     //could set to false to take away arrowkey menu control 
@@ -57,11 +57,28 @@ if (menu_control)
 	{								//and if mouse is within the area of menu items, x-axis-wise.													
 		menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);		//menu cursor attached to mouse position
 		
+		if (sound_played4 = 0 and menu_cursor = 4)
+		{
+			audio_play_sound(tune_pause_check1, 1000, false)
+			sound_played4 = 1
+		}else if sound_played4 = 1 and menu_cursor < 4
+		{
+			sound_played4 = 0
+		}
+		if (sound_played3 = 0 and menu_cursor = 3)
+		{
+			audio_play_sound(tune_pause_check1, 1000, false)
+			sound_played3 = 1
+		}else if sound_played3 = 1 and (menu_cursor < 3 or menu_cursor > 3)
+		{
+			sound_played3 = 0
+		}
+		
 		if (sound_played2 = 0 and menu_cursor = 2)
 		{
 			audio_play_sound(tune_pause_check1, 1000, false)
 			sound_played2 = 1
-		}else if sound_played2 = 1 and menu_cursor < 2
+		}else if sound_played2 = 1 and (menu_cursor < 2 or menu_cursor > 2)
 		{
 			sound_played2 = 0
 		}
@@ -88,15 +105,24 @@ if (menu_control)
 		{										//you can NOT press mouse to go to next menu 
 												//when not hovering over menu item. Could change that if we want
 		//literal carbon copy of above if-statement when pressing enter, so that we have the same functionality when pressing the mouse.									
-		menu_x_target = gui_width-372
+		menu_x_target = gui_width-272
 		menu_committed = menu_cursor;	
 		
 		menu_control = true;
 		pause_menu_sound2()
 		
-		if !instance_exists(o_pausemenu_controls) and menu_cursor = 2
+		if !instance_exists(o_pausemenu_controls) and menu_cursor = 4
 			{
 				instance_create_depth(0,0,2,o_pausemenu_controls)
+			}
+			
+			if menu_cursor = 3
+			{
+				if (global.vol < 1) {global.vol += 0.1; audio_master_gain(global.vol);}
+			}
+			if menu_cursor = 2
+			{
+				if (global.vol > 0) {global.vol -= 0.1; audio_master_gain(global.vol);}
 			}
 		}
 	}
@@ -104,11 +130,14 @@ if (menu_control)
 }
 
 
-if (menu_x > gui_width-373) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
+if (menu_x > gui_width-273) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
 {
 	switch (menu_committed)
 	{
-		case 2: instance_activate_object(o_pausemenu_controls); menu_control = false; break;
+		
+		case 4: instance_activate_object(o_pausemenu_controls); menu_control = false; break;
+		case 3: /*if (vol < 1) {vol += 0.01; audio_master_gain(vol);}*/ break;          //selects menu[0] and executes code before break.
+		case 2: /*if (vol > 0) {vol -= 0.01; audio_master_gain(vol);}*/ break;
 		case 1: window_set_fullscreen(true); break;          //selects menu[0] and executes code before break.
 		case 0: window_set_fullscreen(false); break;
 		
@@ -140,8 +169,16 @@ if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button
 if ((gamepad_button_check_pressed(0,gp_face1)) or		//xinput "A" button
 	(gamepad_button_check_pressed(4,gp_face1)))		//directinput "A" button
 	{
-		if !instance_exists(o_pausemenu_controls) and menu_cursor = 2
+		if !instance_exists(o_pausemenu_controls) and menu_cursor = 4
 		{
 			instance_create_depth(0,0,2,o_pausemenu_controls)
+		}
+		if menu_cursor = 3
+		{
+			if (global.vol < 1) {global.vol += 0.1; audio_master_gain(global.vol);}
+		}
+		if menu_cursor = 2
+		{
+			if (global.vol > 0) {global.vol -= 0.1; audio_master_gain(global.vol);}
 		}
 	}

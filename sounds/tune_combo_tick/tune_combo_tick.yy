@@ -13,8 +13,8 @@
   "soundFile": "tune_combo_tick.mp3",
   "duration": 0.422959,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "player",
+    "path": "folders/Sounds/player.yy",
   },
   "resourceVersion": "1.0",
   "name": "tune_combo_tick",

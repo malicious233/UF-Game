@@ -5,6 +5,10 @@ function atk_stomp()
 	sprite_index = s_player_stomp;
 	attack_timing_end = 45;
 	attack_move_spd = 0.35; 
+	if (attack_timing == 1)
+	{audio_play_sound(tune_stomp_pre, 1000, false);
+		audio_sound_pitch(tune_stomp_pre, 1.0);
+		audio_sound_gain(tune_stomp_pre, 0.65, 0)}
 	if (attack_timing > 1 and attack_timing < 4)
 	{
 		vsp = -4;
@@ -50,10 +54,14 @@ function atk_stomp()
 	}
 
 
+
 		
 	if (ground == true)
 	{
-
+		if audio_is_playing(tune_stomp_pre){audio_stop_sound(tune_stomp_pre)}
+		audio_play_sound(tune_stomp_post, 1000, false);
+		audio_sound_pitch(tune_stomp_post, 1.0);
+		audio_sound_gain(tune_stomp_post, 0.2, 0);
 		states = states.recovery
 		recovery_time = 22;
 		sprite_index = s_player_stomp_rec;

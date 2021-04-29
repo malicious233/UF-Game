@@ -2,13 +2,13 @@
 // You can write your code in this editor
 if keyboard_check_pressed(vk_pageup)
    {
-   if vol < 1 vol += 0.1;
-   audio_master_gain(vol);
+   if (global.vol < 1) {global.vol += 0.1;
+   audio_master_gain(global.vol);}
    }
 if keyboard_check_pressed(vk_pagedown)
    {
-   if vol > 0 vol -= 0.1;
-   audio_master_gain(vol);
+   if (global.vol > 0) {global.vol -= 0.1;
+   audio_master_gain(global.vol);}
    }
 
 //Will crash if it tries to follow something that dosnt exist
@@ -27,6 +27,9 @@ if !(instance_exists(o_player)) and !instance_exists(o_pausemenu_end)
 	
 	//room_goto(room_main_menu)
 }
+if instance_exists(o_pausemenu_end){
+	if audio_is_playing(tune_tincan_walk){
+	audio_stop_sound(tune_tincan_walk)}}
 if !(instance_exists(o_tanker) and audio_is_playing(tune_tanker_idle))
 {
 	audio_stop_sound(tune_tanker_idle);

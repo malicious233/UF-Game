@@ -37,7 +37,7 @@ if (menu_control)
 	(gamepad_button_check_pressed(0,gp_face1)) or		//xinput "A" button
 	(gamepad_button_check_pressed(4,gp_face1)))		//directinput "A" button))
 	{
-		menu_x_target = gui_width-1032//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
+		menu_x_target = gui_width-1006//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
 		menu_committed = menu_cursor;
 		
 		menu_control = true;     //could set to false to take away arrowkey menu control 
@@ -95,7 +95,7 @@ if (menu_control)
 		
 		if (mouse_check_button_pressed(mb_left)) //this is within this mouse centered if-statement so that
 		{						
-			menu_x_target = gui_width-1032//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
+			menu_x_target = gui_width-1006//+200; //coupled with gui_margin in Create? -32 makes it so the menu doesnt move
 			menu_committed = menu_cursor;
 			menu_control = true;
 			pause_menu_sound2()
@@ -105,7 +105,7 @@ if (menu_control)
 }
 
 
-if (menu_x > gui_width-1033) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
+if (menu_x > gui_width-1007) && (menu_committed != -1)    //-33 (one behind -32) makes it so something actually happens when pressing enter
 {
 	switch (menu_committed)
 	{

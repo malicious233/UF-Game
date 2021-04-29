@@ -8,7 +8,7 @@ function atk_bicyclekick()
 	attack_move_spd = 0.75; //How much may you move while attacking
 	if (attack_timing == 1) {
 		audio_play_sound(tune_bicycle_kick, 1000, false)
-		audio_sound_pitch(tune_bicycle_kick, 1.0)
+		audio_sound_pitch(tune_bicycle_kick, 1)
 	}
 	if (attack_timing == 4)
 	{

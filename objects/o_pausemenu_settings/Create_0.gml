@@ -9,9 +9,13 @@ subpause = true   //variable pause is true at creation of this object
 
 allObjects[0,0] = noone;   //variable for every instance that exist on screen, used in DRAW and key-ESCAPE events
 
+sound_played4 = 0
+sound_played3 = 0
 sound_played2 = 0
 sound_played1 = 0
 sound_played0 = 0
+
+
 
 
 //create basic shit for having a navigatable pausemenu with arrowkeys
@@ -19,7 +23,7 @@ sound_played0 = 0
 
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
-gui_margin = 372;
+gui_margin = 272;
 
 menu_x = gui_width+200;  /*where, on the x-axis, in the viewport the menu text appears.
 						setting it to +0 or similar low value could return text out of viewport boundaries*/
@@ -41,7 +45,9 @@ if room == room_main_menu{
 menu[1] = "Fullscreen on";
 menu[0] = "Fullscreen off";
 }else{
-menu[2] = "Controls";
+menu[4] = "Controls";
+menu[3] = "Master volume up"
+menu[2] = "Master volume down"
 menu[1] = "Fullscreen on";
 menu[0] = "Fullscreen off";
 }
@@ -51,7 +57,7 @@ menu_items = array_length_1d(menu);
 if room == room_main_menu{
 menu_cursor = 1;   //sets where the selection arrow starts in menu order when thos object is created
 }else{
-menu_cursor = 2;
+menu_cursor = 4;
 }
 menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);  //part of mouse menu tutorial from Shaun Spalding
 														//gets the top (or was it the bottom?) of the list of menu items

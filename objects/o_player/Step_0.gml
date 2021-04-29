@@ -41,7 +41,7 @@ if controls = controls.nothing
 	{
 		controls = controls.wasd1hand
 		if room = Room1{
-		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_1hand)}
+		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_jk);}
 		//ADD mouse and JK shits!!!
 	}
 	//Maybe you could make this into a switch statement?
@@ -54,9 +54,7 @@ if controls = controls.nothing
 	{
 		controls = controls.wasd1hand
 		if room = Room1{
-		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_jk)
-		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_mouse)
-		}
+			instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_jk)}//;
 	}
 	//if xinput controller is pressed
 	if (gamepad_button_check_pressed(0,gp_shoulderr) or 

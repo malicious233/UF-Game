@@ -18,7 +18,7 @@ sound_played0 = 0
 
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
-gui_margin = 1032;
+gui_margin = 1006;
 
 menu_x = gui_width+200;  /*where, on the x-axis, in the viewport the menu text appears.
 						setting it to +0 or similar low value could return text out of viewport boundaries*/

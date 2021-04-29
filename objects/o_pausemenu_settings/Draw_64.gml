@@ -11,9 +11,13 @@ if (subpause)
 	draw_set_color(c_white);    //draws font white 
 	draw_set_alpha(1);          //opacity for font
 	if room == room_main_menu{
-		draw_text((view_wport[0]+628)/2, (view_hport[0]+470)/2, "Settings");
+		draw_text((view_wport[0]+828)/2, (view_hport[0]+470)/2, "Settings");
 	}else{ 
-		draw_text((view_wport[0]+628)/2, (view_hport[0]+400)/2, "Settings");
+		draw_text((view_wport[0]+828)/2, (view_hport[0]+250)/2, "Settings");
+	}
+	
+	if menu_cursor = 3 or menu_cursor = 2
+	{draw_text((view_wport[0]+828)/2, (view_hport[0]+150)/2, "Volume:" + string(global.vol));
 	}/*sets where on the viewport text is drawn
 	so that the text 'follows', so to say, the player instead of having a stupid set place as an object that can't 
 	be moved.*/

@@ -26,13 +26,13 @@ gamepad_button_check_pressed(4,gp_face1);
 key_test = keyboard_check_pressed(ord("Q")) 
 key_test2 = keyboard_check_pressed(ord("E")) 
 
-if keyboard_check_pressed(ord("Z")) or 
-keyboard_check_pressed(ord("L")) or 
+if keyboard_check_pressed(ord("L")) or 
+keyboard_check_pressed(ord("Z")) or 
 gamepad_button_check_pressed(0,gp_shoulderl) or
 gamepad_button_check_pressed(0,gp_shoulderlb) or
-gamepad_button_check_pressed(4,gp_shoulderl) or
 gamepad_button_check_pressed(0,gp_face4) or 
 gamepad_button_check_pressed(4,gp_face4) or
+gamepad_button_check_pressed(4,gp_shoulderl) or
 gamepad_button_check_pressed(4,gp_shoulderlb)
 {
 	if o_player.image_xscale = -1

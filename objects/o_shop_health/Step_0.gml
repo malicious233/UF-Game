@@ -10,6 +10,8 @@ if (place_meeting(x,y,o_player)) and (o_player.key_attack)
 			hp = clamp(hp,0,50);
 			currency = currency-other.purchase_value;
 			with (other) {instance_destroy();}
+			audio_play_sound(tune_shop_purchase, 1000, false)
+			audio_sound_pitch(tune_shop_purchase, random_range(0.9, 1.1))
 		}
 	}
 }

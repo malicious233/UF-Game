@@ -102,7 +102,7 @@ if (menu_x > gui_width-373) && (menu_committed != -1)     //-33 (one behind -32)
 		switch (menu_committed)
 		{
 			//case 2: break;
-			case 1: room_goto(room_main_menu); break;          //selects menu[0] and executes code before break.
+			case 1: room_goto(room_main_menu); if audio_is_playing(tune_wave_1){audio_stop_sound(tune_wave_1)}; break;          //selects menu[0] and executes code before break.
 			case 0: instance_destroy(); break;
 	
 		
