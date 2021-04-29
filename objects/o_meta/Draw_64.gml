@@ -27,7 +27,7 @@ if (instance_exists(o_player))
 	
 	
 	///Left corner holder	
-	draw_sprite_ext(s_HUD_leftcorner,0,(hudwidth*hud_size)/2,(hudheight*hud_size)/2,hud_size,hud_size,0,c_black,hud_transparency);
+	draw_sprite_ext(s_HUD_leftcorner,0,(hudwidth*hud_size)/2.5,(hudheight*hud_size)/2.5,hud_size,hud_size,0,c_black,hud_transparency);
 
 	DrawSetText(c_white,fnt_HUD,fa_right,fa_bottom)
 	//Draw health in the middle of top hud

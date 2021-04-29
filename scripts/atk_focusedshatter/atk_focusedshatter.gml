@@ -15,6 +15,7 @@ function atk_focusedshatter()
 	{
 		charge = 0;	
 		vsp = vsp*0.8
+		audio_play_sound(tune_focused_shatter_charge, 1000, false)
 		
 	}
 	
@@ -31,6 +32,7 @@ function atk_focusedshatter()
 		{
 			attack_timing = 98;
 			image_index = 5;
+			audio_stop_sound(tune_focused_shatter_charge)
 		}	
 	}
 	
@@ -39,8 +41,12 @@ function atk_focusedshatter()
 		screenshake(0.6*charge,0.8*charge^1.1);	
 	}
 	
+	if (attack_timing == 100){
+		audio_play_sound(tune_focused_shatter_blow, 1000, false)
+	}
 	if (attack_timing == 100)
 		{
+			
 			vsp = -2;
 			screenshake(5,10);
 			hsp = hsp+(6*dir);
