@@ -6,10 +6,6 @@ function atk_bicyclekick()
 	//!!! Attack_timing_end is a magic number, we should fix that!
 	attack_timing_end = 22; //What frame after attacking will you go back to normal state?
 	attack_move_spd = 0.75; //How much may you move while attacking
-	if (attack_timing == 1) {
-		audio_play_sound(tune_bicycle_kick, 1000, false)
-		audio_sound_pitch(tune_bicycle_kick, 1.0)
-	}
 	if (attack_timing == 4)
 	{
 		vsp = vsp-1.5
@@ -46,7 +42,6 @@ function atk_bicyclekick()
 	{
 		cancel_attack = true;	
 		cancel_hitbox = true;
-		audio_stop_sound(tune_bicycle_kick)
 		if (attack_timing >= 3)
 		{
 			states = states.recovery

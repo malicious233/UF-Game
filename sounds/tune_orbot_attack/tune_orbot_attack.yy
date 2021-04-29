@@ -1,17 +1,17 @@
 {
   "compression": 0,
-  "volume": 0.59,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
-  "type": 1,
+  "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "tune_orbot_attack.mp3",
-  "duration": 1.311122,
+  "duration": 0.76255,
   "parent": {
     "name": "orbot",
     "path": "folders/Sounds/enemies/orbot.yy",

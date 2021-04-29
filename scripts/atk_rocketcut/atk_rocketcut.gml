@@ -8,10 +8,6 @@ function atk_rocketcut()
 	sprite_index = s_player_rocketcut;
 	attack_timing_end = 22;
 	attack_move_spd = 0.3;
-	if (attack_timing == 1){
-		audio_play_sound(tune_uppercut, 1000, false)
-		audio_sound_pitch(tune_uppercut, 1.2)
-	}
 	if (attack_timing == 4)
 		{
 			vsp = 0;
