@@ -114,6 +114,7 @@ if (ground == true)
 {
 	states = states.normal;	
 	uppercuts = 1;
+	//audio_play_sound(tune_player_lands, 1000, false)
 }
 
 //Physics
