@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Items",
+    "path": "folders/Objects/Shop/Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "DrawSetText",

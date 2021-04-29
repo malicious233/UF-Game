@@ -15,7 +15,6 @@ switch (b)
 
 function spawn_wares()
 {
-	instance_create_layer(x,y,"Text",o_textbubble)
 	instance_create_layer(x,y-30,"Items",thing())
 	instance_create_layer(x-60,y-30,"Items",thing())
 	instance_create_layer(x+60,y-30,"Items",thing())
