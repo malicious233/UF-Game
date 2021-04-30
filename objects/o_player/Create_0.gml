@@ -80,7 +80,7 @@ upspecial_id = 0;
 
 basicattack[0] = atk_stumbler;
 basicattack[1] = atk_slipkick;
-basicattack_id = 1;
+basicattack_id = 0;
 
 specialattack[0] = atk_shoulderbash;
 specialattack[1] = atk_focusedshatter;
