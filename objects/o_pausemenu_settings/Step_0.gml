@@ -160,7 +160,12 @@ if ((gamepad_button_check_pressed(0,gp_face2)) or		// xinput "B" button
 	if !instance_exists(o_pausemenu_controls) and menu_control = true
 	{
 		instance_destroy();
-		pause_menu_sound3()
+		pause_menu_sound3();
+		
+		var file
+		file = file_text_open_write(SAVEFILE3)
+		file_text_write_real(file,global.vol)
+		file_text_close(file)
 	}
 
 }

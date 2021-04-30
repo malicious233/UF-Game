@@ -42,6 +42,8 @@ Glad I caught this before committing*/
 //create menus, and which order they appear from top to bottom
 if room == room_main_menu{
 //menu[2] = "Controls";
+menu[3] = "Master volume up"
+menu[2] = "Master volume down"
 menu[1] = "Fullscreen on";
 menu[0] = "Fullscreen off";
 }else{
@@ -55,11 +57,17 @@ menu[0] = "Fullscreen off";
 
 menu_items = array_length_1d(menu);
 if room == room_main_menu{
-menu_cursor = 1;   //sets where the selection arrow starts in menu order when thos object is created
+menu_cursor = 3;   //sets where the selection arrow starts in menu order when thos object is created
 }else{
 menu_cursor = 4;
 }
 menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);  //part of mouse menu tutorial from Shaun Spalding
 														//gets the top (or was it the bottom?) of the list of menu items
-
-
+if file_exists(SAVEFILE3)
+{
+	var file
+	file = file_text_open_read(SAVEFILE3)
+	global.vol = file_text_read_real(file)
+	file_text_close(file)
+	audio_master_gain(global.vol)
+}

@@ -147,6 +147,7 @@
     {"id":{"name":"s_testblock","path":"sprites/s_testblock/s_testblock.yy",},"order":15,},
     {"id":{"name":"o_enemy_spawner","path":"objects/o_enemy_spawner/o_enemy_spawner.yy",},"order":7,},
     {"id":{"name":"ct_spawn","path":"scripts/ct_spawn/ct_spawn.yy",},"order":2,},
+    {"id":{"name":"tune_bicycle_kick_2","path":"sounds/tune_bicycle_kick_2/tune_bicycle_kick_2.yy",},"order":19,},
     {"id":{"name":"tune_player_jump","path":"sounds/tune_player_jump/tune_player_jump.yy",},"order":2,},
     {"id":{"name":"s_portal","path":"sprites/s_portal/s_portal.yy",},"order":19,},
     {"id":{"name":"o_hitlagcontroller","path":"objects/o_hitlagcontroller/o_hitlagcontroller.yy",},"order":5,},
@@ -310,11 +311,7 @@
     "name": "Default",
     "children": [],
   },
-  "RoomOrderNodes": [
-    {"roomId":{"name":"room_intro","path":"rooms/room_intro/room_intro.yy",},},
-    {"roomId":{"name":"room_main_menu","path":"rooms/room_main_menu/room_main_menu.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-  ],
+  "RoomOrder": [],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Tile Sets.yy","order":2,"resourceVersion":"1.0","name":"Tile Sets","tags":[],"resourceType":"GMFolder",},
@@ -371,17 +368,17 @@
     {"folderPath":"folders/Sprites/HUD.yy","order":34,"resourceVersion":"1.0","name":"HUD","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
-    {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
-    {"targets":-1,"resourceVersion":"1.3","name":"audiogroup1","resourceType":"GMAudioGroup",},
+    {"targets":-1,"resourceVersion":"1.0","name":"audiogroup_default","resourceType":"GMAudioGroup",},
+    {"targets":-1,"resourceVersion":"1.0","name":"audiogroup1","resourceType":"GMAudioGroup",},
   ],
   "TextureGroups": [
-    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"groupParent":null,"targets":-1,"resourceVersion":"1.3","name":"Default","resourceType":"GMTextureGroup",},
+    {"isScaled":true,"autocrop":true,"border":2,"mipsToGenerate":0,"targets":-1,"resourceVersion":"1.0","name":"Default","resourceType":"GMTextureGroup",},
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.1.542",
+    "IDEVersion": "2.3.0.529",
   },
-  "resourceVersion": "1.4",
+  "resourceVersion": "1.3",
   "name": "UF Game Github",
   "tags": [],
   "resourceType": "GMProject",

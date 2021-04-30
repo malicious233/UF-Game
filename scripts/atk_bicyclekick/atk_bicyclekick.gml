@@ -7,8 +7,8 @@ function atk_bicyclekick()
 	attack_timing_end = 22; //What frame after attacking will you go back to normal state?
 	attack_move_spd = 0.75; //How much may you move while attacking
 	if (attack_timing == 1) {
-		audio_play_sound(tune_bicycle_kick, 1000, false)
-		audio_sound_pitch(tune_bicycle_kick, 1)
+		audio_play_sound(tune_bicycle_kick_2, 1000, false)
+		audio_sound_pitch(tune_bicycle_kick_2, 1.2)
 	}
 	if (attack_timing == 4)
 	{
