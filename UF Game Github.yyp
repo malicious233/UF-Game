@@ -245,6 +245,7 @@
     {"id":{"name":"ctrl_typist","path":"scripts/ctrl_typist/ctrl_typist.yy",},"order":0,},
     {"id":{"name":"s_acrylic_games_logo","path":"sprites/s_acrylic_games_logo/s_acrylic_games_logo.yy",},"order":19,},
     {"id":{"name":"s_key_layout_typist","path":"sprites/s_key_layout_typist/s_key_layout_typist.yy",},"order":23,},
+    {"id":{"name":"tune_uppercut_2","path":"sounds/tune_uppercut_2/tune_uppercut_2.yy",},"order":20,},
     {"id":{"name":"tune_tanker_ram","path":"sounds/tune_tanker_ram/tune_tanker_ram.yy",},"order":3,},
     {"id":{"name":"s_player_stomp2","path":"sprites/s_player_stomp2/s_player_stomp2.yy",},"order":8,},
     {"id":{"name":"s_player_rocketcut","path":"sprites/s_player_rocketcut/s_player_rocketcut.yy",},"order":16,},

@@ -9,8 +9,8 @@ function atk_rocketcut()
 	attack_timing_end = 22;
 	attack_move_spd = 0.3;
 	if (attack_timing == 1){
-		audio_play_sound(tune_uppercut, 1000, false)
-		audio_sound_pitch(tune_uppercut, 1.2)
+		audio_play_sound(tune_uppercut_2, 1000, false)
+		audio_sound_pitch(tune_uppercut_2, 1.2)
 	}
 	if (attack_timing == 4)
 		{
