@@ -49,23 +49,23 @@ skill_id = irandom(4);
 //How do switch statements work anyways?
 if (skill_id == 0)
 {item_name = "Windheel"
-item_desc = "Replaces Up + Attack while airborne\nVastly faster attackspeed, \nbut lower damage"
+item_desc = "Replaces [Up + Light Attack] with\na much faster version of the normal bibycle kick."
 	}
 else if (skill_id == 1)
 {item_name = "Rocketcut"
-item_desc = "Replaces Up + Special\nMuch faster attackspeed\nand higher vertical height,\nbut less damage"
+item_desc = "Replaces [Up + Heavy Attack] with\na much faster version of the normal uppercut."
 	}
 else if (skill_id == 2)
 {item_name = "Slipkick"
-item_desc = "Replaces regular Attack\nSlides further than its\nregular version"	
+item_desc = "Replaces regular Light Attack.\nThis version has:\n-A longer slide.\n-More damage."	
 }
 else if (skill_id == 3)
-{item_name = "Focusedshatter"
-item_desc = "Replaces regular Special\nA new charged attack\nRelease it early by clicking\nSpecial again"
+{item_name = "Focused-shatter"
+item_desc = "Replaces regular Heavy Attack with\na new charged attack.\n-Press once to charge,\npress again to attack."
 	}
 else if (skill_id == 4)
-{item_name = "Aerialslam"
-item_desc = "Replaces Down + Special while airborne\nCreates an explosion as you land\nDamage depends on fall-height"
+{item_name = "Aerial-slam"
+item_desc = "Replaces [Down + Heavy Attack] while in the air.\nThe longer you fall with this attack,\n the more damage you will deal to enemies."
 	}
 	
 draw_shopping_create();
