@@ -2,6 +2,13 @@
 // You can write your code in this editor
 //available = true;
 
+siner = 0;
+yoff = 0;
+
+warexoffset = -120;
+exist = false;
+
+
 function thing()
 {
 var b = irandom(2)
@@ -15,9 +22,8 @@ switch (b)
 
 function spawn_wares()
 {
-	instance_create_layer(x,y-30,"Items",thing())
-	instance_create_layer(x-60,y-30,"Items",thing())
-	instance_create_layer(x+60,y-30,"Items",thing())
+	instance_create_layer(x+warexoffset,y-15,"Items",thing())
+	instance_create_layer(x-60+warexoffset,y-15,"Items",thing())
+	instance_create_layer(x+60+warexoffset,y-15,"Items",thing())
 }
 spawn_wares();
-

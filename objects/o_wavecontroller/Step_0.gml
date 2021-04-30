@@ -13,6 +13,7 @@ if (enemycount) < 1
 if (wave_pause == false) //During wave
 {
 	wave_complete = false;
+	o_shopkeeper.exist = false;
 	with (o_gong)
 	{
 		hittable = false;	
@@ -41,6 +42,7 @@ else //When wave_pause is true
 	if (enemycount == 0 and spawnwaresonce == false)
 	{
 		intang_time = 120;
+		o_shopkeeper.exist = true;
 		with (o_shopkeeper)
 		{
 			spawn_wares();	

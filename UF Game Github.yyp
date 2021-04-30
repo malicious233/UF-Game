@@ -175,6 +175,7 @@
     {"id":{"name":"tune_pause_menu","path":"sounds/tune_pause_menu/tune_pause_menu.yy",},"order":3,},
     {"id":{"name":"tune_fastpunch1","path":"sounds/tune_fastpunch1/tune_fastpunch1.yy",},"order":4,},
     {"id":{"name":"o_pausemenu_kb","path":"objects/o_pausemenu_kb/o_pausemenu_kb.yy",},"order":4,},
+    {"id":{"name":"s_shopcepr","path":"sprites/s_shopcepr/s_shopcepr.yy",},"order":2,},
     {"id":{"name":"tune_running_grass","path":"sounds/tune_running_grass/tune_running_grass.yy",},"order":1,},
     {"id":{"name":"atk_rammer","path":"scripts/atk_rammer/atk_rammer.yy",},"order":0,},
     {"id":{"name":"o_orbot","path":"objects/o_orbot/o_orbot.yy",},"order":0,},

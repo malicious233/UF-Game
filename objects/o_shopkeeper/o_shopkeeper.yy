@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite83",
-    "path": "sprites/Sprite83/Sprite83.yy",
+    "name": "s_shopcepr",
+    "path": "sprites/s_shopcepr/s_shopcepr.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,6 +23,7 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"o_shopkeeper","path":"objects/o_shopkeeper/o_shopkeeper.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"o_shopkeeper","path":"objects/o_shopkeeper/o_shopkeeper.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"o_shopkeeper","path":"objects/o_shopkeeper/o_shopkeeper.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
