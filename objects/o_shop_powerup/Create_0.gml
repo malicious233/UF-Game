@@ -42,17 +42,17 @@ powerup_id = irandom(2);
 if (powerup_id == 0)
 {
 	item_name = "Temporary Speed"
-	item_desc = "-Raises movement speed.\n-Lasts 2 waves.\nBuy more to go even faster."	
+	item_desc = "-Raises movement speed\n-Lasts 2 waves.\n-Can stack"	
 }
 else if (powerup_id == 1)
 {
 	item_name = "Temporary Power"
-	item_desc = "-Raises attack damage.\n-Lasts 2 waves.\nBuy more to deal even more damage to enemies."
+	item_desc = "-Raises attack damage\n-Lasts 2 waves.\n-Can stack"
 }
 else if (powerup_id == 2)
 {
 	item_name = "Temporary Push"	
-	item_desc = "-Raises knockback and\nthrows enemies further when attacking them.\n-Lasts 2 waves.\nBuy more to throw enemies even further."	
+	item_desc = "-Raises knockback on attacks\n-Lasts 2 waves.\n-Can stack"	
 }
 
 draw_shopping_create();

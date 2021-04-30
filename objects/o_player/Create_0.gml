@@ -30,6 +30,8 @@ dodge_duration = 0;
 
 charge = 1;
 
+buying = false;
+
 
 
 

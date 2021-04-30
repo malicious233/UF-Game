@@ -16,8 +16,9 @@ function atk_taunt1()
 			{return audio_play_sound(tune_taunt, 1000, false)}
 	}
 	if (attack_timing == 10)
-	{			
-	create_hitbox()
+	{	
+		buying = true;
+		create_hitbox()
 			with (current_hitbox)
 				{
 					hitbox_offset_x = 0; //X offset från hitbox_owner, optional
