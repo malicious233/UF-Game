@@ -37,15 +37,23 @@ powerup_id = irandom(2);
 	case 1: item_name = "Temporary Power";
 	case 2: item_name = "Temporary Push";
 }*/
+
+//I wish I could do this better but I don't know how switches work :(
 if (powerup_id == 0)
 {
 	item_name = "Temporary Speed"
+	item_desc = "Raises movement speed\nLasts 2 waves\nIs stackable"	
 }
 else if (powerup_id == 1)
 {
-	item_name = "Temporary Power"	
+	item_name = "Temporary Power"
+	item_desc = "Raises attack damage\nLasts 2 waves\nIs stackable"
 }
 else if (powerup_id == 2)
 {
 	item_name = "Temporary Push"	
+	item_desc = "Raises knockback\nLasts 2 waves\nIs stackable"	
 }
+
+
+

@@ -48,15 +48,25 @@ skill_id = irandom(4);
 
 //How do switch statements work anyways?
 if (skill_id == 0)
-{item_name = "Windheel"}
+{item_name = "Windheel"
+item_desc = "Replaces Up + Attack while airborne\nVastly faster attackspeed, \nbut lower damage"
+	}
 else if (skill_id == 1)
-{item_name = "Rocketcut"}
+{item_name = "Rocketcut"
+item_desc = "Replaces Up + Special\nMuch faster attackspeed\nand higher vertical height,\nbut less damage"
+	}
 else if (skill_id == 2)
-{item_name = "Slipkick"}
+{item_name = "Slipkick"
+item_desc = "Replaces regular Attack\nSlides further than its\nregular version"	
+}
 else if (skill_id == 3)
-{item_name = "Focusedshatter"}
+{item_name = "Focusedshatter"
+item_desc = "Replaces regular Special\nA new charged attack\nRelease it early by clicking\nSpecial again"
+	}
 else if (skill_id == 4)
-{item_name = "Aerialslam"}
+{item_name = "Aerialslam"
+item_desc = "Replaces Down + Special while airborne\nCreates an explosion as you land\nDamage depends on fall-height"
+	}
 
 
 
