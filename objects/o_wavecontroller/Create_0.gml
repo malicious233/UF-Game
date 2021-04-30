@@ -4,14 +4,14 @@ spawn_interval_set = 150;
 spawn_interval = spawn_interval_set;
 
 
-
-wave = 5;
+wave = 0;
 wave_buildup = 1;
 wave_max = 10;
 e_wave_cooldown = 500;
 wave_cooldown = 500;
 wave_pause = false;
 wave_complete = false;
+intang_time = 0;
 
 
 spawnwaresonce = false;

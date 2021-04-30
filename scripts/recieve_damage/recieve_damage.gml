@@ -59,13 +59,13 @@ function recieve_damage()
 		
 		//Adds oneself to the hitlagcontroller list
 		ds_list_add(o_hitlagcontroller.hitlaggers_id,obj_id);
-		ds_list_add(o_hitlagcontroller.hitlaggers_dur,min(15,hit_pwr));
+		ds_list_add(o_hitlagcontroller.hitlaggers_dur,min(10,hit_pwr));
 		
 		//Adds the attacker to the hitlagcontroller list too
 		if instance_exists(atk_by)
 		{
 		ds_list_add(o_hitlagcontroller.hitlaggers_id,atk_by.obj_id); 
-		ds_list_add(o_hitlagcontroller.hitlaggers_dur,min(15,hit_pwr));
+		ds_list_add(o_hitlagcontroller.hitlaggers_dur,min(10,hit_pwr));
 		}
 		
 		//Screenshake

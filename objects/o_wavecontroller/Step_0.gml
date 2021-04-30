@@ -13,6 +13,10 @@ if (enemycount) < 1
 if (wave_pause == false) //During wave
 {
 	wave_complete = false;
+	with (o_gong)
+	{
+		hittable = false;	
+	}
 	if (spawn_interval < 0) and (enemycount < e_wave_buildup[wave]) and (enemycount < e_max_wave[wave]) //If the enemy spawn interval is ready and there's less enemies than the cap, spawn enemy
 	{
 		wave_buildup --; //Increase wave_buildup every time an enemy is spawned
@@ -30,9 +34,13 @@ if (wave_pause == false) //During wave
 else //When wave_pause is true
 {
 	if (enemycount == 0)
-	{wave_complete = true}
+	{
+		wave_complete = true
+		intang_time --;
+	}
 	if (enemycount == 0 and spawnwaresonce == false)
 	{
+		intang_time = 120;
 		with (o_shopkeeper)
 		{
 			spawn_wares();	
@@ -42,7 +50,8 @@ else //When wave_pause is true
 		spawnwaresonce = true;
 	}
 	//screenshake(3,3);
-	if (keyboard_check_pressed(ord("L")) == true) and (enemycount == 0) //Click L to go to the next wave during the stupid earthquake
+	//if (keyboard_check_pressed(ord("L")) == true) and (enemycount == 0) //Click L to go to the next wave during the stupid earthquak
+	if (o_gong.gong_hit == true) and (enemycount == 0) and (intang_time <= 0)
 	{
 		if (wave < wave_max)
 		{
