@@ -75,6 +75,7 @@
     {"id":{"name":"o_plat","path":"objects/o_plat/o_plat.yy",},"order":3,},
     {"id":{"name":"friction_force","path":"scripts/friction_force/friction_force.yy",},"order":0,},
     {"id":{"name":"s_cannonball","path":"sprites/s_cannonball/s_cannonball.yy",},"order":0,},
+    {"id":{"name":"draw_shopping_create","path":"scripts/draw_shopping_create/draw_shopping_create.yy",},"order":6,},
     {"id":{"name":"tune_pause_check3","path":"sounds/tune_pause_check3/tune_pause_check3.yy",},"order":2,},
     {"id":{"name":"o_pausemenu","path":"objects/o_pausemenu/o_pausemenu.yy",},"order":0,},
     {"id":{"name":"Sprite84","path":"sprites/Sprite84/Sprite84.yy",},"order":26,},

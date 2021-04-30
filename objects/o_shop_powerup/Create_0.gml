@@ -55,5 +55,6 @@ else if (powerup_id == 2)
 	item_desc = "Raises knockback\nLasts 2 waves\nIs stackable"	
 }
 
+draw_shopping_create();
 
 

@@ -67,6 +67,8 @@ else if (skill_id == 4)
 {item_name = "Aerialslam"
 item_desc = "Replaces Down + Special while airborne\nCreates an explosion as you land\nDamage depends on fall-height"
 	}
+	
+draw_shopping_create();
 
 
 
