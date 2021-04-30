@@ -5,7 +5,7 @@ spawn_interval = spawn_interval_set;
 
 
 
-wave = 0;
+wave = 5;
 wave_buildup = 1;
 wave_max = 10;
 e_wave_cooldown = 500;

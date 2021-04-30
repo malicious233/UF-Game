@@ -5,6 +5,7 @@ function st_hitstunned()
 	if audio_is_playing(tune_running_grass){audio_sound_gain(tune_running_grass, 0 , 0)}
 	intangible = true;
 	hitstun_duration --;
+	cancel_hitbox = true;
 	if (hitstun_duration < 0) {states = states.normal;}
 	
 	sprite_index = s_player_hurt;

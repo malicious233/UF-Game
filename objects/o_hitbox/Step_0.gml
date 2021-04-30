@@ -4,3 +4,14 @@ if !(instance_exists(hitbox_owner))
 {
 	instance_destroy();	
 }
+
+with (hitbox_owner)
+{
+	if states = states.hitstunned
+	{
+		with (other)
+		{
+			instance_destroy();	
+		}
+	}
+}
