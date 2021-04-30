@@ -1,6 +1,7 @@
 /// @description creation code
-#macro SAVEFILE "BanDanSave.sav"
-#macro SAVEFILE2 "BanDanSave2.sav"
+#macro SAVEFILE "BanDanSave.sav" //input method GIF
+#macro SAVEFILE2 "BanDanSave2.sav" //Highscore saver
+#macro SAVEFILE3 "BanDanSave3.sav" //volume save test
 
 alarm[0] = 1  //after one frame alarm 0 runs, could probably put all that code here but naahh.
 alarm[1] = 250
@@ -53,3 +54,11 @@ menu_cursor = 2;   //sets where the selection arrow starts in menu order when th
 
 menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);  //part of mouse menu tutorial from Shaun Spalding
 														//gets the top (or was it the bottom?) of the list of menu items
+														
+/*if file_exists(SAVEFILE3)
+{
+	var file
+	file = file_text_open_read(SAVEFILE3)
+	global.vol = file_text_read_real(file)
+	file_text_close(file)
+}
