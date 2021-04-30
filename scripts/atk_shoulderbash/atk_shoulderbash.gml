@@ -38,6 +38,15 @@ function atk_shoulderbash()
 				screenshake(5,10);
 			}
 		}
+		
+	if (attack_timing >= 20) and (attack_timing < 35)
+	{
+		intangible = true	
+	}
+	else
+	{	
+		intangible = false
+	}
 			
 	if (attack_timing == 24)
 	{

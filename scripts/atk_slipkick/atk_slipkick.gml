@@ -32,5 +32,13 @@ function atk_slipkick()
 			}
 			
 		}
+	if (attack_timing >= 5) and (attack_timing < 15)
+	{
+		intangible = true
+	}
+	else
+	{
+		intangible = false;	
+	}
 
 }

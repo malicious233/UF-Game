@@ -13,14 +13,12 @@ for (var i = 0; i < ds_list_size(hitlaggers_id); ++i;)
 	{
 
 	hitlaggers_id[|i].paused = true;
-	hitlaggers_id[|i].intangible = true;
 	hitlaggers_id[|i].image_speed = 0;
 	
 	hitlaggers_dur[|i] --;
 	if (hitlaggers_dur[|i] < 0)
 	{
 		hitlaggers_id[|i].paused = false;
-		hitlaggers_id[|i].intangible = false;
 		hitlaggers_id[|i].image_speed = 1;
 		ds_list_delete(hitlaggers_id,i)
 		ds_list_delete(hitlaggers_dur,i)	
