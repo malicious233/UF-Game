@@ -4,6 +4,12 @@
 // Inherit the parent event
 event_inherited();
 
+if room = Room1 and global.tutorial = 1
+{
+	o_player.x = 2500
+	o_player.y = 3900
+}
+
 vol = 1
 
 #macro SPD_WALK_MAX 7.2  

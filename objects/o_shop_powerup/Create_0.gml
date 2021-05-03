@@ -42,17 +42,17 @@ powerup_id = irandom(2);
 if (powerup_id == 0)
 {
 	item_name = "Temporary Speed"
-	item_desc = "-Raises movement speed\n-Lasts 2 waves.\n-Can stack"	
+	item_desc = "-Raises your movement speed\n-Lasts 2 waves.\n-Buy more to go even faster.\nWTF DOES 'can stack' MEAN TO REGULAR PEOPLE? BRUH CMON NO NEED TO BE TECHNICALLY WORDED,\nmay become confusing and discurage players from actually buying and stacking powerups since it isn't\n clear what happens if you buy another one with just 'can stack' smh. rant over."	
 }
 else if (powerup_id == 1)
 {
 	item_name = "Temporary Power"
-	item_desc = "-Raises attack damage\n-Lasts 2 waves.\n-Can stack"
+	item_desc = "-Raises your attack damage\n-Lasts 2 waves.\n-Buy more to deal even more damage to enemies."
 }
 else if (powerup_id == 2)
 {
 	item_name = "Temporary Push"	
-	item_desc = "-Raises knockback on attacks\n-Lasts 2 waves.\n-Can stack"	
+	item_desc = "-Raises knockback on your attacks\n-Lasts 2 waves.\n-Buy more to make enemies fly even\nfurther when you attack them."	
 }
 
 draw_shopping_create();

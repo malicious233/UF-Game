@@ -37,6 +37,11 @@ audio_play_sound(tune_pause_escape, 1000, false)
 			o_enemyportal_location.image_alpha = 0
 		}
 		
+		if instance_exists(o_shopkeeper) and o_wavecontroller.shop_keeper_pause = 0
+		{
+			o_shopkeeper.image_alpha = 0
+		}else if instance_exists(o_shopkeeper) and o_wavecontroller.shop_keeper_pause = 1{o_shopkeeper.image_alpha = 1}
+		
 		var offset = 0;						/* offset basically makes sure that we always
 													have valid sprites drawn when paused*/
 													

@@ -57,11 +57,21 @@ if (menu_control)
 	{								//and if mouse is within the area of menu items, x-axis-wise.													
 		menu_cursor = (menu_y - mouse_y_gui) div (menu_itemheight * 1.5);		//menu cursor attached to mouse position
 		
+		
+		if (sound_played3 = 0 and menu_cursor = 3)
+		{
+			audio_play_sound(tune_pause_check1, 1000, false)
+			sound_played3 = 1
+		}else if sound_played3 = 1 and menu_cursor < 3
+		{
+			sound_played3 = 0
+		}
+		
 		if (sound_played2 = 0 and menu_cursor = 2)
 		{
 			audio_play_sound(tune_pause_check1, 1000, false)
 			sound_played2 = 1
-		}else if sound_played2 = 1 and menu_cursor < 2
+		}else if sound_played2 = 1 and (menu_cursor < 2 or menu_cursor > 2)
 		{
 			sound_played2 = 0
 		}
@@ -130,7 +140,7 @@ if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 
 								//resumes game
 								//EDIT: maybe not exactly the same code as in keypress-escape but whatever, it works now
 								//case 2 resumes game
-		case 2: room_goto(Room1)
+		case 2: room_goto(Room1); global.tutorial = 0
 			if audio_is_playing(tune_pause_menu)
 			{
 				audio_sound_gain(tune_pause_menu, 0, 1000)
@@ -148,7 +158,24 @@ if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 
 					}
 				instance_destroy();
 				break;
-		
+		case 3: room_goto(Room1); global.tutorial = 1
+			if audio_is_playing(tune_pause_menu)
+			{
+				audio_sound_gain(tune_pause_menu, 0, 1000)
+			}
+			audio_play_sound(tune_wave_1,1000,false);
+				pause = false;			
+				instance_activate_all(); 
+				instance_deactivate_object(o_pausemenu_quit)
+				o_hurtbox.image_alpha = 1;   
+				menu_control = false; 
+				if instance_exists(o_pausemenu_quit) and pause = false
+					{
+						audio_play_sound(tune_windows95,1000,false) //for testing purposes
+						instance_destroy(o_pausemenu_quit)
+					}
+				instance_destroy();
+				break;
 	}
 	
 }

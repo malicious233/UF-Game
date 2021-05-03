@@ -10,6 +10,7 @@ if (enemycount) < 1
 	screenshake(5,5)
 }
 */
+if room = Room1{
 if (wave_pause == false) //During wave
 {
 	wave_complete = false;
@@ -43,6 +44,7 @@ else //When wave_pause is true
 	{
 		intang_time = 120;
 		o_shopkeeper.exist = true;
+		shop_keeper_pause = 1
 		with (o_shopkeeper)
 		{
 			spawn_wares();	
@@ -66,9 +68,12 @@ else //When wave_pause is true
 		wave_pause = false;
 		audio_sound_gain(tune_music, 0.69, 3000)
 		audio_sound_gain(tune_white_noise, 0, 2000)
+		shop_keeper_pause = 0
+		
 	}
 }
 
+}
 /*
 if (wave_cooldown > 0)
 {

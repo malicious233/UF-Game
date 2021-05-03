@@ -49,23 +49,23 @@ skill_id = irandom(4);
 //How do switch statements work anyways?
 if (skill_id == 0)
 {item_name = "Skill: Windheel"
-item_desc = "Replaces [Up + Light Attack]\n-Much faster attack speed\n-Low damage"
+item_desc = "Replaces [Up + Light Attack].\nThis attack has:\n-Much faster attack speed\ncompared to bicycle kick.\n-A little lower damage"
 	}
 else if (skill_id == 1)
 {item_name = "Skill: Rocketcut"
-item_desc = "Replaces [Up + Heavy Attack]\n-Vastly quicker attack speed\n-Lower damage"
+item_desc = "Replaces [Up + Heavy Attack].\nThis attack has:\n-Much faster attack speed\ncompared to uppercut.\n-A little lower damage"
 	}
 else if (skill_id == 2)
 {item_name = "Skill: Slipkick"
-item_desc = "Replaces [Light Attack}.\n-Longer range\n-Invincibility during slide\n-Longer cooldown"	
+item_desc = "Replaces [Light Attack] on ground.\nThis attack has:\n-Longer slide\n-Invincibility during slide(unnecesary to know imo)\n-Longer cooldown(unnecesary to know imo x2)\n-More damage."	
 }
 else if (skill_id == 3)
 {item_name = "Skill: Focused-shatter"
-item_desc = "Replaces [Heavy Attack]\na new charged attack.\n-Press once to charge,\n-Press Heavy Attack to attack early"
+item_desc = "Replaces [Heavy Attack] with\na new charged attack.\n-Press once to charge,\npress again to attack early.\n-Longer charge = More Damage."
 	}
 else if (skill_id == 4)
 {item_name = "Skill: Aerial-slam"
-item_desc = "Replaces [Down + Heavy Attack] while in the air\n-Damage depends on fall height\n-Deals damage upon landing"
+item_desc = "Replaces [Down + Heavy Attack] while in the air.\n-Damage depends on fall height,\n longer fall = more damage.\n-Deals damage only when landing on ground."
 	}
 	
 draw_shopping_create();

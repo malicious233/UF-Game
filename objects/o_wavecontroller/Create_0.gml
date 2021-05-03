@@ -3,6 +3,7 @@
 spawn_interval_set = 150;
 spawn_interval = spawn_interval_set;
 
+shop_keeper_pause = 0
 
 wave = 0;
 wave_buildup = 1;
