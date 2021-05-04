@@ -6,7 +6,7 @@
 
 
 
-if (instance_exists(o_player))
+if (instance_exists(o_player)) and global.tutorial = 0
 {
 	
 	if (o_wavecontroller.wave_complete == true)

@@ -56,6 +56,7 @@ moving(move_spd,curr_dir);
 if (key_space_click == true) and (jumps > 0)
 {
 	audio_play_sound(tune_player_jump, 1000, false)
+	audio_sound_pitch(tune_player_jump, random_range(0.95, 1.05))
 	vsp = -jump_spd;	
 	jumps --;
 }
