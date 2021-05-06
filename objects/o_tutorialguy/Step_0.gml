@@ -13,11 +13,17 @@ if place_meeting(x,y,o_player)
 if (not_touched == false)
 {
 talk_time ++;	
+
+if keyboard_check_pressed(ord("R"))
+{
+	talk_index ++;
+}
 	
 switch (index)
 {
 	case 0:
 	{
+		/*
 		var onebbl = 220
 		var twobbl = 240
 		var threebbl = 220
@@ -31,16 +37,29 @@ switch (index)
 		if talk_time = onebbl+twobbl+threebbl
 		{Create_speechbubble("You can move by using [A] and [D]\n You can jump over the thing to\n-the right by clicking [Spacebar]",9999)}
 		break;
+		*/
+		
+		if talk_index = 0
+		{Create_speechbubble("Hello, welcome to the tutorial",9999,true)}
+		if talk_index = 1
+		{Create_speechbubble("My name is Coin Exchange Purposed Robot-",9999,true)}
+		if talk_index = 2
+		{Create_speechbubble("-But you can call me Shop-CEPR.",9999,true)}
+		if talk_index >= 3
+		{Create_speechbubble("You can move by using [A] and [D]\n You can jump over the thing to\n-the right by clicking [Spacebar]",9999,false)}
+		break;
+		
 	}
 	
 	case 1:
 	{
 		var onebbl = 200;
+
 		
-		if talk_time = 1
-		{Create_speechbubble("Great, that's the first step",onebbl)}
-		if talk_time = onebbl
-		{Create_speechbubble("You can doublejump once as well-\n-by jumping in the air.",9999)}
+		if talk_index = 0
+		{Create_speechbubble("Great, that's the first step",9999,true)}
+		if talk_index >= 1
+		{Create_speechbubble("You can doublejump once as well-\n-by jumping in the air.",9999,false)}
 		break;
 
 	}
@@ -50,33 +69,36 @@ switch (index)
 		var onebbl = 200;
 		var twobbl = 240;
 		
-		if talk_time = 1
-		{Create_speechbubble("That's the basic movement out of the way",onebbl)}
-		if talk_time = onebbl
-		{Create_speechbubble("Now, let's try attacking that thing over there",twobbl)}
-		if talk_time = onebbl+twobbl
-		{Create_speechbubble("Do a light attack by clicking [Shift]\nAnd do a heavy attack by clicking [Left Control]",9999)}
+
+		
+		if talk_index = 0
+		{Create_speechbubble("That's the basic movement out of the way",9999,true)}
+		if talk_index = 1
+		{Create_speechbubble("Now, let's try attacking that thing over there",9999,true)}
+		if talk_index >= 2
+		{Create_speechbubble("Do a light attack by clicking [Shift]\nAnd do a heavy attack by clicking [Left Control]",9999,false)}
 		break;
 
 	}
 	
 	case 3:
 	{
-		var onebbl = 80;
+		var onebbl = 120;
 		var twobbl = 270;
 		var threebbl = 270;
 		var fourbbl = 270;
+
 		
-		if talk_time = 1
-		{Create_speechbubble("Nice. Getting a hang of it.",onebbl)}
-		if talk_time = onebbl
-		{Create_speechbubble("You're equipped with a multitude of attack options",twobbl)}
-		if talk_time = onebbl+twobbl
-		{Create_speechbubble("Depending on if you're holding [W], [A], [S], or [D]-\nyou'll do different attacks.",threebbl)}
-		if talk_time = onebbl+twobbl+threebbl
-		{Create_speechbubble("Feel free to experiment with attacks in the air as well.",fourbbl)}
-		if talk_time = onebbl+twobbl+threebbl+fourbbl
-		{Create_speechbubble("Try knocking that robot over there into the hoop by\n-doing [Left Control] while holding [W].\n",9999)}
+		if talk_index = 0
+		{Create_speechbubble("Nice. Getting a hang of it.",9999,true)}
+		if talk_index = 1
+		{Create_speechbubble("You're equipped with a multitude of attack options",9999,true)}
+		if talk_index = 2
+		{Create_speechbubble("Depending on if you're holding [W], [A], [S], or [D]-\nyou'll do different attacks.",9999,true)}
+		if talk_index = 3
+		{Create_speechbubble("Feel free to experiment with attacks in the air as well.\n You got quite the collection of moves.",9999,true)}
+		if talk_index >= 4
+		{Create_speechbubble("Try knocking that robot over there into the hoop by\n-doing [Left Control] while holding [W].\n",9999,false)}
 		break;
 
 	}
@@ -86,12 +108,14 @@ switch (index)
 		var onebbl = 200;
 		var twobbl = 270;
 		
-		if talk_time = 1
-		{Create_speechbubble("Watch out. This guy is aggressive.",onebbl)}
-		if talk_time = onebbl
-		{Create_speechbubble("You don't want to be hit too much,\n lose all your HP, you lose",twobbl)}
-		if talk_time = onebbl+twobbl
-		{Create_speechbubble("You can dodge through \n-attacks with [Q] or [E]",9999)}
+
+		
+		if talk_index = 0
+		{Create_speechbubble("Watch out. This guy is aggressive.",9999,true)}
+		if talk_index = 1
+		{Create_speechbubble("You don't want to be hit too much,\n lose all your HP, you lose",9999,true)}
+		if talk_index >= 2
+		{Create_speechbubble("You can dodge through \n-attacks with [Q] or [E]",9999,false)}
 
 	}
 	
@@ -102,16 +126,16 @@ switch (index)
 		var threebbl = 330;
 		var fourbbl = 300;
 		
-		if talk_time = 1
-		{Create_speechbubble("That was all for the tutorial!",onebbl)}
-		if talk_time = onebbl
-		{Create_speechbubble("You should be ready to brave the horde of enemies\n-you'll face in the arena",twobbl)}
-		if talk_time = onebbl+twobbl
-		{Create_speechbubble("I have a shop there you can buy things\n-to help you on your way",threebbl)}
-		if talk_time = onebbl+twobbl+threebbl
-		{Create_speechbubble("You're free to toy with the dummies in this area\nOnce you want to leave the tutorial area\n-enter the door to the right",fourbbl)}
-		if talk_time = onebbl+twobbl+threebbl+fourbbl
-		{Create_speechbubble("Other than that, good luck!",9999)}
+		if talk_index = 0
+		{Create_speechbubble("That was all for the tutorial!",9999,true)}
+		if talk_index = 1
+		{Create_speechbubble("You should be ready to brave the horde of enemies\n-you'll face in the arena",9999,true)}
+		if talk_index = 2
+		{Create_speechbubble("I have a shop there you can buy things\n-to help you on your way",9999,true)}
+		if talk_index = 3
+		{Create_speechbubble("You're free to toy with the dummies in this area\nOnce you want to leave the tutorial area\n-enter the door to the right",9999,true)}
+		if talk_index >= 4
+		{Create_speechbubble("Other than that, good luck in the robot rampage!",9999,false)}
 	}
 	
 	

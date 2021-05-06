@@ -6,6 +6,7 @@ siner = 0;
 yoff = 0;
 not_touched = true;
 talk_time = 0;
+talk_index = 0;
 
 //Create_speechbubble("Hey guys, tutorial time",260)
 

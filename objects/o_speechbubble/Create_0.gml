@@ -2,6 +2,7 @@
 // You can write your code in this editor
 yoffset = -120;
 margin = 5;
+h = false;
 
 DrawSetText(c_white,fnt_HUD_small,fa_middle,fa_middle)
 txtheight = string_height(dialogue);
