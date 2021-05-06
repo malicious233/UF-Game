@@ -4,12 +4,9 @@
 
 siner = 0;
 yoff = 0;
+not_touched = true;
+talk_time = 0;
 
-yoffset = -120;
-margin = 5;
-
-DrawSetText(c_white,fnt_HUD_small,fa_middle,fa_middle)
-txtheight = string_height(dialogue);
-txtlength = string_width(dialogue);
+//Create_speechbubble("Hey guys, tutorial time",260)
 
 

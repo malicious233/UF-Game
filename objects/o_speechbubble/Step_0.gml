@@ -1,4 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_sprite(s_shopcepr,0,x,y-10+yoff)
+time --;
 
+if (time < 0)
+{
+	instance_destroy();	
+}
