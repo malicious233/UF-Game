@@ -61,7 +61,7 @@ if (Particle_interval < 0)
 	{
 		spawn_pwrupparticle(push_fx)	
 	}
-	Particle_interval = 15;
+	Particle_interval = 10;
 }
 
 image_xscale = size*dir;
