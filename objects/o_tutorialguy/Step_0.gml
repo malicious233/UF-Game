@@ -85,7 +85,7 @@ switch (index)
 			spawn_once = true;
 			}
 		if talk_index >= 2
-		{Create_speechbubble("Do quick attacks by clicking [Shift],\nand do strong attacks by clicking [Left Control]",9999,false)}
+		{Create_speechbubble("Do quick attacks by clicking [Shift],\nand do strong attacks by clicking [Left Control].\nYou'll do different attacks too depending on-\n if you hold [W], [A], [S] or [D]",9999,false)}
 		break;
 
 	}
@@ -95,20 +95,17 @@ switch (index)
 		var onebbl = 120;
 		var twobbl = 270;
 		var threebbl = 270;
-		var fourbbl = 270;
 
 		
 		if talk_index = 0
-		{Create_speechbubble("Good job. You're getting a hang of it.",9999,true)}
+		{Create_speechbubble("Good job. \nYou're getting a hang of it.",9999,true)}
 		if talk_index = 1
-		{Create_speechbubble("You're equipped with a multitude of attack options",9999,true)}
+		{Create_speechbubble("Learning your moves is key-\n to being successful in the rampage",9999,true)}
 		if talk_index = 2
-		{Create_speechbubble("Depending on if you're holding [W], [A], [S], or [D]-\nyou'll do different attacks.",9999,true)}
-		if talk_index = 3
 		{Create_speechbubble("Feel free to experiment with attacks in the air as well.\n You got quite the collection of moves.",9999,true)}
-		if talk_index >= 4
-		{
-			Create_speechbubble("Try knocking that robot over there into the hoop by\n-doing [Left Control] while holding [W].\n",9999,false)
+		if talk_index >= 3
+		{Create_speechbubble("Try knocking that robot over there into the hoop by\n-doing [Left Control] while holding [W].",9999,false)
+
 			if (spawn_once != true)
 			{
 				var bruh = instance_create_layer(x+200,y-20,"Instance",o_tincan)	
@@ -116,7 +113,7 @@ switch (index)
 				{has_ai = false; hp = 999;}
 			}
 			spawn_once = true;
-			}
+		}
 		break;
 
 	}
@@ -132,9 +129,9 @@ switch (index)
 		{Create_speechbubble("Watch out. This guy is aggressive!",9999,true)
 			if (spawn_once != true)
 			{
-				var bruh = instance_create_layer(x+250,y-20,"Instance",o_tincan)	
+				var bruh = instance_create_layer(x+300,y-20,"Instance",o_tincan)	
 				with (bruh)
-				{has_ai = true; hp = 999;}
+				{has_ai = true; hp = 999; insta_aggro = false;}
 				o_player.hp = 999;
 			}
 			spawn_once = true;
