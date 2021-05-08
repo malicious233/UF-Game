@@ -22,20 +22,20 @@ function atk_braceletbash()
 				image_xscale = 1.4; //Hitboxens X scale, optional
 				image_yscale = 0.8;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 5;
-				hitbox_x_kb = 3.5*other.dir;
-				hitbox_y_kb = 3;
+				hitbox_damage = 6;
+				hitbox_x_kb = 6.5*other.dir;
+				hitbox_y_kb = -3;
 				atk_fx = atk_fx.heavy_2;
 				screenshake(5,8);
 			}
 			create_hitbox() //Spaced hitbox, this attack is unique in a sense that if you hit with the arm, it will be weaker, but if you hit with the explosion-thing it will be strong
 			with (current_hitbox)
 			{
-				hitbox_offset_x = 40; //X offset från hitbox_owner, optional
+				hitbox_offset_x = 45; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 5; //Y offset från hitbox_owner, optional
 				hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1.1; //Hitboxens X scale, optional
-				image_yscale = 1.1;//Hitboxens Y scale, optional
+				image_xscale = 1.2; //Hitboxens X scale, optional
+				image_yscale = 1.5;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 7;
 				hitbox_x_kb = 8.5*other.dir;
@@ -51,7 +51,7 @@ function atk_braceletbash()
 	{
 
 		states = states.recovery
-		recovery_time = 9.6;
+		recovery_time = 8;
 		sprite_index = s_player_stomp_rec;
 		image_index = 0;
 		cancel_attack = true;	

@@ -9,6 +9,16 @@ function atk_uppercut()
 		audio_play_sound(tune_uppercut, 1000, false)
 		audio_sound_pitch(tune_uppercut, 1.0)
 	}
+	
+	if (attack_timing >= 13) and (attack_timing <= 18)
+	{
+		intangible = true;	
+	}
+	else
+	{
+		intangible = false;	
+	}
+	
 	if (attack_timing == 14)
 		{
 			//if (!audio_is_playing(tune_uppercut)){audio_play_sound(tune_uppercut, 1000, false)}

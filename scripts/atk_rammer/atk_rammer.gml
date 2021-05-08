@@ -21,10 +21,26 @@ function atk_rammer()
 		
 	}
 	
-	if (attack_timing > 40) and (attack_timing < 60)
-	{
-		hsp = 10*dir;	
+	
+	if (attack_timing > 45) and (attack_timing < 70)
+	{	
+		if (hsp == 0)
+		{
+			cancel_hitbox = true;
+			cancel_attack = true;
+			screenshake(6,30);
+			hsp = 10*-dir
+			
+		}
 	}
+	
+	if (attack_timing > 40) and (attack_timing < 70)
+	{
+		hsp = 10*dir;
+	}
+	
+	
+	
 	if (attack_timing > 70) and (attack_timing < 78)
 	{
 		friction_force(0.5,0.96);	

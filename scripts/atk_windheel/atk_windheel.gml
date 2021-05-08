@@ -38,9 +38,9 @@ function atk_windheel()
 			hitbox_offset_y = -12.5; //Y offset från hitbox_owner, optional
 			hitbox_duration = 4;//Hur länge hitboxen är active tills den tas bort automatiskt.
 			image_xscale = 1.6; //Hitboxens X scale, optional
-			image_yscale = 1;//Hitboxens Y scale, optional
+			image_yscale = 1.2;//Hitboxens Y scale, optional
 			hitbox_damage = 2;
-			hitbox_x_kb = -2*other.dir;
+			hitbox_x_kb = 2*other.dir;
 			hitbox_y_kb = -3.5
 		}
 	}
@@ -52,7 +52,7 @@ function atk_windheel()
 		if (attack_timing >= 3)
 		{
 			states = states.recovery
-			recovery_time = 12;
+			recovery_time = 6;
 			sprite_index = s_player_bicyclekick_rec;
 			image_index = 0;
 		}

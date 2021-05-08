@@ -14,13 +14,13 @@ function atk_longkick()
 			create_hitbox()
 			with (current_hitbox)
 			{
-				hitbox_offset_x = 13.5; //X offset från hitbox_owner, optional
-				hitbox_offset_y = 15; //Y offset från hitbox_owner, optional
-				hitbox_duration = 5;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1.5; //Hitboxens X scale, optional
-				image_yscale = 1.4;//Hitboxens Y scale, optional
+				hitbox_offset_x = 10; //X offset från hitbox_owner, optional
+				hitbox_offset_y = 10; //Y offset från hitbox_owner, optional
+				hitbox_duration = 6;//Hur länge hitboxen är active tills den tas bort automatiskt.
+				image_xscale = 1.7; //Hitboxens X scale, optional
+				image_yscale = 1.6;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 5;
+				hitbox_damage = 6;
 				hitbox_x_kb = 5*other.dir;
 				hitbox_y_kb = -3;
 
@@ -32,10 +32,10 @@ function atk_longkick()
 			with (current_hitbox)
 			{
 				hitbox_offset_x = 5; //X offset från hitbox_owner, optional
-				hitbox_offset_y = 15; //Y offset från hitbox_owner, optional
+				hitbox_offset_y = 5; //Y offset från hitbox_owner, optional
 				hitbox_duration = 25;//Hur länge hitboxen är active tills den tas bort automatiskt.
-				image_xscale = 1.1; //Hitboxens X scale, optional
-				image_yscale = 0.75;//Hitboxens Y scale, optional
+				image_xscale = 1.4; //Hitboxens X scale, optional
+				image_yscale = 1.2;//Hitboxens Y scale, optional
 				
 				hitbox_damage = 4;
 				hitbox_x_kb = 3.75*other.dir;
@@ -48,7 +48,7 @@ function atk_longkick()
 	{
 
 		states = states.recovery
-		recovery_time = 9.6;
+		recovery_time = 7.6;
 		sprite_index = s_player_longkick_rec;
 		image_index = 0;
 		cancel_attack = true;	

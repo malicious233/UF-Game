@@ -33,8 +33,10 @@ function atk_aerialslam()
 		with (partcl)
 		{
 			sprite_index = slam_fx
-			x = x+(o_player.dir*30);
-			image_xscale = 2;
+			x = x+(o_player.dir*32);
+			y = y-60
+			image_yscale = 3;
+			image_speed = image_speed*0.8
 		}
 		
 		//audio_play_sound(tune_heavy,10,false);
@@ -44,27 +46,27 @@ function atk_aerialslam()
 		with (current_hitbox) //Earthquake hitbox
 		{
 			hitbox_offset_x = 40;  //X offset från hitbox_owner, optional
-			hitbox_offset_y = 19; //Y offset från hitbox_owner, optional
-			hitbox_duration = 12;  //Hur länge hitboxen är active tills den tas bort automatiskt.
-			image_xscale = 2.2;   //Hitboxens X scale, optional
-			image_yscale = 1;   //Hitboxens Y scale, optional
+			hitbox_offset_y = -15; //Y offset från hitbox_owner, optional
+			hitbox_duration = 14;  //Hur länge hitboxen är active tills den tas bort automatiskt.
+			image_xscale = 1.8;   //Hitboxens X scale, optional
+			image_yscale = 3;   //Hitboxens Y scale, optional
 			obey_hitbox_creator = false;
-			hitbox_damage = 5*other.charge;
-			hitbox_x_kb = 4*other.dir;
+			hitbox_damage = 4*other.charge;
+			hitbox_x_kb = 4.5*other.dir;
 			hitbox_y_kb = -8;
 
 		}
 		create_hitbox()
 		with (current_hitbox) //Earthquake hitbox
 		{
-			hitbox_offset_x = -15;  //X offset från hitbox_owner, optional
+			hitbox_offset_x = 40;  //X offset från hitbox_owner, optional
 			hitbox_offset_y = 19; //Y offset från hitbox_owner, optional
 			hitbox_duration = 12;  //Hur länge hitboxen är active tills den tas bort automatiskt.
-			image_xscale = 2;   //Hitboxens X scale, optional
-			image_yscale = 1;   //Hitboxens Y scale, optional
+			image_xscale = 2.8;   //Hitboxens X scale, optional
+			image_yscale = 0.75;   //Hitboxens Y scale, optional
 			obey_hitbox_creator = false;
-			hitbox_damage = 5*other.charge;
-			hitbox_x_kb = -4*other.dir;
+			hitbox_damage = 4.5*other.charge;
+			hitbox_x_kb = 6*other.dir;
 			hitbox_y_kb = -8;
 
 		}
