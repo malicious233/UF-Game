@@ -6,6 +6,7 @@ if (place_meeting(x,y,o_player)) and (o_player.buying)
 	{
 		if (currency >= other.purchase_value)
 		{
+			purchased_skills ++;
 			script_execute(other.skill_change_id[other.skill_id])
 			currency = currency-other.purchase_value;
 			with (other) {instance_destroy();}

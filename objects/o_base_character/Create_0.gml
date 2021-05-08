@@ -22,12 +22,17 @@ combo_timer = 0;
 //Powerup modifiers
 Speed_mod = 1;
 Speed_duration = 0;
+Speed_stacks = 0
 
 Power_mod = 1;
 Power_duration = 0;
+Power_stacks = 0
 
 Push_mod = 1;
 Push_duration = 0;
+Push_stacks = 0;
+
+Particle_interval = 15;
 
 
 

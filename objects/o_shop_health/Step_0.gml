@@ -6,7 +6,7 @@ if (place_meeting(x,y,o_player)) and (o_player.buying)
 	{
 		if (currency >= other.purchase_value)
 		{
-			hp = hp+15;
+			hp = hp+20;
 			hp = clamp(hp,0,50);
 			currency = currency-other.purchase_value;
 			with (other) {instance_destroy();}

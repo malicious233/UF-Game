@@ -45,6 +45,24 @@ if (hp <= 0) //We should move this so objects can die their own way, so to speak
 		}
 }
 
+Particle_interval --;
+
+if (Particle_interval < 0)
+{
+	if (Speed_mod > 1)
+	{
+		spawn_pwrupparticle(speed_fx)	
+	}
+	if (Power_mod > 1)
+	{
+		spawn_pwrupparticle(power_fx)
+	}
+	if (Push_mod > 1)
+	{
+		spawn_pwrupparticle(push_fx)	
+	}
+	Particle_interval = 15;
+}
 
 image_xscale = size*dir;
 image_yscale = size;
@@ -119,14 +137,17 @@ combo_timer --;
 if (Speed_duration <= 0)
 {
 	Speed_mod = 1;	
+	Speed_stacks = 0
 }
 if (Power_duration <= 0)
 {
 	Power_mod = 1;	
+	Power_stacks = 0
 }
 if (Push_duration <= 0)
 {
 	Push_mod = 1;	
+	Push_stacks = 0;
 }
 
 

@@ -1,23 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
-purchase_value = 15;
+purchase_value = 10*(o_player.Speed_stacks+o_player.Power_stacks+o_player.Push_stacks+1);
 
 function change_speed()
 {
 	o_player.Speed_duration = 3;
 	o_player.Speed_mod = o_player.Speed_mod*1.2
+	o_player.Speed_stacks = o_player.Speed_stacks+1;
 }
 
 function change_power()
 {
 	o_player.Power_duration = 3;
 	o_player.Power_mod = o_player.Power_mod*1.2
+	o_player.Power_stacks = o_player.Power_stacks+1;
 }
 
 function change_push()
 {
 	o_player.Push_duration = 3;
 	o_player.Push_mod = o_player.Push_mod*1.2
+	o_player.Push_stacks = o_player.Push_stacks+1;
 }
 
 //powerup_name[0] = "Temporary Speed";
