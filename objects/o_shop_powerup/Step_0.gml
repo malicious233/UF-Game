@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if instance_exists(o_player)
+{
 if (place_meeting(x,y,o_player)) and (o_player.buying)
 {
 	with (o_player)
@@ -22,3 +24,4 @@ if (o_wavecontroller.wave_pause == false)
 	instance_destroy();	
 }
 
+}

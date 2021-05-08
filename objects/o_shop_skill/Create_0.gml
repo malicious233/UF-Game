@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+// You can write your code in this editor
+if instance_exists(o_player)
+{
 purchase_value = 25+(o_player.purchased_skills*25);
 
 
@@ -71,4 +74,4 @@ item_desc = "Replaces [Down + Heavy Attack] while in the air.\n-Damage depends o
 draw_shopping_create();
 
 
-
+}

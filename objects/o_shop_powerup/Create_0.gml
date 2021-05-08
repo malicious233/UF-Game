@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+// You can write your code in this editor
+// You can write your code in this editor
+
+if instance_exists(o_player)
+{
 purchase_value = 10*(o_player.Speed_stacks+o_player.Power_stacks+o_player.Push_stacks+1);
 
 function change_speed()
@@ -60,4 +65,4 @@ else if (powerup_id == 2)
 
 draw_shopping_create();
 
-
+}
