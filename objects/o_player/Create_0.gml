@@ -76,11 +76,11 @@ controls = controls.gp_xinput
 
 upair[0] = atk_bicyclekick;
 upair[1] = atk_windheel;
-upair_id = 1;
+upair_id = 0;
 
 downair[0] = atk_stomp;
 downair[1] = atk_aerialslam;
-downair_id = 1;
+downair_id = 0;
 
 upspecial[0] = atk_uppercut;
 upspecial[1] = atk_rocketcut;
