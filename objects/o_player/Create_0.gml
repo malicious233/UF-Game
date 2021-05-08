@@ -51,10 +51,7 @@ buying = false;
 
 enum controls
 {
-	arrowkeys,
-	typist,
 	wasd1hand,
-	wasdmouse,
 	gp_xinput,
 	gp_directinput,
 	nothing,

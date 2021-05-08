@@ -112,7 +112,7 @@ if (key_special) and !(key_up)
 	attack(specialattack[specialattack_id],s_player_shoulderbash);	
 }
 
-if (keyboard_check_pressed(ord("U"))) or gamepad_button_check_pressed(0,gp_stickl) or gamepad_button_check_pressed(4,gp_stickl) or mouse_check_button_pressed(mb_middle) or (keyboard_check_pressed(ord("R"))) or (keyboard_check_pressed(ord("B")))
+if (keyboard_check_pressed(ord("U"))) or gamepad_button_check_pressed(0,gp_stickl) or gamepad_button_check_pressed(4,gp_stickl) or (keyboard_check_pressed(ord("R")))
 {
 	attack(atk_taunt1,s_player_taunt1);	
 }
@@ -139,18 +139,6 @@ if (key_test2)
 }
 
 
-//controls change
-/*
-if keyboard_check_pressed(ord("O")) and (vk_up)
-{
-	controls = controls.arrowkeys
-}
-
-if keyboard_check_pressed(ord("P")) and (ord("F"))
-{
-	controls = controls.typist
-}
-*/
 
 
 

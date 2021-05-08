@@ -6,3 +6,5 @@
 //goog8
 //GOOG9
 //goog10
+//goog11 YES
+//goog12 YES

@@ -28,7 +28,7 @@ gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
 gui_margin = 32;
 
-menu_x = gui_width+200;  /*where, on the x-axis, in the viewport the menu text appears.
+menu_x = gui_width+300;  /*where, on the x-axis, in the viewport the menu text appears.
 						setting it to +0 or similar low value could return text out of viewport boundaries*/
 menu_y = gui_height - gui_margin;   //where, on the y-axis, in the viewport the menu text appears
 
@@ -43,14 +43,22 @@ Glad I caught this before committing*/
 
 
 //create menus, and which order they appear from top to bottom
-menu[3] = "Play tutorial"
-menu[2] = "Play game";
+if !file_exists(SAVEFILE)
+{
+menu[2] = "Learn to play";
 menu[1] = "Settings";
 menu[0] = "Quit game";
+menu_cursor = 2
+}else if file_exists(SAVEFILE){
+menu[3] = "Play game";
+menu[2] = "Play tutorial"
+menu[1] = "Settings";
+menu[0] = "Quit game";
+menu_cursor = 3;}
 
 
 menu_items = array_length_1d(menu);
-menu_cursor = 2;   //sets where the selection arrow starts in menu order when thos object is created
+  //sets where the selection arrow starts in menu order when thos object is created
 
 menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);  //part of mouse menu tutorial from Shaun Spalding
 														//gets the top (or was it the bottom?) of the list of menu items

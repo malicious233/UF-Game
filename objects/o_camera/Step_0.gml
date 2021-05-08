@@ -65,6 +65,8 @@ if room = room_main_menu{
 if room = Room1 and audio_is_playing(tune_experimental_music){
 	audio_stop_sound(tune_experimental_music)}
 
+if room = Room1 and global.tutorial = 1 and audio_is_playing(tune_tincan_walk){
+		audio_stop_sound(tune_tincan_walk)}
 
 if instance_exists(follow)
 {

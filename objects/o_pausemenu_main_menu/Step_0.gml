@@ -126,7 +126,7 @@ if (menu_control)
 
 
 
-if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 (one behind -32) makes it so something actually happens when pressing enter
+if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1 and file_exists(SAVEFILE)    //-33 (one behind -32) makes it so something actually happens when pressing enter
 {
 	switch (menu_committed)
 	{
@@ -140,7 +140,7 @@ if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 
 								//resumes game
 								//EDIT: maybe not exactly the same code as in keypress-escape but whatever, it works now
 								//case 2 resumes game
-		case 2: room_goto(Room1); global.tutorial = 0
+		case 3: room_goto(Room1); global.tutorial = 0
 			if audio_is_playing(tune_pause_menu)
 			{
 				audio_sound_gain(tune_pause_menu, 0, 1000)
@@ -158,7 +158,47 @@ if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1    //-33 
 					}
 				instance_destroy();
 				break;
-		case 3: room_goto(Room1); global.tutorial = 1
+		case 2: room_goto(Room1); global.tutorial = 1
+			if audio_is_playing(tune_pause_menu)
+			{
+				audio_sound_gain(tune_pause_menu, 0, 1000)
+			}
+			audio_play_sound(tune_wave_1,1000,false);
+				pause = false;			
+				instance_activate_all(); 
+				instance_deactivate_object(o_pausemenu_quit)
+				o_hurtbox.image_alpha = 1;   
+				menu_control = false; 
+				if instance_exists(o_pausemenu_quit) and pause = false
+					{
+						audio_play_sound(tune_windows95,1000,false) //for testing purposes
+						instance_destroy(o_pausemenu_quit)
+					}
+				instance_destroy();
+				break;
+	}
+	
+}
+if (menu_x > gui_width-33) && (menu_committed != -1) and alarm[2] = -1 and !file_exists(SAVEFILE)    //-33 (one behind -32) makes it so something actually happens when pressing enter
+{
+	switch (menu_committed)
+	{
+		case 0: poisonTick = 1; poisonTick -= 1; if (poisonTick = 0) and ((gamepad_button_check_pressed(0,gp_face1)) or		//fix for quitmenu being opened immediately after exiting when pressing "No" with controller (might be a hardware fault on my end tho but still annoying)
+	(gamepad_button_check_pressed(4,gp_face1))) {instance_activate_object(o_pausemenu_quit)} else if(((keyboard_check_pressed(vk_enter)) or 
+	(keyboard_check_pressed(vk_space))) or (mouse_check_button_pressed(mb_left))){instance_activate_object(o_pausemenu_quit)}; menu_control = false;break;          //selects menu[0] and executes code before break.
+		case 1: instance_activate_object(o_pausemenu_settings); menu_control = false; break;  //acivates submenu and disables arrow control on this menu
+																						//submenu always seen as activated after this, not good.
+								//this whole case 2 needs to be exactly the same code as in KEYPRESS - ESCAPE,
+								//could probably make it a script to call for when needed instead of having be duplicate shenans
+								//resumes game
+								//EDIT: maybe not exactly the same code as in keypress-escape but whatever, it works now
+								//case 2 resumes game
+		case 2: room_goto(Room1); global.tutorial = 1
+			if !file_exists(SAVEFILE){
+				var file
+				file = file_text_open_write(SAVEFILE);
+				file_text_write_real(file,0);
+				file_text_close(file);}
 			if audio_is_playing(tune_pause_menu)
 			{
 				audio_sound_gain(tune_pause_menu, 0, 1000)

@@ -3,8 +3,6 @@
 function ctrl_wasd1hand(){
 key_attack = keyboard_check_pressed(vk_lshift) or 
 keyboard_check_pressed(ord("J")) or 
-keyboard_check_pressed(ord("V")) or 
-mouse_check_button_pressed(mb_left) or
 gamepad_button_check_pressed(0,gp_shoulderr) or 
 gamepad_button_check_pressed(0,gp_face3) or  
 gamepad_button_check_pressed(4,gp_shoulderr) or 
@@ -12,8 +10,6 @@ gamepad_button_check_pressed(4,gp_face3);
 
 key_special = keyboard_check_pressed(vk_lcontrol) or 
 keyboard_check_pressed(ord("K")) or 
-keyboard_check_pressed(ord("C")) or 
-mouse_check_button_pressed(mb_right) or 
 gamepad_button_check_pressed(0,gp_shoulderrb) or 
 gamepad_button_check_pressed(0,gp_face2) or  
 gamepad_button_check_pressed(4,gp_shoulderrb) or 
@@ -27,7 +23,6 @@ key_test = keyboard_check_pressed(ord("Q"))
 key_test2 = keyboard_check_pressed(ord("E")) 
 
 if keyboard_check_pressed(ord("L")) or 
-keyboard_check_pressed(ord("Z")) or 
 gamepad_button_check_pressed(0,gp_shoulderl) or
 gamepad_button_check_pressed(0,gp_shoulderlb) or
 gamepad_button_check_pressed(0,gp_face4) or 
@@ -49,22 +44,18 @@ gamepad_button_check_pressed(4,gp_shoulderlb)
 
 //Dir Inputs
 key_left = keyboard_check(ord("A")) or 
-keyboard_check(vk_left) or 
 gamepad_button_check(0,gp_padl) or 
 gamepad_button_check(4,gp_padl);
 
 key_right = keyboard_check(ord("D")) or 
-keyboard_check(vk_right) or 
 gamepad_button_check(0,gp_padr) or 
 gamepad_button_check(4,gp_padr);
 
 key_up = keyboard_check(ord("W")) or 
-keyboard_check(vk_up) or 
 gamepad_button_check(0,gp_padu) or 
 gamepad_button_check(4,gp_padu);
 
 key_down = keyboard_check(ord("S")) or 
-keyboard_check(vk_down) or 
 gamepad_button_check(0,gp_padd) or 
 gamepad_button_check(4,gp_padd);
 

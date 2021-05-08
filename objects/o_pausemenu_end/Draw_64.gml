@@ -17,6 +17,7 @@ if (pause)
 	draw_set_font(fnt_GUI);     //sets given custom font
 	draw_set_color(c_white);    //draws font white 
 	draw_set_alpha(dugg2);          //opacity for font
+	draw_set_halign(fa_right);
 	draw_text((view_wport[0]+1300)/2, (view_hport[0]+400)/2, "You succumbed"); //sets where on the viewport text is drawn
 	draw_text((view_wport[0]+1300)/2, (view_hport[0]-400)/2, "Your Highscore:  " + string(gooch)); //sets where on the viewport text is drawn
 	//draw_text((view_wport[0]-450)/2, (view_hport[0]-400)/2, gooch); //sets where on the viewport text is drawn

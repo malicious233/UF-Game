@@ -38,14 +38,12 @@ Glad I caught this before committing*/
 
 //create menus, and which order they appear from top to bottom
 //menu[2] = "sub2";
-menu[3] = "Arrowkeys, C & V";
-menu[2] = "Typist, J & K, L";
-menu[1] = "WASD, lctrl & lshift,"; //fix when player presses any of these buttons it goes to WASD1hand 
-menu[0] = "J & K, L or Mouse";
+menu[1] = "WASD two hands"
+menu[0] = "WASD one hand";
 
 
 menu_items = array_length_1d(menu);
-menu_cursor = 3;   //sets where the selection arrow starts in menu order when thos object is created
+menu_cursor = 1;   //sets where the selection arrow starts in menu order when thos object is created
 
 menu_top = menu_y - ((menu_itemheight * 1.5) * menu_items);  //part of mouse menu tutorial from Shaun Spalding
 														//gets the top (or was it the bottom?) of the list of menu items

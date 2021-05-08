@@ -10,7 +10,7 @@ if (subpause)
 	draw_set_font(fnt_GUI);     //sets given custom font
 	draw_set_color(c_white);    //draws font white 
 	draw_set_alpha(1);          //opacity for font
-	draw_text((view_wport[0]-638)/2, (view_hport[0]+300)/2, "Keyboard controls"); /*sets where on the viewport text is drawn
+	draw_text((view_wport[0]-638)/2, (view_hport[0]+500)/2, "Keyboard controls"); /*sets where on the viewport text is drawn
 	so that the text 'follows', so to say, the player instead of having a stupid set place as an object that can't 
 	be moved.*/
 	//draw_text (room_get_viewport(0,3)/,room_getviewport(0,4)/2,"pauseddd");   //unused
@@ -48,7 +48,7 @@ if (subpause)
 	}
 
 
-if menu_cursor = 3{
+/*if menu_cursor = 3{
 	draw_sprite(s_key_layout_arrow, image_index*0.05,(view_wport[0])/2, (view_hport[0]-300)/2)
 }
 
@@ -56,14 +56,13 @@ if menu_cursor = 2{
 	draw_sprite(s_key_layout_typist, image_index*0.05,(view_wport[0])/2, (view_hport[0]-300)/2)
 }
 
-
+*/
 if menu_cursor = 1{
-	draw_sprite(s_key_layout_1hand, image_index*0.05,(view_wport[0])/2, (view_hport[0]-300)/2)
+	draw_sprite(s_key_layout_jk, image_index*0.05,(view_wport[0])/2, (view_hport[0]-300)/2)
 }
 
 if menu_cursor = 0{
-	draw_sprite(s_key_layout_jk, image_index*0.05,(view_wport[0]-300)/2, (view_hport[0]-300)/2)
-	draw_sprite_ext(s_key_layout_mouse, image_index*0.05,(view_wport[0]+850)/2, (view_hport[0]-300)/2, 0.75, 0.75, 0, c_white, 1)
+	draw_sprite(s_key_layout_1hand, image_index*0.05,(view_wport[0])/2, (view_hport[0]-300)/2)
 }
 
 

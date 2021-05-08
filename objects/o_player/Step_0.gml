@@ -15,10 +15,7 @@ if (paused == false)
 //ctrl_arrowkeys()
 switch(controls)
 {
-	case controls.arrowkeys: ctrl_arrowkeys() ; break;
-	case controls.typist: ctrl_typist() ; break;
 	case controls.wasd1hand: ctrl_wasd1hand() ; break;
-	case controls.wasdmouse: ctrl_wasdmouse() ; break;
 	case controls.gp_xinput: ctrl_gp_xinput() ; break;
 	case controls.gp_directinput: ctrl_gp_directinput() ; break;
 	case controls.nothing: ctrl_nothing() ; break;
@@ -31,31 +28,22 @@ if controls = controls.nothing
 	//if wasd1hand is pressed
 	if (keyboard_check_pressed(vk_lshift) or 
 	keyboard_check_pressed(vk_lcontrol) or
-	//keyboard_check_pressed(vk_space) or  //May remove this if you want--> 
+	keyboard_check_pressed(vk_space) or  //May remove this if you want--> 
 	keyboard_check_pressed(ord("Q")) or   //-->to choose between more than one input method-->
 	keyboard_check_pressed(ord("E")) or     //-->that uses space.
 	keyboard_check(ord("A")) or
 	keyboard_check(ord("D")) or 
 	keyboard_check(ord("W")) or
-	keyboard_check(ord("S")))
+	keyboard_check(ord("S")) or 
+	keyboard_check_pressed(ord("J")) or
+	keyboard_check_pressed(ord("K")) or
+	keyboard_check_pressed(ord("L")))
 	{
 		controls = controls.wasd1hand
-		if room = Room1{
-		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_jk);}
 		//ADD mouse and JK shits!!!
 	}
 	//Maybe you could make this into a switch statement?
 	
-	if keyboard_check_pressed(ord("J")) or
-	keyboard_check_pressed(ord("K")) or
-	keyboard_check_pressed(ord("L")) or
-	mouse_check_button_pressed(mb_right) or
-	mouse_check_button_pressed(mb_left)
-	{
-		controls = controls.wasd1hand
-		if room = Room1{
-			instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_jk)}//;
-	}
 	//if xinput controller is pressed
 	if (gamepad_button_check_pressed(0,gp_shoulderr) or 
 	gamepad_button_check_pressed(0,gp_shoulderrb) or 
@@ -79,8 +67,6 @@ if controls = controls.nothing
 	gamepad_axis_value(0,gp_axisrh) > 0.2)
 	{
 		controls = controls.wasd1hand
-		if room = Room1{
-		instance_create_layer(o_player.x, o_player.y, "Text", o_gamepad_layout_xbox)}
 	}
 	
 	//if directinput controller is pressed
@@ -106,45 +92,12 @@ if controls = controls.nothing
 	gamepad_axis_value(4,gp_axisrh) > 0.2)
 	{
 		controls = controls.wasd1hand
-		if room = Room1{
-		instance_create_layer(o_player.x, o_player.y, "Text", o_gamepad_layout_ps4)}
 	}
 	
-	if (keyboard_check_pressed(ord("V")) or 
-	keyboard_check_pressed(ord("C")) or
-	keyboard_check_pressed(ord("Z")) or
-	//keyboard_check_pressed(vk_space) or  //May remove this if you want--> 
-	//keyboard_check_pressed(ord("Q")) or   //-->to choose between more than one input method-->
-	//keyboard_check_pressed(ord("E")) or     //-->that uses space.
-	keyboard_check(vk_right) or
-	keyboard_check(vk_left) or 
-	keyboard_check(vk_up) or
-	keyboard_check(vk_down))
-	{
-		controls = controls.wasd1hand
-		if room = Room1{
-		instance_create_layer(o_player.x, o_player.y, "Text", o_key_layout_arrow)}
-	}
 }
 #endregion
 
 
-#region all the input buttons (commented)
-/*
-key_x_click = keyboard_check_pressed(ord("X"));
-key_z_click = keyboard_check_pressed(ord("Z"));
-key_c_click = keyboard_check_pressed(ord("C"));
-key_space_click = keyboard_check_pressed(vk_space);
-key_v_click = keyboard_check_pressed(ord("V"));
-
-//Dir Inputs
-key_left = keyboard_check(vk_left);
-key_left_click = keyboard_check_pressed(vk_left);
-key_right = keyboard_check(vk_right);
-key_right_click = keyboard_check_pressed(vk_right);
-key_up = keyboard_check(vk_up);
-*/
-#endregion
 
 //Reset Flags
 if (cancel_hitbox == true)

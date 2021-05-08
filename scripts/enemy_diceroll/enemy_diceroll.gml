@@ -91,9 +91,9 @@ function enemy_diceroll()
 	
 	if wav == 10
 	{
-		if (roll >= 0) and (roll < 0.05)
+		if (roll >= 0) and (roll < 0.1)
 			{return o_tanker};
-		else if (roll >= 0.05) and (roll < 0.35)
+		else if (roll >= 0.1) and (roll < 0.35)
 			{return o_orbot}
 		else if (roll >= 0.35) and (roll <= 1)
 			{return o_tincan}

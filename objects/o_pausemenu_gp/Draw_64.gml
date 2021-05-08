@@ -48,12 +48,12 @@ if (subpause)
 	}
 
 if menu_cursor = 1{
-	draw_sprite_ext(s_gamepad_layout_xbox, image_index*0.1,(view_wport[0])/2, (view_hport[0]-300)/2, 0.75, 0.75, 0, c_white, 1)
+	draw_sprite_ext(s_gamepad_layout_xbox, image_index*0.1,(view_wport[0])/2, (view_hport[0]-230)/2, 0.75, 0.75, 0, c_white, 1)
 		
 }
 
 if menu_cursor = 0{
-	draw_sprite_ext(s_gamepad_layout_ps4, image_index*0.1,(view_wport[0])/2, (view_hport[0]-300)/2, 0.75, 0.75, 0, c_white, 1)
+	draw_sprite_ext(s_gamepad_layout_ps4, image_index*0.1,(view_wport[0])/2, (view_hport[0]-230)/2, 0.75, 0.75, 0, c_white, 1)
 		
 }
 
