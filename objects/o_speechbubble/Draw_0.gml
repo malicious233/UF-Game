@@ -8,3 +8,8 @@ draw_set_alpha(1);
 
 DrawSetText(c_white,fnt_HUD_small,fa_middle,fa_middle)
 draw_text(x,y+yoffset,dialogue);
+
+if (skippable == true)
+{
+draw_sprite(s_button_R,0,x+0.5*txtlength+margin,y+yoffset+0.5*txtheight+margin*2)
+}

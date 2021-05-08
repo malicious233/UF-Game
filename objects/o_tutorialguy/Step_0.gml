@@ -129,7 +129,7 @@ switch (index)
 
 		
 		if talk_index = 0
-		{Create_speechbubble("Watch out. This guy is aggressive.",9999,true)
+		{Create_speechbubble("Watch out. This guy is aggressive!",9999,true)
 			if (spawn_once != true)
 			{
 				var bruh = instance_create_layer(x+250,y-20,"Instance",o_tincan)	

@@ -259,6 +259,7 @@
     {"id":{"name":"o_pausemenu_main_menu","path":"objects/o_pausemenu_main_menu/o_pausemenu_main_menu.yy",},"order":7,},
     {"id":{"name":"s_HUD_rightcorner","path":"sprites/s_HUD_rightcorner/s_HUD_rightcorner.yy",},"order":0,},
     {"id":{"name":"s_player_focusedshatter","path":"sprites/s_player_focusedshatter/s_player_focusedshatter.yy",},"order":22,},
+    {"id":{"name":"s_button_R","path":"sprites/s_button_R/s_button_R.yy",},"order":4,},
     {"id":{"name":"s_tree","path":"sprites/s_tree/s_tree.yy",},"order":29,},
     {"id":{"name":"tune_white_noise","path":"sounds/tune_white_noise/tune_white_noise.yy",},"order":31,},
     {"id":{"name":"tune_stomp_pre","path":"sounds/tune_stomp_pre/tune_stomp_pre.yy",},"order":14,},

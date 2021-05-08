@@ -10,6 +10,7 @@ function Create_speechbubble(argument0, argument1, argument2)
 		DrawSetText(c_white,fnt_HUD_small,fa_middle,fa_middle)
 		txtheight = string_height(dialogue);
 		txtlength = string_width(dialogue);
+		skippable = argument2
 	}
 	
 }
