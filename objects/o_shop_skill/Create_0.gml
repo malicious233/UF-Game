@@ -52,15 +52,15 @@ skill_id = irandom(4);
 //How do switch statements work anyways?
 if (skill_id == 0)
 {item_name = "Skill: Windheel"
-item_desc = "Replaces [Up + Light Attack].\nThis attack has:\n-Much faster attack speed\ncompared to the regular bicycle kick.\n-A little less damage"
+item_desc = "Replaces [Up + Light Attack].\nThis attack has:\n-Much faster attack speed\ncompared to the regular bicycle kick.\n-A little less damage."
 	}
 else if (skill_id == 1)
 {item_name = "Skill: Rocketcut"
-item_desc = "Replaces [Up + Heavy Attack].\nThis attack has:\n-Much faster attack speed\ncompared to the regular uppercut.\n-A little less damage"
+item_desc = "Replaces [Up + Heavy Attack].\nThis attack has:\n-Much faster attack speed\ncompared to the regular uppercut.\n-A little less damage."
 	}
 else if (skill_id == 2)
 {item_name = "Skill: Slipkick"
-item_desc = "Replaces [Light Attack] on ground.\nThis attack has:\n-Longer slide\n-Momentary invincibility when attacking.\n-More damage."	
+item_desc = "Replaces [Light Attack] on ground.\nThis attack has:\n-Longer slide.\n-Momentary invincibility when attacking.\n-More damage."	
 }
 else if (skill_id == 3)
 {item_name = "Skill: Focused-shatter"

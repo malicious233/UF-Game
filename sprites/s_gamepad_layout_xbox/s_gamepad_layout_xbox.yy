@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"fba3a325-f073-422c-991a-0fb047cc51e5","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fba3a325-f073-422c-991a-0fb047cc51e5","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},"LayerId":{"name":"d198c237-3fc9-4d60-a4ed-e843877ae7f7","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_gamepad_layout_xbox","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},"resourceVersion":"1.0","name":"fba3a325-f073-422c-991a-0fb047cc51e5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4c45f47c-d8ee-4f63-b8dd-ce96d993c1ef","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4c45f47c-d8ee-4f63-b8dd-ce96d993c1ef","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},"LayerId":{"name":"8181d60b-c0d0-4408-8da3-224a1f684535","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_gamepad_layout_xbox","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},"resourceVersion":"1.0","name":"4c45f47c-d8ee-4f63-b8dd-ce96d993c1ef","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"s_gamepad_layout_xbox","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c7575c2d-a372-45d6-9c88-728e9c4acee1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fba3a325-f073-422c-991a-0fb047cc51e5","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e544c7d2-ee0c-4767-aee3-eda60c8b9474","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c45f47c-d8ee-4f63-b8dd-ce96d993c1ef","path":"sprites/s_gamepad_layout_xbox/s_gamepad_layout_xbox.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d198c237-3fc9-4d60-a4ed-e843877ae7f7","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8181d60b-c0d0-4408-8da3-224a1f684535","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",

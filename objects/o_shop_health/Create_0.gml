@@ -9,6 +9,6 @@ else
 	purchase_value = 15;	
 }
 item_name = "Health Recovery";
-item_desc = "-Restores 20 health"
+item_desc = "-Restores 20 health."
 
 draw_shopping_create();

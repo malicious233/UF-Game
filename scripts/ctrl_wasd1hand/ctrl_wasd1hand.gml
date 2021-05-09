@@ -17,18 +17,18 @@ gamepad_button_check_pressed(4,gp_face2);
 
 key_space_click = keyboard_check_pressed(vk_space) or 
 gamepad_button_check_pressed(0,gp_face1) or  
-gamepad_button_check_pressed(4,gp_face1);
+gamepad_button_check_pressed(0,gp_shoulderlb) or
+gamepad_button_check_pressed(4,gp_face1) or
+gamepad_button_check_pressed(4,gp_shoulderlb)
 
 key_test = keyboard_check_pressed(ord("Q")) 
 key_test2 = keyboard_check_pressed(ord("E")) 
 
 if keyboard_check_pressed(ord("L")) or 
 gamepad_button_check_pressed(0,gp_shoulderl) or
-gamepad_button_check_pressed(0,gp_shoulderlb) or
 gamepad_button_check_pressed(0,gp_face4) or 
 gamepad_button_check_pressed(4,gp_face4) or
-gamepad_button_check_pressed(4,gp_shoulderl) or
-gamepad_button_check_pressed(4,gp_shoulderlb)
+gamepad_button_check_pressed(4,gp_shoulderl)
 {
 	if o_player.image_xscale = -1
 	{

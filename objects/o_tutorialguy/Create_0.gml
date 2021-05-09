@@ -9,6 +9,8 @@ talk_time = 0;
 talk_index = 0;
 spawn_once = false;
 not_spawned = true;
+bubble_index = 0
+//Babay
 //Create_speechbubble("Hey guys, tutorial time",260)
 
 

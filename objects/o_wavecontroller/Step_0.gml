@@ -56,7 +56,7 @@ else //When wave_pause is true
 		{
 			spawn_wares();	
 			audio_sound_gain(tune_music, 0, 3000)
-			audio_sound_gain(tune_white_noise, 0.99, 2000)
+			audio_sound_gain(tune_white_noise, 0.2, 2000)
 		}
 		spawnwaresonce = true;
 	}
@@ -73,11 +73,11 @@ else //When wave_pause is true
 		o_player.Push_duration --;
 		wave_buildup = e_wave_buildup[wave];
 		wave_pause = false;
-		if wave = 8{audio_sound_gain(tune_music, 0, 3000);
+		if wave = 11{audio_sound_gain(tune_music, 0, 3000);
 			audio_sound_gain(tune_white_noise, 0, 2000)}
-		if wave = 10{audio_sound_gain(tune_music, 0.69, 7000)
+		if wave = 12{audio_sound_gain(tune_music, 0.69, 7000)
 		audio_sound_gain(tune_white_noise, 0, 2000)} 
-		if wave = 0 or wave = 1 or wave = 2 or wave = 3 or wave = 4 or wave = 5 or wave = 6 or wave = 7 or wave = 9{
+		if wave = 0 or wave = 1 or wave = 2 or wave = 3 or wave = 4 or wave = 5 or wave = 6 or wave = 7 or wave = 8 or wave = 9 or wave = 10{
 		audio_sound_gain(tune_music, 0.69, 3000)
 		audio_sound_gain(tune_white_noise, 0, 2000)}
 		shop_keeper_pause = 0
