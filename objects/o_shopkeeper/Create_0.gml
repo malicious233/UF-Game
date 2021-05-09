@@ -24,6 +24,6 @@ function spawn_wares()
 {
 	instance_create_layer(x+warexoffset,y-15,"Items",thing())
 	instance_create_layer(x-60+warexoffset,y-15,"Items",thing())
-	instance_create_layer(x+60+warexoffset,y-15,"Items",thing())
+	instance_create_layer(x+60+warexoffset,y-15,"Items",o_shop_health)
 }
 spawn_wares();

@@ -23,7 +23,14 @@ if (wave_pause == false) //During wave
 	{
 		wave_buildup --; //Increase wave_buildup every time an enemy is spawned
 		summon_enemy();
-		spawn_interval = spawn_interval_set;
+		if (wave < 8)
+		{
+		spawn_interval = 150;
+		}
+		else
+		{
+		spawn_interval = 60;	
+		}
 	}
 	spawn_interval --;
 	
