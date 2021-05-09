@@ -18,6 +18,7 @@
     {"id":{"name":"o_text","path":"objects/o_text/o_text.yy",},"order":6,},
     {"id":{"name":"o_mid","path":"objects/o_mid/o_mid.yy",},"order":15,},
     {"id":{"name":"s_testts","path":"tilesets/s_testts/s_testts.yy",},"order":1,},
+    {"id":{"name":"s_exitdoor","path":"sprites/s_exitdoor/s_exitdoor.yy",},"order":32,},
     {"id":{"name":"o_game_logo","path":"objects/o_game_logo/o_game_logo.yy",},"order":22,},
     {"id":{"name":"o_barrel","path":"objects/o_barrel/o_barrel.yy",},"order":6,},
     {"id":{"name":"o_tanker_damage","path":"objects/o_tanker_damage/o_tanker_damage.yy",},"order":14,},

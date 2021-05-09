@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite109",
-    "path": "sprites/Sprite109/Sprite109.yy",
+    "name": "s_exitdoor",
+    "path": "sprites/s_exitdoor/s_exitdoor.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,7 +20,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"parent":{"name":"o_exitdoor","path":"objects/o_exitdoor/o_exitdoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
