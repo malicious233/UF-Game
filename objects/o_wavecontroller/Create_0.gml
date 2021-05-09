@@ -5,7 +5,7 @@ spawn_interval = spawn_interval_set;
 
 shop_keeper_pause = 0
 
-wave = 7;
+wave = 0;
 wave_buildup = 1;
 wave_max = 12;
 e_wave_cooldown = 500;
