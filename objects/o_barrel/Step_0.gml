@@ -165,6 +165,9 @@ input_dir = lorr;
 if (actionable = true)
 {
 	dir = lorr;	//Should fix so the moving() script is what does the turning. Thoughts shouldnt do that much physically, only give commands.
+	
+	
+	
 	if ((distance_to_point(target_focus.x,target_focus.y)) < 80)
 	{
 		attack(atk_faceplant,s_tincan_faceplant);	

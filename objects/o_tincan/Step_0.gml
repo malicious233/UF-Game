@@ -165,6 +165,17 @@ input_dir = lorr;
 if (actionable = true)
 {
 	dir = lorr;	//Should fix so the moving() script is what does the turning. Thoughts shouldnt do that much physically, only give commands.
+	
+	var climbchance = random_range(0,50);
+	if (climbchance <= 1)
+	{
+	
+		if (place_meeting(x+dir,y,o_wall))
+		{
+		attack(atk_faceplant,s_tincan_faceplant);
+		}
+	}
+	
 	if ((distance_to_point(target_focus.x,target_focus.y)) < 80)
 	{
 		attack(atk_faceplant,s_tincan_faceplant);	
