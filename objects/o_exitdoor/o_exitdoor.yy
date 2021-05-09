@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sprite111",
-    "path": "sprites/Sprite111/Sprite111.yy",
+    "name": "Sprite109",
+    "path": "sprites/Sprite109/Sprite109.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,14 +20,12 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"parent":{"name":"o_exitdoor","path":"objects/o_exitdoor/o_exitdoor.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Tutorial",
+    "path": "folders/Objects/Tutorial.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_exitdoor",
