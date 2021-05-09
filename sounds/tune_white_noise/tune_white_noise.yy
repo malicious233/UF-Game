@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.2,
+  "volume": 0.99,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "tune_white_noise.mp3",
-  "duration": 202.37561,
+  "duration": 243.570709,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

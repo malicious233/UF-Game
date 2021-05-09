@@ -49,7 +49,7 @@ else //When wave_pause is true
 		{
 			spawn_wares();	
 			audio_sound_gain(tune_music, 0, 3000)
-			audio_sound_gain(tune_white_noise, 0.2, 2000)
+			audio_sound_gain(tune_white_noise, 0.99, 2000)
 		}
 		spawnwaresonce = true;
 	}

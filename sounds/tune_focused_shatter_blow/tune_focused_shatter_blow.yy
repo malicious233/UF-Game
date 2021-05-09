@@ -1,17 +1,17 @@
 {
   "compression": 0,
-  "volume": 0.68,
+  "volume": 0.58,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
-  "type": 0,
+  "type": 1,
   "bitDepth": 1,
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "tune_focused_shatter_blow.mp3",
-  "duration": 1.729082,
+  "duration": 1.70295,
   "parent": {
     "name": "player",
     "path": "folders/Sounds/player.yy",
