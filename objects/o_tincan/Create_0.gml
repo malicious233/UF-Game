@@ -9,6 +9,8 @@ actionable = true;
 input_dir = 0;
 step_once = false;
 
+move_spd = random_range(0.3,0.4);
+
 if (insta_aggro == true)
 {
 thought = thought.agitated;

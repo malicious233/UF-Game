@@ -17,10 +17,21 @@ function atk_faceplant()
 		{
 			var atk_rang = random_range(6,10)
 			hsp = hsp+(atk_rang*dir);
-			vsp = vsp-5.5;
+			vsp = vsp-6.5;
 		}
+	
+	if (attack_timing == 26)
+	{
+		hsp = hsp+(2*dir)	
+	}
+	if (attack_timing == 36)
+	{
+		vsp = vsp+2.5;	
+	}
+	
 	if (attack_timing == 42)
 		{
+			vsp = vsp+5;
 			create_hitbox()
 			with (current_hitbox)
 			{

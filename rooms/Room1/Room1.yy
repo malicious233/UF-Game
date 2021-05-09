@@ -616,6 +616,9 @@
         {"properties":[
             {"propertyId":{"name":"index","path":"objects/o_tutorialguy/o_tutorialguy.yy",},"objectId":{"name":"o_tutorialguy","path":"objects/o_tutorialguy/o_tutorialguy.yy",},"value":"4","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
           ],"isDnd":false,"objectId":{"name":"o_tutorialguy","path":"objects/o_tutorialguy/o_tutorialguy.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":4800.0,"y":3872.0,"resourceVersion":"1.0","name":"inst_5739A780","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_tincan","path":"objects/o_tincan/o_tincan.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1088.0,"y":4000.0,"resourceVersion":"1.0","name":"inst_4256B033","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_tincan","path":"objects/o_tincan/o_tincan.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1440.0,"y":4000.0,"resourceVersion":"1.0","name":"inst_594F6918","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"o_tincan","path":"objects/o_tincan/o_tincan.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1312.0,"y":4000.0,"resourceVersion":"1.0","name":"inst_6FB619EA","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":1200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instance","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":false,"depth":1300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Hurtbox","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -1011,6 +1014,9 @@
     {"name":"inst_26F622EB","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_5B7C4A19","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_508BF13E","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_4256B033","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_594F6918","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_6FB619EA","path":"rooms/Room1/Room1.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
