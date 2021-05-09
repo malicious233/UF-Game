@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (global.tutorial == false)
+{
 var enemycount = (instance_number(o_base_character))-1+(instance_number(o_enemyportal)); //Counts all enemies, minus the player because he's also a base_character
 
 /*
@@ -83,6 +85,8 @@ else //When wave_pause is true
 		shop_keeper_pause = 0
 		
 	}
+}
+
 }
 
 }
