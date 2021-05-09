@@ -37,6 +37,7 @@ step_once = false;
 dodge_duration = 0;
 
 charge = 1;
+iframes = 0;
 
 buying = false;
 

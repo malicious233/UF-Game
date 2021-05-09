@@ -25,6 +25,12 @@ if (key_right == true)
 	//curr_dir = 1;
 }
 
+if (iframes < 0)
+{intangible = false;}
+else
+{intangible = true;}
+
+
 /*if (key_right == false) and (key_left == false)
 {
 	curr_dir = 0;

@@ -199,6 +199,8 @@ else
 	ground = false;	
 }
 
+iframes --;
+
 //States
 
 if (Speed_duration <= 0)

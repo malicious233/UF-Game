@@ -5,4 +5,4 @@ gong_cd = 60;
 
 txt = "Attack to go to-\nnext wave"
 txtlength = string_width(txt)
-yoffset = 60;
+yoffset = 30;

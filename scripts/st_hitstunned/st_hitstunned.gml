@@ -6,7 +6,7 @@ function st_hitstunned()
 	intangible = true;
 	hitstun_duration --;
 	cancel_hitbox = true;
-	if (hitstun_duration < 0) {states = states.normal;}
+	if (hitstun_duration < 0) {states = states.normal; iframes = 30;}
 	
 	sprite_index = s_player_hurt;
 	

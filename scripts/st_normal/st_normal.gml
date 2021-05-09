@@ -11,7 +11,10 @@ function st_normal()
 //hsp = Approach(hsp,move,SPD_WALK_ACCEL);
 buying = false;
 
-intangible = false;
+if (iframes < 0)
+{intangible = false;}
+else
+{intangible = true;}
 
 sound_running_gain = 0
 if !audio_is_playing(tune_running_grass){ audio_play_sound(tune_running_grass,1000,true)}
