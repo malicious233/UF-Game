@@ -291,7 +291,6 @@
     {"id":{"name":"atk_focusedshatter","path":"scripts/atk_focusedshatter/atk_focusedshatter.yy",},"order":4,},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},"order":3,},
     {"id":{"name":"atk_uppercut","path":"scripts/atk_uppercut/atk_uppercut.yy",},"order":3,},
-    {"id":{"name":"hueshift","path":"shaders/hueshift/hueshift.yy",},"order":0,},
     {"id":{"name":"s_player_stomp_rec","path":"sprites/s_player_stomp_rec/s_player_stomp_rec.yy",},"order":11,},
     {"id":{"name":"attack","path":"scripts/attack/attack.yy",},"order":3,},
     {"id":{"name":"o_hoop","path":"objects/o_hoop/o_hoop.yy",},"order":0,},
