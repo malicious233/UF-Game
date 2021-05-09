@@ -4,6 +4,7 @@
 
 siner = 0;
 yoff = 0;
+index = 0
 
 not_touched = true;
 talk_time = 0;

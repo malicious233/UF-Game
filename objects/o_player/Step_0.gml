@@ -57,6 +57,7 @@ if controls = controls.nothing
 	gamepad_button_check(0,gp_padr) or 
 	gamepad_button_check(0,gp_padu) or 
 	gamepad_button_check(0,gp_padd) or 
+	gamepad_button_check_pressed(0,gp_stickl) or
 	gamepad_axis_value(0,gp_axislh) < -0.2 or
 	gamepad_axis_value(0,gp_axislh) > 0.2 or
 	gamepad_axis_value(0,gp_axislv) < -0.2 or
@@ -82,6 +83,7 @@ if controls = controls.nothing
 	gamepad_button_check(4,gp_padr) or 
 	gamepad_button_check(4,gp_padu) or 
 	gamepad_button_check(4,gp_padd) or 
+	gamepad_button_check_pressed(4,gp_stickl) or
 	gamepad_axis_value(4,gp_axislh) < -0.2 or
 	gamepad_axis_value(4,gp_axislh) > 0.2 or
 	gamepad_axis_value(4,gp_axislv) < -0.2 or
@@ -131,7 +133,8 @@ if controls = controls.wasd1hand
 	gamepad_button_check(0,gp_padl) or 
 	gamepad_button_check(0,gp_padr) or 
 	gamepad_button_check(0,gp_padu) or 
-	gamepad_button_check(0,gp_padd) or 
+	gamepad_button_check(0,gp_padd) or
+	gamepad_button_check_pressed(0,gp_stickl) or
 	gamepad_axis_value(0,gp_axislh) < -0.2 or
 	gamepad_axis_value(0,gp_axislh) > 0.2 or
 	gamepad_axis_value(0,gp_axislv) < -0.2 or
@@ -158,6 +161,7 @@ if controls = controls.wasd1hand
 	gamepad_button_check(4,gp_padr) or 
 	gamepad_button_check(4,gp_padu) or 
 	gamepad_button_check(4,gp_padd) or 
+	gamepad_button_check_pressed(4,gp_stickl) or
 	gamepad_axis_value(4,gp_axislh) < -0.2 or
 	gamepad_axis_value(4,gp_axislh) > 0.2 or
 	gamepad_axis_value(4,gp_axislv) < -0.2 or
@@ -199,8 +203,7 @@ else
 	ground = false;	
 }
 
-iframes --;
-
+iframes --
 //States
 
 if (Speed_duration <= 0)

@@ -3,6 +3,6 @@
 gong_hit = false;
 gong_cd = 60;
 
-txt = "Attack to go to-\nnext wave"
+txt = "Attack to start\nthe next wave"
 txtlength = string_width(txt)
 yoffset = 30;

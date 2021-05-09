@@ -4,19 +4,19 @@ function shop_confirm()
 {	
 	if place_meeting(x,y,o_player)
 	{
-	rotato_time ++;
-	if (rotato_time < 60)
+	//rotato_time ++;
+	if o_player.keyboard_tutorial = 1
 	{
 		draw_sprite(s_button_R,0,x,y+30)	
 	}
-	else
+	if o_player.controller_tutorial = 1
 	{
 		draw_sprite(s_button_L3,0,x,y+30)	
 	}
-	if (rotato_time == 120)
-	{
-		rotato_time = 0;	
-	}
+	//if (rotato_time == 120)
+	//{
+	//	rotato_time = 0;	
+	//}
 	}
 	
 }

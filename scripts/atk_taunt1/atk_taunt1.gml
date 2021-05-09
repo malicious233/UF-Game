@@ -10,9 +10,9 @@ function atk_taunt1()
 	if (attack_timing == 9)
 	{
 			var roll = random(1)
-		if (roll >= 0) and (roll < 0.05)
+		if (roll >= 0) and (roll < 0.025)
 			{return audio_play_sound(tune_taunt_special, 1000, false);}
-		else if (roll >= 0.05) and (roll <= 1)
+		else if (roll >= 0.025) and (roll <= 1)
 			{return audio_play_sound(tune_taunt, 1000, false)}
 	}
 	if (attack_timing == 10)
