@@ -11,6 +11,8 @@ if room = Room1 and global.tutorial = 1
 }
 
 vol = 1
+keyboard_tutorial = 1
+controller_tutorial = 0
 
 #macro SPD_WALK_MAX 7.2  
 #macro SPD_WALK_ACCEL 0.7

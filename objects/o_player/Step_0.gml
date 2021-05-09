@@ -96,6 +96,84 @@ if controls = controls.nothing
 	
 }
 #endregion
+#region
+if controls = controls.wasd1hand
+{
+	//if wasd1hand is pressed
+	if (keyboard_check_pressed(vk_lshift) or 
+	keyboard_check_pressed(vk_lcontrol) or
+	keyboard_check_pressed(vk_space) or  //May remove this if you want--> 
+	keyboard_check_pressed(ord("Q")) or   //-->to choose between more than one input method-->
+	keyboard_check_pressed(ord("E")) or     //-->that uses space.
+	keyboard_check(ord("A")) or
+	keyboard_check(ord("D")) or 
+	keyboard_check(ord("W")) or
+	keyboard_check(ord("S")) or 
+	keyboard_check_pressed(ord("J")) or
+	keyboard_check_pressed(ord("K")) or
+	keyboard_check_pressed(ord("L")))
+	{
+		keyboard_tutorial = 1
+		controller_tutorial = 0
+		//ADD mouse and JK shits!!!
+	}
+	//Maybe you could make this into a switch statement?
+	
+	//if xinput controller is pressed
+	if (gamepad_button_check_pressed(0,gp_shoulderr) or 
+	gamepad_button_check_pressed(0,gp_shoulderrb) or 
+	gamepad_button_check_pressed(0,gp_shoulderl) or
+	gamepad_button_check_pressed(0,gp_shoulderlb) or
+	gamepad_button_check_pressed(0,gp_face4) or
+	gamepad_button_check_pressed(0,gp_face3) or 
+	gamepad_button_check_pressed(0,gp_face2) or
+	gamepad_button_check_pressed(0,gp_face1) or
+	gamepad_button_check(0,gp_padl) or 
+	gamepad_button_check(0,gp_padr) or 
+	gamepad_button_check(0,gp_padu) or 
+	gamepad_button_check(0,gp_padd) or 
+	gamepad_axis_value(0,gp_axislh) < -0.2 or
+	gamepad_axis_value(0,gp_axislh) > 0.2 or
+	gamepad_axis_value(0,gp_axislv) < -0.2 or
+	gamepad_axis_value(0,gp_axislv) > 0.2 or
+	gamepad_axis_value(0,gp_axisrv) < -0.2 or
+	gamepad_axis_value(0,gp_axisrv) > 0.2 or
+	gamepad_axis_value(0,gp_axisrh) < -0.2 or
+	gamepad_axis_value(0,gp_axisrh) > 0.2)
+	{
+		controller_tutorial = 1
+		keyboard_tutorial = 0
+	}
+	
+	//if directinput controller is pressed
+	if (gamepad_button_check_pressed(4,gp_shoulderr) or 
+	gamepad_button_check_pressed(4,gp_shoulderrb) or 
+	gamepad_button_check_pressed(4,gp_shoulderl) or
+	gamepad_button_check_pressed(4,gp_shoulderlb) or
+	gamepad_button_check_pressed(4,gp_face4) or
+	gamepad_button_check_pressed(4,gp_face3) or 
+	gamepad_button_check_pressed(4,gp_face2) or
+	gamepad_button_check_pressed(4,gp_face1) or
+	gamepad_button_check(4,gp_padl) or 
+	gamepad_button_check(4,gp_padr) or 
+	gamepad_button_check(4,gp_padu) or 
+	gamepad_button_check(4,gp_padd) or 
+	gamepad_axis_value(4,gp_axislh) < -0.2 or
+	gamepad_axis_value(4,gp_axislh) > 0.2 or
+	gamepad_axis_value(4,gp_axislv) < -0.2 or
+	gamepad_axis_value(4,gp_axislv) > 0.2 or
+	gamepad_axis_value(4,gp_axisrv) < -0.2 or
+	gamepad_axis_value(4,gp_axisrv) > 0.2 or
+	gamepad_axis_value(4,gp_axisrh) < -0.2 or
+	gamepad_axis_value(4,gp_axisrh) > 0.2)
+	{
+		controller_tutorial = 1
+		keyboard_tutorial = 0
+	}
+	
+}
+#endregion
+
 
 
 
