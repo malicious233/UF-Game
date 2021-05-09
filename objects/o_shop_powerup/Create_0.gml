@@ -5,7 +5,7 @@
 
 if instance_exists(o_player)
 {
-purchase_value = 10*(o_player.Speed_stacks+o_player.Power_stacks+o_player.Push_stacks+1);
+purchase_value = 15*(o_player.Speed_stacks+o_player.Power_stacks+o_player.Push_stacks+1);
 
 function change_speed()
 {
