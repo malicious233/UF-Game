@@ -6,7 +6,7 @@ event_inherited();
 
 if room = Room1 and global.tutorial = 1
 {
-	o_player.x = 2500
+	o_player.x = 2550
 	o_player.y = 3900
 }
 

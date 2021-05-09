@@ -14,7 +14,9 @@ if (instance_exists(o_player)) and global.tutorial = 0
 	var rectanglewidth = 80*hud_size
 	draw_set_color(c_black)
 	draw_set_alpha(hud_transparency)
-	draw_rectangle((window_width/2)-rectanglewidth,(hudheight*hud_size)*0.75,(window_width/2)+rectanglewidth,(hudheight*hud_size)*1,false)
+	if o_wavecontroller.wave = 7{
+		draw_rectangle((window_width/2)-rectanglewidth,(hudheight*hud_size)*0.45,(window_width/2)+rectanglewidth,(hudheight*hud_size)*0.67,false)
+	}else {draw_rectangle((window_width/2)-rectanglewidth,(hudheight*hud_size)*0.75,(window_width/2)+rectanglewidth,(hudheight*hud_size)*1,false)}
 	draw_set_alpha(1)
 	
 	draw_set_font(fnt_HUD)
@@ -23,7 +25,9 @@ if (instance_exists(o_player)) and global.tutorial = 0
 	
 	DrawSetText(c_white,fnt_HUD,fa_right,fa_bottom)
 	//draw_text((window_width/2)+string_width("Wave Complete")/2,(hudheight*hud_size),"Wave Complete")
-	draw_text((window_width/2)+string_width("Wave Complete")/2,(hudheight*hud_size)*0.975,"Wave Complete")
+	if o_wavecontroller.wave = 7{
+		draw_text((window_width/2)+string_width("Wave Complete")/2,(hudheight*hud_size)*0.65,"Wave Complete")
+	}else {draw_text((window_width/2)+string_width("Wave Complete")/2,(hudheight*hud_size)*0.975,"Wave Complete")}
 	}
 	
 	

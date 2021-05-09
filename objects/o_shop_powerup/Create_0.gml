@@ -50,17 +50,17 @@ powerup_id = irandom(2);
 if (powerup_id == 0)
 {
 	item_name = "Temporary Speed"
-	item_desc = "-Raises your movement speed\n-Lasts 2 waves.\n-Speed-effect stacks when buying more."	
+	item_desc = "-Raises your movement speed.\n-Lasts 2 waves.\n-Speed-effect stacks when buying more."	
 }
 else if (powerup_id == 1)
 {
 	item_name = "Temporary Power"
-	item_desc = "-Raises your attack damage\n-Lasts 2 waves.\n-Damage-effect stacks when buying more."
+	item_desc = "-Raises your attack damage.\n-Lasts 2 waves.\n-Damage-effect stacks when buying more."
 }
 else if (powerup_id == 2)
 {
 	item_name = "Temporary Push"	
-	item_desc = "-Raises knockback on your attacks\n-Makes enemies fly further when attacked.\n-Lasts 2 waves.\n-Knockback-effect stacks when buying more."	
+	item_desc = "-Raises knockback on your attacks.\n-Makes enemies fly further when attacked.\n-Lasts 2 waves.\n-Knockback-effect stacks when buying more."	
 }
 
 draw_shopping_create();
