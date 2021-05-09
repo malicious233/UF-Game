@@ -53,23 +53,37 @@ skill_id = irandom(4);
 if (skill_id == 0)
 {item_name = "Skill: Windheel"
 item_desc = "Replaces [Up + Light Attack].\nThis attack has:\n-Much faster attack speed\ncompared to the regular bicycle kick.\n-A little less damage."
-	}
+if (o_player.upair_id = 1)
+{instance_create_layer(x,y,"Shop",o_shop_powerup); instance_destroy();}
+}
+
 else if (skill_id == 1)
 {item_name = "Skill: Rocketcut"
 item_desc = "Replaces [Up + Heavy Attack].\nThis attack has:\n-Much faster attack speed\ncompared to the regular uppercut.\n-A little less damage."
-	}
+if (o_player.upspecial_id = 1)
+{instance_create_layer(x,y,"Shop",o_shop_powerup); instance_destroy();}
+}
+
 else if (skill_id == 2)
 {item_name = "Skill: Slipkick"
 item_desc = "Replaces [Light Attack] on ground.\nThis attack has:\n-Longer slide.\n-Momentary invincibility when attacking.\n-More damage."	
+if (o_player.basicattack_id = 1)
+{instance_create_layer(x,y,"Shop",o_shop_powerup); instance_destroy();}
 }
+
 else if (skill_id == 3)
 {item_name = "Skill: Focused-shatter"
 item_desc = "Replaces [Heavy Attack] with\na new charged attack.\n-Press once to charge,\npress again to attack early.\n-Longer charge = More Damage."
-	}
+if (o_player.specialattack_id = 1)
+{instance_create_layer(x,y,"Shop",o_shop_powerup); instance_destroy();}
+}
+
 else if (skill_id == 4)
 {item_name = "Skill: Aerial-slam"
 item_desc = "Replaces [Down + Heavy Attack] while in the air.\n-Damage depends on fall height,\n longer fall = more damage.\n-Deals damage only when landing on ground."
-	}
+if (o_player.downair_id = 1)
+{instance_create_layer(x,y,"Shop",o_shop_powerup); instance_destroy();}
+}
 	
 draw_shopping_create();
 
