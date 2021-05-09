@@ -11,7 +11,9 @@ target_focus = o_player;
 actionable = true;
 thought = thought.agitated
 
-float_height = random_range(60,170);
+float_height = random_range(60,140);
+move_spd = random_range(0.25,0.3)
+
 
 if !audio_is_playing(tune_orbot_hovering){
 	audio_play_sound(tune_orbot_hovering, 1000, true)
