@@ -7,7 +7,7 @@ shop_keeper_pause = 0
 
 wave = 0;
 wave_buildup = 1;
-wave_max = 10;
+wave_max = 11;
 e_wave_cooldown = 500;
 wave_cooldown = 500;
 wave_pause = false;
@@ -28,9 +28,11 @@ e_wave_buildup[5] = 10; //Mixed tincan and orbot, low chance for tanker
 e_wave_buildup[6] = 1; //One tanker
 e_wave_buildup[7] = 14; //Gott o blandat
 
-e_wave_buildup[8] = 3;//Tanker wave
-e_wave_buildup[9] = 18;
-e_wave_buildup[10] = 22;
+e_wave_buildup[8] = 18;//Tincan-ageddon
+e_wave_buildup[9] = 14;//Orbot-ageddon
+e_wave_buildup[10] = 16;//Mix
+e_wave_buildup[11] = 4; //Tanker hell
+e_wave_buildup[12] = 25; //Final, repeating wave
 
 //Horizontal list for max amount of enemies that can be in the arena per wave
 e_max_wave[0] = 1;
@@ -40,11 +42,14 @@ e_max_wave[3] = 2;
 e_max_wave[4] = 3;
 e_max_wave[5] = 5;
 e_max_wave[6] = 1;
-e_max_wave[7] = 8;
+e_max_wave[7] = 7;
 
-e_max_wave[8] = 2;
+e_max_wave[8] = 10;
 e_max_wave[9] = 12;
-e_max_wave[10] = 15;
+e_max_wave[10] = 12;
+e_max_wave[11] = 2;
+e_max_wave[12] = 15;
+
 
 /*
 portal_coord[0, 0] = o_player.x; 
