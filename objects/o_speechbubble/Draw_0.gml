@@ -11,5 +11,8 @@ draw_text(x,y+yoffset,dialogue);
 
 if (skippable == true)
 {
-draw_sprite(s_button_R,0,x+0.5*txtlength+margin,y+yoffset+0.5*txtheight+margin*2)
+	if (o_player.controller_tutorial == true)
+	{draw_sprite(s_button_L3,0,x+0.5*txtlength+margin,y+yoffset+0.5*txtheight+margin*2)}
+	else if (o_player.keyboard_tutorial == true)
+	{draw_sprite(s_button_R,0,x+0.5*txtlength+margin,y+yoffset+0.5*txtheight+margin*2)}
 }

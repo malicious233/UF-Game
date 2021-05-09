@@ -3,7 +3,8 @@
 siner += 1;
 yoff = 3 * sin(siner / 9);
 
-
+if (global.tutorial == false)
+{instance_destroy();}
 
 if place_meeting(x-45,y,o_player)
 {
@@ -21,7 +22,7 @@ if (not_touched == false)
 {
 talk_time ++;	
 
-if keyboard_check_pressed(ord("R"))
+if keyboard_check_pressed(ord("R")) or gamepad_button_check_pressed(0,gp_stickl) or gamepad_button_check_pressed(4,gp_stickl)
 {
 	talk_index ++;
 	if text_index = 1{audio_play_sound(tune_tutorial_text, 1000, false)
