@@ -12,3 +12,5 @@ item_name = "Health Recovery";
 item_desc = "-Restores 15 health."
 
 draw_shopping_create();
+
+rotato_time = 0;

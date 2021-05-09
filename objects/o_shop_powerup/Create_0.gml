@@ -3,6 +3,9 @@
 // You can write your code in this editor
 // You can write your code in this editor
 
+rotato_time = 0;
+
+
 if instance_exists(o_player)
 {
 purchase_value = 15*(o_player.Speed_stacks+o_player.Power_stacks+o_player.Push_stacks+1);
