@@ -15,7 +15,10 @@ function atk_windheel()
 		audio_sound_pitch(tune_bicycle_kick, 1.1)}
 	if (attack_timing == 3)
 	{
+		if (vsp > 0)
+		{
 		vsp = -2;
+		}
 		create_hitbox()
 		with (current_hitbox)
 		{
