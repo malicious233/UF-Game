@@ -118,7 +118,7 @@ if (curr_damage != 0)
 		if (combo_count = 3){audio_sound_pitch(tune_combo_tick, 1.6)}
 		if (combo_count = 4){audio_sound_pitch(tune_combo_tick, 1.8)} 
 		if (combo_count > 4){audio_sound_pitch(tune_combo_tick, 2.0)}}
-		points = round(points*1.5)	
+		points = round(points*1.25)	
 		if realowner_dud = 0{
 		var mone = instance_create_layer(x,y,"Player",o_coin)	
 		with (mone)

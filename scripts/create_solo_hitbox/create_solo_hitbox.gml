@@ -9,19 +9,20 @@
 //}
 //
 
-function create_hitbox()
+function create_solo_hitbox()
 {
+	var cluster = instance_create_layer(x,y,"Hitbox",o_hitbox_master)
+	cluster.hitbox_owner = id;
 	
 	current_hitbox = instance_create_layer(0,0,"Hitbox",o_hitbox); //Skapar ett hitbox objekt
 				with (current_hitbox) //Adjusterar hitboxen som nyss skapades
 				{
-					
-					//var cluster = instance_create_layer(x,y,"Hitbox",o_hitbox_master)
-					
 					hitbox_owner = other.id; //Ger hitboxen id't av skaparen
 					team = other.team //Sätter hitboxen på samma team som en själv
-					hitbox_group = other.current_attack_id; //Vilket "cluster" hitboxen är, så en attack med flera hitboxes inte träffar flera gånger.
-					//hitbox_group = cluster.id;
+					
+					//hitbox_group = other.current_attack_id; //Vilket "cluster" hitboxen är, så en attack med flera hitboxes inte träffar flera gånger.
+					hitbox_group = cluster.id;
+					
 					if (other.projectile == false)
 					{
 					Power_modifier = other.Power_mod;

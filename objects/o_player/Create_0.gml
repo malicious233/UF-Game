@@ -86,7 +86,7 @@ upspecial[0] = atk_uppercut;
 upspecial[1] = atk_rocketcut;
 upspecial_id = 0;
 
-basicattack[0] = atk_stumbler;
+basicattack[0] = atk_flurrystring;
 basicattack[1] = atk_slipkick;
 basicattack_id = 0;
 

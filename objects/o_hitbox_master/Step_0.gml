@@ -30,3 +30,10 @@ if (attack_timing_end <= 0)
 
 attack_timing_end --;
 
+/*
+emergency_deletion --;
+if (emergency_deletion == 0)
+{
+	instance_destroy();		
+}
+*/

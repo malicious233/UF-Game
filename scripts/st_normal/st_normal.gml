@@ -98,7 +98,8 @@ else
 //Attacks
 if (key_attack) and !(key_up)
 {
-	attack(basicattack[basicattack_id],s_player_stumbler);	
+	attack(basicattack[basicattack_id],s_player_flurrystring);	
+	//attack(atk_flurrystring,s_player_flurrystring);
 }
 if (key_attack) and (key_up)
 {
