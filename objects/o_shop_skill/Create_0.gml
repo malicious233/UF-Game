@@ -6,7 +6,7 @@ rotato_time = 0;
 
 if instance_exists(o_player)
 {
-purchase_value = 25+(o_player.purchased_skills*25);
+purchase_value = 20+(o_player.purchased_skills*30);
 
 
 function change_windheel()

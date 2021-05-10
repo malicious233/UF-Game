@@ -9,6 +9,10 @@ rotato_time = 0;
 if instance_exists(o_player)
 {
 purchase_value = 15*(o_player.Speed_stacks+o_player.Power_stacks+o_player.Push_stacks+1);
+if (o_wavecontroller.wave >= 7)
+{
+	purchase_value = 30*(o_player.Speed_stacks+o_player.Power_stacks+o_player.Push_stacks+1);
+}
 
 function change_speed()
 {

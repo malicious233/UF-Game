@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_portal",
-    "path": "sprites/s_portal/s_portal.yy",
+    "name": "s_summonportal",
+    "path": "sprites/s_summonportal/s_summonportal.yy",
   },
   "solid": false,
   "visible": true,

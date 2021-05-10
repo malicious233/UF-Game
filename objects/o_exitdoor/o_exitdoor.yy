@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_exitdoor",
-    "path": "sprites/s_exitdoor/s_exitdoor.yy",
+    "name": "s_tutorialdoor",
+    "path": "sprites/s_tutorialdoor/s_tutorialdoor.yy",
   },
   "solid": false,
   "visible": true,

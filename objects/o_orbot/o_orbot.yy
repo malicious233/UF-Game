@@ -46,7 +46,7 @@
     {"propertyId":{"name":"hp","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"25","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"team ","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"1","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"points","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"250","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"death_money","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"7","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"death_money","path":"objects/o_base_character/o_base_character.yy",},"objectId":{"name":"o_base_character","path":"objects/o_base_character/o_base_character.yy",},"value":"5","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Enemies",
