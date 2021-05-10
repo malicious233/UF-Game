@@ -28,8 +28,8 @@ e_wave_buildup[5] = 10; //Mixed tincan and orbot, low chance for tanker
 e_wave_buildup[6] = 1; //One tanker
 e_wave_buildup[7] = 12; //Gott o blandat
 
-e_wave_buildup[8] = 22;//Tincan-ageddon
-e_wave_buildup[9] = 18;//Orbot-ageddon
+e_wave_buildup[8] = 20;//Tincan-ageddon
+e_wave_buildup[9] = 16;//Orbot-ageddon
 e_wave_buildup[10] = 18;//Mix
 e_wave_buildup[11] = 4; //Tanker hell
 e_wave_buildup[12] = 25; //Final, repeating wave
@@ -45,7 +45,7 @@ e_max_wave[6] = 1;
 e_max_wave[7] = 7;
 
 e_max_wave[8] = 12;
-e_max_wave[9] = 10;
+e_max_wave[9] = 9;
 e_max_wave[10] = 10;
 e_max_wave[11] = 3;
 e_max_wave[12] = 15;

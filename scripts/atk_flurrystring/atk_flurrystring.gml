@@ -29,7 +29,7 @@ function atk_flurrystring()
 			create_solo_hitbox()
 			with (current_hitbox)
 			{
-				hitbox_offset_x = 20; //X offset från hitbox_owner, optional
+				hitbox_offset_x = 26; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 8; //Y offset från hitbox_owner, optional
 				hitbox_duration = 5;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.6; //Hitboxens X scale, optional
@@ -52,13 +52,13 @@ function atk_flurrystring()
 		create_solo_hitbox()
 			with (current_hitbox)
 			{
-				hitbox_offset_x = 22; //X offset från hitbox_owner, optional
+				hitbox_offset_x = 26; //X offset från hitbox_owner, optional
 				hitbox_offset_y = 8; //Y offset från hitbox_owner, optional
 				hitbox_duration = 5;//Hur länge hitboxen är active tills den tas bort automatiskt.
 				image_xscale = 1.6; //Hitboxens X scale, optional
 				image_yscale = 1.2;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 2;
+				hitbox_damage = 1;
 				hitbox_x_kb = 1.5*other.dir;
 				hitbox_y_kb = -1.5;	
 			}
@@ -80,7 +80,7 @@ function atk_flurrystring()
 				image_xscale = 2; //Hitboxens X scale, optional
 				image_yscale = 1.6;//Hitboxens Y scale, optional
 				
-				hitbox_damage = 3;
+				hitbox_damage = 5;
 				hitbox_x_kb = 6*other.dir;
 				hitbox_y_kb = -5.5;	
 			}
