@@ -7,10 +7,12 @@ function shop_confirm()
 	//rotato_time ++;
 	if o_player.keyboard_tutorial = 1
 	{
-		draw_sprite(s_button_R,0,x,y+30)	
+		draw_set_alpha(0.75)
+		draw_sprite(s_button_R,0,x,y+30)
 	}
 	if o_player.controller_tutorial = 1
 	{
+		draw_set_alpha(0.75)
 		draw_sprite(s_button_L3,0,x,y+30)	
 	}
 	//if (rotato_time == 120)
