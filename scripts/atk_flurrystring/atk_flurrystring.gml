@@ -21,6 +21,11 @@ function atk_flurrystring()
 			cancel_attack = true;
 			vsp = -jump_spd;
 		}
+		if (key_test) or (key_test2)
+		{
+			cancel_hitbox = true;
+			cancel_attack = true;
+		}
 	}
 	
 	if (attack_timing == 4)
