@@ -180,7 +180,7 @@ switch (index)
 		if talk_index = 3
 		{Create_speechbubble("You are free to toy with the dummie-robots in this area.\nWhen you want to leave this room, go to\nthe door on the right.",9999,true)}
 		if talk_index = 4
-		{Create_speechbubble("You can also play with a game-controller if you prefer\nit over the keyboard. Check the Settings-menu\nto see how to use a controller to play.",9999,true)}
+		{Create_speechbubble("You can also play with a game-controller if you prefer\nit over the keyboard. Check the Settings-menu\nto see how to use a controller to play, or replay\nthe tutorial when you have plugged in your controller.",9999,true)}
 		if talk_index >= 5
 		{Create_speechbubble("Other than that, good luck in the robot rampage!",9999,false); text_index = 12}
 		break;
@@ -215,13 +215,13 @@ switch (index)
 		*/
 		
 		if talk_index = 0
-		{Create_speechbubble("Hello, welcome to the tutorial.\nPress [GOOG] to see what I'm about to say next.",9999,true); text_index = 1; bubble_index = 1;}
+		{Create_speechbubble("Hello, welcome to the tutorial.\nPress the left joystick to see what I'm about to say next.",9999,true); text_index = 1; bubble_index = 1;}
 		if talk_index = 1
 		{Create_speechbubble("My name is Coin Exchange Purposed Robot-",9999,true);}
 		if talk_index = 2
 		{Create_speechbubble("-but you can call me Shop-CEPR.",9999,true)}
 		if talk_index >= 3
-		{Create_speechbubble("You can move left or right by pressing [LEFT] or [RIGHT].\n Jump over the hill\nby walking right and pressing [Spacebar].",9999,false); text_index = 2}
+		{Create_speechbubble("You can move left or right by pressing accordingly on\nthe D-PAD or the left joystick. Jump over the hill by\nwalking right and pressing the lower face-button on\nyour controller (Xbox [A]-button or PS [Cross(X)]-button).",9999,false); text_index = 2}
 		break;
 		
 	}
@@ -232,7 +232,7 @@ switch (index)
 
 		
 		if talk_index = 0
-		{Create_speechbubble("Great, that's the first step. GOOG",9999,true); text_index = 3; bubble_index = 3;}
+		{Create_speechbubble("Great, that's the first step.",9999,true); text_index = 3; bubble_index = 3;}
 		if talk_index >= 1
 		{Create_speechbubble("You can double-jump as well.\n Jump while in the air to double-jump.",9999,false);text_index = 4}
 		break;
@@ -260,7 +260,7 @@ switch (index)
 			spawn_once = true;
 			}
 		if talk_index >= 2
-		{Create_speechbubble("Do quick light attacks by pressing [J],\nand do strong attacks by pressing [K].\nIf you hold down [W], [A], [S] or [D] while you press\nthe attack-buttons, you will do\ndifferent and unique attacks.",9999,false); text_index = 6}
+		{Create_speechbubble("Do quick light attacks by pressing the left face-button,\nand do strong attacks by pressing the right face-button\n(Xbox [X] and [B] or PS [Square] and [Circle]).\nIf you hold a direction on the D-PAD or the left joystick\nwhile you press the attack-buttons, you will do\ndifferent and unique attacks.",9999,false); text_index = 6}
 		break;
 
 	}
@@ -279,7 +279,7 @@ switch (index)
 		if talk_index = 2
 		{Create_speechbubble("Feel free to experiment with attacks in the air as well.\nYou got quite the collection of moves.",9999,true)}
 		if talk_index >= 3
-		{Create_speechbubble("Try knocking that robot over there into THE HOOP by\nholding down [W] and pressing [K].",9999,false); text_index = 8;
+		{Create_speechbubble("Try knocking that robot over there into THE HOOP by\nholding UP on the D-PAD or the left joystick and pressing\nthe heavy attack button (Xbox [B] or PS [Circle]).",9999,false); text_index = 8;
 
 			if (spawn_once != true)
 			{
@@ -312,9 +312,9 @@ switch (index)
 			spawn_once = true;
 		}
 		if talk_index = 1
-		{Create_speechbubble("You don't want to be hit too much.\n If you lose all your HP, you will lose the game.",9999,true)}
+		{Create_speechbubble("You don't want to be hit too much.\nIf you lose all your HP, you will lose the game.",9999,true)}
 		if talk_index >= 2
-		{Create_speechbubble("You can dodge and avoid\nenemy attacks with [Q] or [E].",9999,false); text_index = 10}
+		{Create_speechbubble("You can dodge and avoid enemy attacks with\nthe upper face button(Xbox [Y] or PS [Triangle]).",9999,false); text_index = 10}
 		break;
 
 	}
@@ -335,7 +335,7 @@ switch (index)
 		if talk_index = 3
 		{Create_speechbubble("You are free to toy with the dummie-robots in this area.\nWhen you want to leave this room, go to\nthe door on the right.",9999,true)}
 		if talk_index = 4
-		{Create_speechbubble("You can also play with a game-controller if you prefer\nit over the keyboard. Check the Settings-menu\nto see how to use a controller to play.",9999,true)}
+		{Create_speechbubble("You can also play with a game-controller if you prefer\nit over the keyboard. Check the Settings-menu\nto see how to use a controller to play, or replay\nthe tutorial when you have plugged in your controller.",9999,true)}
 		if talk_index >= 5
 		{Create_speechbubble("Other than that, good luck in the robot rampage!",9999,false); text_index = 12}
 		break;
