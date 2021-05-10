@@ -69,7 +69,7 @@ if (o_player.upspecial_id = 1)
 
 else if (skill_id == 2)
 {item_name = "Skill: Slipkick"
-item_desc = "Replaces [Light Attack] on ground.\nThis attack has:\n-Longer slide.\n-Momentary invincibility when attacking.\n-More damage."	
+item_desc = "Replaces [Light Attack] on ground.\nThis attack is a slide-attack and has:\n-Momentary invincibility when attacking.\n-More damage per hit."	
 if (o_player.basicattack_id = 1)
 {instance_create_layer(x,y,"Shop",o_shop_powerup); instance_destroy();}
 }

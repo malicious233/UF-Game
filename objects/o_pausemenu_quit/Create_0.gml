@@ -3,7 +3,7 @@
 
 instance_deactivate_object(o_pausemenu_quit)  //deactivates this object immediately,
 									//activates when pressing enter in o_pausemenu --> STEP event
-
+instance_activate_object(o_meta)
 
 subpause = true   //variable pause is true at creation of this object
 

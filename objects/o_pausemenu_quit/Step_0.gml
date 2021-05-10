@@ -102,7 +102,38 @@ if (menu_x > gui_width-373) && (menu_committed != -1)     //-33 (one behind -32)
 		switch (menu_committed)
 		{
 			//case 2: break;
-			case 1: room_goto(room_main_menu); if audio_is_playing(tune_wave_1){audio_stop_sound(tune_wave_1)}; break;          //selects menu[0] and executes code before break.
+			case 1: room_goto(room_main_menu); if audio_is_playing(tune_wave_1){audio_stop_sound(tune_wave_1)};
+			
+			if file_exists(SAVEFILE2)
+				{
+					gooch3 = 0
+					file = file_text_open_read(SAVEFILE2)
+					if (file_text_read_real(file) < o_meta.scorepoints)
+					{
+						gooch3 = 2
+						file = file_text_open_write(SAVEFILE2)
+						file_text_write_real(file,o_meta.scorepoints)
+						file_text_close(file)
+
+					} 
+					file = file_text_open_read(SAVEFILE2)
+					if (file_text_read_real(file) = o_meta.scorepoints and gooch3 !=2) {gooch3 = 3; file_text_close(file)} 
+					file = file_text_open_read(SAVEFILE2)
+					if (file_text_read_real(file) > o_meta.scorepoints) {gooch3 = 4; file_text_close(file) }
+					//else if (o_meta.scorepoints < file_text_read_real(file)) {/*gooch4 = 1; gooch2 = 0; file_text_close(file); } else {gooch4 = 0; file_text_close(file);*/}
+	
+				}
+
+				if !file_exists(SAVEFILE2)
+				{
+					gooch3 = 1
+					var file
+					file = file_text_open_write(SAVEFILE2)
+					file_text_write_real(file,o_meta.scorepoints)
+					file_text_close(file)
+	
+				}
+			break;          //selects menu[0] and executes code before break.
 			case 0: instance_destroy(); break;
 	
 		
